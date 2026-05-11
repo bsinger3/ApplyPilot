@@ -97,11 +97,15 @@ def parse_skills(text: str) -> list[tuple[str, str]]:
         List of (category_name, skills_string) tuples.
     """
     skills: list[tuple[str, str]] = []
+    empty_values = {"", "n/a", "na", "none", "not applicable", "null", "-"}
     for line in text.strip().split("\n"):
         line = line.strip()
         if ":" in line:
             cat, val = line.split(":", 1)
-            skills.append((cat.strip(), val.strip()))
+            cat = cat.strip()
+            val = val.strip()
+            if cat and val.lower().strip(" .") not in empty_values:
+                skills.append((cat, val))
     return skills
 
 
@@ -166,7 +170,8 @@ def build_html(resume: dict) -> str:
         rows = ""
         for cat, val in skills:
             rows += f'<div class="skill-row"><span class="skill-cat">{cat}:</span> {val}</div>\n'
-        skills_html = f'<div class="section"><div class="section-title">Technical Skills</div>{rows}</div>'
+        if rows:
+            skills_html = f'<div class="section"><div class="section-title">Technical Skills</div>{rows}</div>'
 
     # Experience
     exp_html = ""

@@ -85,7 +85,8 @@ TITLE: Match the target role. Keep seniority (Senior/Lead/Staff). Drop company s
 
 SUMMARY: Rewrite from scratch. Lead with the 1-2 skills that matter most for THIS role. Sound like someone who's done this job.
 
-SKILLS: Reorder each category so the job's must-haves appear first.
+SKILLS: Reorder each category so the job's must-haves appear first. Omit any skill category that has no real skills.
+Never output "N/A", "None", "Not applicable", or empty categories.
 
 Reframe EVERY bullet for this role. Same real work, different angle. Every bullet must be reworded. Never copy verbatim.
 
@@ -110,7 +111,7 @@ BULLETS: Strong verb + what you built + quantified impact. Vary verbs (Built, De
 
 ## OUTPUT: Return ONLY valid JSON. No markdown fences. No commentary. No "here is" preamble.
 
-{{"title":"Role Title","summary":"2-3 tailored sentences.","skills":{{"Languages":"...","Frameworks":"...","DevOps & Infra":"...","Databases":"...","Tools":"..."}},"experience":[{{"header":"Title at Company","subtitle":"Newark, New Jersey | Aug 2025 - Present","bullets":["bullet 1","bullet 2","bullet 3","bullet 4"]}}],"projects":[],"education":"{school} | {education_level}"}}"""
+{{"title":"Role Title","summary":"2-3 tailored sentences.","skills":{{"Languages":"Python, SQL","Databases":"PostgreSQL, Snowflake","Tools":"Power BI, Mixpanel"}},"experience":[{{"header":"Title at Company","subtitle":"Newark, New Jersey | Aug 2025 - Present","bullets":["bullet 1","bullet 2","bullet 3","bullet 4"]}}],"projects":[],"education":"{school} | {education_level}"}}"""
 
 
 def _build_judge_prompt(profile: dict) -> str:
@@ -239,6 +240,22 @@ def _non_empty_project_entries(data: dict) -> list[dict]:
     return entries
 
 
+def _non_empty_skill_rows(skills: dict) -> list[tuple[str, str]]:
+    """Return skill rows with real values, dropping N/A placeholders."""
+    empty_values = {"", "n/a", "na", "none", "not applicable", "null", "-"}
+    rows: list[tuple[str, str]] = []
+    if not isinstance(skills, dict):
+        return rows
+    for category, value in skills.items():
+        category_text = sanitize_text(str(category))
+        value_text = sanitize_text(str(value))
+        normalized = value_text.lower().strip(" .")
+        if not category_text or normalized in empty_values:
+            continue
+        rows.append((category_text, value_text))
+    return rows
+
+
 # ── Resume Assembly (profile-driven header) ──────────────────────────────
 
 def assemble_resume_text(data: dict, profile: dict) -> str:
@@ -285,11 +302,12 @@ def assemble_resume_text(data: dict, profile: dict) -> str:
     lines.append("")
 
     # Technical Skills
-    lines.append("TECHNICAL SKILLS")
-    if isinstance(data["skills"], dict):
-        for cat, val in data["skills"].items():
-            lines.append(f"{cat}: {sanitize_text(str(val))}")
-    lines.append("")
+    skill_rows = _non_empty_skill_rows(data["skills"])
+    if skill_rows:
+        lines.append("TECHNICAL SKILLS")
+        for cat, val in skill_rows:
+            lines.append(f"{cat}: {val}")
+        lines.append("")
 
     # Experience
     lines.append("EXPERIENCE")
