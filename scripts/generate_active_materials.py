@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate resumes and cover letters only for still-live job postings.
+"""Generate application materials only for still-live job postings.
 
 This wraps ApplyPilot's existing tailor/cover generation functions, but checks
 each job URL before spending LLM tokens. Stale or unconfirmable postings are
@@ -69,16 +69,16 @@ def needs_cover_letter(job: dict) -> bool:
     return (job.get("cover_letter_path") or "") != expected_cover_letter_path(job)
 
 
-def check_job_exists(client: httpx.Client, url: str) -> tuple[bool, str]:
+def check_job_exists(client: httpx.Client, url: str) -> tuple[bool, str, str]:
     if not url:
-        return False, "missing URL"
+        return False, "missing_url", "missing URL"
 
     response = None
     for attempt in range(3):
         try:
             response = client.get(url)
         except httpx.HTTPError as exc:
-            return False, f"fetch failed: {exc.__class__.__name__}"
+            return False, "unconfirmed", f"fetch failed: {exc.__class__.__name__}"
 
         if response.status_code != 429:
             break
@@ -92,22 +92,43 @@ def check_job_exists(client: httpx.Client, url: str) -> tuple[bool, str]:
         time.sleep(wait)
 
     if response is None:
-        return False, "fetch failed"
+        return False, "unconfirmed", "fetch failed"
 
     if response.status_code in (404, 410):
-        return False, f"HTTP {response.status_code}"
+        return False, "stale", f"HTTP {response.status_code}"
     if response.status_code >= 400:
-        return False, f"unconfirmed HTTP {response.status_code}"
+        return False, "unconfirmed", f"HTTP {response.status_code}"
 
     text = response.text[:250_000].lower()
     for signal in STALE_SIGNALS:
         if signal in text:
-            return False, f"stale signal: {signal}"
+            return False, "stale", f"stale signal: {signal}"
 
-    return True, f"HTTP {response.status_code}"
+    return True, "live", f"HTTP {response.status_code}"
 
 
-def fetch_candidates(conn, min_score: int) -> list[dict]:
+def update_posting_check(conn, job: dict, posting_status: str, reason: str) -> None:
+    """Persist posting liveness check metadata for later CSV review."""
+    now = datetime.now(timezone.utc).isoformat()
+    conn.execute(
+        """
+        UPDATE jobs
+        SET checked_at = ?,
+            posting_status = ?,
+            detail_error = CASE
+                WHEN ? IN ('stale', 'unconfirmed', 'missing_url') THEN ?
+                ELSE detail_error
+            END
+        WHERE url = ?
+        """,
+        (now, posting_status, posting_status, f"posting check: {reason}", job["url"]),
+    )
+    conn.commit()
+    job["checked_at"] = now
+    job["posting_status"] = posting_status
+
+
+def fetch_candidates(conn, min_score: int, materials: str) -> list[dict]:
     rows = conn.execute(
         """
         SELECT *
@@ -127,10 +148,15 @@ def fetch_candidates(conn, min_score: int) -> list[dict]:
             job.get("url"),
         ).eligible_for_generation:
             continue
-        if (
-            (needs_tailored_resume(job) and (job.get("tailor_attempts") or 0) < TAILOR_MAX_ATTEMPTS)
-            or (needs_cover_letter(job) and (job.get("cover_attempts") or 0) < COVER_MAX_ATTEMPTS)
-        ):
+
+        needs_resume = needs_tailored_resume(job) and (job.get("tailor_attempts") or 0) < TAILOR_MAX_ATTEMPTS
+        needs_cover = needs_cover_letter(job) and (job.get("cover_attempts") or 0) < COVER_MAX_ATTEMPTS
+
+        if materials == "resumes" and needs_resume:
+            candidates.append(job)
+        elif materials == "cover_letters" and needs_cover and not needs_tailored_resume(job):
+            candidates.append(job)
+        elif materials == "all" and (needs_resume or needs_cover):
             candidates.append(job)
     return candidates
 
@@ -223,6 +249,12 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--min-score", type=int, default=7)
     parser.add_argument("--validation", choices=("strict", "normal", "lenient"), default="normal")
+    parser.add_argument(
+        "--materials",
+        choices=("resumes", "cover_letters", "all"),
+        default="all",
+        help="Which material type to generate after the liveness check.",
+    )
     parser.add_argument("--max-jobs", type=int, default=0, help="Optional cap for this run; 0 means no cap.")
     parser.add_argument("--sleep", type=float, default=2.0, help="Seconds to pause between URL checks.")
     args = parser.parse_args()
@@ -236,11 +268,11 @@ def main() -> None:
     conn = get_connection()
     profile = load_profile()
     resume_text = RESUME_PATH.read_text(encoding="utf-8")
-    candidates = fetch_candidates(conn, args.min_score)
+    candidates = fetch_candidates(conn, args.min_score, args.materials)
     if args.max_jobs > 0:
         candidates = candidates[:args.max_jobs]
 
-    log.info("Checking %d score-%d+ jobs before generation.", len(candidates), args.min_score)
+    log.info("Checking %d score-%d+ jobs before %s generation.", len(candidates), args.min_score, args.materials)
 
     stats = {
         "checked": 0,
@@ -261,7 +293,8 @@ def main() -> None:
     with httpx.Client(follow_redirects=True, timeout=20, headers=headers) as client:
         for index, job in enumerate(candidates, start=1):
             url = job_url(job)
-            exists, reason = check_job_exists(client, url)
+            exists, posting_status, reason = check_job_exists(client, url)
+            update_posting_check(conn, job, posting_status, reason)
             stats["checked"] += 1
             title = job.get("title") or "(untitled)"
             log.info("%d/%d URL check [%s] %s", index, len(candidates), reason, title[:70])
@@ -271,13 +304,13 @@ def main() -> None:
                 time.sleep(args.sleep)
                 continue
 
-            if needs_tailored_resume(job):
+            if args.materials in ("resumes", "all") and needs_tailored_resume(job):
                 if write_tailored_resume(conn, job, resume_text, profile, args.validation):
                     stats["tailored"] += 1
                 else:
                     stats["tailor_failed"] += 1
 
-            if not needs_tailored_resume(job) and needs_cover_letter(job):
+            if args.materials in ("cover_letters", "all") and not needs_tailored_resume(job) and needs_cover_letter(job):
                 if write_cover_letter(conn, job, resume_text, profile, args.validation):
                     stats["cover_letters"] += 1
                 else:

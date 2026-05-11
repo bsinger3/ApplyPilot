@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import re
 from dataclasses import dataclass
-from urllib.parse import unquote
+from urllib.parse import unquote, urlparse
 
 from applypilot.config import load_search_config
 
@@ -25,11 +25,23 @@ REMOTE_TERMS = (
 )
 
 ONSITE_TERMS = ("onsite", "on-site", "hybrid", "in office", "in-office")
+US_REMOTE_TERMS = (
+    "remote us",
+    "remote u s",
+    "remote united states",
+    "remote united states of america",
+    "remote usa",
+    "united states remote",
+    "us remote",
+    "u s remote",
+    "usa remote",
+)
 
 # Conservative built-in transit-local coverage from Newark plus the user's
 # accepted NY/NJ focus. This is intentionally text based; it avoids treating
 # distant jobs as local just because they mention "United States".
 LOCAL_TERMS = (
+    "new york ny",
     "new york, ny",
     "new york city",
     "nyc",
@@ -39,6 +51,7 @@ LOCAL_TERMS = (
     "bronx",
     "staten island",
     "newark, nj",
+    "newark nj",
     "newark, new jersey",
     "jersey city",
     "hoboken",
@@ -55,8 +68,17 @@ LOCAL_TERMS = (
 NON_LOCAL_TERMS = (
     "frisco texas",
     "frisco, texas",
+    "eagan minnesota",
+    "remote missouri",
     "texas",
+    "minnesota",
+    "missouri",
     "toronto ontario",
+    "germany langenfeld",
+    "poland gdansk",
+    "spain madrid",
+    "remote india",
+    "bengaluru karnataka",
     "mexico city",
     "ciudad de mexico",
     "cdmx",
@@ -67,7 +89,14 @@ NON_LOCAL_TERMS = (
     "vancouver",
     "london",
     "europe",
+    "germany",
+    "poland",
+    "spain",
+    "brazil",
+    "sao paulo",
+    "so paulo",
     "india",
+    "bengaluru",
     "philippines",
     "singapore",
     "australia",
@@ -99,12 +128,27 @@ def _url_location_text(url: str | None) -> str:
     """Extract readable location tokens from job URLs such as Workday paths."""
     if not url:
         return ""
-    text = unquote(url).lower()
-    text = re.sub(r"https?://[^/]+", " ", text)
+    parsed = urlparse(url)
+    if "linkedin.com" in parsed.netloc and "/jobs/view/" in parsed.path:
+        return ""
+
+    path = unquote(parsed.path or "").lower()
+    if "/job/" in path:
+        text = path.split("/job/", 1)[1].split("/", 1)[0]
+    else:
+        text = path
+
     text = re.sub(r"[_/?=&.]+", " ", text)
     text = text.replace("-", " ")
     text = re.sub(r"\s+", " ", text)
     return text.strip()
+
+
+def _normalize_location_text(text: str) -> str:
+    """Normalize punctuation so terms like 'Remote, US' are matchable."""
+    text = text.lower()
+    text = re.sub(r"[^a-z0-9]+", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def classify_location(
@@ -120,22 +164,14 @@ def classify_location(
     reject_patterns = [str(p).lower() for p in location_cfg.get("reject_patterns", [])]
 
     url_text = _url_location_text(url)
-    location_evidence = " ".join(part for part in (location or "", url_text) if part).lower()
-    combined = " ".join(part for part in (location or "", url_text, description or "") if part).lower()
+    location_evidence = _normalize_location_text(" ".join(part for part in (location or "", url_text) if part))
+    combined = _normalize_location_text(" ".join(part for part in (location or "", url_text, description or "") if part))
     if not combined.strip():
         return LocationEligibility(UNKNOWN_LOCATION, "missing location")
-
-    remote_match = _contains_any(location_evidence, REMOTE_TERMS)
-    if remote_match:
-        return LocationEligibility(ELIGIBLE_REMOTE, f"remote signal: {remote_match}")
 
     reject_match = _contains_any(combined, reject_patterns)
     if reject_match:
         return LocationEligibility(INELIGIBLE_LOCATION, f"rejected by pattern: {reject_match}")
-
-    non_local_match = _contains_any(location_evidence, NON_LOCAL_TERMS)
-    if non_local_match:
-        return LocationEligibility(INELIGIBLE_LOCATION, f"non-local location: {non_local_match}")
 
     local_match = _contains_any(location_evidence, LOCAL_TERMS)
     if local_match:
@@ -146,6 +182,20 @@ def classify_location(
 
     if "new york" in location_evidence or _has_state_token(location_evidence, "ny"):
         return LocationEligibility(ELIGIBLE_LOCAL, "New York location")
+
+    non_local_match = _contains_any(location_evidence, NON_LOCAL_TERMS)
+    if non_local_match:
+        return LocationEligibility(INELIGIBLE_LOCATION, f"non-local location: {non_local_match}")
+
+    if "united states of america" in location_evidence and "remote" not in location_evidence:
+        return LocationEligibility(INELIGIBLE_LOCATION, "non-local United States location")
+
+    remote_match = _contains_any(location_evidence, REMOTE_TERMS)
+    if remote_match:
+        constrained_remote = bool(location_evidence) and not _contains_any(location_evidence, US_REMOTE_TERMS)
+        if constrained_remote and location_evidence.strip() not in {"remote"}:
+            return LocationEligibility(INELIGIBLE_LOCATION, f"location-constrained remote: {location_evidence}")
+        return LocationEligibility(ELIGIBLE_REMOTE, f"remote signal: {remote_match}")
 
     accept_match = _contains_any(location_evidence, accept_patterns)
     if accept_match and accept_match not in {"united states", "usa", "us"}:
