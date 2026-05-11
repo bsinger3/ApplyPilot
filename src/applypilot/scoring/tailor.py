@@ -13,18 +13,16 @@ import json
 import logging
 import time
 from datetime import datetime, timezone
-from pathlib import Path
 
 from applypilot.config import RESUME_PATH, TAILORED_DIR, load_profile
 from applypilot.database import get_connection, get_jobs_by_stage
 from applypilot.llm import get_client
-from applypilot.scoring.filenames import unique_job_prefix
+from applypilot.location import classify_location
+from applypilot.scoring.filenames import resume_filename_stem, unique_job_prefix
 from applypilot.scoring.validator import (
     BANNED_WORDS,
-    FABRICATION_WATCHLIST,
     sanitize_text,
     validate_json_fields,
-    validate_tailored_resume,
 )
 
 log = logging.getLogger(__name__)
@@ -53,12 +51,10 @@ def _build_tailor_prompt(profile: dict) -> str:
 
     # Preserved entities
     companies = resume_facts.get("preserved_companies", [])
-    projects = resume_facts.get("preserved_projects", [])
     school = resume_facts.get("preserved_school", "")
     real_metrics = resume_facts.get("real_metrics", [])
 
     companies_str = ", ".join(companies) if companies else "N/A"
-    projects_str = ", ".join(projects) if projects else "N/A"
     metrics_str = ", ".join(real_metrics) if real_metrics else "N/A"
 
     # Include ALL banned words from the validator so the LLM knows exactly
@@ -93,7 +89,7 @@ SKILLS: Reorder each category so the job's must-haves appear first.
 
 Reframe EVERY bullet for this role. Same real work, different angle. Every bullet must be reworded. Never copy verbatim.
 
-PROJECTS: Reorder by relevance. Drop irrelevant projects entirely.
+PROJECTS: Reorder by relevance. Drop irrelevant projects entirely. Omit projects if none are relevant.
 
 BULLETS: Strong verb + what you built + quantified impact. Vary verbs (Built, Designed, Implemented, Reduced, Automated, Deployed, Operated, Optimized). Most relevant first. Max 4 per section.
 
@@ -114,7 +110,7 @@ BULLETS: Strong verb + what you built + quantified impact. Vary verbs (Built, De
 
 ## OUTPUT: Return ONLY valid JSON. No markdown fences. No commentary. No "here is" preamble.
 
-{{"title":"Role Title","summary":"2-3 tailored sentences.","skills":{{"Languages":"...","Frameworks":"...","DevOps & Infra":"...","Databases":"...","Tools":"..."}},"experience":[{{"header":"Title at Company","subtitle":"Tech | Dates","bullets":["bullet 1","bullet 2","bullet 3","bullet 4"]}}],"education":"{school} | {education_level}"}}"""
+{{"title":"Role Title","summary":"2-3 tailored sentences.","skills":{{"Languages":"...","Frameworks":"...","DevOps & Infra":"...","Databases":"...","Tools":"..."}},"experience":[{{"header":"Title at Company","subtitle":"Newark, New Jersey | Aug 2025 - Present","bullets":["bullet 1","bullet 2","bullet 3","bullet 4"]}}],"projects":[],"education":"{school} | {education_level}"}}"""
 
 
 def _build_judge_prompt(profile: dict) -> str:
@@ -218,6 +214,31 @@ def extract_json(raw: str) -> dict:
     raise ValueError("No valid JSON found in LLM response")
 
 
+def _clean_subtitle(subtitle: str) -> str:
+    """Remove prompt placeholder subtitles while preserving real dates."""
+    subtitle = sanitize_text(subtitle)
+    if subtitle.lower().startswith("tech |"):
+        return subtitle.split("|", 1)[1].strip()
+    return subtitle
+
+
+def _non_empty_project_entries(data: dict) -> list[dict]:
+    """Return project entries with real content."""
+    projects = data.get("projects") or []
+    if not isinstance(projects, list):
+        return []
+    entries: list[dict] = []
+    for entry in projects:
+        if not isinstance(entry, dict):
+            continue
+        header = sanitize_text(str(entry.get("header") or entry.get("title") or ""))
+        bullets = [sanitize_text(str(b)) for b in entry.get("bullets", []) if sanitize_text(str(b))]
+        subtitle = _clean_subtitle(str(entry.get("subtitle") or ""))
+        if header or bullets:
+            entries.append({"header": header, "subtitle": subtitle, "bullets": bullets})
+    return entries
+
+
 # ── Resume Assembly (profile-driven header) ──────────────────────────────
 
 def assemble_resume_text(data: dict, profile: dict) -> str:
@@ -275,10 +296,23 @@ def assemble_resume_text(data: dict, profile: dict) -> str:
     for entry in data.get("experience", []):
         lines.append(sanitize_text(entry.get("header", "")))
         if entry.get("subtitle"):
-            lines.append(sanitize_text(entry["subtitle"]))
+            lines.append(_clean_subtitle(entry["subtitle"]))
         for b in entry.get("bullets", []):
             lines.append(f"- {sanitize_text(b)}")
         lines.append("")
+
+    # Projects are optional. Emit the section only when real entries exist.
+    projects = _non_empty_project_entries(data)
+    if projects:
+        lines.append("PROJECTS")
+        for entry in projects:
+            if entry["header"]:
+                lines.append(entry["header"])
+            if entry["subtitle"]:
+                lines.append(entry["subtitle"])
+            for b in entry["bullets"]:
+                lines.append(f"- {b}")
+            lines.append("")
 
     # Education
     lines.append("EDUCATION")
@@ -462,9 +496,13 @@ def run_tailoring(min_score: int = 7, limit: int = 20,
     conn = get_connection()
 
     jobs = get_jobs_by_stage(conn=conn, stage="pending_tailor", min_score=min_score, limit=limit)
+    jobs = [
+        job for job in jobs
+        if classify_location(job.get("location"), job.get("full_description") or job.get("description")).eligible_for_generation
+    ]
 
     if not jobs:
-        log.info("No untailored jobs with score >= %d.", min_score)
+        log.info("No location-eligible untailored jobs with score >= %d.", min_score)
         return {"approved": 0, "failed": 0, "errors": 0, "elapsed": 0.0}
 
     TAILORED_DIR.mkdir(parents=True, exist_ok=True)
@@ -482,9 +520,10 @@ def run_tailoring(min_score: int = 7, limit: int = 20,
 
             # Build stable per-job filename prefix.
             prefix = unique_job_prefix(job)
+            resume_stem = resume_filename_stem(job)
 
             # Save tailored resume text
-            txt_path = TAILORED_DIR / f"{prefix}.txt"
+            txt_path = TAILORED_DIR / f"{resume_stem}.txt"
             txt_path.write_text(tailored, encoding="utf-8")
 
             # Save job description for traceability

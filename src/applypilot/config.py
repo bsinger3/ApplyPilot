@@ -108,9 +108,36 @@ def load_search_config() -> dict:
         # Fall back to package-shipped example
         example = CONFIG_DIR / "searches.example.yaml"
         if example.exists():
-            return yaml.safe_load(example.read_text(encoding="utf-8"))
+            return normalize_search_config(yaml.safe_load(example.read_text(encoding="utf-8")) or {})
         return {}
-    return yaml.safe_load(SEARCH_CONFIG_PATH.read_text(encoding="utf-8"))
+    return normalize_search_config(yaml.safe_load(SEARCH_CONFIG_PATH.read_text(encoding="utf-8")) or {})
+
+
+def normalize_search_config(cfg: dict | None) -> dict:
+    """Normalize search config while preserving old location keys.
+
+    Current configs store filters under ``location.accept_patterns`` and
+    ``location.reject_patterns``. Older code used top-level
+    ``location_accept`` and ``location_reject_non_remote``. Keep both views in
+    sync so discovery, scoring, generation, and apply code can share one
+    behavior while existing config files keep working.
+    """
+    cfg = dict(cfg or {})
+    location = dict(cfg.get("location") or {})
+
+    accept = location.get("accept_patterns")
+    if accept is None:
+        accept = cfg.get("location_accept", [])
+    reject = location.get("reject_patterns")
+    if reject is None:
+        reject = cfg.get("location_reject_non_remote", [])
+
+    location["accept_patterns"] = list(accept or [])
+    location["reject_patterns"] = list(reject or [])
+    cfg["location"] = location
+    cfg["location_accept"] = location["accept_patterns"]
+    cfg["location_reject_non_remote"] = location["reject_patterns"]
+    return cfg
 
 
 def load_sites_config() -> dict:

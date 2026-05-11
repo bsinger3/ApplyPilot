@@ -16,6 +16,8 @@ import sqlite3
 from pathlib import Path
 from urllib.parse import quote
 
+from applypilot.location import classify_location
+
 
 APP_DIR = Path(os.environ.get("APPLYPILOT_DIR", Path.home() / ".applypilot")).expanduser()
 DB_PATH = APP_DIR / "applypilot.db"
@@ -27,6 +29,10 @@ COLUMNS = (
     "job_title",
     "company",
     "score",
+    "location",
+    "location_status",
+    "checked_at",
+    "posting_status",
     "job_url",
     "tailored_resume_pdf",
     "cover_letter_pdf",
@@ -48,6 +54,14 @@ def unique_prefix(site: str | None, title: str | None, url: str | None) -> str:
     prefix = legacy_prefix(site, title)
     token = hashlib.sha1((url or "").encode("utf-8")).hexdigest()[:10] if url else "no_url"
     return f"{prefix}_{token}" if prefix else token
+
+
+def resume_stem(site: str | None, title: str | None, url: str | None) -> str:
+    return f"{unique_prefix(site, title, url)}_Resume_Brianna_Singer"
+
+
+def cover_letter_stem(site: str | None, title: str | None, url: str | None) -> str:
+    return f"{unique_prefix(site, title, url)}_Cover_Letter_Brianna_Singer"
 
 
 def sibling_pdf(path_value: str | None) -> Path | None:
@@ -89,19 +103,30 @@ def export_manual_apply_index() -> int:
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
 
     with connect_readonly(DB_PATH) as conn:
+        existing_columns = {row[1] for row in conn.execute("PRAGMA table_info(jobs)").fetchall()}
+        location_status_expr = "location_status" if "location_status" in existing_columns else "NULL AS location_status"
+        checked_at_expr = "checked_at" if "checked_at" in existing_columns else "NULL AS checked_at"
+        posting_status_expr = "posting_status" if "posting_status" in existing_columns else "NULL AS posting_status"
         jobs = conn.execute(
-            """
+            f"""
             SELECT
                 title,
                 site,
                 fit_score,
                 url,
                 application_url,
+                location,
+                description,
+                full_description,
+                detail_scraped_at,
+                {location_status_expr},
+                {checked_at_expr},
+                {posting_status_expr},
                 tailored_resume_path,
                 cover_letter_path
             FROM jobs
-            WHERE tailored_resume_path IS NOT NULL
-               OR cover_letter_path IS NOT NULL
+            WHERE COALESCE(fit_score, 0) >= 7
+              AND full_description IS NOT NULL
             ORDER BY COALESCE(fit_score, 0) DESC, site, title, url
             """
         ).fetchall()
@@ -110,26 +135,33 @@ def export_manual_apply_index() -> int:
     for job in jobs:
         legacy = legacy_prefix(job["site"], job["title"])
         unique = unique_prefix(job["site"], job["title"], job["url"])
+        location = classify_location(job["location"], job["full_description"] or job["description"])
+        location_status = job["location_status"] or location.status
+
+        if not location.eligible_for_generation:
+            continue
 
         resume_pdf = (
             sibling_pdf(job["tailored_resume_path"])
-            or named_pdf(TAILORED_DIR, unique)
+            or named_pdf(TAILORED_DIR, resume_stem(job["site"], job["title"], job["url"]))
             or named_pdf(TAILORED_DIR, legacy)
         )
         cover_letter_pdf = (
             sibling_pdf(job["cover_letter_path"])
+            or named_pdf(COVER_LETTER_DIR, cover_letter_stem(job["site"], job["title"], job["url"]))
             or named_pdf(COVER_LETTER_DIR, unique, "_CL")
             or named_pdf(COVER_LETTER_DIR, legacy, "_CL")
         )
-
-        if not resume_pdf and not cover_letter_pdf:
-            continue
 
         rows.append(
             {
                 "job_title": job["title"] or "",
                 "company": job["site"] or "",
                 "score": job["fit_score"] if job["fit_score"] is not None else "",
+                "location": job["location"] or "",
+                "location_status": location_status,
+                "checked_at": job["checked_at"] or job["detail_scraped_at"] or "",
+                "posting_status": job["posting_status"] or "unconfirmed",
                 "job_url": job["application_url"] or job["url"] or "",
                 "tailored_resume_pdf": str(resume_pdf) if resume_pdf else "",
                 "cover_letter_pdf": str(cover_letter_pdf) if cover_letter_pdf else "",

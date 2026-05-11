@@ -183,12 +183,14 @@ def build_html(resume: dict) -> str:
     proj_html = ""
     if "PROJECTS" in sections:
         entries = parse_entries(sections["PROJECTS"])
+        entries = [e for e in entries if e.get("title") or e.get("bullets")]
         items = ""
         for e in entries:
             bullets = "".join(f"<li>{b}</li>" for b in e["bullets"])
             subtitle = f'<div class="entry-subtitle">{e["subtitle"]}</div>' if e["subtitle"] else ""
             items += f'<div class="entry"><div class="entry-title">{e["title"]}</div>{subtitle}<ul>{bullets}</ul></div>'
-        proj_html = f'<div class="section"><div class="section-title">Projects</div>{items}</div>'
+        if items:
+            proj_html = f'<div class="section"><div class="section-title">Projects</div>{items}</div>'
 
     # Education
     edu_html = ""

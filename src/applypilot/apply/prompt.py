@@ -103,11 +103,13 @@ def _build_location_check(profile: dict, search_config: dict) -> str:
     accept_patterns = location_cfg.get("accept_patterns", [])
     primary_city = personal.get("city", location_cfg.get("primary", "your city"))
 
+    transit_rule = "New York City or NY/NJ locations reachable within 90 minutes by train or bus from 54 Polk Street Apt G2, Newark, NJ 07105"
+
     # Build the list of acceptable cities for hybrid/onsite
     if accept_patterns:
-        city_list = ", ".join(accept_patterns)
+        city_list = f"{transit_rule}; configured accepted patterns: {', '.join(accept_patterns)}"
     else:
-        city_list = primary_city
+        city_list = transit_rule or primary_city
 
     return f"""== LOCATION CHECK (do this FIRST before any form) ==
 Read the job page. Determine the work arrangement. Then decide:

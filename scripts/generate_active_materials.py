@@ -18,9 +18,10 @@ import httpx
 
 from applypilot.config import COVER_LETTER_DIR, RESUME_PATH, TAILORED_DIR, ensure_dirs, load_env, load_profile
 from applypilot.database import get_connection, init_db
+from applypilot.location import classify_location
 from applypilot.scoring.cover_letter import MAX_ATTEMPTS as COVER_MAX_ATTEMPTS
 from applypilot.scoring.cover_letter import generate_cover_letter
-from applypilot.scoring.filenames import unique_job_prefix
+from applypilot.scoring.filenames import cover_letter_filename_stem, resume_filename_stem, unique_job_prefix
 from applypilot.scoring.pdf import convert_to_pdf
 from applypilot.scoring.tailor import MAX_ATTEMPTS as TAILOR_MAX_ATTEMPTS
 from applypilot.scoring.tailor import tailor_resume
@@ -53,11 +54,11 @@ def job_url(job: dict) -> str:
 
 
 def expected_resume_path(job: dict) -> str:
-    return str(TAILORED_DIR / f"{unique_job_prefix(job)}.txt")
+    return str(TAILORED_DIR / f"{resume_filename_stem(job)}.txt")
 
 
 def expected_cover_letter_path(job: dict) -> str:
-    return str(COVER_LETTER_DIR / f"{unique_job_prefix(job)}_CL.txt")
+    return str(COVER_LETTER_DIR / f"{cover_letter_filename_stem(job)}.txt")
 
 
 def needs_tailored_resume(job: dict) -> bool:
@@ -120,6 +121,8 @@ def fetch_candidates(conn, min_score: int) -> list[dict]:
     candidates = []
     for row in rows:
         job = dict(row)
+        if not classify_location(job.get("location"), job.get("full_description") or job.get("description")).eligible_for_generation:
+            continue
         if (
             (needs_tailored_resume(job) and (job.get("tailor_attempts") or 0) < TAILOR_MAX_ATTEMPTS)
             or (needs_cover_letter(job) and (job.get("cover_attempts") or 0) < COVER_MAX_ATTEMPTS)
@@ -131,6 +134,7 @@ def fetch_candidates(conn, min_score: int) -> list[dict]:
 def write_tailored_resume(conn, job: dict, resume_text: str, profile: dict, validation_mode: str) -> bool:
     tailored, report = tailor_resume(resume_text, job, profile, validation_mode=validation_mode)
     prefix = unique_job_prefix(job)
+    resume_stem = resume_filename_stem(job)
 
     success_statuses = {"approved", "approved_with_judge_warning"}
     now = datetime.now(timezone.utc).isoformat()
@@ -145,7 +149,7 @@ def write_tailored_resume(conn, job: dict, resume_text: str, profile: dict, vali
         return False
 
     TAILORED_DIR.mkdir(parents=True, exist_ok=True)
-    txt_path = TAILORED_DIR / f"{prefix}.txt"
+    txt_path = TAILORED_DIR / f"{resume_stem}.txt"
     txt_path.write_text(tailored, encoding="utf-8")
 
     job_path = TAILORED_DIR / f"{prefix}_JOB.txt"
@@ -193,8 +197,7 @@ def write_cover_letter(conn, job: dict, resume_text: str, profile: dict, validat
         return False
 
     COVER_LETTER_DIR.mkdir(parents=True, exist_ok=True)
-    prefix = unique_job_prefix(job)
-    cl_path = COVER_LETTER_DIR / f"{prefix}_CL.txt"
+    cl_path = COVER_LETTER_DIR / f"{cover_letter_filename_stem(job)}.txt"
     cl_path.write_text(letter, encoding="utf-8")
 
     try:

@@ -22,6 +22,7 @@ import yaml
 from applypilot import config
 from applypilot.config import CONFIG_DIR
 from applypilot.database import get_connection, init_db
+from applypilot.location import is_location_eligible_for_discovery
 
 log = logging.getLogger(__name__)
 
@@ -45,30 +46,16 @@ def _load_location_filter(search_cfg: dict | None = None):
     if search_cfg is None:
         search_cfg = config.load_search_config()
 
-    accept = search_cfg.get("location_accept", [])
-    reject = search_cfg.get("location_reject_non_remote", [])
+    location_cfg = search_cfg.get("location", {})
+    accept = location_cfg.get("accept_patterns", search_cfg.get("location_accept", []))
+    reject = location_cfg.get("reject_patterns", search_cfg.get("location_reject_non_remote", []))
     return accept, reject
 
 
 def _location_ok(location: str | None, accept: list[str], reject: list[str]) -> bool:
     """Check if a job location passes the user's location filter."""
-    if not location:
-        return True
-
-    loc = location.lower()
-
-    if any(r in loc for r in ("remote", "anywhere", "work from home", "wfh", "distributed")):
-        return True
-
-    for r in reject:
-        if r.lower() in loc:
-            return False
-
-    for a in accept:
-        if a.lower() in loc:
-            return True
-
-    return False
+    search_cfg = {"location": {"accept_patterns": accept, "reject_patterns": reject}}
+    return is_location_eligible_for_discovery(location, search_cfg)
 
 
 # -- HTML stripper -----------------------------------------------------------

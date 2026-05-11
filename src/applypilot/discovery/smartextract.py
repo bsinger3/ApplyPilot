@@ -20,17 +20,16 @@ import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
-from pathlib import Path
 from urllib.parse import quote_plus
 
-import httpx
 import yaml
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
 from applypilot import config
 from applypilot.config import CONFIG_DIR
-from applypilot.database import get_connection, init_db, store_jobs, get_stats
+from applypilot.database import init_db, get_stats
+from applypilot.location import is_location_eligible_for_discovery
 from applypilot.llm import get_client
 
 log = logging.getLogger(__name__)
@@ -52,25 +51,16 @@ def _load_location_filter(search_cfg: dict | None = None):
     """Load location accept/reject lists from search config."""
     if search_cfg is None:
         search_cfg = config.load_search_config()
-    accept = search_cfg.get("location_accept", [])
-    reject = search_cfg.get("location_reject_non_remote", [])
+    location_cfg = search_cfg.get("location", {})
+    accept = location_cfg.get("accept_patterns", search_cfg.get("location_accept", []))
+    reject = location_cfg.get("reject_patterns", search_cfg.get("location_reject_non_remote", []))
     return accept, reject
 
 
 def _location_ok(location: str | None, accept: list[str], reject: list[str]) -> bool:
     """Check if a job location passes the user's location filter."""
-    if not location:
-        return True
-    loc = location.lower()
-    if any(r in loc for r in ("remote", "anywhere", "work from home", "wfh", "distributed")):
-        return True
-    for r in reject:
-        if r.lower() in loc:
-            return False
-    for a in accept:
-        if a.lower() in loc:
-            return True
-    return False
+    search_cfg = {"location": {"accept_patterns": accept, "reject_patterns": reject}}
+    return is_location_eligible_for_discovery(location, search_cfg)
 
 
 # -- Site configuration from YAML --------------------------------------------
@@ -424,7 +414,7 @@ def format_strategy_briefing(intel: dict) -> str:
             sections.append(f"\nJSON-LD: {len(job_postings)} JobPosting entries found (usable!)")
             sections.append(f"First JobPosting:\n{json.dumps(job_postings[0], indent=2)[:3000]}")
         else:
-            sections.append(f"\nJSON-LD: NO JobPosting entries (json_ld strategy will NOT work)")
+            sections.append("\nJSON-LD: NO JobPosting entries (json_ld strategy will NOT work)")
         if other:
             types = [j.get("@type", "?") if isinstance(j, dict) else "?" for j in other]
             sections.append(f"Other JSON-LD types (NOT job data): {types}")

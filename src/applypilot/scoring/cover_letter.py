@@ -5,15 +5,15 @@ postings. All personal data (name, skills, achievements) comes from the user's
 profile at runtime. No hardcoded personal information.
 """
 
-import json
 import logging
 import time
 from datetime import datetime, timezone
 
 from applypilot.config import COVER_LETTER_DIR, RESUME_PATH, load_profile
-from applypilot.database import get_connection, get_jobs_by_stage
+from applypilot.database import get_connection
+from applypilot.location import classify_location
 from applypilot.llm import get_client
-from applypilot.scoring.filenames import unique_job_prefix
+from applypilot.scoring.filenames import cover_letter_filename_stem
 from applypilot.scoring.validator import (
     BANNED_WORDS,
     LLM_LEAK_PHRASES,
@@ -220,6 +220,10 @@ def run_cover_letters(min_score: int = 7, limit: int = 20,
     if jobs and not isinstance(jobs[0], dict):
         columns = jobs[0].keys()
         jobs = [dict(zip(columns, row)) for row in jobs]
+    jobs = [
+        job for job in jobs
+        if classify_location(job.get("location"), job.get("full_description") or job.get("description")).eligible_for_generation
+    ]
 
     COVER_LETTER_DIR.mkdir(parents=True, exist_ok=True)
     log.info(
@@ -237,10 +241,7 @@ def run_cover_letters(min_score: int = 7, limit: int = 20,
             letter = generate_cover_letter(resume_text, job, profile,
                                           validation_mode=validation_mode)
 
-            # Build stable per-job filename prefix.
-            prefix = unique_job_prefix(dict(job))
-
-            cl_path = COVER_LETTER_DIR / f"{prefix}_CL.txt"
+            cl_path = COVER_LETTER_DIR / f"{cover_letter_filename_stem(dict(job))}.txt"
             cl_path.write_text(letter, encoding="utf-8")
 
             # Generate PDF (best-effort)

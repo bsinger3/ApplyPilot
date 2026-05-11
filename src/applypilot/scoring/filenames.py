@@ -31,3 +31,13 @@ def unique_job_prefix(job: dict) -> str:
     prefix = legacy_job_prefix(job)
     token = job_url_token(job)
     return f"{prefix}_{token}" if prefix else token
+
+
+def resume_filename_stem(job: dict) -> str:
+    """Return the human-readable unique stem for tailored resume files."""
+    return f"{unique_job_prefix(job)}_Resume_Brianna_Singer"
+
+
+def cover_letter_filename_stem(job: dict) -> str:
+    """Return the human-readable unique stem for cover letter files."""
+    return f"{unique_job_prefix(job)}_Cover_Letter_Brianna_Singer"

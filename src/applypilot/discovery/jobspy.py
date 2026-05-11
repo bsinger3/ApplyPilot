@@ -15,7 +15,8 @@ from datetime import datetime, timezone
 from jobspy import scrape_jobs
 
 from applypilot import config
-from applypilot.database import get_connection, init_db, store_jobs
+from applypilot.database import get_connection, init_db
+from applypilot.location import is_location_eligible_for_discovery
 
 log = logging.getLogger(__name__)
 
@@ -81,8 +82,9 @@ def _load_location_config(search_cfg: dict) -> tuple[list[str], list[str]]:
 
     Falls back to sensible defaults if not defined in the YAML.
     """
-    accept = search_cfg.get("location_accept", [])
-    reject = search_cfg.get("location_reject_non_remote", [])
+    location_cfg = search_cfg.get("location", {})
+    accept = location_cfg.get("accept_patterns", search_cfg.get("location_accept", []))
+    reject = location_cfg.get("reject_patterns", search_cfg.get("location_reject_non_remote", []))
     return accept, reject
 
 
@@ -92,27 +94,8 @@ def _location_ok(location: str | None, accept: list[str], reject: list[str]) -> 
     Remote jobs are always accepted. Non-remote jobs must match an accept
     pattern and not match a reject pattern.
     """
-    if not location:
-        return True  # unknown location -- keep it, let scorer decide
-
-    loc = location.lower()
-
-    # Remote jobs always OK
-    if any(r in loc for r in ("remote", "anywhere", "work from home", "wfh", "distributed")):
-        return True
-
-    # Reject non-remote matches
-    for r in reject:
-        if r.lower() in loc:
-            return False
-
-    # Accept matches
-    for a in accept:
-        if a.lower() in loc:
-            return True
-
-    # No match -- reject unknown
-    return False
+    search_cfg = {"location": {"accept_patterns": accept, "reject_patterns": reject}}
+    return is_location_eligible_for_discovery(location, search_cfg)
 
 
 # -- DB storage (JobSpy DataFrame -> SQLite) ---------------------------------
@@ -129,7 +112,6 @@ def store_jobspy_results(conn: sqlite3.Connection, df, source_label: str) -> tup
             continue
 
         title = str(row.get("title", "")) if str(row.get("title", "")) != "nan" else None
-        company = str(row.get("company", "")) if str(row.get("company", "")) != "nan" else None
         location_str = str(row.get("location", "")) if str(row.get("location", "")) != "nan" else None
 
         # Build salary string from min/max

@@ -25,6 +25,7 @@ from rich.live import Live
 
 from applypilot import config
 from applypilot.database import get_connection
+from applypilot.location import classify_location
 from applypilot.apply import chrome, dashboard, prompt as prompt_mod
 from applypilot.apply.chrome import (
     launch_chrome, cleanup_worker, kill_all_chrome,
@@ -143,6 +144,16 @@ def acquire_job(target_url: str | None = None, min_score: int = 7,
 
         if not row:
             conn.rollback()
+            return None
+
+        location = classify_location(row["location"], row["full_description"])
+        if not location.eligible_for_generation:
+            conn.execute(
+                "UPDATE jobs SET apply_status = 'failed', apply_error = ?, apply_attempts = 99 WHERE url = ?",
+                (f"not_eligible_location: {location.reason}", row["url"]),
+            )
+            conn.commit()
+            logger.info("Skipping location-ineligible job: %s", row["url"][:80])
             return None
 
         # Skip manual ATS sites (unsolvable CAPTCHAs)

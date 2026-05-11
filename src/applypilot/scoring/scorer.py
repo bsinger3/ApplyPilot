@@ -5,14 +5,14 @@ job description. All personal data is loaded at runtime from the user's
 profile and resume file.
 """
 
-import json
 import logging
 import re
 import time
 from datetime import datetime, timezone
 
-from applypilot.config import RESUME_PATH, load_profile
+from applypilot.config import RESUME_PATH
 from applypilot.database import get_connection, get_jobs_by_stage
+from applypilot.location import INELIGIBLE_LOCATION, UNKNOWN_LOCATION, classify_location
 from applypilot.llm import get_client
 
 log = logging.getLogger(__name__)
@@ -80,6 +80,15 @@ def score_job(resume_text: str, job: dict) -> dict:
     Returns:
         {"score": int, "keywords": str, "reasoning": str}
     """
+    location = classify_location(job.get("location"), job.get("full_description") or job.get("description"))
+    if location.status == INELIGIBLE_LOCATION:
+        return {
+            "score": 1,
+            "keywords": "",
+            "reasoning": f"Location ineligible: {location.reason}",
+            "location_status": location.status,
+        }
+
     job_text = (
         f"TITLE: {job['title']}\n"
         f"COMPANY: {job['site']}\n"
@@ -95,10 +104,14 @@ def score_job(resume_text: str, job: dict) -> dict:
     try:
         client = get_client()
         response = client.chat(messages, max_tokens=512, temperature=0.2)
-        return _parse_score_response(response)
+        result = _parse_score_response(response)
+        result["location_status"] = location.status
+        if location.status == UNKNOWN_LOCATION:
+            result["reasoning"] = f"Location unknown: {location.reason}. {result['reasoning']}"
+        return result
     except Exception as e:
         log.error("LLM error scoring job '%s': %s", job.get("title", "?"), e)
-        return {"score": 0, "keywords": "", "reasoning": f"LLM error: {e}"}
+        return {"score": 0, "keywords": "", "reasoning": f"LLM error: {e}", "location_status": location.status}
 
 
 def run_scoring(limit: int = 0, rescore: bool = False) -> dict:
@@ -156,8 +169,8 @@ def run_scoring(limit: int = 0, rescore: bool = False) -> dict:
     now = datetime.now(timezone.utc).isoformat()
     for r in results:
         conn.execute(
-            "UPDATE jobs SET fit_score = ?, score_reasoning = ?, scored_at = ? WHERE url = ?",
-            (r["score"], f"{r['keywords']}\n{r['reasoning']}", now, r["url"]),
+            "UPDATE jobs SET fit_score = ?, score_reasoning = ?, scored_at = ?, location_status = ? WHERE url = ?",
+            (r["score"], f"{r['keywords']}\n{r['reasoning']}", now, r.get("location_status"), r["url"]),
         )
     conn.commit()
 
