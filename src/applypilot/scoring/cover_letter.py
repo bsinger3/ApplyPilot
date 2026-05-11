@@ -222,7 +222,11 @@ def run_cover_letters(min_score: int = 7, limit: int = 20,
         jobs = [dict(zip(columns, row)) for row in jobs]
     jobs = [
         job for job in jobs
-        if classify_location(job.get("location"), job.get("full_description") or job.get("description")).eligible_for_generation
+        if classify_location(
+            job.get("location"),
+            job.get("full_description") or job.get("description"),
+            job.get("url"),
+        ).eligible_for_generation
     ]
 
     COVER_LETTER_DIR.mkdir(parents=True, exist_ok=True)

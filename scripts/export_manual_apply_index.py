@@ -135,7 +135,7 @@ def export_manual_apply_index() -> int:
     for job in jobs:
         legacy = legacy_prefix(job["site"], job["title"])
         unique = unique_prefix(job["site"], job["title"], job["url"])
-        location = classify_location(job["location"], job["full_description"] or job["description"])
+        location = classify_location(job["location"], job["full_description"] or job["description"], job["url"])
         location_status = job["location_status"] or location.status
 
         if not location.eligible_for_generation:

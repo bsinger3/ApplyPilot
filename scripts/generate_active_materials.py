@@ -121,7 +121,11 @@ def fetch_candidates(conn, min_score: int) -> list[dict]:
     candidates = []
     for row in rows:
         job = dict(row)
-        if not classify_location(job.get("location"), job.get("full_description") or job.get("description")).eligible_for_generation:
+        if not classify_location(
+            job.get("location"),
+            job.get("full_description") or job.get("description"),
+            job.get("url"),
+        ).eligible_for_generation:
             continue
         if (
             (needs_tailored_resume(job) and (job.get("tailor_attempts") or 0) < TAILOR_MAX_ATTEMPTS)

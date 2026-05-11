@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import re
 from dataclasses import dataclass
+from urllib.parse import unquote
 
 from applypilot.config import load_search_config
 
@@ -52,6 +53,10 @@ LOCAL_TERMS = (
 )
 
 NON_LOCAL_TERMS = (
+    "frisco texas",
+    "frisco, texas",
+    "texas",
+    "toronto ontario",
     "mexico city",
     "ciudad de mexico",
     "cdmx",
@@ -90,9 +95,22 @@ def _has_state_token(text: str, state: str) -> bool:
     return bool(re.search(rf"(^|[^a-z]){re.escape(state.lower())}([^a-z]|$)", text))
 
 
+def _url_location_text(url: str | None) -> str:
+    """Extract readable location tokens from job URLs such as Workday paths."""
+    if not url:
+        return ""
+    text = unquote(url).lower()
+    text = re.sub(r"https?://[^/]+", " ", text)
+    text = re.sub(r"[_/?=&.]+", " ", text)
+    text = text.replace("-", " ")
+    text = re.sub(r"\s+", " ", text)
+    return text.strip()
+
+
 def classify_location(
     location: str | None,
     description: str | None = None,
+    url: str | None = None,
     search_cfg: dict | None = None,
 ) -> LocationEligibility:
     """Classify a posting's location for the current job-search policy."""
@@ -101,13 +119,13 @@ def classify_location(
     accept_patterns = [str(p).lower() for p in location_cfg.get("accept_patterns", [])]
     reject_patterns = [str(p).lower() for p in location_cfg.get("reject_patterns", [])]
 
-    combined = " ".join(part for part in (location or "", description or "") if part).lower()
-    loc = (location or "").strip().lower()
-
+    url_text = _url_location_text(url)
+    location_evidence = " ".join(part for part in (location or "", url_text) if part).lower()
+    combined = " ".join(part for part in (location or "", url_text, description or "") if part).lower()
     if not combined.strip():
         return LocationEligibility(UNKNOWN_LOCATION, "missing location")
 
-    remote_match = _contains_any(combined, REMOTE_TERMS)
+    remote_match = _contains_any(location_evidence, REMOTE_TERMS)
     if remote_match:
         return LocationEligibility(ELIGIBLE_REMOTE, f"remote signal: {remote_match}")
 
@@ -115,23 +133,37 @@ def classify_location(
     if reject_match:
         return LocationEligibility(INELIGIBLE_LOCATION, f"rejected by pattern: {reject_match}")
 
-    non_local_match = _contains_any(loc or combined, NON_LOCAL_TERMS)
+    non_local_match = _contains_any(location_evidence, NON_LOCAL_TERMS)
     if non_local_match:
         return LocationEligibility(INELIGIBLE_LOCATION, f"non-local location: {non_local_match}")
 
-    local_match = _contains_any(loc or combined, LOCAL_TERMS)
+    local_match = _contains_any(location_evidence, LOCAL_TERMS)
     if local_match:
         return LocationEligibility(ELIGIBLE_LOCAL, f"local transit area: {local_match}")
 
-    if "new jersey" in loc or _has_state_token(loc, "nj"):
+    if "new jersey" in location_evidence or _has_state_token(location_evidence, "nj"):
         return LocationEligibility(ELIGIBLE_LOCAL, "New Jersey location")
 
-    if "new york" in loc or _has_state_token(loc, "ny"):
+    if "new york" in location_evidence or _has_state_token(location_evidence, "ny"):
         return LocationEligibility(ELIGIBLE_LOCAL, "New York location")
 
-    accept_match = _contains_any(loc, accept_patterns)
+    accept_match = _contains_any(location_evidence, accept_patterns)
     if accept_match and accept_match not in {"united states", "usa", "us"}:
         return LocationEligibility(ELIGIBLE_LOCAL, f"accepted by pattern: {accept_match}")
+
+    explicit_remote_match = _contains_any(
+        combined,
+        (
+            "remote ok",
+            "remote option",
+            "remote eligible",
+            "fully remote",
+            "100% remote",
+            "work from anywhere",
+        ),
+    )
+    if explicit_remote_match:
+        return LocationEligibility(ELIGIBLE_REMOTE, f"explicit remote signal: {explicit_remote_match}")
 
     onsite_match = _contains_any(combined, ONSITE_TERMS)
     if onsite_match:

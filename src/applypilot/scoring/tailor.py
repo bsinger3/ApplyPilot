@@ -498,7 +498,11 @@ def run_tailoring(min_score: int = 7, limit: int = 20,
     jobs = get_jobs_by_stage(conn=conn, stage="pending_tailor", min_score=min_score, limit=limit)
     jobs = [
         job for job in jobs
-        if classify_location(job.get("location"), job.get("full_description") or job.get("description")).eligible_for_generation
+        if classify_location(
+            job.get("location"),
+            job.get("full_description") or job.get("description"),
+            job.get("url"),
+        ).eligible_for_generation
     ]
 
     if not jobs:

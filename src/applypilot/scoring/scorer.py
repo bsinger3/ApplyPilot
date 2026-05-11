@@ -80,7 +80,7 @@ def score_job(resume_text: str, job: dict) -> dict:
     Returns:
         {"score": int, "keywords": str, "reasoning": str}
     """
-    location = classify_location(job.get("location"), job.get("full_description") or job.get("description"))
+    location = classify_location(job.get("location"), job.get("full_description") or job.get("description"), job.get("url"))
     if location.status == INELIGIBLE_LOCATION:
         return {
             "score": 1,
