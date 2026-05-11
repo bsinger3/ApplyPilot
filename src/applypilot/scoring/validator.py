@@ -114,7 +114,7 @@ def validate_json_fields(data: dict, profile: dict, mode: str = "normal") -> dic
     warnings: list[str] = []
 
     # Required keys — always checked regardless of mode
-    for key in ("title", "summary", "skills", "experience", "projects", "education"):
+    for key in ("title", "summary", "skills", "experience", "education"):
         if key not in data or not data[key]:
             errors.append(f"Missing required field: {key}")
     if errors:
@@ -149,8 +149,8 @@ def validate_json_fields(data: dict, profile: dict, mode: str = "normal") -> dic
                 all_text_parts.append(b)
 
     # Projects: collect bullets
-    if isinstance(data["projects"], list):
-        for entry in data["projects"]:
+    if isinstance(data.get("projects", []), list):
+        for entry in data.get("projects", []):
             for b in entry.get("bullets", []):
                 all_text_parts.append(b)
 
