@@ -31,6 +31,12 @@ log = logging.getLogger(__name__)
 VALID_STAGES = ("discover", "enrich", "score", "tailor", "cover", "pdf")
 
 
+def _safe_console_text(value: object) -> str:
+    """Return text that Windows PowerShell's legacy console can print."""
+    text = "" if value is None else str(value)
+    return text.encode("cp1252", errors="replace").decode("cp1252")
+
+
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
@@ -410,7 +416,7 @@ def status(
         site_table.add_column("Count", justify="right")
 
         for site, count in stats["by_site"]:
-            site_table.add_row(site or "Unknown", str(count))
+            site_table.add_row(_safe_console_text(site or "Unknown"), str(count))
 
         console.print(site_table)
 
