@@ -104,6 +104,7 @@ def export_manual_apply_index() -> int:
 
     with connect_readonly(DB_PATH) as conn:
         existing_columns = {row[1] for row in conn.execute("PRAGMA table_info(jobs)").fetchall()}
+        company_expr = "company" if "company" in existing_columns else "NULL AS company"
         location_status_expr = "location_status" if "location_status" in existing_columns else "NULL AS location_status"
         checked_at_expr = "checked_at" if "checked_at" in existing_columns else "NULL AS checked_at"
         posting_status_expr = "posting_status" if "posting_status" in existing_columns else "NULL AS posting_status"
@@ -111,6 +112,7 @@ def export_manual_apply_index() -> int:
             f"""
             SELECT
                 title,
+                {company_expr},
                 site,
                 fit_score,
                 url,
@@ -156,7 +158,7 @@ def export_manual_apply_index() -> int:
         rows.append(
             {
                 "job_title": job["title"] or "",
-                "company": job["site"] or "",
+                "company": job["company"] or job["site"] or "",
                 "score": job["fit_score"] if job["fit_score"] is not None else "",
                 "location": job["location"] or "",
                 "location_status": location_status,

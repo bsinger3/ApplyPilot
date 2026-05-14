@@ -22,6 +22,7 @@ import yaml
 from applypilot import config
 from applypilot.config import CONFIG_DIR
 from applypilot.database import get_connection, init_db
+from applypilot.discovery.storage import insert_discovered_job
 from applypilot.location import is_location_eligible_for_discovery
 
 log = logging.getLogger(__name__)
@@ -52,10 +53,16 @@ def _load_location_filter(search_cfg: dict | None = None):
     return accept, reject
 
 
-def _location_ok(location: str | None, accept: list[str], reject: list[str]) -> bool:
+def _location_ok(
+    location: str | None,
+    accept: list[str],
+    reject: list[str],
+    description: str | None = None,
+    url: str | None = None,
+) -> bool:
     """Check if a job location passes the user's location filter."""
     search_cfg = {"location": {"accept_patterns": accept, "reject_patterns": reject}}
-    return is_location_eligible_for_discovery(location, search_cfg)
+    return is_location_eligible_for_discovery(location, search_cfg, description=description, url=url)
 
 
 # -- HTML stripper -----------------------------------------------------------
@@ -287,11 +294,19 @@ def fetch_details(employer: dict, jobs: list[dict]) -> list[dict]:
 
 # -- DB storage --------------------------------------------------------------
 
-def store_results(conn: sqlite3.Connection, jobs: list[dict], employers: dict) -> tuple[int, int]:
+def store_results(
+    conn: sqlite3.Connection,
+    jobs: list[dict],
+    employers: dict,
+    accept_locs: list[str] | None = None,
+    reject_locs: list[str] | None = None,
+) -> tuple[int, int]:
     """Store corporate jobs in DB. Returns (new, existing)."""
     now = datetime.now(timezone.utc).isoformat()
     new = 0
     existing = 0
+    accept_locs = accept_locs or []
+    reject_locs = reject_locs or []
 
     for job in jobs:
         url = job.get("apply_url", "")
@@ -311,16 +326,35 @@ def store_results(conn: sqlite3.Connection, jobs: list[dict], employers: dict) -
         site = job.get("employer_name", "Corporate")
         strategy = "workday_api"
 
-        try:
-            conn.execute(
-                "INSERT INTO jobs (url, title, salary, description, location, site, strategy, "
-                "discovered_at, full_description, application_url, detail_scraped_at, detail_error) "
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-                (url, job.get("title"), None, short_desc, job.get("location"),
-                 site, strategy, now, full_description, url, detail_scraped_at, detail_error),
-            )
+        if not _location_ok(
+            job.get("location"),
+            accept_locs,
+            reject_locs,
+            description=full_description or short_desc,
+            url=url,
+        ):
+            existing += 1
+            continue
+
+        result = insert_discovered_job(
+            conn,
+            url=url,
+            title=job.get("title"),
+            company=site,
+            salary=None,
+            description=short_desc,
+            location=job.get("location"),
+            site=site,
+            strategy=strategy,
+            discovered_at=now,
+            full_description=full_description,
+            application_url=url,
+            detail_scraped_at=detail_scraped_at,
+            detail_error=detail_error,
+        )
+        if result == "new":
             new += 1
-        except sqlite3.IntegrityError:
+        else:
             existing += 1
 
     conn.commit()
@@ -360,7 +394,7 @@ def _process_one(
         log.error("%s: ERROR fetching details for '%s': %s", emp["name"], search_text, e)
 
     conn = get_connection()
-    new, existing = store_results(conn, jobs, employers)
+    new, existing = store_results(conn, jobs, employers, accept_locs=accept_locs, reject_locs=reject_locs)
     log.info("%s: %d new, %d already in DB", emp["name"], new, existing)
 
     return {"employer": emp["name"], "query": search_text,

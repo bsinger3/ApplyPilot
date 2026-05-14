@@ -18,7 +18,7 @@ from pathlib import Path
 from rich.console import Console
 
 from applypilot.config import APP_DIR, DB_PATH
-from applypilot.database import get_connection
+from applypilot.database import ensure_columns, get_connection
 
 console = Console()
 
@@ -35,6 +35,7 @@ def generate_dashboard(output_path: str | None = None) -> str:
     out = Path(output_path) if output_path else APP_DIR / "dashboard.html"
 
     conn = get_connection()
+    ensure_columns(conn)
 
     # Stats
     total = conn.execute("SELECT COUNT(*) FROM jobs").fetchone()[0]
@@ -74,7 +75,7 @@ def generate_dashboard(output_path: str | None = None) -> str:
 
     # All scored jobs (5+), ordered by score desc
     jobs = conn.execute("""
-        SELECT url, title, salary, description, location, site, strategy,
+        SELECT url, title, company, salary, description, location, site, strategy,
                full_description, application_url, detail_error,
                fit_score, score_reasoning
         FROM jobs
@@ -150,6 +151,7 @@ def generate_dashboard(output_path: str | None = None) -> str:
         url = escape(j["url"] or "")
         salary = escape(j["salary"] or "")
         location = escape(j["location"] or "")
+        company = escape(j["company"] or "")
         site = escape(j["site"] or "")
         site_color = colors.get(j["site"] or "", "#6b7280")
         apply_url = escape(j["application_url"] or "")
@@ -165,6 +167,8 @@ def generate_dashboard(output_path: str | None = None) -> str:
         desc_len = len(j["full_description"] or "")
 
         meta_parts = []
+        if company:
+            meta_parts.append(f'<span class="meta-tag company">{company}</span>')
         meta_parts.append(
             f'<span class="meta-tag site-tag" style="background:{site_color}33;color:{site_color}">{site}</span>'
         )

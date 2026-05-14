@@ -16,6 +16,7 @@ from jobspy import scrape_jobs
 
 from applypilot import config
 from applypilot.database import get_connection, init_db
+from applypilot.discovery.storage import clean_text, insert_discovered_job
 from applypilot.location import is_location_eligible_for_discovery
 
 log = logging.getLogger(__name__)
@@ -98,6 +99,18 @@ def _location_ok(location: str | None, accept: list[str], reject: list[str]) -> 
     return is_location_eligible_for_discovery(location, search_cfg)
 
 
+def _job_location_ok(
+    location: str | None,
+    description: str | None,
+    url: str | None,
+    accept: list[str],
+    reject: list[str],
+) -> bool:
+    """Check location plus description for applicant-country restrictions."""
+    search_cfg = {"location": {"accept_patterns": accept, "reject_patterns": reject}}
+    return is_location_eligible_for_discovery(location, search_cfg, description=description, url=url)
+
+
 # -- DB storage (JobSpy DataFrame -> SQLite) ---------------------------------
 
 def store_jobspy_results(conn: sqlite3.Connection, df, source_label: str) -> tuple[int, int]:
@@ -111,8 +124,9 @@ def store_jobspy_results(conn: sqlite3.Connection, df, source_label: str) -> tup
         if not url or url == "nan":
             continue
 
-        title = str(row.get("title", "")) if str(row.get("title", "")) != "nan" else None
-        location_str = str(row.get("location", "")) if str(row.get("location", "")) != "nan" else None
+        title = clean_text(row.get("title"))
+        company = clean_text(row.get("company"))
+        location_str = clean_text(row.get("location"))
 
         # Build salary string from min/max
         salary = None
@@ -128,8 +142,8 @@ def store_jobspy_results(conn: sqlite3.Connection, df, source_label: str) -> tup
             if interval:
                 salary += f"/{interval}"
 
-        description = str(row.get("description", "")) if str(row.get("description", "")) != "nan" else None
-        site_name = str(row.get("site", source_label))
+        description = clean_text(row.get("description"))
+        site_name = clean_text(row.get("site")) or source_label
         is_remote = row.get("is_remote", False)
 
         site_label = f"{site_name}"
@@ -146,18 +160,26 @@ def store_jobspy_results(conn: sqlite3.Connection, df, source_label: str) -> tup
             detail_scraped_at = now
 
         # Extract apply URL if JobSpy provided it
-        apply_url = str(row.get("job_url_direct", "")) if str(row.get("job_url_direct", "")) != "nan" else None
+        apply_url = clean_text(row.get("job_url_direct"))
 
-        try:
-            conn.execute(
-                "INSERT INTO jobs (url, title, salary, description, location, site, strategy, discovered_at, "
-                "full_description, application_url, detail_scraped_at) "
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-                (url, title, salary, description, location_str, site_label, strategy, now,
-                 full_description, apply_url, detail_scraped_at),
-            )
+        result = insert_discovered_job(
+            conn,
+            url=url,
+            title=title,
+            company=company,
+            salary=salary,
+            description=description,
+            location=location_str,
+            site=site_label,
+            strategy=strategy,
+            discovered_at=now,
+            full_description=full_description,
+            application_url=apply_url,
+            detail_scraped_at=detail_scraped_at,
+        )
+        if result == "new":
             new += 1
-        except sqlite3.IntegrityError:
+        else:
             existing += 1
 
     conn.commit()
@@ -252,9 +274,12 @@ def _run_one_search(
 
     # Filter by location before storing
     before = len(df)
-    df = df[df.apply(lambda row: _location_ok(
-        str(row.get("location", "")) if str(row.get("location", "")) != "nan" else None,
-        accept_locs, reject_locs,
+    df = df[df.apply(lambda row: _job_location_ok(
+        clean_text(row.get("location")),
+        clean_text(row.get("description")),
+        clean_text(row.get("job_url")),
+        accept_locs,
+        reject_locs,
     ), axis=1)]
     filtered = before - len(df)
 
@@ -320,6 +345,19 @@ def search_jobs(
 
     if total == 0:
         return {"total": 0, "new": 0, "existing": 0}
+
+    accept_locs, reject_locs = _load_location_config(config.load_search_config())
+    before = len(df)
+    df = df[df.apply(lambda row: _job_location_ok(
+        clean_text(row.get("location")),
+        clean_text(row.get("description")),
+        clean_text(row.get("job_url")),
+        accept_locs,
+        reject_locs,
+    ), axis=1)]
+    filtered = before - len(df)
+    if filtered:
+        log.info("Filtered %d jobs (location/applicant restrictions)", filtered)
 
     if "site" in df.columns:
         site_counts = df["site"].value_counts()

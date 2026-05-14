@@ -183,9 +183,10 @@ def write_tailored_resume(conn, job: dict, resume_text: str, profile: dict, vali
     txt_path.write_text(tailored, encoding="utf-8")
 
     job_path = TAILORED_DIR / f"{prefix}_JOB.txt"
+    company = job.get("company") or job.get("site") or ""
     job_desc = (
         f"Title: {job.get('title', '')}\n"
-        f"Company: {job.get('site', '')}\n"
+        f"Company: {company}\n"
         f"Location: {job.get('location', 'N/A')}\n"
         f"Score: {job.get('fit_score', 'N/A')}\n"
         f"URL: {job.get('url', '')}\n\n"

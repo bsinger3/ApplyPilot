@@ -29,6 +29,7 @@ from playwright.sync_api import sync_playwright
 from applypilot import config
 from applypilot.config import CONFIG_DIR
 from applypilot.database import init_db, get_stats
+from applypilot.discovery.storage import insert_discovered_job
 from applypilot.location import is_location_eligible_for_discovery
 from applypilot.llm import get_client
 
@@ -57,10 +58,16 @@ def _load_location_filter(search_cfg: dict | None = None):
     return accept, reject
 
 
-def _location_ok(location: str | None, accept: list[str], reject: list[str]) -> bool:
+def _location_ok(
+    location: str | None,
+    accept: list[str],
+    reject: list[str],
+    description: str | None = None,
+    url: str | None = None,
+) -> bool:
     """Check if a job location passes the user's location filter."""
     search_cfg = {"location": {"accept_patterns": accept, "reject_patterns": reject}}
-    return is_location_eligible_for_discovery(location, search_cfg)
+    return is_location_eligible_for_discovery(location, search_cfg, description=description, url=url)
 
 
 # -- Site configuration from YAML --------------------------------------------
@@ -93,18 +100,30 @@ def _store_jobs_filtered(
         url = job.get("url")
         if not url:
             continue
-        if not _location_ok(job.get("location"), accept_locs, reject_locs):
+        if not _location_ok(
+            job.get("location"),
+            accept_locs,
+            reject_locs,
+            description=job.get("description"),
+            url=job.get("url"),
+        ):
             filtered += 1
             continue
-        try:
-            conn.execute(
-                "INSERT INTO jobs (url, title, salary, description, location, site, strategy, discovered_at) "
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
-                (url, job.get("title"), job.get("salary"), job.get("description"),
-                 job.get("location"), site, strategy, now),
-            )
+        result = insert_discovered_job(
+            conn,
+            url=url,
+            title=job.get("title"),
+            company=job.get("company") or site,
+            salary=job.get("salary"),
+            description=job.get("description"),
+            location=job.get("location"),
+            site=site,
+            strategy=strategy,
+            discovered_at=now,
+        )
+        if result == "new":
             new += 1
-        except sqlite3.IntegrityError:
+        else:
             existing += 1
 
     if filtered:
@@ -486,23 +505,23 @@ Below is a lightweight intelligence briefing -- JSON-LD data, intercepted API re
 Pick the BEST strategy:
 
 1. "json_ld" -- ONLY if briefing shows JobPosting JSON-LD entries (it will say "usable!")
-2. "api_response" -- ONLY if an intercepted API response has job-like fields (name, title, salary, description, location, slug)
+2. "api_response" -- ONLY if an intercepted API response has job-like fields (name, title, company, salary, description, location, slug)
 3. "css_selectors" -- when neither JSON-LD nor API data has job data
 
 HOW TO THINK:
 - If the briefing says "JSON-LD: NO JobPosting entries" or "json_ld strategy will NOT work", do NOT pick json_ld.
 - For api_response: "url_pattern" must be a substring that matches one of the INTERCEPTED API URLs listed above (not the page URL!). Copy a unique part of the API URL.
 - For api_response: "items_path" must point to the ARRAY of items, not a single item. Use dot notation with [n] ONLY for traversing into a specific index to reach an inner array. Example: if data is {{"results": [{{"hits": [...]}}]}}, items_path is "results[0].hits" to reach the hits array.
-- For api_response: field paths (title, salary, etc.) are RELATIVE TO EACH ITEM in the array. If items are nested objects like {{"_source": {{"Title": "..."}}}}, use "_source.Title" for the title field.
+- For api_response: field paths (title, company, salary, etc.) are RELATIVE TO EACH ITEM in the array. If items are nested objects like {{"_source": {{"Title": "..."}}}}, use "_source.Title" for the title field.
 - For css_selectors: just return {{"strategy":"css_selectors","reasoning":"...","extraction":{{}}}} -- selectors will be generated in a separate focused step.
 
 Return ONLY valid JSON:
 
 For json_ld:
-{{"strategy":"json_ld","reasoning":"...","extraction":{{"title":"title","salary":"baseSalary_path_or_null","description":"description","location":"jobLocation[0].address.addressCountry","url":"url_field"}}}}
+{{"strategy":"json_ld","reasoning":"...","extraction":{{"title":"title","company":"hiringOrganization.name","salary":"baseSalary_path_or_null","description":"description","location":"jobLocation[0].address.addressCountry","url":"url_field"}}}}
 
 For api_response:
-{{"strategy":"api_response","reasoning":"...","extraction":{{"url_pattern":"actual.url.substring","items_path":"path.to.the.array","title":"field_in_each_item","salary":"salary_field_or_null","description":"description_field_or_null","location":"location_path","url":"url_field"}}}}
+{{"strategy":"api_response","reasoning":"...","extraction":{{"url_pattern":"actual.url.substring","items_path":"path.to.the.array","title":"field_in_each_item","company":"company_field_or_null","salary":"salary_field_or_null","description":"description_field_or_null","location":"location_path","url":"url_field"}}}}
 
 For css_selectors:
 {{"strategy":"css_selectors","reasoning":"...","extraction":{{}}}}
@@ -605,6 +624,7 @@ Your task:
 Return a JSON object:
 - "job_card": CSS selector matching each job card (MUST match ALL cards on the page)
 - "title": selector RELATIVE to the card for the job title
+- "company": selector relative to card for company/employer name, or null
 - "salary": selector relative to card for salary, or null
 - "description": selector relative to card for description snippet, or null
 - "location": selector relative to card for location, or null
@@ -724,7 +744,7 @@ def execute_json_ld(intel: dict, plan: dict) -> list[dict]:
         if not isinstance(entry, dict) or entry.get("@type") != "JobPosting":
             continue
         job: dict = {}
-        for field in ["title", "salary", "description", "location", "url"]:
+        for field in ["title", "company", "salary", "description", "location", "url"]:
             path = ext.get(field)
             if not path or path == "null":
                 job[field] = None
@@ -760,7 +780,7 @@ def execute_api_response(intel: dict, plan: dict) -> list[dict]:
         if not isinstance(item, dict):
             continue
         job: dict = {}
-        for field in ["title", "salary", "description", "location", "url"]:
+        for field in ["title", "company", "salary", "description", "location", "url"]:
             path = ext.get(field)
             if not path or path == "null":
                 job[field] = None
@@ -817,7 +837,7 @@ def execute_css_selectors(intel: dict) -> tuple[dict, list[dict]]:
     jobs: list[dict] = []
     for card in cards:
         job: dict = {}
-        for field in ["title", "salary", "description", "location", "url"]:
+        for field in ["title", "company", "salary", "description", "location", "url"]:
             sel = selectors.get(field)
             if not sel or sel == "null":
                 job[field] = None

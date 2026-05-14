@@ -102,6 +102,42 @@ NON_LOCAL_TERMS = (
     "australia",
 )
 
+NON_US_APPLICANT_TERMS = (
+    "authorized to work in canada",
+    "authorised to work in canada",
+    "legally eligible to work in canada",
+    "eligible to work in canada",
+    "canadian work authorization",
+    "canadian work authorisation",
+    "must be based in canada",
+    "applicants must be located in canada",
+    "candidates must be located in canada",
+    "must reside in canada",
+    "canada based",
+    "canada-based",
+    "authorized to work in the uk",
+    "authorised to work in the uk",
+    "uk work authorization",
+    "uk work authorisation",
+    "must be based in the uk",
+    "must reside in the uk",
+    "authorized to work in india",
+    "authorised to work in india",
+    "must be based in india",
+    "must reside in india",
+    "authorized to work in australia",
+    "authorised to work in australia",
+    "must be based in australia",
+    "must reside in australia",
+    "authorized to work in singapore",
+    "authorised to work in singapore",
+    "must be based in singapore",
+    "must reside in singapore",
+    "authorized to work in the eu",
+    "authorised to work in the eu",
+    "must be based in the eu",
+)
+
 
 @dataclass(frozen=True)
 class LocationEligibility:
@@ -169,6 +205,10 @@ def classify_location(
     if not combined.strip():
         return LocationEligibility(UNKNOWN_LOCATION, "missing location")
 
+    non_us_match = _contains_any(combined, NON_US_APPLICANT_TERMS)
+    if non_us_match:
+        return LocationEligibility(INELIGIBLE_LOCATION, f"non-US applicant restriction: {non_us_match}")
+
     reject_match = _contains_any(combined, reject_patterns)
     if reject_match:
         return LocationEligibility(INELIGIBLE_LOCATION, f"rejected by pattern: {reject_match}")
@@ -222,6 +262,11 @@ def classify_location(
     return LocationEligibility(UNKNOWN_LOCATION, "no remote or local signal")
 
 
-def is_location_eligible_for_discovery(location: str | None, search_cfg: dict | None = None) -> bool:
+def is_location_eligible_for_discovery(
+    location: str | None,
+    search_cfg: dict | None = None,
+    description: str | None = None,
+    url: str | None = None,
+) -> bool:
     """Return True when discovery should keep the posting for later stages."""
-    return classify_location(location, search_cfg=search_cfg).status != INELIGIBLE_LOCATION
+    return classify_location(location, description=description, url=url, search_cfg=search_cfg).status != INELIGIBLE_LOCATION

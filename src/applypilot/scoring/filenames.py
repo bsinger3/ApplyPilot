@@ -9,7 +9,7 @@ import re
 def legacy_job_prefix(job: dict) -> str:
     """Return the original ApplyPilot site/title filename prefix."""
     safe_title = re.sub(r"[^\w\s-]", "", job.get("title") or "")[:50].strip().replace(" ", "_")
-    safe_site = re.sub(r"[^\w\s-]", "", job.get("site") or "")[:20].strip().replace(" ", "_")
+    safe_site = re.sub(r"[^\w\s-]", "", job.get("company") or job.get("site") or "")[:20].strip().replace(" ", "_")
     return f"{safe_site}_{safe_title}".strip("_")
 
 
