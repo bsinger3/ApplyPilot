@@ -430,12 +430,14 @@ def dashboard(
 
 
 @app.command()
-def doctor() -> None:
+def doctor(
+    persona: Optional[str] = typer.Option(None, "--persona", help="Check persona-specific profile, resume, and search files."),
+) -> None:
     """Check your setup and diagnose missing requirements."""
     import shutil
     from applypilot.config import (
         load_env, PROFILE_PATH, RESUME_PATH, RESUME_PDF_PATH,
-        SEARCH_CONFIG_PATH, ENV_PATH, get_chrome_path,
+        SEARCH_CONFIG_PATH, get_chrome_path, resolve_persona_paths,
     )
 
     load_env()
@@ -446,26 +448,50 @@ def doctor() -> None:
 
     results: list[tuple[str, str, str]] = []  # (check, status, note)
 
+    persona_paths = None
+    if persona:
+        from applypilot.database import get_connection, get_persona_by_slug
+
+        try:
+            persona_row = get_persona_by_slug(persona, conn=get_connection())
+        except FileNotFoundError:
+            console.print(f"[red]Persona not found:[/red] {persona}")
+            raise typer.Exit(code=1)
+        persona_paths = resolve_persona_paths(persona_row)
+
     # --- Tier 1 checks ---
     # Profile
-    if PROFILE_PATH.exists():
-        results.append(("profile.json", ok_mark, str(PROFILE_PATH)))
+    profile_path = persona_paths.profile_path if persona_paths else PROFILE_PATH
+    if profile_path.exists():
+        results.append(("profile.json", ok_mark, str(profile_path)))
     else:
-        results.append(("profile.json", fail_mark, "Run 'applypilot init' to create"))
+        if persona:
+            results.append(("profile.json", fail_mark, f"Create {profile_path}"))
+        else:
+            results.append(("profile.json", fail_mark, "Run 'applypilot init' to create"))
 
     # Resume
-    if RESUME_PATH.exists():
-        results.append(("resume.txt", ok_mark, str(RESUME_PATH)))
-    elif RESUME_PDF_PATH.exists():
+    resume_path = persona_paths.resume_path if persona_paths else RESUME_PATH
+    resume_pdf_path = persona_paths.resume_pdf_path if persona_paths else RESUME_PDF_PATH
+    if resume_path.exists():
+        results.append(("resume.txt", ok_mark, str(resume_path)))
+    elif resume_pdf_path.exists():
         results.append(("resume.txt", warn_mark, "Only PDF found - plain-text needed for AI stages"))
     else:
-        results.append(("resume.txt", fail_mark, "Run 'applypilot init' to add your resume"))
+        if persona:
+            results.append(("resume.txt", fail_mark, f"Create {resume_path}"))
+        else:
+            results.append(("resume.txt", fail_mark, "Run 'applypilot init' to add your resume"))
 
     # Search config
-    if SEARCH_CONFIG_PATH.exists():
-        results.append(("searches.yaml", ok_mark, str(SEARCH_CONFIG_PATH)))
+    search_config_path = persona_paths.search_config_path if persona_paths else SEARCH_CONFIG_PATH
+    if search_config_path.exists():
+        results.append(("searches.yaml", ok_mark, str(search_config_path)))
     else:
-        results.append(("searches.yaml", warn_mark, "Will use example config - run 'applypilot init'"))
+        if persona:
+            results.append(("searches.yaml", warn_mark, f"Will use example config - create {search_config_path}"))
+        else:
+            results.append(("searches.yaml", warn_mark, "Will use example config - run 'applypilot init'"))
 
     # jobspy (discovery dep installed separately)
     try:
@@ -527,7 +553,8 @@ def doctor() -> None:
 
     # --- Render results ---
     console.print()
-    console.print("[bold]ApplyPilot Doctor[/bold]\n")
+    title = "ApplyPilot Doctor" if not persona else f"ApplyPilot Doctor [dim]persona={persona}[/dim]"
+    console.print(f"[bold]{title}[/bold]\n")
 
     col_w = max(len(r[0]) for r in results) + 2
     for check, status, note in results:
