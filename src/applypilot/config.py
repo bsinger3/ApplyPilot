@@ -185,7 +185,7 @@ def load_profile(persona: str | dict | PersonaPaths | None = None) -> dict:
         raise FileNotFoundError(
             f"Profile not found at {paths.profile_path}. Run `applypilot init` or create the persona first."
         )
-    return json.loads(paths.profile_path.read_text(encoding="utf-8"))
+    return json.loads(paths.profile_path.read_text(encoding="utf-8-sig"))
 
 
 def load_search_config(persona: str | dict | PersonaPaths | None = None) -> dict:
