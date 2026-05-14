@@ -18,12 +18,12 @@ from pathlib import Path
 from rich.console import Console
 
 from applypilot.config import APP_DIR, DB_PATH
-from applypilot.database import get_connection
+from applypilot.database import get_connection, get_persona_by_slug
 
 console = Console()
 
 
-def generate_dashboard(output_path: str | None = None) -> str:
+def generate_dashboard(output_path: str | None = None, persona: str = "default") -> str:
     """Generate an HTML dashboard of all jobs with fit scores.
 
     Args:
@@ -35,6 +35,8 @@ def generate_dashboard(output_path: str | None = None) -> str:
     out = Path(output_path) if output_path else APP_DIR / "dashboard.html"
 
     conn = get_connection()
+    persona_row = get_persona_by_slug(persona, conn=conn)
+    persona_id = persona_row["id"]
 
     # Stats
     total = conn.execute("SELECT COUNT(*) FROM jobs").fetchone()[0]
@@ -43,44 +45,56 @@ def generate_dashboard(output_path: str | None = None) -> str:
         "WHERE full_description IS NOT NULL AND application_url IS NOT NULL"
     ).fetchone()[0]
     scored = conn.execute(
-        "SELECT COUNT(*) FROM jobs WHERE fit_score IS NOT NULL"
+        "SELECT COUNT(*) FROM job_persona WHERE persona_id = ? AND fit_score IS NOT NULL",
+        (persona_id,),
     ).fetchone()[0]
     high_fit = conn.execute(
-        "SELECT COUNT(*) FROM jobs WHERE fit_score >= 7"
+        "SELECT COUNT(*) FROM job_persona WHERE persona_id = ? AND fit_score >= 7",
+        (persona_id,),
     ).fetchone()[0]
 
     # Score distribution
     score_dist: dict[int, int] = {}
     if scored:
         rows = conn.execute(
-            "SELECT fit_score, COUNT(*) FROM jobs "
-            "WHERE fit_score IS NOT NULL "
-            "GROUP BY fit_score ORDER BY fit_score DESC"
+            "SELECT fit_score, COUNT(*) FROM job_persona "
+            "WHERE persona_id = ? AND fit_score IS NOT NULL "
+            "GROUP BY fit_score ORDER BY fit_score DESC",
+            (persona_id,),
         ).fetchall()
         for r in rows:
             score_dist[r[0]] = r[1]
 
     # Site stats
     site_stats = conn.execute("""
-        SELECT site,
+        SELECT COALESCE(j.company_name, j.site) as site,
                COUNT(*) as total,
-               SUM(CASE WHEN fit_score >= 7 THEN 1 ELSE 0 END) as high_fit,
-               SUM(CASE WHEN fit_score BETWEEN 5 AND 6 THEN 1 ELSE 0 END) as mid_fit,
-               SUM(CASE WHEN fit_score < 5 AND fit_score IS NOT NULL THEN 1 ELSE 0 END) as low_fit,
-               SUM(CASE WHEN fit_score IS NULL THEN 1 ELSE 0 END) as unscored,
-               ROUND(AVG(fit_score), 1) as avg_score
-        FROM jobs GROUP BY site ORDER BY high_fit DESC, total DESC
-    """).fetchall()
+               SUM(CASE WHEN jp.fit_score >= 7 THEN 1 ELSE 0 END) as high_fit,
+               SUM(CASE WHEN jp.fit_score BETWEEN 5 AND 6 THEN 1 ELSE 0 END) as mid_fit,
+               SUM(CASE WHEN jp.fit_score < 5 AND jp.fit_score IS NOT NULL THEN 1 ELSE 0 END) as low_fit,
+               SUM(CASE WHEN jp.fit_score IS NULL THEN 1 ELSE 0 END) as unscored,
+               ROUND(AVG(jp.fit_score), 1) as avg_score
+        FROM jobs j
+        LEFT JOIN job_persona jp ON jp.job_id = j.id AND jp.persona_id = ?
+        GROUP BY COALESCE(j.company_name, j.site)
+        ORDER BY high_fit DESC, total DESC
+    """, (persona_id,)).fetchall()
 
     # All scored jobs (5+), ordered by score desc
     jobs = conn.execute("""
-        SELECT url, title, salary, description, location, site, strategy,
-               full_description, application_url, detail_error,
-               fit_score, score_reasoning
-        FROM jobs
-        WHERE fit_score >= 5
-        ORDER BY fit_score DESC, site, title
-    """).fetchall()
+        SELECT COALESCE(js.url, j.url) as url,
+               j.title, j.salary, j.description,
+               COALESCE(j.location_text, j.location) as location,
+               COALESCE(j.company_name, j.site) as site,
+               j.strategy, j.full_description,
+               COALESCE(js.application_url, j.application_url_canonical, j.application_url) as application_url,
+               j.detail_error, jp.fit_score, jp.score_reasoning
+        FROM jobs j
+        JOIN job_persona jp ON jp.job_id = j.id
+        LEFT JOIN job_sources js ON js.id = jp.selected_source_id
+        WHERE jp.persona_id = ? AND jp.fit_score >= 5
+        ORDER BY jp.fit_score DESC, site, j.title
+    """, (persona_id,)).fetchall()
 
     # Color map per site
     colors = {
@@ -302,7 +316,7 @@ def generate_dashboard(output_path: str | None = None) -> str:
 <body>
 
 <h1>ApplyPilot Dashboard</h1>
-<p class="subtitle">{total} jobs &middot; {scored} scored &middot; {high_fit} strong matches (7+)</p>
+<p class="subtitle">Persona: {escape(persona)} &middot; {total} jobs &middot; {scored} scored &middot; {high_fit} strong matches (7+)</p>
 
 <div class="summary">
   <div class="stat-card stat-total"><div class="stat-num">{total}</div><div class="stat-label">Total Jobs</div></div>
@@ -395,12 +409,12 @@ applyFilters();
     return abs_path
 
 
-def open_dashboard(output_path: str | None = None) -> None:
+def open_dashboard(output_path: str | None = None, persona: str = "default") -> None:
     """Generate the dashboard and open it in the default browser.
 
     Args:
         output_path: Where to write the HTML file. Defaults to ~/.applypilot/dashboard.html.
     """
-    path = generate_dashboard(output_path)
+    path = generate_dashboard(output_path, persona=persona)
     console.print("[dim]Opening in browser...[/dim]")
     webbrowser.open(f"file:///{path}")

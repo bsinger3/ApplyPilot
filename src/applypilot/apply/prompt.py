@@ -419,7 +419,8 @@ If CapSolver genuinely failed (errorId > 0):
 
 def build_prompt(job: dict, tailored_resume: str,
                  cover_letter: str | None = None,
-                 dry_run: bool = False) -> str:
+                 dry_run: bool = False,
+                 persona: str | dict | config.PersonaPaths | None = None) -> str:
     """Build the full instruction prompt for the apply agent.
 
     Loads the user profile and search config internally. All personal data
@@ -435,8 +436,8 @@ def build_prompt(job: dict, tailored_resume: str,
     Returns:
         Complete prompt string for the AI agent.
     """
-    profile = config.load_profile()
-    search_config = config.load_search_config()
+    profile = config.load_profile(persona)
+    search_config = config.load_search_config(persona)
     personal = profile["personal"]
 
     # --- Resolve resume PDF path ---

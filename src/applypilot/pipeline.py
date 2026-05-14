@@ -59,15 +59,17 @@ _UPSTREAM: dict[str, str | None] = {
 # Individual stage runners
 # ---------------------------------------------------------------------------
 
-def _run_discover(workers: int = 1) -> dict:
+def _run_discover(workers: int = 1, persona: str = "default") -> dict:
     """Stage: Job discovery — JobSpy, Workday, and smart-extract scrapers."""
     stats: dict = {"jobspy": None, "workday": None, "smartextract": None}
+    from applypilot.config import load_search_config
+    search_cfg = load_search_config(persona)
 
     # JobSpy
     console.print("  [cyan]JobSpy full crawl...[/cyan]")
     try:
         from applypilot.discovery.jobspy import run_discovery
-        run_discovery()
+        run_discovery(cfg=search_cfg)
         stats["jobspy"] = "ok"
     except Exception as e:
         log.error("JobSpy crawl failed: %s", e)
@@ -78,7 +80,7 @@ def _run_discover(workers: int = 1) -> dict:
     console.print("  [cyan]Workday corporate scraper...[/cyan]")
     try:
         from applypilot.discovery.workday import run_workday_discovery
-        run_workday_discovery(workers=workers)
+        run_workday_discovery(workers=workers, search_cfg=search_cfg)
         stats["workday"] = "ok"
     except Exception as e:
         log.error("Workday scraper failed: %s", e)
@@ -89,7 +91,7 @@ def _run_discover(workers: int = 1) -> dict:
     console.print("  [cyan]Smart extract (AI-powered scraping)...[/cyan]")
     try:
         from applypilot.discovery.smartextract import run_smart_extract
-        run_smart_extract(workers=workers)
+        run_smart_extract(workers=workers, search_cfg=search_cfg)
         stats["smartextract"] = "ok"
     except Exception as e:
         log.error("Smart extract failed: %s", e)
@@ -110,33 +112,37 @@ def _run_enrich(workers: int = 1) -> dict:
         return {"status": f"error: {e}"}
 
 
-def _run_score() -> dict:
+def _run_score(persona: str = "default") -> dict:
     """Stage: LLM scoring — assign fit scores 1-10."""
     try:
         from applypilot.scoring.scorer import run_scoring
-        run_scoring()
+        run_scoring(persona=persona)
         return {"status": "ok"}
     except Exception as e:
         log.error("Scoring failed: %s", e)
         return {"status": f"error: {e}"}
 
 
-def _run_tailor(min_score: int = 7, validation_mode: str = "normal") -> dict:
+def _run_tailor(min_score: int = 7, validation_mode: str = "normal",
+                persona: str = "default") -> dict:
     """Stage: Resume tailoring — generate tailored resumes for high-fit jobs."""
     try:
         from applypilot.scoring.tailor import run_tailoring
-        run_tailoring(min_score=min_score, validation_mode=validation_mode)
+        run_tailoring(min_score=min_score, validation_mode=validation_mode,
+                      persona=persona)
         return {"status": "ok"}
     except Exception as e:
         log.error("Tailoring failed: %s", e)
         return {"status": f"error: {e}"}
 
 
-def _run_cover(min_score: int = 7, validation_mode: str = "normal") -> dict:
+def _run_cover(min_score: int = 7, validation_mode: str = "normal",
+               persona: str = "default") -> dict:
     """Stage: Cover letter generation."""
     try:
         from applypilot.scoring.cover_letter import run_cover_letters
-        run_cover_letters(min_score=min_score, validation_mode=validation_mode)
+        run_cover_letters(min_score=min_score, validation_mode=validation_mode,
+                          persona=persona)
         return {"status": "ok"}
     except Exception as e:
         log.error("Cover letter generation failed: %s", e)
@@ -244,8 +250,21 @@ _PENDING_SQL: dict[str, str] = {
 _STREAM_POLL_INTERVAL = 10
 
 
-def _count_pending(stage: str, min_score: int = 7) -> int:
+def _count_pending(stage: str, min_score: int = 7, persona: str = "default") -> int:
     """Count pending work items for a stage."""
+    if stage in ("score", "tailor", "cover"):
+        from applypilot.database import get_jobs_by_stage, get_persona_by_slug
+        conn = get_connection()
+        persona_row = get_persona_by_slug(persona, conn=conn)
+        stage_map = {"score": "pending_score", "tailor": "pending_tailor", "cover": "pending_cover"}
+        return len(get_jobs_by_stage(
+            conn=conn,
+            stage=stage_map[stage],
+            min_score=min_score,
+            limit=0,
+            persona_id=persona_row["id"],
+        ))
+
     sql = _PENDING_SQL.get(stage)
     if sql is None:
         return 0
@@ -262,6 +281,7 @@ def _run_stage_streaming(
     min_score: int = 7,
     workers: int = 1,
     validation_mode: str = "normal",
+    persona: str = "default",
 ) -> None:
     """Run a single stage in streaming mode: loop until upstream done + no work.
 
@@ -271,9 +291,14 @@ def _run_stage_streaming(
     """
     runner = _STAGE_RUNNERS[stage]
     kwargs: dict = {}
+    if stage == "discover":
+        kwargs["persona"] = persona
+    if stage == "score":
+        kwargs["persona"] = persona
     if stage in ("tailor", "cover"):
         kwargs["min_score"] = min_score
         kwargs["validation_mode"] = validation_mode
+        kwargs["persona"] = persona
     if stage in ("discover", "enrich"):
         kwargs["workers"] = workers
 
@@ -297,7 +322,7 @@ def _run_stage_streaming(
             # Wait a bit for upstream to produce some work before first run
             tracker.wait(upstream, timeout=_STREAM_POLL_INTERVAL)
 
-        pending = _count_pending(stage, min_score)
+        pending = _count_pending(stage, min_score, persona=persona)
 
         if pending > 0:
             try:
@@ -324,7 +349,8 @@ def _run_stage_streaming(
 # ---------------------------------------------------------------------------
 
 def _run_sequential(ordered: list[str], min_score: int, workers: int = 1,
-                    validation_mode: str = "normal") -> dict:
+                    validation_mode: str = "normal",
+                    persona: str = "default") -> dict:
     """Execute stages one at a time (original behavior)."""
     results: list[dict] = []
     errors: dict[str, str] = {}
@@ -342,9 +368,14 @@ def _run_sequential(ordered: list[str], min_score: int, workers: int = 1,
 
         try:
             kwargs: dict = {}
+            if name == "discover":
+                kwargs["persona"] = persona
+            if name == "score":
+                kwargs["persona"] = persona
             if name in ("tailor", "cover"):
                 kwargs["min_score"] = min_score
                 kwargs["validation_mode"] = validation_mode
+                kwargs["persona"] = persona
             if name in ("discover", "enrich"):
                 kwargs["workers"] = workers
             result = runner(**kwargs)
@@ -378,7 +409,8 @@ def _run_sequential(ordered: list[str], min_score: int, workers: int = 1,
 
 
 def _run_streaming(ordered: list[str], min_score: int, workers: int = 1,
-                   validation_mode: str = "normal") -> dict:
+                   validation_mode: str = "normal",
+                   persona: str = "default") -> dict:
     """Execute stages concurrently with DB as conveyor belt."""
     tracker = _StageTracker()
     stop_event = threading.Event()
@@ -400,7 +432,7 @@ def _run_streaming(ordered: list[str], min_score: int, workers: int = 1,
         start_times[name] = time.time()
         t = threading.Thread(
             target=_run_stage_streaming,
-            args=(name, tracker, stop_event, min_score, workers, validation_mode),
+            args=(name, tracker, stop_event, min_score, workers, validation_mode, persona),
             name=f"stage-{name}",
             daemon=True,
         )
@@ -448,6 +480,7 @@ def run_pipeline(
     stream: bool = False,
     workers: int = 1,
     validation_mode: str = "normal",
+    persona: str = "default",
 ) -> dict:
     """Run pipeline stages.
 
@@ -481,6 +514,7 @@ def run_pipeline(
     console.print(f"  Min score:  {min_score}")
     console.print(f"  Workers:    {workers}")
     console.print(f"  Validation: {validation_mode}")
+    console.print(f"  Persona:    {persona}")
     console.print(f"  Stages:     {' -> '.join(ordered)}")
 
     # Pre-run stats
@@ -498,10 +532,12 @@ def run_pipeline(
     # Execute
     if stream:
         result = _run_streaming(ordered, min_score, workers=workers,
-                                validation_mode=validation_mode)
+                                validation_mode=validation_mode,
+                                persona=persona)
     else:
         result = _run_sequential(ordered, min_score, workers=workers,
-                                 validation_mode=validation_mode)
+                                 validation_mode=validation_mode,
+                                 persona=persona)
 
     # Summary table
     console.print(f"\n{'=' * 70}")

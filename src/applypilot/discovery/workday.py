@@ -21,7 +21,7 @@ import yaml
 
 from applypilot import config
 from applypilot.config import CONFIG_DIR
-from applypilot.database import get_connection, init_db
+from applypilot.database import get_connection, init_db, store_jobs
 
 log = logging.getLogger(__name__)
 
@@ -305,6 +305,7 @@ def store_results(conn: sqlite3.Connection, jobs: list[dict], employers: dict) -
     now = datetime.now(timezone.utc).isoformat()
     new = 0
     existing = 0
+    to_store: list[dict] = []
 
     for job in jobs:
         url = job.get("apply_url", "")
@@ -324,19 +325,22 @@ def store_results(conn: sqlite3.Connection, jobs: list[dict], employers: dict) -
         site = job.get("employer_name", "Corporate")
         strategy = "workday_api"
 
-        try:
-            conn.execute(
-                "INSERT INTO jobs (url, title, salary, description, location, site, strategy, "
-                "discovered_at, full_description, application_url, detail_scraped_at, detail_error) "
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-                (url, job.get("title"), None, short_desc, job.get("location"),
-                 site, strategy, now, full_description, url, detail_scraped_at, detail_error),
-            )
-            new += 1
-        except sqlite3.IntegrityError:
-            existing += 1
+        to_store.append({
+            "url": url,
+            "title": job.get("title"),
+            "company": site,
+            "salary": None,
+            "description": short_desc,
+            "location": job.get("location"),
+            "full_description": full_description,
+            "application_url": url,
+            "detail_scraped_at": detail_scraped_at,
+            "detail_error": detail_error,
+            "discovered_at": now,
+        })
 
-    conn.commit()
+    if to_store:
+        new, existing = store_jobs(conn, to_store, "Workday", "workday_api")
     return new, existing
 
 
@@ -469,7 +473,11 @@ def scrape_employers(
 
 # -- Public entry point ------------------------------------------------------
 
-def run_workday_discovery(employers: dict | None = None, workers: int = 1) -> dict:
+def run_workday_discovery(
+    employers: dict | None = None,
+    workers: int = 1,
+    search_cfg: dict | None = None,
+) -> dict:
     """Main entry point for Workday-based corporate job discovery.
 
     Loads employer registry from config/employers.yaml (or uses the provided
@@ -490,7 +498,8 @@ def run_workday_discovery(employers: dict | None = None, workers: int = 1) -> di
         log.warning("No employers configured. Create config/employers.yaml.")
         return {"found": 0, "new": 0, "existing": 0, "queries": 0}
 
-    search_cfg = config.load_search_config()
+    if search_cfg is None:
+        search_cfg = config.load_search_config()
     queries_cfg = search_cfg.get("queries", [])
     accept_locs, reject_locs = _load_location_filter(search_cfg)
 

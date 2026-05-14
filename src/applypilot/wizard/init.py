@@ -370,11 +370,11 @@ def run_wizard() -> None:
         label = TIER_LABELS[t]
         cmds = ", ".join(f"[bold]{c}[/bold]" for c in TIER_COMMANDS[t])
         if t <= tier:
-            tier_lines.append(f"  [green]✓ Tier {t} — {label}[/green]  ({cmds})")
+            tier_lines.append(f"  [green]OK Tier {t} - {label}[/green]  ({cmds})")
         elif t == tier + 1:
-            tier_lines.append(f"  [yellow]→ Tier {t} — {label}[/yellow]  ({cmds})")
+            tier_lines.append(f"  [yellow]-> Tier {t} - {label}[/yellow]  ({cmds})")
         else:
-            tier_lines.append(f"  [dim]✗ Tier {t} — {label}  ({cmds})[/dim]")
+            tier_lines.append(f"  [dim]-- Tier {t} - {label}  ({cmds})[/dim]")
 
     unlock_hint = ""
     if tier == 1:
@@ -385,7 +385,7 @@ def run_wizard() -> None:
     console.print(
         Panel.fit(
             "[bold green]Setup complete![/bold green]\n\n"
-            f"[bold]Your tier: Tier {tier} — {TIER_LABELS[tier]}[/bold]\n\n"
+            f"[bold]Your tier: Tier {tier} - {TIER_LABELS[tier]}[/bold]\n\n"
             + "\n".join(tier_lines)
             + unlock_hint,
             border_style="green",

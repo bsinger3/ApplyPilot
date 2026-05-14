@@ -16,8 +16,8 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-from applypilot.config import RESUME_PATH, TAILORED_DIR, load_profile
-from applypilot.database import get_connection, get_jobs_by_stage
+from applypilot.config import RESUME_PATH, TAILORED_DIR, load_profile, resolve_persona_paths
+from applypilot.database import get_connection, get_jobs_by_stage, get_persona_by_slug, update_tailor_result
 from applypilot.llm import get_client
 from applypilot.scoring.validator import (
     BANNED_WORDS,
@@ -456,7 +456,8 @@ def tailor_resume(
 # ── Batch Entry Point ────────────────────────────────────────────────────
 
 def run_tailoring(min_score: int = 7, limit: int = 20,
-                  validation_mode: str = "normal") -> dict:
+                  validation_mode: str = "normal",
+                  persona: str = "default") -> dict:
     """Generate tailored resumes for high-scoring jobs.
 
     Args:
@@ -467,17 +468,27 @@ def run_tailoring(min_score: int = 7, limit: int = 20,
     Returns:
         {"approved": int, "failed": int, "errors": int, "elapsed": float}
     """
-    profile = load_profile()
-    resume_text = RESUME_PATH.read_text(encoding="utf-8")
     conn = get_connection()
+    persona_row = get_persona_by_slug(persona, conn=conn)
+    persona_paths = resolve_persona_paths(persona_row)
+    profile = load_profile(persona_row)
+    resume_path = persona_paths.resume_path if persona else RESUME_PATH
+    resume_text = resume_path.read_text(encoding="utf-8")
 
-    jobs = get_jobs_by_stage(conn=conn, stage="pending_tailor", min_score=min_score, limit=limit)
+    jobs = get_jobs_by_stage(
+        conn=conn,
+        stage="pending_tailor",
+        min_score=min_score,
+        limit=limit,
+        persona_id=persona_row["id"],
+    )
 
     if not jobs:
         log.info("No untailored jobs with score >= %d.", min_score)
         return {"approved": 0, "failed": 0, "errors": 0, "elapsed": 0.0}
 
-    TAILORED_DIR.mkdir(parents=True, exist_ok=True)
+    out_dir = persona_paths.tailored_dir if persona else TAILORED_DIR
+    out_dir.mkdir(parents=True, exist_ok=True)
     log.info("Tailoring resumes for %d jobs (score >= %d)...", len(jobs), min_score)
     t0 = time.time()
     completed = 0
@@ -496,11 +507,11 @@ def run_tailoring(min_score: int = 7, limit: int = 20,
             prefix = f"{safe_site}_{safe_title}"
 
             # Save tailored resume text
-            txt_path = TAILORED_DIR / f"{prefix}.txt"
+            txt_path = out_dir / f"{prefix}.txt"
             txt_path.write_text(tailored, encoding="utf-8")
 
             # Save job description for traceability
-            job_path = TAILORED_DIR / f"{prefix}_JOB.txt"
+            job_path = out_dir / f"{prefix}_JOB.txt"
             job_desc = (
                 f"Title: {job['title']}\n"
                 f"Company: {job['site']}\n"
@@ -512,7 +523,7 @@ def run_tailoring(min_score: int = 7, limit: int = 20,
             job_path.write_text(job_desc, encoding="utf-8")
 
             # Save validation report
-            report_path = TAILORED_DIR / f"{prefix}_REPORT.json"
+            report_path = out_dir / f"{prefix}_REPORT.json"
             report_path.write_text(json.dumps(report, indent=2), encoding="utf-8")
 
             # Generate PDF for approved resumes (best-effort)
@@ -533,11 +544,13 @@ def run_tailoring(min_score: int = 7, limit: int = 20,
                 "site": job["site"],
                 "status": report["status"],
                 "attempts": report["attempts"],
+                "job": job,
             }
         except Exception as e:
             result = {
                 "url": job["url"], "title": job["title"], "site": job["site"],
                 "status": "error", "attempts": 0, "path": None, "pdf_path": None,
+                "job": job,
             }
             log.error("%d/%d [ERROR] %s -- %s", completed, len(jobs), job["title"][:40], e)
 
@@ -559,17 +572,14 @@ def run_tailoring(min_score: int = 7, limit: int = 20,
     now = datetime.now(timezone.utc).isoformat()
     _success_statuses = {"approved", "approved_with_judge_warning"}
     for r in results:
-        if r["status"] in _success_statuses:
-            conn.execute(
-                "UPDATE jobs SET tailored_resume_path=?, tailored_at=?, "
-                "tailor_attempts=COALESCE(tailor_attempts,0)+1 WHERE url=?",
-                (r["path"], now, r["url"]),
-            )
-        else:
-            conn.execute(
-                "UPDATE jobs SET tailor_attempts=COALESCE(tailor_attempts,0)+1 WHERE url=?",
-                (r["url"],),
-            )
+        update_tailor_result(
+            conn,
+            r["job"],
+            persona_row["id"],
+            r["path"],
+            now,
+            r["status"] in _success_statuses,
+        )
     conn.commit()
 
     elapsed = time.time() - t0

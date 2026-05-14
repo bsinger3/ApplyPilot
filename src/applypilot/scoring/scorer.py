@@ -11,8 +11,8 @@ import re
 import time
 from datetime import datetime, timezone
 
-from applypilot.config import RESUME_PATH, load_profile
-from applypilot.database import get_connection, get_jobs_by_stage
+from applypilot.config import RESUME_PATH, resolve_persona_paths
+from applypilot.database import get_connection, get_jobs_by_stage, get_persona_by_slug, update_job_score
 from applypilot.llm import get_client
 
 log = logging.getLogger(__name__)
@@ -101,7 +101,7 @@ def score_job(resume_text: str, job: dict) -> dict:
         return {"score": 0, "keywords": "", "reasoning": f"LLM error: {e}"}
 
 
-def run_scoring(limit: int = 0, rescore: bool = False) -> dict:
+def run_scoring(limit: int = 0, rescore: bool = False, persona: str = "default") -> dict:
     """Score unscored jobs that have full descriptions.
 
     Args:
@@ -111,16 +111,30 @@ def run_scoring(limit: int = 0, rescore: bool = False) -> dict:
     Returns:
         {"scored": int, "errors": int, "elapsed": float, "distribution": list}
     """
-    resume_text = RESUME_PATH.read_text(encoding="utf-8")
     conn = get_connection()
+    persona_row = get_persona_by_slug(persona, conn=conn)
+    persona_paths = resolve_persona_paths(persona_row)
+    resume_path = persona_paths.resume_path if persona else RESUME_PATH
+    resume_text = resume_path.read_text(encoding="utf-8")
 
     if rescore:
-        query = "SELECT * FROM jobs WHERE full_description IS NOT NULL"
+        query = """
+            SELECT j.id AS job_id, j.url, j.title,
+                   COALESCE(j.company_name, j.site) AS site,
+                   j.location, j.location_text, j.full_description
+            FROM jobs j
+            WHERE j.full_description IS NOT NULL
+        """
         if limit > 0:
             query += f" LIMIT {limit}"
         jobs = conn.execute(query).fetchall()
     else:
-        jobs = get_jobs_by_stage(conn=conn, stage="pending_score", limit=limit)
+        jobs = get_jobs_by_stage(
+            conn=conn,
+            stage="pending_score",
+            limit=limit,
+            persona_id=persona_row["id"],
+        )
 
     if not jobs:
         log.info("No unscored jobs with descriptions found.")
@@ -140,6 +154,7 @@ def run_scoring(limit: int = 0, rescore: bool = False) -> dict:
     for job in jobs:
         result = score_job(resume_text, job)
         result["url"] = job["url"]
+        result["job"] = job
         completed += 1
 
         if result["score"] == 0:
@@ -155,9 +170,13 @@ def run_scoring(limit: int = 0, rescore: bool = False) -> dict:
     # Write scores to DB
     now = datetime.now(timezone.utc).isoformat()
     for r in results:
-        conn.execute(
-            "UPDATE jobs SET fit_score = ?, score_reasoning = ?, scored_at = ? WHERE url = ?",
-            (r["score"], f"{r['keywords']}\n{r['reasoning']}", now, r["url"]),
+        update_job_score(
+            conn,
+            r["job"],
+            persona_row["id"],
+            r["score"],
+            f"{r['keywords']}\n{r['reasoning']}",
+            now,
         )
     conn.commit()
 
@@ -166,10 +185,10 @@ def run_scoring(limit: int = 0, rescore: bool = False) -> dict:
 
     # Score distribution
     dist = conn.execute("""
-        SELECT fit_score, COUNT(*) FROM jobs
-        WHERE fit_score IS NOT NULL
+        SELECT fit_score, COUNT(*) FROM job_persona
+        WHERE fit_score IS NOT NULL AND persona_id = ?
         GROUP BY fit_score ORDER BY fit_score DESC
-    """).fetchall()
+    """, (persona_row["id"],)).fetchall()
     distribution = [(row[0], row[1]) for row in dist]
 
     return {

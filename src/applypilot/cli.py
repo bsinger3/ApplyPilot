@@ -22,6 +22,8 @@ app = typer.Typer(
     help="AI-powered end-to-end job application pipeline.",
     no_args_is_help=True,
 )
+persona_app = typer.Typer(help="Manage job-search personas.")
+app.add_typer(persona_app, name="persona")
 console = Console()
 log = logging.getLogger(__name__)
 
@@ -73,6 +75,68 @@ def init() -> None:
     run_wizard()
 
 
+@persona_app.command("list")
+def persona_list() -> None:
+    """List configured personas."""
+    _bootstrap()
+
+    from applypilot.database import get_connection, ensure_default_persona
+
+    conn = get_connection()
+    ensure_default_persona(conn)
+    rows = conn.execute("SELECT slug, name, profile_path, resume_path FROM personas ORDER BY slug").fetchall()
+
+    table = Table(title="ApplyPilot Personas", show_header=True, header_style="bold cyan")
+    table.add_column("Slug", style="bold")
+    table.add_column("Name")
+    table.add_column("Profile")
+    table.add_column("Resume")
+    for row in rows:
+        table.add_row(row["slug"], row["name"], row["profile_path"] or "", row["resume_path"] or "")
+    console.print(table)
+
+
+@persona_app.command("create")
+def persona_create(
+    slug: str = typer.Argument(..., help="Persona slug, for example software-pm."),
+    name: Optional[str] = typer.Option(None, "--name", help="Display name."),
+) -> None:
+    """Create a persona record with conventional file paths."""
+    _bootstrap()
+
+    from applypilot.database import create_persona, get_connection
+    from applypilot.config import ensure_persona_dirs, resolve_persona_paths
+
+    conn = get_connection()
+    row = create_persona(slug, name=name, conn=conn)
+    paths = ensure_persona_dirs(resolve_persona_paths(row))
+    console.print(f"[green]Persona ready:[/green] {row['slug']}")
+    console.print(f"  Profile: {paths.profile_path}")
+    console.print(f"  Resume:  {paths.resume_path}")
+    console.print(f"  Search:  {paths.search_config_path}")
+
+
+@persona_app.command("show")
+def persona_show(
+    slug: str = typer.Argument(..., help="Persona slug to show."),
+) -> None:
+    """Show persona paths."""
+    _bootstrap()
+
+    from applypilot.database import get_connection, get_persona_by_slug
+    from applypilot.config import resolve_persona_paths
+
+    row = get_persona_by_slug(slug, conn=get_connection())
+    paths = resolve_persona_paths(row)
+    console.print(f"\n[bold]{row['slug']}[/bold] ({row['name']})")
+    console.print(f"  Profile:       {paths.profile_path}")
+    console.print(f"  Resume:        {paths.resume_path}")
+    console.print(f"  Resume PDF:    {paths.resume_pdf_path}")
+    console.print(f"  Searches:      {paths.search_config_path}")
+    console.print(f"  Tailored dir:  {paths.tailored_dir}")
+    console.print(f"  Cover letters: {paths.cover_letter_dir}\n")
+
+
 @app.command()
 def run(
     stages: Optional[list[str]] = typer.Argument(
@@ -87,6 +151,7 @@ def run(
     workers: int = typer.Option(1, "--workers", "-w", help="Parallel threads for discovery/enrichment stages."),
     stream: bool = typer.Option(False, "--stream", help="Run stages concurrently (streaming mode)."),
     dry_run: bool = typer.Option(False, "--dry-run", help="Preview stages without executing."),
+    persona: str = typer.Option(..., "--persona", help="Persona slug to use for search/scoring/tailoring."),
     validation: str = typer.Option(
         "normal",
         "--validation",
@@ -102,6 +167,13 @@ def run(
     _bootstrap()
 
     from applypilot.pipeline import run_pipeline
+    from applypilot.database import get_connection, get_persona_by_slug
+
+    try:
+        get_persona_by_slug(persona, conn=get_connection())
+    except FileNotFoundError:
+        console.print(f"[red]Persona not found:[/red] {persona}")
+        raise typer.Exit(code=1)
 
     stage_list = stages if stages else ["all"]
 
@@ -136,6 +208,7 @@ def run(
         stream=stream,
         workers=workers,
         validation_mode=validation,
+        persona=persona,
     )
 
     if result.get("errors"):
@@ -152,6 +225,7 @@ def apply(
     dry_run: bool = typer.Option(False, "--dry-run", help="Preview actions without submitting."),
     headless: bool = typer.Option(False, "--headless", help="Run browsers in headless mode."),
     url: Optional[str] = typer.Option(None, "--url", help="Apply to a specific job URL."),
+    persona: str = typer.Option(..., "--persona", help="Persona slug to use for auto-apply."),
     gen: bool = typer.Option(False, "--gen", help="Generate prompt file for manual debugging instead of running."),
     mark_applied: Optional[str] = typer.Option(None, "--mark-applied", help="Manually mark a job URL as applied."),
     mark_failed: Optional[str] = typer.Option(None, "--mark-failed", help="Manually mark a job URL as failed (provide URL)."),
@@ -161,26 +235,34 @@ def apply(
     """Launch auto-apply to submit job applications."""
     _bootstrap()
 
-    from applypilot.config import check_tier, PROFILE_PATH as _profile_path
-    from applypilot.database import get_connection
+    from applypilot.config import APP_DIR, check_tier, resolve_persona_paths
+    from applypilot.database import get_connection, get_persona_by_slug
+
+    conn = get_connection()
+    try:
+        persona_row = get_persona_by_slug(persona, conn=conn)
+    except FileNotFoundError:
+        console.print(f"[red]Persona not found:[/red] {persona}")
+        raise typer.Exit(code=1)
+    persona_paths = resolve_persona_paths(persona_row)
 
     # --- Utility modes (no Chrome/Claude needed) ---
 
     if mark_applied:
         from applypilot.apply.launcher import mark_job
-        mark_job(mark_applied, "applied")
+        mark_job(mark_applied, "applied", persona=persona)
         console.print(f"[green]Marked as applied:[/green] {mark_applied}")
         return
 
     if mark_failed:
         from applypilot.apply.launcher import mark_job
-        mark_job(mark_failed, "failed", reason=fail_reason)
+        mark_job(mark_failed, "failed", reason=fail_reason, persona=persona)
         console.print(f"[yellow]Marked as failed:[/yellow] {mark_failed} ({fail_reason or 'manual'})")
         return
 
     if reset_failed:
         from applypilot.apply.launcher import reset_failed as do_reset
-        count = do_reset()
+        count = do_reset(persona=persona)
         console.print(f"[green]Reset {count} failed job(s) for retry.[/green]")
         return
 
@@ -190,23 +272,30 @@ def apply(
     check_tier(3, "auto-apply")
 
     # Check 2: Profile exists
-    if not _profile_path.exists():
+    if not persona_paths.profile_path.exists():
         console.print(
             "[red]Profile not found.[/red]\n"
-            "Run [bold]applypilot init[/bold] to create your profile first."
+            f"Create a profile for persona [bold]{persona}[/bold]: {persona_paths.profile_path}"
         )
         raise typer.Exit(code=1)
 
     # Check 3: Tailored resumes exist (skip for --gen with --url)
     if not (gen and url):
-        conn = get_connection()
         ready = conn.execute(
-            "SELECT COUNT(*) FROM jobs WHERE tailored_resume_path IS NOT NULL AND applied_at IS NULL"
+            """
+            SELECT COUNT(*) FROM job_persona jp
+            JOIN jobs j ON j.id = jp.job_id
+            WHERE jp.persona_id = ?
+              AND jp.tailored_resume_path IS NOT NULL
+              AND jp.applied_at IS NULL
+              AND COALESCE(j.application_url_canonical, j.application_url) IS NOT NULL
+            """,
+            (persona_row["id"],),
         ).fetchone()[0]
         if ready == 0:
             console.print(
                 "[red]No tailored resumes ready.[/red]\n"
-                "Run [bold]applypilot run score tailor[/bold] first to prepare applications."
+                f"Run [bold]applypilot run score tailor --persona {persona}[/bold] first."
             )
             raise typer.Exit(code=1)
 
@@ -216,11 +305,11 @@ def apply(
         if not target:
             console.print("[red]--gen requires --url to specify which job.[/red]")
             raise typer.Exit(code=1)
-        prompt_file = gen_prompt(target, min_score=min_score, model=model)
+        prompt_file = gen_prompt(target, min_score=min_score, model=model, persona=persona)
         if not prompt_file:
             console.print("[red]No matching job found for that URL.[/red]")
             raise typer.Exit(code=1)
-        mcp_path = _profile_path.parent / ".mcp-apply-0.json"
+        mcp_path = APP_DIR / ".mcp-apply-0.json"
         console.print(f"[green]Wrote prompt to:[/green] {prompt_file}")
         console.print(f"\n[bold]Run manually:[/bold]")
         console.print(
@@ -238,6 +327,7 @@ def apply(
     console.print(f"  Limit:    {'unlimited' if continuous else effective_limit}")
     console.print(f"  Workers:  {workers}")
     console.print(f"  Model:    {model}")
+    console.print(f"  Persona:  {persona}")
     console.print(f"  Headless: {headless}")
     console.print(f"  Dry run:  {dry_run}")
     if url:
@@ -253,19 +343,24 @@ def apply(
         dry_run=dry_run,
         continuous=continuous,
         workers=workers,
+        persona=persona,
     )
 
 
 @app.command()
-def status() -> None:
+def status(
+    persona: str = typer.Option(..., "--persona", help="Persona slug to report."),
+) -> None:
     """Show pipeline statistics from the database."""
     _bootstrap()
 
-    from applypilot.database import get_stats
+    from applypilot.database import get_connection, get_persona_by_slug, get_stats
 
-    stats = get_stats()
+    conn = get_connection()
+    persona_row = get_persona_by_slug(persona, conn=conn)
+    stats = get_stats(conn=conn, persona_id=persona_row["id"])
 
-    console.print("\n[bold]ApplyPilot Pipeline Status[/bold]\n")
+    console.print(f"\n[bold]ApplyPilot Pipeline Status[/bold] [dim]persona={persona}[/dim]\n")
 
     # Summary table
     summary = Table(title="Pipeline Overview", show_header=True, header_style="bold cyan")
@@ -323,13 +418,15 @@ def status() -> None:
 
 
 @app.command()
-def dashboard() -> None:
+def dashboard(
+    persona: str = typer.Option(..., "--persona", help="Persona slug to display."),
+) -> None:
     """Generate and open the HTML dashboard in your browser."""
     _bootstrap()
 
     from applypilot.view import open_dashboard
 
-    open_dashboard()
+    open_dashboard(persona=persona)
 
 
 @app.command()
@@ -360,7 +457,7 @@ def doctor() -> None:
     if RESUME_PATH.exists():
         results.append(("resume.txt", ok_mark, str(RESUME_PATH)))
     elif RESUME_PDF_PATH.exists():
-        results.append(("resume.txt", warn_mark, "Only PDF found — plain-text needed for AI stages"))
+        results.append(("resume.txt", warn_mark, "Only PDF found - plain-text needed for AI stages"))
     else:
         results.append(("resume.txt", fail_mark, "Run 'applypilot init' to add your resume"))
 
@@ -368,7 +465,7 @@ def doctor() -> None:
     if SEARCH_CONFIG_PATH.exists():
         results.append(("searches.yaml", ok_mark, str(SEARCH_CONFIG_PATH)))
     else:
-        results.append(("searches.yaml", warn_mark, "Will use example config — run 'applypilot init'"))
+        results.append(("searches.yaml", warn_mark, "Will use example config - run 'applypilot init'"))
 
     # jobspy (discovery dep installed separately)
     try:
@@ -442,13 +539,13 @@ def doctor() -> None:
     # Tier summary
     from applypilot.config import get_tier, TIER_LABELS
     tier = get_tier()
-    console.print(f"[bold]Current tier: Tier {tier} — {TIER_LABELS[tier]}[/bold]")
+    console.print(f"[bold]Current tier: Tier {tier} - {TIER_LABELS[tier]}[/bold]")
 
     if tier == 1:
-        console.print("[dim]  → Tier 2 unlocks: scoring, tailoring, cover letters (needs LLM API key)[/dim]")
-        console.print("[dim]  → Tier 3 unlocks: auto-apply (needs Claude Code CLI + Chrome + Node.js)[/dim]")
+        console.print("[dim]  -> Tier 2 unlocks: scoring, tailoring, cover letters (needs LLM API key)[/dim]")
+        console.print("[dim]  -> Tier 3 unlocks: auto-apply (needs Claude Code CLI + Chrome + Node.js)[/dim]")
     elif tier == 2:
-        console.print("[dim]  → Tier 3 unlocks: auto-apply (needs Claude Code CLI + Chrome + Node.js)[/dim]")
+        console.print("[dim]  -> Tier 3 unlocks: auto-apply (needs Claude Code CLI + Chrome + Node.js)[/dim]")
 
     console.print()
 

@@ -24,7 +24,13 @@ from playwright.sync_api import sync_playwright
 
 from applypilot import config
 from applypilot.config import DB_PATH
-from applypilot.database import get_connection, init_db, ensure_columns
+from applypilot.database import (
+    canonicalize_url,
+    compute_description_hash,
+    get_connection,
+    init_db,
+    ensure_columns,
+)
 from applypilot.llm import get_client
 
 log = logging.getLogger(__name__)
@@ -663,15 +669,34 @@ def scrape_site_batch(
 
                 if status in ("ok", "partial"):
                     stats[status] += 1
+                    full_description = result.get("full_description")
+                    application_url = canonicalize_url(result.get("application_url"))
                     conn.execute(
                         "UPDATE jobs SET full_description = ?, application_url = ?, "
+                        "application_url_canonical = COALESCE(application_url_canonical, ?), "
+                        "description_hash = COALESCE(description_hash, ?), "
                         "detail_scraped_at = ?, detail_error = NULL WHERE url = ?",
-                        (result.get("full_description"), result.get("application_url"), now, url),
+                        (full_description, application_url, application_url,
+                         compute_description_hash(full_description), now, url),
+                    )
+                    conn.execute(
+                        """
+                        UPDATE job_sources
+                        SET application_url = COALESCE(application_url, ?),
+                            detail_scraped_at = ?,
+                            detail_error = NULL
+                        WHERE url = ?
+                        """,
+                        (application_url, now, url),
                     )
                 else:
                     stats["error"] += 1
                     conn.execute(
                         "UPDATE jobs SET detail_error = ?, detail_scraped_at = ? WHERE url = ?",
+                        (result.get("error", "unknown"), now, url),
+                    )
+                    conn.execute(
+                        "UPDATE job_sources SET detail_error = ?, detail_scraped_at = ? WHERE url = ?",
                         (result.get("error", "unknown"), now, url),
                     )
 

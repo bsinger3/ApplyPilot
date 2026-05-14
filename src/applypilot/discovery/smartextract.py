@@ -95,8 +95,7 @@ def _store_jobs_filtered(
 ) -> tuple[int, int]:
     """Store jobs with location filtering. Returns (new, existing)."""
     now = datetime.now(timezone.utc).isoformat()
-    new = 0
-    existing = 0
+    to_store: list[dict] = []
     filtered = 0
 
     for job in jobs:
@@ -106,21 +105,15 @@ def _store_jobs_filtered(
         if not _location_ok(job.get("location"), accept_locs, reject_locs):
             filtered += 1
             continue
-        try:
-            conn.execute(
-                "INSERT INTO jobs (url, title, salary, description, location, site, strategy, discovered_at) "
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
-                (url, job.get("title"), job.get("salary"), job.get("description"),
-                 job.get("location"), site, strategy, now),
-            )
-            new += 1
-        except sqlite3.IntegrityError:
-            existing += 1
+        job = dict(job)
+        job["discovered_at"] = job.get("discovered_at") or now
+        to_store.append(job)
 
     if filtered:
         log.info("Filtered %d jobs (wrong location)", filtered)
-    conn.commit()
-    return new, existing
+    if not to_store:
+        return 0, 0
+    return store_jobs(conn, to_store, site, strategy)
 
 
 # -- Page intelligence collector ---------------------------------------------
@@ -1088,6 +1081,7 @@ def _run_all(
 def run_smart_extract(
     sites: list[dict] | None = None,
     workers: int = 1,
+    search_cfg: dict | None = None,
 ) -> dict:
     """Main entry point for AI-powered smart extraction.
 
@@ -1101,7 +1095,8 @@ def run_smart_extract(
     Returns:
         Dict with stats: total_new, total_existing, passed, total.
     """
-    search_cfg = config.load_search_config()
+    if search_cfg is None:
+        search_cfg = config.load_search_config()
     accept_locs, reject_locs = _load_location_filter(search_cfg)
 
     targets = build_scrape_targets(sites=sites, search_cfg=search_cfg)

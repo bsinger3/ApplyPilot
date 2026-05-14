@@ -24,7 +24,7 @@ from rich.console import Console
 from rich.live import Live
 
 from applypilot import config
-from applypilot.database import get_connection
+from applypilot.database import get_connection, get_persona_by_slug
 from applypilot.apply import chrome, dashboard, prompt as prompt_mod
 from applypilot.apply.chrome import (
     launch_chrome, cleanup_worker, kill_all_chrome,
@@ -87,8 +87,33 @@ def _make_mcp_config(cdp_port: int) -> dict:
 # Database operations
 # ---------------------------------------------------------------------------
 
+def _apply_select_sql() -> str:
+    return """
+        SELECT
+            j.id AS job_id,
+            COALESCE(js.id, jp.selected_source_id) AS source_id,
+            COALESCE(js.url, j.url) AS url,
+            j.title,
+            COALESCE(j.company_name, j.site) AS site,
+            COALESCE(js.application_url, j.application_url_canonical, j.application_url) AS application_url,
+            jp.tailored_resume_path,
+            jp.fit_score,
+            COALESCE(j.location_text, j.location) AS location,
+            j.full_description,
+            jp.cover_letter_path,
+            jp.apply_status,
+            jp.apply_attempts,
+            jp.persona_id
+        FROM job_persona jp
+        JOIN jobs j ON j.id = jp.job_id
+        LEFT JOIN job_sources js
+          ON js.job_id = j.id
+         AND (jp.selected_source_id IS NULL OR jp.selected_source_id = js.id)
+    """
+
+
 def acquire_job(target_url: str | None = None, min_score: int = 7,
-                worker_id: int = 0) -> dict | None:
+                worker_id: int = 0, persona: str = "default") -> dict | None:
     """Atomically acquire the next job to apply to.
 
     Args:
@@ -100,46 +125,48 @@ def acquire_job(target_url: str | None = None, min_score: int = 7,
         Job dict or None if the queue is empty.
     """
     conn = get_connection()
+    persona_row = get_persona_by_slug(persona, conn=conn)
+    persona_id = persona_row["id"]
     try:
         conn.execute("BEGIN IMMEDIATE")
 
         if target_url:
             like = f"%{target_url.split('?')[0].rstrip('/')}%"
-            row = conn.execute("""
-                SELECT url, title, site, application_url, tailored_resume_path,
-                       fit_score, location, full_description, cover_letter_path
-                FROM jobs
-                WHERE (url = ? OR application_url = ? OR application_url LIKE ? OR url LIKE ?)
-                  AND tailored_resume_path IS NOT NULL
-                  AND apply_status != 'in_progress'
+            row = conn.execute(_apply_select_sql() + """
+                WHERE jp.persona_id = ?
+                  AND (j.url = ? OR j.application_url = ? OR j.application_url LIKE ? OR j.url LIKE ?
+                       OR js.url = ? OR js.application_url = ? OR js.application_url LIKE ? OR js.url LIKE ?)
+                  AND jp.tailored_resume_path IS NOT NULL
+                  AND COALESCE(jp.apply_status, '') != 'in_progress'
                 LIMIT 1
-            """, (target_url, target_url, like, like)).fetchone()
+            """, (persona_id, target_url, target_url, like, like,
+                  target_url, target_url, like, like)).fetchone()
         else:
             blocked_sites, blocked_patterns = _load_blocked()
             # Build parameterized filters to avoid SQL injection
-            params: list = [min_score]
+            params: list = [persona_id, config.DEFAULTS["max_apply_attempts"], min_score]
             site_clause = ""
             if blocked_sites:
                 placeholders = ",".join("?" * len(blocked_sites))
-                site_clause = f"AND site NOT IN ({placeholders})"
+                site_clause = f"AND COALESCE(j.company_name, j.site) NOT IN ({placeholders})"
                 params.extend(blocked_sites)
             url_clauses = ""
             if blocked_patterns:
-                url_clauses = " ".join(f"AND url NOT LIKE ?" for _ in blocked_patterns)
+                url_clauses = " ".join(
+                    f"AND COALESCE(js.url, j.url) NOT LIKE ?" for _ in blocked_patterns
+                )
                 params.extend(blocked_patterns)
-            row = conn.execute(f"""
-                SELECT url, title, site, application_url, tailored_resume_path,
-                       fit_score, location, full_description, cover_letter_path
-                FROM jobs
-                WHERE tailored_resume_path IS NOT NULL
-                  AND (apply_status IS NULL OR apply_status = 'failed')
-                  AND (apply_attempts IS NULL OR apply_attempts < ?)
-                  AND fit_score >= ?
+            row = conn.execute(_apply_select_sql() + f"""
+                WHERE jp.persona_id = ?
+                  AND jp.tailored_resume_path IS NOT NULL
+                  AND (jp.apply_status IS NULL OR jp.apply_status = 'failed')
+                  AND (jp.apply_attempts IS NULL OR jp.apply_attempts < ?)
+                  AND jp.fit_score >= ?
                   {site_clause}
                   {url_clauses}
-                ORDER BY fit_score DESC, url
+                ORDER BY jp.fit_score DESC, COALESCE(js.url, j.url)
                 LIMIT 1
-            """, [config.DEFAULTS["max_apply_attempts"]] + params).fetchone()
+            """, params).fetchone()
 
         if not row:
             conn.rollback()
@@ -150,8 +177,16 @@ def acquire_job(target_url: str | None = None, min_score: int = 7,
         apply_url = row["application_url"] or row["url"]
         if is_manual_ats(apply_url):
             conn.execute(
-                "UPDATE jobs SET apply_status = 'manual', apply_error = 'manual ATS' WHERE url = ?",
-                (row["url"],),
+                """
+                UPDATE job_persona
+                SET apply_status = 'manual', apply_error = 'manual ATS'
+                WHERE job_id = ? AND persona_id = ?
+                """,
+                (row["job_id"], persona_id),
+            )
+            conn.execute(
+                "UPDATE jobs SET apply_status = 'manual', apply_error = 'manual ATS' WHERE id = ?",
+                (row["job_id"],),
             )
             conn.commit()
             logger.info("Skipping manual ATS: %s", row["url"][:80])
@@ -159,11 +194,19 @@ def acquire_job(target_url: str | None = None, min_score: int = 7,
 
         now = datetime.now(timezone.utc).isoformat()
         conn.execute("""
+            UPDATE job_persona
+            SET apply_status = 'in_progress',
+                agent_id = ?,
+                last_attempted_at = ?,
+                selected_source_id = COALESCE(selected_source_id, ?)
+            WHERE job_id = ? AND persona_id = ?
+        """, (f"worker-{worker_id}", now, row["source_id"], row["job_id"], persona_id))
+        conn.execute("""
             UPDATE jobs SET apply_status = 'in_progress',
                            agent_id = ?,
                            last_attempted_at = ?
-            WHERE url = ?
-        """, (f"worker-{worker_id}", now, row["url"]))
+            WHERE id = ?
+        """, (f"worker-{worker_id}", now, row["job_id"]))
         conn.commit()
 
         return dict(row)
@@ -172,36 +215,63 @@ def acquire_job(target_url: str | None = None, min_score: int = 7,
         raise
 
 
-def mark_result(url: str, status: str, error: str | None = None,
+def mark_result(job: dict, status: str, error: str | None = None,
                 permanent: bool = False, duration_ms: int | None = None,
                 task_id: str | None = None) -> None:
     """Update a job's apply status in the database."""
     conn = get_connection()
     now = datetime.now(timezone.utc).isoformat()
+    job_id = job["job_id"]
+    persona_id = job["persona_id"]
+    url = job["url"]
+    applied_source_url = job.get("application_url") or url
     if status == "applied":
+        conn.execute("""
+            UPDATE job_persona
+            SET apply_status = 'applied', applied_at = ?,
+                apply_error = NULL, agent_id = NULL,
+                apply_duration_ms = ?, apply_task_id = ?,
+                applied_source_url = ?
+            WHERE job_id = ? AND persona_id = ?
+        """, (now, duration_ms, task_id, applied_source_url, job_id, persona_id))
         conn.execute("""
             UPDATE jobs SET apply_status = 'applied', applied_at = ?,
                            apply_error = NULL, agent_id = NULL,
                            apply_duration_ms = ?, apply_task_id = ?
-            WHERE url = ?
-        """, (now, duration_ms, task_id, url))
+            WHERE id = ?
+        """, (now, duration_ms, task_id, job_id))
     else:
         attempts = 99 if permanent else "COALESCE(apply_attempts, 0) + 1"
+        conn.execute(f"""
+            UPDATE job_persona
+            SET apply_status = ?, apply_error = ?,
+                apply_attempts = {attempts}, agent_id = NULL,
+                apply_duration_ms = ?, apply_task_id = ?
+            WHERE job_id = ? AND persona_id = ?
+        """, (status, error or "unknown", duration_ms, task_id, job_id, persona_id))
         conn.execute(f"""
             UPDATE jobs SET apply_status = ?, apply_error = ?,
                            apply_attempts = {attempts}, agent_id = NULL,
                            apply_duration_ms = ?, apply_task_id = ?
-            WHERE url = ?
-        """, (status, error or "unknown", duration_ms, task_id, url))
+            WHERE id = ?
+        """, (status, error or "unknown", duration_ms, task_id, job_id))
     conn.commit()
 
 
-def release_lock(url: str) -> None:
+def release_lock(job: dict) -> None:
     """Release the in_progress lock without changing status."""
     conn = get_connection()
     conn.execute(
-        "UPDATE jobs SET apply_status = NULL, agent_id = NULL WHERE url = ? AND apply_status = 'in_progress'",
-        (url,),
+        """
+        UPDATE job_persona
+        SET apply_status = NULL, agent_id = NULL
+        WHERE job_id = ? AND persona_id = ? AND apply_status = 'in_progress'
+        """,
+        (job["job_id"], job["persona_id"]),
+    )
+    conn.execute(
+        "UPDATE jobs SET apply_status = NULL, agent_id = NULL WHERE id = ? AND apply_status = 'in_progress'",
+        (job["job_id"],),
     )
     conn.commit()
 
@@ -211,13 +281,15 @@ def release_lock(url: str) -> None:
 # ---------------------------------------------------------------------------
 
 def gen_prompt(target_url: str, min_score: int = 7,
-               model: str = "sonnet", worker_id: int = 0) -> Path | None:
+               model: str = "sonnet", worker_id: int = 0,
+               persona: str = "default") -> Path | None:
     """Generate a prompt file and print the Claude CLI command for manual debugging.
 
     Returns:
         Path to the generated prompt file, or None if no job found.
     """
-    job = acquire_job(target_url=target_url, min_score=min_score, worker_id=worker_id)
+    job = acquire_job(target_url=target_url, min_score=min_score,
+                      worker_id=worker_id, persona=persona)
     if not job:
         return None
 
@@ -228,10 +300,11 @@ def gen_prompt(target_url: str, min_score: int = 7,
     if txt_path and txt_path.exists():
         resume_text = txt_path.read_text(encoding="utf-8")
 
-    prompt = prompt_mod.build_prompt(job=job, tailored_resume=resume_text)
+    prompt = prompt_mod.build_prompt(job=job, tailored_resume=resume_text,
+                                     persona=persona)
 
     # Release the lock so the job stays available
-    release_lock(job["url"])
+    release_lock(job)
 
     # Write prompt file
     config.ensure_dirs()
@@ -247,7 +320,8 @@ def gen_prompt(target_url: str, min_score: int = 7,
     return prompt_file
 
 
-def mark_job(url: str, status: str, reason: str | None = None) -> None:
+def mark_job(url: str, status: str, reason: str | None = None,
+             persona: str = "default") -> None:
     """Manually mark a job's apply status in the database.
 
     Args:
@@ -256,36 +330,68 @@ def mark_job(url: str, status: str, reason: str | None = None) -> None:
         reason: Failure reason (only for status='failed').
     """
     conn = get_connection()
+    persona_row = get_persona_by_slug(persona, conn=conn)
+    row = conn.execute(
+        """
+        SELECT j.id AS job_id, jp.persona_id
+        FROM jobs j
+        JOIN job_persona jp ON jp.job_id = j.id
+        LEFT JOIN job_sources js ON js.job_id = j.id
+        WHERE jp.persona_id = ?
+          AND (j.url = ? OR j.application_url = ? OR js.url = ? OR js.application_url = ?)
+        LIMIT 1
+        """,
+        (persona_row["id"], url, url, url, url),
+    ).fetchone()
+    if not row:
+        return
+
     now = datetime.now(timezone.utc).isoformat()
     if status == "applied":
         conn.execute("""
+            UPDATE job_persona
+            SET apply_status = 'applied', applied_at = ?,
+                apply_error = NULL, agent_id = NULL,
+                applied_source_url = ?
+            WHERE job_id = ? AND persona_id = ?
+        """, (now, url, row["job_id"], persona_row["id"]))
+        conn.execute("""
             UPDATE jobs SET apply_status = 'applied', applied_at = ?,
                            apply_error = NULL, agent_id = NULL
-            WHERE url = ?
-        """, (now, url))
+            WHERE id = ?
+        """, (now, row["job_id"]))
     else:
+        conn.execute("""
+            UPDATE job_persona
+            SET apply_status = 'failed', apply_error = ?,
+                apply_attempts = 99, agent_id = NULL
+            WHERE job_id = ? AND persona_id = ?
+        """, (reason or "manual", row["job_id"], persona_row["id"]))
         conn.execute("""
             UPDATE jobs SET apply_status = 'failed', apply_error = ?,
                            apply_attempts = 99, agent_id = NULL
-            WHERE url = ?
-        """, (reason or "manual", url))
+            WHERE id = ?
+        """, (reason or "manual", row["job_id"]))
     conn.commit()
 
 
-def reset_failed() -> int:
+def reset_failed(persona: str = "default") -> int:
     """Reset all failed jobs so they can be retried.
 
     Returns:
         Number of jobs reset.
     """
     conn = get_connection()
+    persona_row = get_persona_by_slug(persona, conn=conn)
     cursor = conn.execute("""
-        UPDATE jobs SET apply_status = NULL, apply_error = NULL,
-                       apply_attempts = 0, agent_id = NULL
-        WHERE apply_status = 'failed'
+        UPDATE job_persona
+        SET apply_status = NULL, apply_error = NULL,
+            apply_attempts = 0, agent_id = NULL
+        WHERE (apply_status = 'failed'
           OR (apply_status IS NOT NULL AND apply_status != 'applied'
-              AND apply_status != 'in_progress')
-    """)
+              AND apply_status != 'in_progress'))
+          AND persona_id = ?
+    """, (persona_row["id"],))
     conn.commit()
     return cursor.rowcount
 
@@ -295,7 +401,8 @@ def reset_failed() -> int:
 # ---------------------------------------------------------------------------
 
 def run_job(job: dict, port: int, worker_id: int = 0,
-            model: str = "sonnet", dry_run: bool = False) -> tuple[str, int]:
+            model: str = "sonnet", dry_run: bool = False,
+            persona: str = "default") -> tuple[str, int]:
     """Spawn a Claude Code session for one job application.
 
     Returns:
@@ -315,6 +422,7 @@ def run_job(job: dict, port: int, worker_id: int = 0,
         job=job,
         tailored_resume=resume_text,
         dry_run=dry_run,
+        persona=persona,
     )
 
     # Write per-worker MCP config
@@ -548,7 +656,8 @@ def _is_permanent_failure(result: str) -> bool:
 def worker_loop(worker_id: int = 0, limit: int = 1,
                 target_url: str | None = None,
                 min_score: int = 7, headless: bool = False,
-                model: str = "sonnet", dry_run: bool = False) -> tuple[int, int]:
+                model: str = "sonnet", dry_run: bool = False,
+                persona: str = "default") -> tuple[int, int]:
     """Run jobs sequentially until limit is reached or queue is empty.
 
     Args:
@@ -578,7 +687,7 @@ def worker_loop(worker_id: int = 0, limit: int = 1,
                      last_action="waiting for job", actions=0)
 
         job = acquire_job(target_url=target_url, min_score=min_score,
-                          worker_id=worker_id)
+                          worker_id=worker_id, persona=persona)
         if not job:
             if not continuous:
                 add_event(f"[W{worker_id}] Queue empty")
@@ -602,20 +711,21 @@ def worker_loop(worker_id: int = 0, limit: int = 1,
             chrome_proc = launch_chrome(worker_id, port=port, headless=headless)
 
             result, duration_ms = run_job(job, port=port, worker_id=worker_id,
-                                            model=model, dry_run=dry_run)
+                                            model=model, dry_run=dry_run,
+                                            persona=persona)
 
             if result == "skipped":
-                release_lock(job["url"])
+                release_lock(job)
                 add_event(f"[W{worker_id}] Skipped: {job['title'][:30]}")
                 continue
             elif result == "applied":
-                mark_result(job["url"], "applied", duration_ms=duration_ms)
+                mark_result(job, "applied", duration_ms=duration_ms)
                 applied += 1
                 update_state(worker_id, jobs_applied=applied,
                              jobs_done=applied + failed)
             else:
                 reason = result.split(":", 1)[-1] if ":" in result else result
-                mark_result(job["url"], "failed", reason,
+                mark_result(job, "failed", reason,
                             permanent=_is_permanent_failure(result),
                             duration_ms=duration_ms)
                 failed += 1
@@ -623,7 +733,7 @@ def worker_loop(worker_id: int = 0, limit: int = 1,
                              jobs_done=applied + failed)
 
         except KeyboardInterrupt:
-            release_lock(job["url"])
+            release_lock(job)
             if _stop_event.is_set():
                 break
             add_event(f"[W{worker_id}] Job skipped (Ctrl+C)")
@@ -631,7 +741,7 @@ def worker_loop(worker_id: int = 0, limit: int = 1,
         except Exception as e:
             logger.exception("Worker %d launcher error", worker_id)
             add_event(f"[W{worker_id}] Launcher error: {str(e)[:40]}")
-            release_lock(job["url"])
+            release_lock(job)
             failed += 1
             update_state(worker_id, jobs_failed=failed)
         finally:
@@ -653,7 +763,8 @@ def worker_loop(worker_id: int = 0, limit: int = 1,
 def main(limit: int = 1, target_url: str | None = None,
          min_score: int = 7, headless: bool = False, model: str = "sonnet",
          dry_run: bool = False, continuous: bool = False,
-         poll_interval: int = 60, workers: int = 1) -> None:
+         poll_interval: int = 60, workers: int = 1,
+         persona: str = "default") -> None:
     """Launch the apply pipeline.
 
     Args:
@@ -737,6 +848,7 @@ def main(limit: int = 1, target_url: str | None = None,
                     headless=headless,
                     model=model,
                     dry_run=dry_run,
+                    persona=persona,
                 )
             else:
                 # Multi-worker — distribute limit across workers
@@ -760,6 +872,7 @@ def main(limit: int = 1, target_url: str | None = None,
                             headless=headless,
                             model=model,
                             dry_run=dry_run,
+                            persona=persona,
                         ): i
                         for i in range(workers)
                     }

@@ -3,6 +3,7 @@
 import os
 import platform
 import shutil
+from dataclasses import dataclass
 from pathlib import Path
 
 # User data directory — all user-specific files live here
@@ -10,6 +11,7 @@ APP_DIR = Path(os.environ.get("APPLYPILOT_DIR", Path.home() / ".applypilot"))
 
 # Core paths
 DB_PATH = APP_DIR / "applypilot.db"
+PERSONAS_DIR = APP_DIR / "personas"
 PROFILE_PATH = APP_DIR / "profile.json"
 RESUME_PATH = APP_DIR / "resume.txt"
 RESUME_PDF_PATH = APP_DIR / "resume.pdf"
@@ -28,6 +30,20 @@ APPLY_WORKER_DIR = APP_DIR / "apply-workers"
 # Package-shipped config (YAML registries)
 PACKAGE_DIR = Path(__file__).parent
 CONFIG_DIR = PACKAGE_DIR / "config"
+
+
+@dataclass(frozen=True)
+class PersonaPaths:
+    """Resolved persona-specific file paths."""
+
+    slug: str
+    name: str
+    profile_path: Path
+    resume_path: Path
+    resume_pdf_path: Path
+    search_config_path: Path
+    tailored_dir: Path
+    cover_letter_dir: Path
 
 
 def get_chrome_path() -> str:
@@ -87,30 +103,102 @@ def get_chrome_user_data() -> Path:
 
 def ensure_dirs():
     """Create all required directories."""
-    for d in [APP_DIR, TAILORED_DIR, COVER_LETTER_DIR, LOG_DIR, CHROME_WORKER_DIR, APPLY_WORKER_DIR]:
+    for d in [APP_DIR, PERSONAS_DIR, TAILORED_DIR, COVER_LETTER_DIR, LOG_DIR, CHROME_WORKER_DIR, APPLY_WORKER_DIR]:
         d.mkdir(parents=True, exist_ok=True)
 
 
-def load_profile() -> dict:
-    """Load user profile from ~/.applypilot/profile.json."""
-    import json
-    if not PROFILE_PATH.exists():
-        raise FileNotFoundError(
-            f"Profile not found at {PROFILE_PATH}. Run `applypilot init` first."
+def resolve_persona_paths(persona: str | dict | PersonaPaths | None = None) -> PersonaPaths:
+    """Resolve persona file paths without touching the database.
+
+    The `default` persona uses existing root-level files for compatibility.
+    Non-default personas use APP_DIR/personas/<slug>/.
+    """
+    if isinstance(persona, PersonaPaths):
+        return persona
+
+    if isinstance(persona, dict):
+        slug = persona.get("slug") or "default"
+        name = persona.get("name") or slug
+        if slug == "default":
+            return PersonaPaths(
+                slug=slug,
+                name=name,
+                profile_path=Path(persona.get("profile_path") or PROFILE_PATH),
+                resume_path=Path(persona.get("resume_path") or RESUME_PATH),
+                resume_pdf_path=Path(persona.get("resume_pdf_path") or RESUME_PDF_PATH),
+                search_config_path=Path(persona.get("search_config_path") or SEARCH_CONFIG_PATH),
+                tailored_dir=TAILORED_DIR / slug,
+                cover_letter_dir=COVER_LETTER_DIR / slug,
+            )
+        persona_dir = PERSONAS_DIR / slug
+        return PersonaPaths(
+            slug=slug,
+            name=name,
+            profile_path=Path(persona.get("profile_path") or persona_dir / "profile.json"),
+            resume_path=Path(persona.get("resume_path") or persona_dir / "resume.txt"),
+            resume_pdf_path=Path(persona.get("resume_pdf_path") or persona_dir / "resume.pdf"),
+            search_config_path=Path(persona.get("search_config_path") or persona_dir / "searches.yaml"),
+            tailored_dir=TAILORED_DIR / slug,
+            cover_letter_dir=COVER_LETTER_DIR / slug,
         )
-    return json.loads(PROFILE_PATH.read_text(encoding="utf-8"))
+
+    slug = persona or "default"
+    if slug == "default":
+        return PersonaPaths(
+            slug="default",
+            name="Default",
+            profile_path=PROFILE_PATH,
+            resume_path=RESUME_PATH,
+            resume_pdf_path=RESUME_PDF_PATH,
+            search_config_path=SEARCH_CONFIG_PATH,
+            tailored_dir=TAILORED_DIR / "default",
+            cover_letter_dir=COVER_LETTER_DIR / "default",
+        )
+
+    persona_dir = PERSONAS_DIR / slug
+    return PersonaPaths(
+        slug=slug,
+        name=slug.replace("-", " ").title(),
+        profile_path=persona_dir / "profile.json",
+        resume_path=persona_dir / "resume.txt",
+        resume_pdf_path=persona_dir / "resume.pdf",
+        search_config_path=persona_dir / "searches.yaml",
+        tailored_dir=TAILORED_DIR / slug,
+        cover_letter_dir=COVER_LETTER_DIR / slug,
+    )
 
 
-def load_search_config() -> dict:
-    """Load search configuration from ~/.applypilot/searches.yaml."""
+def ensure_persona_dirs(persona: str | dict | PersonaPaths | None = None) -> PersonaPaths:
+    """Create output and persona directories for a resolved persona."""
+    paths = resolve_persona_paths(persona)
+    paths.profile_path.parent.mkdir(parents=True, exist_ok=True)
+    paths.tailored_dir.mkdir(parents=True, exist_ok=True)
+    paths.cover_letter_dir.mkdir(parents=True, exist_ok=True)
+    return paths
+
+
+def load_profile(persona: str | dict | PersonaPaths | None = None) -> dict:
+    """Load user profile for a persona."""
+    import json
+    paths = resolve_persona_paths(persona)
+    if not paths.profile_path.exists():
+        raise FileNotFoundError(
+            f"Profile not found at {paths.profile_path}. Run `applypilot init` or create the persona first."
+        )
+    return json.loads(paths.profile_path.read_text(encoding="utf-8"))
+
+
+def load_search_config(persona: str | dict | PersonaPaths | None = None) -> dict:
+    """Load search configuration for a persona."""
     import yaml
-    if not SEARCH_CONFIG_PATH.exists():
+    paths = resolve_persona_paths(persona)
+    if not paths.search_config_path.exists():
         # Fall back to package-shipped example
         example = CONFIG_DIR / "searches.example.yaml"
         if example.exists():
             return yaml.safe_load(example.read_text(encoding="utf-8"))
         return {}
-    return yaml.safe_load(SEARCH_CONFIG_PATH.read_text(encoding="utf-8"))
+    return yaml.safe_load(paths.search_config_path.read_text(encoding="utf-8"))
 
 
 def load_sites_config() -> dict:

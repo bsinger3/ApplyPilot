@@ -8,6 +8,7 @@ resume.pdf
 
 # Runtime artifacts
 *.db
+codex-chat-transcript.json
 tailored_resumes/
 cover_letters/
 chrome-workers/
@@ -19,6 +20,7 @@ logs/
 .mcp*.json
 
 # Python
+.venv/
 __pycache__/
 *.py[cod]
 *$py.class

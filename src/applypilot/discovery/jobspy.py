@@ -167,14 +167,20 @@ def store_jobspy_results(conn: sqlite3.Connection, df, source_label: str) -> tup
         apply_url = str(row.get("job_url_direct", "")) if str(row.get("job_url_direct", "")) != "nan" else None
 
         try:
-            conn.execute(
-                "INSERT INTO jobs (url, title, salary, description, location, site, strategy, discovered_at, "
-                "full_description, application_url, detail_scraped_at) "
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
-                (url, title, salary, description, location_str, site_label, strategy, now,
-                 full_description, apply_url, detail_scraped_at),
-            )
-            new += 1
+            added, dupes = store_jobs(conn, [{
+                "url": url,
+                "title": title,
+                "company": company,
+                "salary": salary,
+                "description": description,
+                "location": location_str,
+                "full_description": full_description,
+                "application_url": apply_url,
+                "detail_scraped_at": detail_scraped_at,
+                "discovered_at": now,
+            }], site_label, strategy)
+            new += added
+            existing += dupes
         except sqlite3.IntegrityError:
             existing += 1
 
