@@ -1,0 +1,96 @@
+Title: Technical Project Manager
+Company: System One
+Location: N/A
+Score: 8
+URL: https://www.linkedin.com/jobs/view/4411501234
+Application URL: 
+
+**The Opportunity:** 
+
+
+
+
+  
+
+
+
+
+
+ Compliance platforms don't manage themselves — and neither do the teams building them. We're hiring a Technical Project Manager who's equal parts strategist and executor: someone who can cut through ambiguity, align competing priorities across Risk, Audit, and Engineering, and keep complex delivery programs moving without losing anyone along the way.
+ 
+
+
+
+ You'll embed directly with our Risk \& Compliance Developer team, owning delivery across a portfolio of compliance and analytics platforms. If you love bringing order to complex systems and get satisfaction from a clean sprint board and a stakeholder who actually reads your status reports, read on.
+ 
+
+
+
+  
+
+
+
+
+
+**What You'll Do:** 
+
+
+
+
+  
+
+
+
+
+* Drive end\-to\-end delivery across compliance certification, policy management, audit tracking, and BI reporting platforms — from backlog to production
+* Run the delivery rhythm: sprint planning, stand\-ups, retrospectives, and cross\-team syncs that people actually find useful
+* Own RAID logs, project plans, and status reports that give stakeholders real signal — not just green squares
+* Map and manage dependencies across IT, Risk, Audit, and Application teams so nothing falls through the cracks
+* Translate technical complexity into clear executive updates, with risks and mitigations that decision\-makers can act on
+* Coordinate releases, change windows, and post\-implementation reviews with precision
+
+
+
+  
+
+
+
+
+
+**What You Bring:** 
+
+
+
+
+  
+
+
+
+
+* At least 5\+ years running technical projects or programs end\-to\-end — you've seen things go sideways and know how to course\-correct fast
+* Fluency in Agile/Scrum, SDLC, and hybrid delivery models — you can flex the framework to fit the team
+* Hands\-on experience with analytics or BI platforms (Power BI or similar) and the compliance\-adjacent systems that feed them
+* A reputation for keeping multiple workstreams in motion without dropping quality or relationships
+* Communication that's clear, confident, and calibrated to the audience — whether it's a dev standup or a senior leadership review
+
+
+
+  
+
+
+
+
+
+**Bonus Points:** 
+
+
+
+
+  
+
+
+
+
+* You've navigated SOX, Audit, or enterprise Risk environments and understand why the details matter
+* You're familiar with compliance tooling ecosystems (policy management, GRC platforms, workflow tools)
+* You hold a PMP, CSM, or equivalent — or you've just been doing the job long enough that you could teach the cert

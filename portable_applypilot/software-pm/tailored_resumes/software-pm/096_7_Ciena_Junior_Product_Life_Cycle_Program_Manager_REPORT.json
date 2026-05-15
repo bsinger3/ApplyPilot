@@ -1,0 +1,13 @@
+{
+  "attempts": 4,
+  "validator": {
+    "passed": false,
+    "errors": [
+      "Missing required field: projects"
+    ],
+    "warnings": []
+  },
+  "judge": null,
+  "status": "failed_validation",
+  "validation_mode": "normal"
+}

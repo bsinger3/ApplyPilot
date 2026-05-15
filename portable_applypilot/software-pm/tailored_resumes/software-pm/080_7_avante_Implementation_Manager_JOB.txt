@@ -1,0 +1,230 @@
+Title: Implementation Manager
+Company: avante
+Location: N/A
+Score: 7
+URL: https://www.linkedin.com/jobs/view/4414162029
+Application URL: 
+
+**About Avante** 
+
+
+
+
+ Avante is on a mission to transform how self\-funded employers manage their benefits and HR operations. Our AI\-powered SaaS platform helps employers shift from reactive firefighting to strategic planning, while providing employees with the guidance they need to truly understand and maximize their benefits.
+ 
+
+
+
+  
+
+
+
+
+
+ Employee benefits represent the second\-largest expense for most businesses, yet the landscape is fragmented, complex, and difficult to navigate. Avante unifies fragmented benefits data and provides AI\-driven insights that help employers control costs while delivering an exceptional employee experience.
+ 
+
+
+
+  
+
+
+
+
+
+ We are headquartered in Seattle and expanding our presence to New York City, with an in\-office culture (4 days a week) to drive community, collaboration, and ideation.
+ 
+
+
+
+  
+
+
+
+
+
+**The Role** 
+
+
+
+
+ We're looking for our first dedicated Implementation Manager in New York City to own the end\-to\-end activation of customers on the Avante platform. This is a foundational hire where you won't just run implementations, but you'll help shape what a world\-class implementation experience looks like at Avante — and you'll be doing it from the ground floor of our East Coast expansion.
+ 
+
+
+
+  
+
+
+
+
+
+ You'll work across both direct enterprise customers and partner\-channel clients (brokers and their employer clients), managing the technical and operational details that get customers live and achieving value quickly. With a large and growing concentration of Avante customers on the East Coast, this role puts you at the center of where the business is heading.
+ 
+
+
+
+  
+
+
+
+
+
+ If you thrive in environments where you're building the plane while flying it, and you believe the best customer experiences come from a combination of AI tool adoption, robust project management, technical fluency, and genuine care, then this role is for you.
+ 
+
+
+
+  
+
+
+
+
+
+**What You’ll Do:** 
+
+
+
+
+**Customer Activation \& Implementation** 
+
+
+
+* Own the end\-to\-end implementation lifecycle for direct and partner customers, from kickoff through go\-live.
+* Activate customers across their desired employee deployment channels including web apps, Microsoft Teams, Slack, Outlook, ServiceNow integrations, and more.
+* Project manage multiple concurrent implementations, keeping internal and external stakeholders aligned on timelines, milestones, and dependencies.
+* Lead customer\-facing calls with executive presence, translating technical complexity into clear, confident communication for senior stakeholders.
+* Build strong working relationships with partner teams to ensure smooth coordination and a seamless experience for their clients.
+
+
+
+  
+
+
+
+
+
+**Technical Enablement \& Troubleshooting:** 
+
+
+
+* Serve as the first line of technical triage for deployment channels and integrations, escalating and working with engineering to resolve blockers as needed.
+* Partner with engineering on SSO, API, and SFTP configurations (i.e., you don’t need to code, but you need to speak the language fluently enough to collaborate effectively).
+* Support data schema review for claims and HRIS data, ensuring customer data is structured correctly for optimal platform performance.
+* Develop a working knowledge of common integration failure points to accelerate resolution and reduce engineering escalations over time.
+
+
+
+  
+
+
+
+
+
+**Process Design \& Scale:** 
+
+
+
+* Design and document implementation playbooks, templates, and workflows to support building the foundation for a repeatable, scalable implementation function.
+* Help define the implementation\-to\-CSM handoff process, working closely with the existing CX team to create a model that sets customers up for long\-term success.
+* Establish and track implementation KPIs: time\-to\-value, activation rates, customer satisfaction at go\-live, and engineering escalation volume.
+* Leverage AI tools to drive efficiency across the implementation process, while ensuring a world\-class experience.
+
+
+
+  
+
+
+
+
+
+**What We’re Looking For:** 
+
+
+
+* 3–7 years of experience in implementation, onboarding, or technical project management within a SaaS or technology environment.
+* Proven ability to manage multiple concurrent projects with competing priorities and tight timelines.
+* Executive presence where you’re comfortable leading calls with C\-suite stakeholders and translating technical details into business\-relevant language.
+* Technical fluency: you understand APIs, SSO, SFTP, and data integrations well enough to collaborate with engineering and triage issues independently.
+* Data fluency: comfortable reviewing data schemas, understanding data mapping, and ensuring data quality for platform configuration.
+* Strong project management skills with experience using tools like Linear, Asana, Monday.com, or similar.
+* A self\-starter mentality: you’re energized by ambiguity and excited to build processes where none exist yet.
+* Empathy, calm under pressure, and a genuine commitment to delivering an exceptional customer experience.
+* Excitement about using AI to supercharge your own productivity and deliver better outcomes at scale.
+
+
+
+  
+
+
+
+
+
+**Nice to Have:** 
+
+
+
+* Experience in HR tech, health tech, or benefits administration.
+* Familiarity with healthcare claims data, coding standards (ICD, CPT, HCPCS), or benefits data structures.
+* Working knowledge of SQL for data validation and troubleshooting.
+* Experience working with channel partners, brokers, or TPAs.
+
+
+
+  
+
+
+
+
+
+**Role Progression:** 
+
+
+
+
+**First 30 Days:** 
+ Complete onboarding alongside the CX team to build deep product knowledge. Shadow existing implementations to understand the current process, pain points, and customer journey. Begin identifying opportunities to improve and formalize the implementation workflow.
+ 
+
+
+
+**60–90 Days:** 
+ Lead your first implementations end\-to\-end with CSM support. Start drafting the implementation playbook and propose the CSM handoff model. Build working relationships with engineering, product, and partner teams.
+ 
+
+
+
+**4\+ Months:** 
+ Own the full implementation pipeline independently. Have a documented, repeatable implementation process in place. Be a key voice in product feedback loops based on implementation patterns.
+ 
+
+
+
+  
+
+
+
+
+
+**Interview Process \& Compensation** 
+
+
+
+
+ We respect your time and aim to keep things efficient:
+ 
+
+
+* Introductory call with our Talent team (30 min)
+* Conversation with the SVP of Customer Experience (45 min)
+* Team interviews with CSMs and cross\-functional partners (90\-120 min)
+
+
+
+  
+
+
+
+
+
+ Comp: $108\-$132K

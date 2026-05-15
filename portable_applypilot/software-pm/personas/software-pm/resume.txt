@@ -1,0 +1,48 @@
+Brianna Singer
+Technical Product Manager, Data & AI Platforms
+916 224 9144  •  bsinger3@gmail.com  •   Newark, New Jersey 07105
+Professional Experience
+Technical Project Manager, FriendsWithMeasurements.com, Newark, New Jersey Aug 2025   –  Present
+Rebuilt FriendsWithMeasurements.com to solve a common apparel discovery problem: shoppers struggling to find clothing that fits their body measurements. Redesigned the Postgres data model to support a catalog of 15K+ measurement profiles.
+Built data ingestion and normalization pipelines for apparel datasets, standardizing inconsistent sizing formats and enabling structured filtering.
+Implemented measurement-based product search using Postgres functions, vector similarity queries, and indexed text search, increasing relevant results by more than 30% and reducing “no results” searches by over 80%.
+Designed image and metadata pipelines using Supabase storage and computer vision tagging to improve catalog discoverability and enable measurement-based analytics.
+Product Manager, ALTR, Melbourne, Florida Feb 2025   –  Aug 2025
+Defined product requirements for ALTR’s data governance platform by analyzing customer security workflows and sales feedback, aligning engineering delivery with enterprise data protection needs.
+Transformed competitor sentiment research into a strategic roadmap that prioritized high-demand data governance features, directly supporting the sales pipeline for enterprise accounts.
+Spearheaded ALTR’s Snowflake Native App that uses Snowflake’s native classifiers to scan 50+ TBs of a key customer’s data, detect unprotected sensitive data, apply the right tags, and generate security policy recommendations based on exposure and usage. First customer identified 80+ columns of unprotected PII, cutting manual tagging time by 10s of hours. Product usage tracked through Mixpanel analytics.
+Developed logic across multiple Snowflake audit log types to support automated alerting when security policies are violated and designed remediation flows that revoke permissions and force logouts for suspicious users.
+Partnered with enterprise data security teams to evaluate classifier performance, prioritize roadmap features, and translate governance requirements into deployable product releases.
+Product Manager, Guy Carpenter, New York, New York Nov 2023   –  Dec 2024
+Drove delivery of NLP-powered contract intelligence workflows across more than 100k property reinsurance contracts, reducing average contract review time from 7 days to approximately 10 minutes and capturing more than $40M in previously unstructured deal economics.
+Built Power BI dashboards that surfaced trends in exception patterns, deal size correlations, and recurring review bottlenecks, equipping brokerage leadership with data to support multimillion dollar negotiations.
+Designed QA experiments and data augmentation techniques that improved model precision by 15% and recall by 9% for high-value edge cases.
+Led scrum ceremonies and tracked OKRs for a five engineer team developing contract extraction and classification models.
+Implemented LLM driven document processing workflows to automate term extraction and reduce manual contract review effort.
+Technical Project Manager, Sirion, New York, New York                     May 2022   –  June 2023
+Managed budgets exceeding $75k, led daily scrum and Agile delivery of ML models, consistently hitting +95% of sprint goals for bank clients.
+Served as primary liaison for customers of Sirion’s SaaS product, facilitating document extraction for financial contracts.
+Defined training data requirements and implemented NLP strategies to improve the model's interpretation of financial tables and charts.
+Mentored junior project managers and led seminars on project scoping, product releases, and management skills.
+Social Impact and Volunteer Experience
+Domestic Violence Hotline Volunteer, Sakhi, New York, New York          Jan 2022 – Present
+Provide crisis support for the domestic violence hotline, coordinated with New York City’s Homeless Shelter network for emergency placements.
+Completed training in trauma response and crisis communication to support domestic violence hotline callers effectively.
+Suicide Hotline Volunteer, The Samaritans of New York, New York, New York          Feb 2021 – Sep 2021
+Practiced crisis management, mental health counseling, and emergency response, serving on the suicide hotline for regular volunteer shifts.
+Education
+Cornell University School of Industrial and Labor Relations, Ithaca, New York   May 2018
+Bachelor of Science in Industrial and Labor Relations, Minor Degree in Financial Business
+Additional coursework in web development, Python scripting, and mobile app development
+Awards
+1st Place Winner, Columbia University’s Women in Tech Hackathon, New York, New York  Oct 2022
+Prototyped “HumaneHousing,” a platform that helps recently incarcerated individuals apply for housing in New York State, winning a $1500 grant.
+Honorable Mention, The Fringe Playwriting Festival, New York, New York June 2017
+Press release in the East End Beacon for writing and producing a dystopian short play inspired by Franz Kafka.
+Skills
+• Data & Analytics: SQL, MySQL, Snowflake, Power BI, Mixpanel, Excel, Google Sheets
+• Programming & Automation: Python (Selenium, Beautiful Soup, PyTorch), Google Apps Script
+• Product & Project Management: Product Roadmapping, Agile Development, Scrum Management, OKRs, Jira (Atlassian Suite), Agile Ceremonies
+• Design & Prototyping: Figma, UI/UX Design, Human-Centered Design Research, AI-assisted web prototyping (Claude, ChatGPT)
+• Databases & Systems: Document Databases, Data Modeling, Data Pipelines
+• Communication & Documentation: Product Specifications, Copywriting, PowerPoint, Google Slides

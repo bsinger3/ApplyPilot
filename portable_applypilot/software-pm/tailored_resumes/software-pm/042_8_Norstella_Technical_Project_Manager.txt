@@ -1,0 +1,54 @@
+Brianna Singer
+Technical Project Manager
+bsinger3@gmail.com | 916 224 9144 | https://github.com/bsinger3/ | https://linkedin.com/in/briannasinger/
+
+SUMMARY
+Experienced Technical Project Manager with a strong background in data solutions and project delivery for large-scale clients. Proven ability to lead cross-functional teams, manage project timelines, and enhance client satisfaction through effective communication and risk management.
+
+TECHNICAL SKILLS
+Languages: Python, SQL
+DevOps & Infra: Supabase, Postgres, Snowflake, Power BI, Mixpanel
+Databases: Postgres, Snowflake
+Tools: Agile, Scrum, OKRs, data pipelines, requirements definition, roadmap planning, stakeholder management
+
+EXPERIENCE
+Technical Project Manager at FriendsWithMeasurements.com
+Tech | Aug 2025 - Present
+- Redesigned Postgres data model to support 15K+ measurement profiles, enhancing apparel discovery for users.
+- Developed data ingestion and normalization pipelines, standardizing sizing formats and improving data accessibility.
+- Implemented measurement-based product search, increasing relevant results by over 30% and decreasing 'no results' searches by 80%.
+- Designed image and metadata pipelines using Supabase, improving catalog discoverability and enabling analytics.
+
+Product Manager at ALTR
+Tech | Feb 2025 - Aug 2025
+- Defined product requirements for data governance platform, aligning engineering with enterprise data protection needs.
+- Transformed competitor analysis into a strategic roadmap, prioritizing features that directly supported sales initiatives.
+- Developed a Snowflake Native App to scan 50+ TBs of customer data, reducing manual tagging time significantly by automating sensitive data detection.
+- Collaborated with data security teams to evaluate classifier performance and translate governance needs into actionable product features.
+
+Product Manager at Guy Carpenter
+Tech | Nov 2023 - Dec 2024
+- Delivered NLP-powered contract intelligence workflows, reducing review time from 7 days to approximately 10 minutes, capturing $40M in deal economics.
+- Created Power BI dashboards to visualize trends and support multimillion dollar negotiations for brokerage leadership.
+- Enhanced model precision by 15% and recall by 9% through innovative QA experiments and data augmentation techniques.
+- Led scrum ceremonies and tracked OKRs, ensuring project alignment with business objectives.
+
+Technical Project Manager at Sirion
+Tech | May 2022 - June 2023
+- Managed project budgets exceeding $75k, consistently achieving over 95% of sprint goals for financial clients.
+- Acted as primary liaison for SaaS product customers, facilitating efficient document extraction for financial contracts.
+- Defined training data requirements and implemented NLP strategies to enhance model performance on financial data.
+- Mentored junior project managers, sharing best practices in project management and delivery.
+
+PROJECTS
+Crisis Support System - Domestic Violence Hotline
+Tech | Jan 2022 - Present
+- Provided crisis support through a hotline, coordinating with local shelters for emergency placements.
+- Completed trauma response training to enhance effectiveness in crisis communication.
+
+Crisis Management Training - Suicide Hotline
+Tech | Feb 2021 - Sep 2021
+- Practiced crisis management and mental health counseling on a suicide hotline, enhancing emergency response skills.
+
+EDUCATION
+Cornell University School of Industrial and Labor Relations | Bachelor of Science, Industrial and Labor Relations

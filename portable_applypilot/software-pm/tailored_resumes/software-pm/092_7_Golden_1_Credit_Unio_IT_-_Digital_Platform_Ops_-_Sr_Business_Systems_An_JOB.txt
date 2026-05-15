@@ -1,0 +1,146 @@
+Title: IT - Digital Platform Ops - Sr Business Systems Analyst - Digital
+Company: Golden 1 Credit Union
+Location: Remote, US (Remote)
+Score: 7
+URL: https://www.indeed.com/viewjob?jk=70da02dd55bd7c71
+Application URL: https://jobs.dayforcehcm.com/en-US/golden1/CANDIDATEPORTAL/jobs/49096
+
+**TITLE:** SR BUSINESS SYSTEMS ANALYST \- DIGITAL
+  
+**STATUS:** EXEMPT
+  
+**REPORTS TO:** MANAGER \- DIGITAL OPERATIONS
+  
+**DEPARTMENT:** IT \- DIGITAL PLATFORM DELIVERY
+  
+**JOB CODE:** 11624
+  
+**PAY RANGE:** $102,000\.00 \- $110,000\.00 ANNUALLY
+  
+  
+
+**GENERAL DESCRIPTION:**  
+
+The Senior Business Systems Analyst role is responsible for engaging with various business units to translate complex business needs into quality software solutions and assists in the design, development, and implementation of identified solutions following Agile Software development practices. This also includes the operational support for all managed enterprise\-wide software solutions. In partnership with the software vendors and business units, the senior analyst will work to maximize opportunities to use technology to improve products, services, and/or business processes. An advanced understanding of the Credit Union’s enterprise\-wide software solutions is required.
+  
+  
+
+**TASKS, DUTIES, FUNCTIONS:**  
+
+1\. Oversees all aspects of the Software Development Lifecycle for enterprise\-wide software solutions by reviewing, analyzing, and creating detailed documentation of business unit needs, including workflow, program functions, and steps required to implement technical business processes.
+  
+2\. Drives efficient and effective joint business/IT requirements and solution discussions in addition to stakeholder review meetings.
+  
+3\. Provide high\-quality analytical system solutions for key stakeholders.
+  
+4\. Proactively identifies software functional gaps and opportunities of improvement.
+  
+5\. Collaborates with product owners to create product backlog by using Agile practices.
+  
+6\. Creates user stories with relevant acceptance criteria.
+  
+7\. Leads or participates with the implementation of complex projects as technical subject matter expert from beginning to completion.
+  
+* Delivery Focus:
+
+
+1\. 10% Training and mentoring BSA I
+  
+2\. 70% Project Support
+  
+3\. 20% Department process improvement
+  
+8\. Participate in scrum events such as daily scrums, sprint planning, backlog refinement, sprint retrospective and reviews.
+  
+9\. Supports Agile practices and leads the improvement of service.
+  
+10\. Designs, creates, and documents process flows, technical requirements list, specifications, diagrams, scenarios, mockups, and/or models for the development team using Visio, MS Word, Excel, PDF, SharePoint, and other like tools.
+  
+11\. Provide Tier 3 application support to uphold day\-to\-day business line operations, including the resolution of all internal tickets to a timely and successful resolution for all Enterprise\-wide managed software solutions.
+  
+* Operations Focus:
+
+
+1\. 10% Training and mentoring BSA I and BSA II
+  
+2\. 20% Tickets and operational support requests
+  
+3\. 70% Manage and support software upgrades
+  
+12\. Troubleshoots issues, assists in triage, and assesses risk and serves as escalation points for incident management.
+  
+13\. Manage administrative functions such as, but not limited to customizations of intricate forms, fields, reports and create saved searches, dashboards, workflows, role\-based access management and reporting support.
+  
+14\. Effectively work to resolve complex business line application requests or reported issues through effective listening skills, positive action, information gathering and/or ticket escalation.
+  
+15\. Keep application users regularly informed on progress and resolution for all application issues reported and in alignment with internal service level agreements using clear and proactive communication.
+  
+16\. Collaborate and coordinate with third\-party service providers or other internal technical teams to address software needs\-based solutions and production issues with implemented resolutions and consistent follow\-up.
+  
+17\. Establish and maintain strong working relationships with business line, other internal technical teams, and third\-party service providers needed to improve Enterprise\-wide software solutions.
+  
+18\. Participate in on\-call support for critical response to after hour application impairments or major outages as needed.
+  
+  
+
+**ORGANIZATIONAL CONTACTS \& RELATIONSHIPS:**  
+
+**1\. INTERNAL:** All Credit Union Staff
+  
+**2\. EXTERNAL:** Vendors, suppliers, government agencies, other industry associations and peers at other financial institutions.
+  
+  
+
+**QUALIFICATIONS:**  
+
+**1\. EDUCATION:** Minimum four\-year degree in Information Technology, Project Management or Business Administration required, or 6 years of experience. Bachelor’s degree in Business Administration, Accounting, Information Technology, Engineering, Management, or related field preferred with 4\+ years of experience. Equivalent work experience may be considered in lieu of a 4\-year degree. Agile certifications preferred.
+  
+**2\. EXPERIENCE:** Seven years or more experience in financial or health services, including technical business analysis, product development and process improvement. Experience working in an Agile environment or Azure eco system (DevOps) strongly desired.
+  
+  
+
+**3\. KNOWLEDGE / SKILLS:**  
+
+* Knowledge of commonly used financial industry concepts, practices, and guidelines.
+* Knowledge of existing Credit Union products, services, and overall operational guidelines, especially as it relates to various delivery channels.
+* Excellent oral communication, presentation, and technical writing skills.
+* Strong research, technical analysis, planning and organizational skills.
+* Ability to use logical reasoning when interpreting facts.
+* Experience with small to medium enterprise software systems, as well as the ability to learn new systems quickly.
+* Ability to analyze and document technical business processes.
+* Ability to make observations, examinations, evaluations, and recommendations.
+* Ability to participate on projects and assist team members to implement system upgrades and enhancements.
+* Strong PC skills.
+
+
+**PHYSICAL REQUIREMENTS:**  
+
+1\. Carry and respond to a cell phone 7 days a week. May need to diagnose problems from home, occasionally may need to travel to site to correct problem either by car or public conveyance.
+  
+2\. Prolonged sitting throughout the workday with occasional mobility required.
+  
+3\. Corrected vision within the normal range.
+  
+4\. Hearing within normal range. A device to enhance hearing will be provided if needed.
+  
+5\. Ability to lift 20 lbs. as may be required.
+  
+6\. Occasional movements throughout the department daily to interact with staff, accomplish tasks, etc.
+  
+7\. Occasional travel may be required locally, statewide, and throughout the United States to attend seminars and vendor group meetings. Overnight travel and evening schedules included.
+  
+8\. Occasionally required to change work hours or work long hours including working on weekends to accomplish tasks.
+  
+  
+
+**LICENSES / CERTIFICATIONS:**  
+
+None
+  
+Pursuant to the San Francisco Fair Chance Ordinance, we will consider for employment qualified applicants with arrest and conviction records.
+  
+\#LI\-Remote
+  
+THIS JOB DESCRIPTION PROVIDES AN OVERVIEW OF THE GENERAL SCOPE AND LEVEL OF WORK EXPECTED TO BE PERFORMED, BUT IT IS NOT AN EXHAUSTIVE LIST OF ALL DUTIES OR RESPONSIBILITIES ASSOCIATED WITH THE POSITION. THE CREDIT UNION RESERVES THE RIGHT TO MODIFY, ADD, OR REMOVE DUTIES AS NEEDED WITHOUT ADVANCE NOTICE. EMPLOYEES MAY BE REQUIRED TO PERFORM ADDITIONAL TASKS AND DUTIES AS DIRECTED BY THEIR SUPERVISOR, PROVIDED SUCH TASKS ARE WITHIN THE EMPLOYEE’S KNOWLEDGE, SKILLS, AND ABILITIES, OR CAN BE PERFORMED WITH REASONABLE TRAINING. NOTHING IN THIS JOB DESCRIPTION ALTERS THE AT\-WILL EMPLOYMENT RELATIONSHIP OR LIMITS THE CREDIT UNION’S RIGHT TO ASSIGN OR REASSIGN DUTIES AND RESPONSIBILITIES TO THIS POSITION AT ANY TIME.
+  
+REV. 10/01/2025

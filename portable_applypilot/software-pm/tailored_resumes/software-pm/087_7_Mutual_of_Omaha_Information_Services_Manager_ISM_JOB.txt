@@ -1,0 +1,123 @@
+Title: Information Services Manager (ISM)
+Company: Mutual of Omaha
+Location: Remote, US (Remote)
+Score: 7
+URL: https://www.indeed.com/viewjob?jk=65f364fdd6eb9300
+Application URL: https://www.mutualofomaha.com/careers/jobs/detail/504764
+
+**Location:** Remote  
+
+**Work Type:** Full Time Regular  
+
+**Job No:** 504764  
+
+**Categories:** Information Technology  
+
+**Application Closes:** Closes Jun 12, 2026
+
+
+2026\-05\-12  
+
+We are seeking an experienced Information Services Manager (ISM) to lead the transformation of our Individual product Customer and Policy data platforms \- from legacy, monolithic operational systems to modern, domain\-driven, microservices\-based architecture. This role will balance the stability and stewardship of critical existing systems with the delivery of our vision for the Operational Data layer, driving innovation while ensuring continuity and reliability.
+
+
+
+Modernizing operational data systems enables real\-time decision making, better data quality, and AI‑driven innovation. Our Operational Data Vision starts with transforming legacy Customer and Policy data for Individual products. We are moving from monolithic platforms to a domain‑driven, event‑enabled architecture that improves agility and scalability through a gradual, low‑disruption migration.
+
+  
+
+
+**WHAT WE CAN OFFER YOU:**
+
+
+
+* Estimated Salary: (Levels have variable responsibilities and qualifications)
+
+
+	+ Info Services Manager: $167,000 \- $174,000, plus annual bonus opportunity
+* 401(k) plan with a 2% company contribution and 6% company match.
+* Work\-life balance with vacation, personal time and paid holidays. See our benefits and perks page for details.
+* Applicants for this position must not now, nor at any point in the future, require sponsorship for employment.
+  
+
+
+  
+
+**WHAT YOU’LL DO:**
+
+
+* Lead a team that supports two legacy, monolithic operational systems (one COBOL based and one Java based) that underpin core Individual product Customer and Policy capabilities.
+* Stand up and lead a modern Customer \& Policy data capability, making our Operational Data Vision a reality through domain centric, event driven data products.
+* Build, coach, and retain a highly performing, inclusive team through clear expectations, accountability, recognition, and growth opportunities while also recruiting and developing the right mix of skills to support both legacy and modern data capabilities
+* Champion Mutually Connected values and promote an inclusive employee experience and encourage self\-directed teams and intrinsic motivation while addressing performance issues directly and constructively
+* Ensure compliance with SDLC, incident, problem, change, and audit standards while demonstrating effective financial stewardship across labor, vendors, and tooling
+* Apply Organizational Change Management practices to guide teams through transformation and champion Agile and SAFe principles while balancing flexibility with discipline
+* Build strong peer relationships across technology, architecture, and business teams and manage vendors and external partners through effective statements of work, cost controls, and performance metrics
+* Lead teams responsible for mission critical, monolithic operational platforms supporting Individual product Customer and Policy capabilities and improve operational sustainability by addressing workflow inefficiencies, unplanned work, and support load
+* Redesign intake, prioritization, and execution models to improve transparency and predictability while also stabilizing delivery while preparing platforms for gradual modernization and integration with future data capabilities
+* Establish domain\-aligned, event\-enabled microservices and data products that improve agility, scalability, and data consistency across the platform. Partner with Enterprise Architecture, Data Governance, and Platform teams to implement modern data patterns
+* Ensure forward\-looking initiatives are protected from operational drag while remaining aligned to enterprise standards and use Customer \& Policy as a reference domain for how operational data should be delivered across the enterprise
+* Able to work remotely with access to a high\-speed internet connection and located in the United States or Puerto Rico.
+  
+
+  
+
+**WHAT YOU’LL BRING:**
+
+
+
+* Comfortable leading teams across legacy and modern technology stacks, acting as a solution owner, not just a people manager
+* Influence experienced engineers and stakeholders with strong technical perspectives while balancing empathy with accountability and decisiveness
+* Experience leading teams through legacy\-to\-modern application transitions and can thrive in ambiguity and can translate vision into executable plans
+* Communicate clearly across technical, business, and executive audiences
+
+ **PREFERRED:**
+
+
+* 5\+ years of Information Systems or technology leadership experience, or equivalent combination of leadership and technical experience
+* Bachelor’s degree in information technology, Computer Science, Business, or equivalent experience
+* Experience with domain centric or event driven data architectures and exposure to data mesh, knowledge graph, or operational data modernization initiatives
+* Background supporting large\-scale operational systems in regulated or complex enterprise environments and formal training in leadership or change management
+* Demonstrated success leading teams through operational stabilization and modernization and proven ability to collaborate across organizational boundaries to deliver complex solutions
+* Strong understanding of data platforms, pipelines, and hybrid legacy/modern architectures
+
+
+**This role is classified as remote; however, periodic in\-person attendance will be required at times for activities such as quarterly or project planning, training, or other business\-critical meetings.**
+
+  
+
+
+**We value diverse experience, skills, and passion for innovation. If your experience aligns with the listed requirements**
+
+
+
+If you have questions about your application or the hiring process, email our Talent Acquisition area at careers@mutualofomaha.com. Please allow at least one week from time of applying if you are checking on the status.
+
+
+**Stay Safe from Job Scams**  
+
+Mutual of Omaha only accepts applications from mutualofomaha.com/careers. Legitimate communications will come from '@mutualofomaha.com.' We never request sensitive information or extend job offers without conducting interviews. For more details, check our Hiring FAQs. Stay alert for scams and apply securely!
+
+
+
+Fair Chance Notices
+
+
+
+  
+
+Need help? Email Us
+**Great place to work**
+-----------------------
+
+
+Together we achieve greatness. Not only is this a core value, but it’s also representative of the kind of place we are — built by the strength and integrity of our employees. It’s why we’re named a “Great Place to Work”.
+
+  
+
+
+**An inclusive culture**
+------------------------
+
+
+Surround yourself with an authentic and inclusive culture. Your strengths and differences will be valued and celebrated by a diverse community of co‑workers.

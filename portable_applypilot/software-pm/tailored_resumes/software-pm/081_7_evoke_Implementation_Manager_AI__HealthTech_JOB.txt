@@ -1,0 +1,64 @@
+Title: Implementation Manager (AI / HealthTech)
+Company: evoke
+Location: N/A
+Score: 7
+URL: https://www.linkedin.com/jobs/view/4413442717
+Application URL: 
+
+**Implementation Manager \| $140k – $160k \+ Equity \| New York (On\-site)** 
+
+
+
+
+  
+
+
+
+
+
+ We’re partnered with a fast\-growing, venture\-backed AI HealthTech startup founded by experienced serial entrepreneurs, building AI\-powered automation tools that are transforming operational workflows across healthcare providers.
+ 
+
+
+
+  
+
+
+
+
+
+ They are now hiring a Deployment Specialist to lead end\-to\-end customer implementations, managing the rollout of AI products into complex enterprise environments. This is a highly cross\-functional role combining technical implementation, project management, customer engagement, and systems integration.
+ 
+
+
+
+  
+
+
+
+
+
+ You should apply if you have:
+ 
+
+
+* Experience owning end\-to\-end software implementations in an early\-stage (Seed–Series C) or fast\-paced SaaS environment.
+* Strong project management skills with the ability to manage multiple deployments simultaneously
+* Experience working with APIs, integrations, and enterprise systems such as EMRs, HRIS, or CRMs
+* A fast\-paced, ownership\-driven mindset with strong problem\-solving ability
+
+
+
+  
+
+
+
+
+
+ Nice to have:
+ 
+
+
+* Healthcare or HealthTech experience
+* Exposure to HL7, FHIR, ETL pipelines, RPA frameworks, or AI/ML platforms
+* Basic scripting or querying experience with Python, SQL, JavaScript, or JSON

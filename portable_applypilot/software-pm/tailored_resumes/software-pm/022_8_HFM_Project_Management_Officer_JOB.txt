@@ -1,0 +1,101 @@
+Title: Project Management Officer
+Company: HFM
+Location: N/A
+Score: 8
+URL: https://www.linkedin.com/jobs/view/4411156637
+Application URL: 
+
+**About the Role** 
+
+
+
+
+ We are looking for a
+ **Project Management Officer (PMO)** 
+ to plan and track the delivery of
+ **projects** 
+ . This role will ensure structured, phased execution across product definition, design, and technical implementation.
+ 
+
+
+
+ The PMO will work
+ **closely alongside the Product Analyst (PA)** 
+ and cross\-functional teams to ensure clarity in scope, timelines, dependencies, and execution.
+ **Experience or exposure to trading or fintech platforms is a strong advantage** 
+ , especially for understanding user journeys and data\-driven features.
+ 
+
+
+
+  
+
+
+
+
+
+**Key Responsibilities** 
+
+
+
+* Own and manage the
+ **end\-to\-end project plan** 
+ across product discovery, design, and delivery phases.
+* Translate product roadmaps into
+ **clear timelines, milestones, and phased execution plans** 
+ .
+* Work
+ **alongside the Product Analyst** 
+ to ensure requirements, user flows, and feature definitions are complete and delivery ready.
+* Support the
+ **creation, review, and validation of user flows** 
+ .
+* Coordinate with
+ **product, UI/UX, content and technical teams** 
+ to align scope, priorities, and execution.
+* Track progress against timelines and ensure delivery aligns with
+ **team capacity and priorities** 
+ .
+* Identify, manage, and communicate
+ **dependencies, risks, and blockers** 
+ , including those related to APIs, integrations, or third\-party systems.
+* Ensure effective
+ **scope control and change management** 
+ throughout the project lifecycle.
+* Facilitate
+ **planning sessions, stand\-ups, reviews, and delivery checkpoints** 
+ .
+* Ensure all deliverables (requirements, flows, designs) are
+ **reviewed and approved** 
+ before development handoff.
+
+
+
+  
+
+
+
+
+
+**Skills \& Experience** 
+
+
+
+* **3 \- 4 years of experience** 
+ as a PMO or Project Manager.
+* Experience working closely with
+ **Product Analysts, Product Owners, or Business Analysts** 
+ .
+* Exposure to
+ **user flow creation, journey mapping, or functional flow documentation** 
+ (supporting role).
+* Strong capability in managing
+ **phased deliveries** 
+ and complex dependencies.
+* Familiarity with
+ **API\-driven systems and third\-party integrations** 
+ .
+* Proficiency with tools such as
+ **Jira, Confluence, ClickUp/Trello, Figma (for flow reviews), and Google Workspace** 
+ .
+* Good communication in English.

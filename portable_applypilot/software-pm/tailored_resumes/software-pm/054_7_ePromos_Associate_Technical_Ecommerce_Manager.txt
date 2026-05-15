@@ -1,0 +1,51 @@
+Brianna Singer
+Associate Technical Ecommerce Manager
+bsinger3@gmail.com | 916 224 9144 | https://github.com/bsinger3/ | https://linkedin.com/in/briannasinger/
+
+SUMMARY
+Experienced Technical Project Manager with a focus on data-driven solutions and technical SEO. Proven track record in optimizing site performance and discoverability to enhance user experience and drive measurable growth.
+
+TECHNICAL SKILLS
+Languages: Python, SQL
+DevOps & Infra: Supabase, Postgres, Snowflake, Power BI, Mixpanel
+Databases: Postgres, Snowflake
+Tools: Agile, Scrum, OKRs, data pipelines, requirements definition, stakeholder management, technical SEO, analytics, tracking, reporting
+
+EXPERIENCE
+Technical Project Manager at FriendsWithMeasurements.com
+Tech | Aug 2025 - Present
+- Redesigned Postgres data model to enhance catalog structure for 15K+ measurement profiles, improving user search experience.
+- Developed data ingestion pipelines to standardize apparel sizing formats, increasing data accuracy and usability.
+- Implemented measurement-based product search with optimized queries, boosting relevant search results by over 30%.
+- Designed image and metadata pipelines to enhance catalog discoverability and support measurement-based analytics.
+
+Product Manager at ALTR
+Tech | Feb 2025 - Aug 2025
+- Executed product requirements analysis for data governance platform, aligning features with enterprise security needs.
+- Developed Snowflake Native App to automate sensitive data tagging, reducing manual efforts by hours and improving compliance.
+- Created automated alerting mechanisms for security policy violations, enhancing data protection measures.
+- Collaborated with data security teams to refine product roadmap and ensure alignment with governance standards.
+
+Product Manager at Guy Carpenter
+Tech | Nov 2023 - Dec 2024
+- Drove NLP-powered workflows for contract intelligence, reducing review times from 7 days to 10 minutes, capturing $40M in deal economics.
+- Developed Power BI dashboards to visualize trends and support data-driven negotiations, enhancing decision-making processes.
+- Designed QA experiments to improve model precision and recall, optimizing contract review workflows.
+- Led agile ceremonies for a team focused on document processing, ensuring timely delivery of features.
+
+Technical Project Manager at Sirion
+Tech | May 2022 - June 2023
+- Managed project budgets and led Agile delivery of ML models, consistently achieving over 95% of sprint goals.
+- Served as primary liaison for SaaS product customers, enhancing user experience through effective document extraction.
+- Defined NLP training data requirements to improve model accuracy in interpreting financial documents.
+- Mentored junior project managers in project scoping and management best practices.
+
+PROJECTS
+Technical SEO Optimization - Enhanced website visibility
+Tech | Dates
+- Conducted comprehensive technical SEO audits, translating findings into actionable tasks for improved site health.
+- Monitored site performance metrics, identifying opportunities for growth in organic search traffic.
+- Implemented on-page SEO improvements, enhancing metadata and internal linking structures.
+
+EDUCATION
+Cornell University School of Industrial and Labor Relations | Bachelor of Science, Industrial and Labor Relations

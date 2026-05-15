@@ -1,0 +1,50 @@
+Brianna Singer
+Project Coordinator
+bsinger3@gmail.com | 916 224 9144 | https://github.com/bsinger3/ | https://linkedin.com/in/briannasinger/
+
+SUMMARY
+Experienced Project Coordinator with a strong background in Agile methodologies and cross-functional team support. Proven ability to drive project execution, facilitate Agile ceremonies, and ensure alignment between stakeholders and product teams.
+
+TECHNICAL SKILLS
+Languages: Python, SQL
+DevOps & Infra: Jira, Confluence, Power BI
+Databases: Postgres, Snowflake
+Tools: Agile, Scrum, OKRs, data pipelines, stakeholder management
+
+EXPERIENCE
+Technical Project Manager at FriendsWithMeasurements.com
+Tech | Aug 2025 - Present
+- Coordinated daily project activities and timelines, ensuring alignment across teams and timely deliverables.
+- Facilitated Agile ceremonies including daily stand-ups and sprint planning, enhancing team collaboration and focus.
+- Developed and maintained project dashboards in Jira, tracking progress and identifying risks or blockers proactively.
+- Implemented process improvements that increased team efficiency and reduced project delivery times.
+
+Product Manager at ALTR
+Tech | Feb 2025 - Aug 2025
+- Supported multiple teams by defining product requirements and aligning engineering delivery with customer needs.
+- Monitored project metrics and KPIs, providing insights that improved feature prioritization and resource allocation.
+- Collaborated with stakeholders to ensure clarity on product priorities and project timelines, enhancing communication.
+- Facilitated retrospectives and backlog grooming sessions, driving continuous improvement across the product team.
+
+Product Manager at Guy Carpenter
+Tech | Nov 2023 - Dec 2024
+- Led Agile ceremonies for a five-engineer team, successfully tracking sprint goals and enhancing team accountability.
+- Developed reporting dashboards that provided insights into project performance, supporting strategic decision-making.
+- Managed stakeholder communication, ensuring alignment on project objectives and delivery timelines.
+- Optimized workflows for contract intelligence projects, improving delivery metrics and reducing review times significantly.
+
+Technical Project Manager at Sirion
+Tech | May 2022 - June 2023
+- Managed project budgets and resources, consistently meeting or exceeding sprint goals through effective coordination.
+- Facilitated daily scrums and Agile delivery processes, ensuring smooth operations and team alignment.
+- Defined project requirements and documentation processes, capturing action items and follow-ups from meetings.
+- Mentored junior team members on Agile practices and project management skills, fostering team development.
+
+PROJECTS
+Agile Project Management Implementation - Enhanced team delivery
+Tech | 2022
+- Implemented Agile methodologies across multiple teams, improving project delivery speed and collaboration.
+- Developed training materials for Agile ceremonies, increasing team engagement and understanding of the process.
+
+EDUCATION
+Cornell University School of Industrial and Labor Relations | Bachelor of Science, Industrial and Labor Relations

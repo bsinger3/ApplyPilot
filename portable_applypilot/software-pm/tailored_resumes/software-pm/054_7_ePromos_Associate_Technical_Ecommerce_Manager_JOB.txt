@@ -1,0 +1,107 @@
+Title: Associate Technical Ecommerce Manager
+Company: ePromos
+Location: Remote, US (Remote)
+Score: 7
+URL: https://www.indeed.com/viewjob?jk=6d4d68fedec5ecaf
+Application URL: https://epromos.applytojob.com/apply/3j3j7ZSTLz/Associate-Technical-Ecommerce-Manager?source=INDE&~
+
+**About ePromos**  
+
+ePromos Promotional Products, LLC, has been a leading industry distributor in the promotional space for over 20 years! Our award\-winning website combined with our sales strategy, service capabilities and enterprise level solutions consistently set us apart.  
+
+  
+
+As a remote\-first company, ePromos embraces flexibility, collaboration, and continuous improvement. Our team is composed of passionate professionals who thrive in a fast\-paced, performance\-driven culture where ideas are valued and innovation is encouraged. Our values are strong with a deep\-rooted emphasis on giving back as part of our ePromos Cares mission.  
+
+  
+
+At ePromos, we don’t just sell products—we help build brands. Join us and be part of a company that’s redefining the promotional marketing space through strategic thinking, bold creativity, and a people\-first approach.  
+
+  
+
+**BASIC FUNCTION SUMMARY:**
+The Associate Technical Ecommerce Manager supports and optimizes the technical health, performance, and discoverability of the ecommerce ecosystem across traditional search and AI\-driven surfaces. The role owns critical technical ecommerce workstreams that improve site health, strengthen organic visibility, and enable scalable online growth. Collaborates with cross\-functional partners to lead web projects, optimize technical SEO and tracking, ensure accurate, accessible, and scalable site architecture, and drive measurable gains in traffic, conversion, and revenue.  
+
+  
+
+The following duties are not intended to serve as a comprehensive list of all duties required for this position. The job description is a summary of the major duties and responsibilities. This role may not be required to perform all duties listed and may be expected to perform additional duties as requested.
+
+**KEY RESPONSIBILITIES:**  
+
+**Technical SEO \& Site Health**
+
+* Executes Technical SEO audits and translate findings into clear, prioritized tasks that improve crawlability, indexation and ranking performance
+* Monitor site health and partner with development to resolve issues and maintain a stable experience
+* Own site architecture, including URL structure, taxonomy, internal linking, and crawl optimization
+
+**Organic Traffic \& Discoverability**
+
+* Monitor organic performance for the dot‑com site and program stores (rankings, impressions, CTR, landing page traffic) and identify opportunities to grow high‑intent search traffic.
+* Recommend and help implement on‑page and technical improvements (metadata, internal linking, schema, content structure) that strengthen visibility across traditional search and AI‑driven surfaces.
+* Responsible for blog publishing schedule, blog briefs, and coordination with contractors
+
+**Ecommerce \& Programs Web Operations**
+
+* Support day‑to‑day management of the dot‑com site and related program stores, ensuring product content, navigation, and templates follow established standards.
+* Coordinate and validate site updates, releases, and fixes, helping to maintain a consistent, high‑quality user experience across devices.
+* Ensure program stores are configured with SEO best practices and meet technical requirements
+
+**Ecommerce Project Management**
+
+* Assist with ecommerce and web projects from intake through launch, including requirements gathering, ticket creation, timeline coordination, and stakeholder communication.
+* Plan and execute QA and UAT for new features and enhancements, documenting issues and confirming successful deployment.
+
+**Analytics, Tracking \& Reporting*** Implement and maintain GA4 events, tags, and tracking configurations across ecommerce properties in partnership with analytics and media teams.
+* Build and maintain reports and dashboards that connect technical performance (SEO, site speed, tracking) to traffic, conversion, and revenue outcomes.
+
+**Accessibility \& Compliance*** Support digital accessibility efforts by helping ensure pages, templates, and components align with WCAG/ADA best practices, including headings, alt text, color contrast, and keyboard navigation.
+* Coordinate with vendors and internal teams to track, test, and document accessibility fixes, and ensure program stores and new experiences follow established accessibility and compliance standards.
+
+**Cross‑Functional Collaboration \& Standards**
+
+* Partner with Marketing, Merchandising, Operations, and IT to ensure technical SEO, tracking, ecommerce best practices and accessibility considerations are built into briefs, requirements, and campaigns.
+* Maintain documentation, SOPs, and governance for technical standards, and share best practices to support consistent execution across teams.
+
+**ESSENTIAL FUNCTIONS: Duties, Skills, Responsibilities, and Expectations:**
+
+* Translate technical SEO and tracking requirements into clear specifications, tickets, and documentation that developers and non‑technical partners can easily act on.
+* Troubleshoot issues across SEO, site performance, accessibility, product feeds, and tracking, identifying and resolving root causes rather than one‑off symptoms.
+* Ensure accuracy and consistency of tracking implementations across analytics, tag management, and media platforms, regularly validating events and data flows.
+* Maintain organized documentation, SOPs, and governance standards that support scalable, repeatable technical execution for the ecommerce ecosystem.
+* Participate in sprint planning, refinement, QA, and release processes to advocate for and enforce technical SEO, accessibility, and tracking requirements.
+* Communicate effectively with technical and non‑technical stakeholders, aligning on priorities, trade‑offs, timelines, and expected outcomes.
+* Apply strong analytical thinking to identify trends, diagnose issues, quantify impact, and recommend data‑backed actions that improve performance.
+* Demonstrate proficiency in SEO tools, analytics platforms, and tag management systems, and proactively deepen expertise as the tech stack evolves.
+* Operate with high attention to detail, ownership, and accountability, consistently looking for opportunities to optimize and improve the ecommerce experience.
+* Stay current with evolving SEO, AI search, accessibility, and ecommerce best practices, and share relevant insights and recommendations with the broader team.
+
+**MINIMUM REQUIREMENTS:*** 5\+ years of experience in ecommerce, digital marketing, or web operations, with at least 2 years focused on technical SEO, site performance, or analytics implementation.
+* Bachelor’s degree in Marketing, Business, Information Systems, or a related field, *or* equivalent combination of education and relevant work experience.
+* Hands\-on experience managing or supporting an ecommerce or CMS\-driven website (e.g., BigCommerce, Shopify, or similar), including publishing changes and validating releases.
+* Proven ability to run or support technical SEO activities such as audits, site architecture improvements, metadata optimization, and management of sitemaps, redirects, and canonical tags.
+* Experience implementing and troubleshooting website analytics and event\-based tracking using tools like GA4 and a tag management system (e.g., Google Tag Manager).
+* Demonstrated proficiency with SEO and analytics tools (e.g., Google Search Console and at least one SEO platform), using data to identify issues and propose solutions.
+* Strong analytical and problem\-solving skills, including the ability to diagnose technical issues, synthesize findings, and clearly explain recommendations to non\-technical stakeholders.
+* Clear written and verbal communication skills, with experience translating technical requirements into tickets, documentation, or project briefs others can execute.
+
+**WORKING CONDITIONS:*** Position is fully remote to the US only
+* Ability to accommodate multiple time zones with primary ET (EST/EDT)
+* Dedicated workspace and high\-speed internet
+* Frequent video conference/email/chat
+
+**PHYSICAL DEMANDS:*** Consistently operate a computer and other productivity equipment, including keyboard, webcam, and document scanner
+* Clarity of vision of 30” or less
+* Ability to perceive sound in the capacity of oral communication
+* Exertion of up to 10 lbs. of force as related to the lifting or moving of objects
+
+
+The base salary range for this role is $70,000 to $90,000 per year. Compensation for this role will vary based on factors such as qualifications, experience, skill level, and competencies. The Company will meet minimum wage or the minimum of the pay range (whichever is higher) based on city, county, and state requirements.  
+
+***We are an Equal Opportunity Employer!***  
+
+***ePromos is committed to creating a diverse workplace environment and is proud to be an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, gender, gender identity or expression, sexual orientation, national origin, genetics, disability, age, or veteran status.***We do not accept resume submissions from third party recruiters.
+
+
+
+
+3j3j7ZSTLz

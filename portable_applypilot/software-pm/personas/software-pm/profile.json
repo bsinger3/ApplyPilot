@@ -1,0 +1,112 @@
+﻿{
+    "personal":  {
+                     "full_name":  "Brianna Singer",
+                     "preferred_name":  "Brianna",
+                     "email":  "bsinger3@gmail.com",
+                     "password":  "",
+                     "phone":  "916 224 9144",
+                     "address":  "",
+                     "city":  "Newark",
+                     "province_state":  "New Jersey",
+                     "country":  "United States",
+                     "postal_code":  "07105",
+                     "linkedin_url":  "https://linkedin.com/in/briannasinger/",
+                     "github_url":  "https://github.com/bsinger3/",
+                     "portfolio_url":  "",
+                     "website_url":  ""
+                 },
+    "work_authorization":  {
+                               "legally_authorized_to_work":  "Yes",
+                               "require_sponsorship":  "No",
+                               "work_permit_type":  ""
+                           },
+    "availability":  {
+                         "earliest_start_date":  "Immediately",
+                         "available_for_full_time":  "Yes",
+                         "available_for_contract":  "Yes"
+                     },
+    "compensation":  {
+                         "salary_expectation":  "130000",
+                         "salary_currency":  "USD",
+                         "salary_range_min":  "115000",
+                         "salary_range_max":  "160000",
+                         "currency_conversion_note":  ""
+                     },
+    "experience":  {
+                       "years_of_experience_total":  "",
+                       "education_level":  "Bachelor of Science, Industrial and Labor Relations",
+                       "current_job_title":  "Product Manager",
+                       "current_company":  "FriendsWithMeasurements.com",
+                       "target_role":  "Software Project Manager"
+                   },
+    "skills_boundary":  {
+                            "languages":  [
+                                              "Python",
+                                              "SQL"
+                                          ],
+                            "frameworks":  [
+
+                                           ],
+                            "devops":  [
+                                           "Supabase",
+                                           "Postgres",
+                                           "Snowflake",
+                                           "Power BI",
+                                           "Mixpanel"
+                                       ],
+                            "databases":  [
+                                              "Postgres",
+                                              "Snowflake"
+                                          ],
+                            "tools":  [
+                                          "Agile",
+                                          "Scrum",
+                                          "OKRs",
+                                          "NLP",
+                                          "LLM workflows",
+                                          "data pipelines",
+                                          "requirements definition",
+                                          "roadmap planning",
+                                          "stakeholder management"
+                                      ]
+                        },
+    "resume_facts":  {
+                         "preserved_companies":  [
+                                                     "FriendsWithMeasurements.com",
+                                                     "ALTR",
+                                                     "Guy Carpenter",
+                                                     "Sirion",
+                                                     "Sakhi",
+                                                     "The Samaritans of New York"
+                                                 ],
+                         "preserved_projects":  [
+                                                    "FriendsWithMeasurements.com",
+                                                    "Snowflake Native App",
+                                                    "NLP-powered contract intelligence workflows",
+                                                    "HumaneHousing"
+                                                ],
+                         "preserved_school":  "Cornell University School of Industrial and Labor Relations",
+                         "real_metrics":  [
+                                              "15K+ measurement profiles",
+                                              "30%",
+                                              "80%",
+                                              "50+ TBs",
+                                              "80+ columns",
+                                              "100k property reinsurance contracts",
+                                              "7 days to approximately 10 minutes",
+                                              "$40M",
+                                              "15%",
+                                              "9%",
+                                              "five engineer team",
+                                              "$75k",
+                                              "+95% of sprint goals",
+                                              "$1500 grant"
+                                          ]
+                     },
+    "eeo_voluntary":  {
+                          "gender":  "Decline to self-identify",
+                          "race_ethnicity":  "Decline to self-identify",
+                          "veteran_status":  "Decline to self-identify",
+                          "disability_status":  "Decline to self-identify"
+                      }
+}

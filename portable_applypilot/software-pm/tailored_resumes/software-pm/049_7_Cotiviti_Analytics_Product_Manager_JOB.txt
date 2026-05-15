@@ -1,0 +1,86 @@
+Title: Analytics Product Manager
+Company: Cotiviti
+Location: Remote, US (Remote)
+Score: 7
+URL: https://www.indeed.com/viewjob?jk=cedbdf906206a9c5
+Application URL: https://careers-cotiviti.icims.com/jobs/19116/job?utm_source=indeed_integration&iis=Job%20Board&iisn=Indeed&indeed-apply-token=73a2d2b2a8d6d5c0a62696875eaebd669103652d3f0c2cd5445d3e66b1592b0f
+
+Overview:
+
+The Rule Value Analysis Analytics (RVA) Product Manager is a visionary, strategic leader responsible for guiding the evolution of the RVA insights platform, a tool that uncovers new savings opportunities for clients. This individual excels in product management best practices, inspires cross\-functional teams, and communicates effectively with all stakeholders. The RVA Product Manager is a strong collaborator and communicator, passionate about delivering measurable client value and driving innovation.
+Responsibilities:
+**Key Attributes*** Proven leader able to motivate and align teams to a common vision.
+* Excellent communicator, skilled at presenting technical and business concepts to diverse audiences.
+* Strategic thinker with a visionary mindset for platform evolution.
+* Strong collaborator, adept at building partnerships across organizations.
+* Proactive, adaptable, and solution\-oriented.
+
+**Primary Responsibilities*** Develop, maintain, and execute the product roadmap, prioritizing features and enhancements that align with business objectives and client needs.
+* Develop and own product strategy and roadmaps for Artificial Intelligence (AI), Machine Learning (ML), and Business Intelligence (BI) solutions that accelerate growth and inform strategic decisions.
+* Lead projects through the full product lifecycle, from ideation and requirements gathering to development, launch, and ongoing optimization.
+* Gather and synthesize feedback from stakeholders, translating insights into actionable improvements for the platform.
+* Partner with clients to understand needs, develop analytic solutions, and communicate insights that drive strategic decisions and maximize client value.
+* Collaborate with data scientists, data engineers, BI developers, data analysts, and business stakeholders to define requirements and deliver analytic products.
+* Advise stakeholders and end\-users on the best use of analytics to address business challenges and achieve desired outcomes.
+* Prioritize product features and enhancements to maximize business value, technical feasibility, and user needs.
+* Design and oversee product experiments and validation processes to ensure analytics solutions meet performance and accuracy benchmarks.
+* Monitor product metrics and leverage data\-driven insights to inform decisions, improve features, and enhance user experience.
+* Communicate platform status, progress, and vision to leadership and executive teams through regular presentations and reports.
+* Provide monthly updates on platform performance, enhancements, and client impact.
+* Champion intuitive user experiences by working closely with BI developers to translate analytics into actionable and easy\-to\-understand insights.
+* Evangelize data analytics products across the organization and with external clients, providing education and supporting adoption.
+* Translate data\-driven insights into thought leadership through white papers, blog posts, and conference presentations, establishing the company’s position as an industry leader.
+* Partner with upstream and downstream organizations that consume data from the RVA platform to ensure seamless integration and alignment.
+* Serve as the initial escalation point for resolving issues related to the platform, coordinating swift and effective solutions.
+* Support the rollout of new platform versions, including launch planning, change management, and user adoption activities.
+* Lead the integration of additional products into the RVA platform, collaborating with technical and business teams to expand platform value.
+* Provide strategic guidance to resources delivering adhoc analyses requested by customers; identify opportunities to productize or scale recurring adhoc requests.
+* Foster a culture of innovation, continuous improvement, and client\-centricity within the product team.
+* Stay current with emerging data analytics, machine learning, and technology trends, integrating new developments into product strategy where appropriate.
+* Ensure product documentation is accurate, accessible, and up\-to\-date for all stakeholders.
+* Monitor compliance with relevant data privacy, security, and regulatory requirements.
+* Complete all responsibilities as outlined in the annual performance review and/or goal setting.
+* Complete all special projects and other duties as assigned.
+* Must be able to perform duties with or without reasonable accommodation.
+
+
+This job description is intended to describe the general nature and level of work being performed and is not to be construed as an exhaustive list of responsibilities, duties and skills required. This job description does not constitute an employment agreement and is subject to change as the needs of Cotiviti and requirements of the job change.
+
+
+Qualifications:
+* Advanced degree in a quantitative, healthcare\-related, or business field (e.g., Computer Science, Information Systems, Analytics, Public Health, Business); or equivalent professional experience in consulting or strategic roles.
+* Minimum 6 years of experience in healthcare analytics, consulting, technology, product development, or other relevant roles, including at least 3 years developing analytic solutions/products.
+* Proven expertise advising clients or stakeholders on analytic solutions, communicating complex findings, and influencing business strategy.
+* Client\-facing experience, with strong relationship\-building and exceptional communication skills.
+* Deep knowledge of healthcare payment integrity, claims analytics, and/or provider revenue cycle management.
+* Proficiency in SQL for querying, data analysis, and understanding data structures.
+* Extensive experience implementing AI/ML and BI solutions to drive measurable business value.
+* Demonstrated ability to transform analytics and data\-driven insights into compelling narratives and market\-facing thought leadership.
+* Hands\-on experience conducting data analysis with Business Intelligence applications such as Tableau, MicroStrategy, Looker, Domo, etc.; technical certifications in BI tools are a plus.
+* Product management expertise, including developing roadmaps, stakeholder management, and applying agile methodologies in cross\-functional product teams; agile and/or product management certification required.
+* Experience translating voice of customer feedback into user personas and user stories; UI/UX design skills a plus.
+* Highly proficient in Microsoft Office Suite (PowerPoint, Excel, Word) and JIRA to support product development and communication processes.
+* Familiarity with AI concepts and integration approaches relevant to analytics platforms (e.g., natural language processing, predictive analytics, automated insights).
+* Strong leadership, visionary mindset, and ability to drive innovation in a fast\-paced environment.
+* Excellent written and verbal communication skills, with the ability to present technical and business concepts to diverse audiences.
+
+**Mental Requirements:*** Ability to analyze complex data sets and identify patterns and insights.
+* Ability to solve problems and address stakeholder needs effectively.
+* Ability to think strategically and align product development with business goals.
+* Ability to communicate and collaborate effectively with diverse teams.
+
+**Working Conditions and Physical Requirements:*** Remaining in a stationary position, often standing or sitting for prolonged periods.
+* Repeating motions that may include the wrists, hands, and/or fingers.
+* Must be able to provide a dedicated, secure work area.
+* Must be able to provide high\-speed internet access/connectivity and office setup and maintenance.
+
+
+Base compensation ranges from $120,000 to $151,000 per year. Specific offers are determined by various factors, such as experience, education, skills, certifications, and other business needs.  
+
+Cotiviti offers team members a competitive benefits package to address a wide range of personal and family needs, including medical, dental, vision, disability, and life insurance coverage, 401(k) savings plans, paid family leave, 9 paid holidays per year, and 17\-27 days of Paid Time Off (PTO) per year, depending on specific level and length of service with Cotiviti. For information about our benefits package, please refer to our Careers page.  
+
+Date of posting: 5/11/2026
+Applications are assessed on a rolling basis. We anticipate that the application window will close on 7/11/2026, but the application window may change depending on the volume of applications received or close immediately if a qualified candidate is selected.
+\#LI\-JB1
+\#LI\-Remote
+\#senior

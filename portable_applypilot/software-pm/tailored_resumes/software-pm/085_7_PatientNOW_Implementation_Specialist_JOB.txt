@@ -1,0 +1,82 @@
+Title: Implementation Specialist
+Company: PatientNOW
+Location: Remote, US (Remote)
+Score: 7
+URL: https://www.indeed.com/viewjob?jk=042e4321654956ea
+Application URL: https://ats.rippling.com/patientnow/jobs/71475feb-3a88-4cf0-a1ff-b92c637696bb?jobSite=Indeed
+
+**Company Overview:**
+
+
+Designed for beauty, built for growth, PatientNow brings clinical\-grade EMR with intuitive charting, smart AI automation, advanced photography, marketing, patient engagement, and seamless practice management into one elegant system. Everything works together naturally, helping clients create a smooth, intentional patient experience from consultation to checkout. Supported by a U.S.\-based team that understands the pace and artistry of aesthetics, PatientNow provides the technology and partnership to scale with confidence.
+
+ **Vision**: Empowering practices and businesses to improve health and wellness worldwide by helping their clients look and feel their best.
+
+ **Mission**: PatientNow is elevating businesses focused on beauty, wellness and medical aesthetics with innovative, all\-in\-one software and consulting service solutions. People who partner with us stand out in the industry with strong market differentiation, while streamlining operations for long term success and sustainable growth.
+
+ **Values**:
+
+* **Show up** – being present and supportive: for each other through collaboration and respect, for our customers with exceptional service, and for the business with dedication to excellence and growth.
+* **Own the outcome** – By understanding the objective, exceeding expectations with pride, confirming resolution, communicating early and often, and continuously learning and improving
+* **Be Authentic** – By sharing thoughts and opinions, keeping promises, showing your true self, and engaging with respect
+
+ **Position Summary:**
+
+
+The Implementation Specialist is responsible for delivering a seamless, high\-quality onboarding experience for new PatientNow customers. This role owns the critical first phase of the customer journey, ensuring each client is successfully configured, trained, and prepared to adopt the platform with confidence.
+
+
+This position combines project management, software configuration, and customer training. You will guide customers through change, help them transition from legacy workflows, and ensure they realize value quickly. Success in this role means delivering efficient, well\-organized implementations while creating a strong first impression that builds long\-term trust.
+
+ **Essential Duties and Responsibilities:**
+
+* Own the end\-to\-end onboarding experience for new customers, from kickoff through successful go\-live
+* Configure and customize the PatientNow platform to align with each customer’s workflows and business needs
+* Manage onboarding timelines, milestones, and deliverables to ensure efficient and on\-time implementations
+* Deliver clear, engaging training sessions tailored to different user roles, learning styles, and levels of technical proficiency
+* Guide customers through change management, helping them adopt new processes and workflows with confidence
+* Identify risks to onboarding success early and proactively drive solutions
+* Provide consultative recommendations to help customers optimize their use of the platform
+* Communicate technical concepts in a user\-friendly, professional manner
+* Maintain accurate documentation of onboarding progress, configurations, and customer interactions
+* Stay current on new features, product updates, and industry trends to continuously improve onboarding outcomes
+
+ **Competencies:** To perform the job successfully, an individual should demonstrate the following.
+
+* **Adaptability** \- Demonstrates persistence and overcomes obstacles. Measures self against standard of excellence. Recognizes and acts on opportunities. Sets and achieves challenging goals. Takes calculated risks to accomplish goals.
+* **Business Ethics** – Inspires the trust of others. Keeps commitments. Treats people with respect. Upholds organizational values. Works with integrity and ethically.
+* **Communications** \- Exhibits good listening and comprehension. Expresses ideas and thoughts in written form. Expresses ideas and thoughts verbally. Keeps others adequately informed. Selects and uses appropriate communication methods.
+* **Continuous Learning** \- Assesses own strengths and weaknesses. Pursues training and development opportunities. Seeks feedback to improve performance. Shares expertise with others. Strives to continuously build knowledge and skills.
+* **Problem Solving** \- Develops alternative solutions. Gathers and analyzes information skillfully. Identifies problems in a timely manner. Resolves problems in early stages. Works well in group problem solving situations.
+* **Teamwork** \- Balances team and individual responsibilities. Contributes to building a positive team spirit. Exhibits objectivity and openness to others' views. Gives and welcomes feedback. Puts success of team above own interests.
+
+ **Education/Experience:**
+
+* 2\+ years of experience in implementation, onboarding, or training roles, preferably in SaaS
+* Strong project management skills with the ability to manage multiple implementations simultaneously
+* Demonstrated ability to learn new software quickly and effectively
+* Ability to communicate technical concepts clearly to non\-technical audiences
+* Strong organizational skills and attention to detail
+* Experience working with CRM, EMR, or practice management software preferred
+* Familiarity with Salesforce, GuideCX, or similar systems is a plus
+* Customer\-focused mindset with the ability to manage different personalities and learning styles
+
+ **Why You’ll Thrive Here:**
+
+
+In this role, you’ll get to:
+
+* Work at the intersection of innovation and impact, helping real\-world practices grow and thrive in a rapidly expanding market;
+* Collaborate with a talented, curious team that values experimentation, learning, and customer empathy;
+* Be empowered to lead with autonomy while supported by strong leadership and product discipline; and
+* Help modernize aesthetics software in an industry that’s ripe for transformation through innovative, AI\-native technology.
+
+ **Supervisory Responsibilities:** This position does not include any supervisory responsibilities.
+
+ *The above job description is not intended to be an all\-inclusive list of duties and standards of the position. Incumbents will follow any other instructions, and perform any other related duties, as assigned by their supervisor.*
+
+ **Note:** PatientNow jobs are listed on our careers page patientnow.com/careers and select job boards. We will never ask for payment or sensitive info. Official emails come from **@patientnow.com, @recura.ai** or **mail@ats.rippling.com**
+
+ **The pay range for this role is:**  
+
+60,000 \- 72,000 USD per year(Remote (United States))
