@@ -1,0 +1,16 @@
+{
+  "attempts": 2,
+  "validator": {
+    "passed": true,
+    "errors": [],
+    "warnings": []
+  },
+  "judge": {
+    "passed": true,
+    "verdict": "PASS",
+    "issues": "none",
+    "raw": "VERDICT: PASS  \nISSUES: none"
+  },
+  "status": "approved",
+  "validation_mode": "normal"
+}

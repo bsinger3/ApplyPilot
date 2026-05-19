@@ -13,6 +13,7 @@ import json
 import logging
 import re
 import time
+from difflib import SequenceMatcher
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -34,6 +35,128 @@ MAX_ATTEMPTS = 5  # max cross-run retries before giving up
 
 # ── Prompt Builders (profile-driven) ──────────────────────────────────────
 
+def _skill_category_label(category: str) -> str:
+    """Format profile skill category keys for resume output."""
+    labels = {
+        "devops": "DevOps & Infra",
+    }
+    return labels.get(category, category.replace("_", " ").title())
+
+
+def _normalize_match_text(text: str) -> str:
+    """Normalize text for skill matching."""
+    text = text.lower()
+    text = text.replace("&", " and ")
+    text = text.replace("+", " plus ")
+    text = re.sub(r"[^a-z0-9]+", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def _split_skill_values(value: object) -> list[str]:
+    """Parse an LLM skills field into individual skill strings."""
+    if isinstance(value, list):
+        return [str(v).strip() for v in value if str(v).strip()]
+    if not isinstance(value, str):
+        return []
+    parts = re.split(r"[,;|]\s*", value)
+    return [p.strip() for p in parts if p.strip()]
+
+
+def _skill_matches_job(skill: str, job_text: str) -> bool:
+    """Return whether a profile skill is mentioned in the job description."""
+    skill_norm = _normalize_match_text(skill)
+    job_norm = _normalize_match_text(job_text)
+    if not skill_norm or not job_norm:
+        return False
+
+    if f" {skill_norm} " in f" {job_norm} ":
+        return True
+
+    raw_parts = re.split(r"[/()]", skill)
+    for part in raw_parts:
+        part_norm = _normalize_match_text(part)
+        if len(part_norm) >= 2 and f" {part_norm} " in f" {job_norm} ":
+            return True
+
+    skill_tokens = skill_norm.split()
+    job_tokens = job_norm.split()
+    if not skill_tokens or len(skill_tokens) > len(job_tokens):
+        return False
+    if len(skill_tokens) <= 3 and all(token in job_tokens for token in skill_tokens):
+        return True
+
+    window_sizes = {len(skill_tokens)}
+    if len(skill_tokens) > 1:
+        window_sizes.update({len(skill_tokens) - 1, len(skill_tokens) + 1})
+    for size in sorted(s for s in window_sizes if s > 0):
+        if size > len(job_tokens):
+            continue
+        for i in range(0, len(job_tokens) - size + 1):
+            candidate = " ".join(job_tokens[i:i + size])
+            if SequenceMatcher(None, skill_norm, candidate).ratio() >= 0.86:
+                return True
+    return False
+
+
+def _profile_skill_lookup(profile: dict) -> tuple[dict[str, str], dict[str, list[str]]]:
+    """Return normalized skill lookup and category mapping from profile."""
+    boundary = profile.get("skills_boundary", {})
+    lookup: dict[str, str] = {}
+    by_category: dict[str, list[str]] = {}
+    for category, skills in boundary.items():
+        if not isinstance(skills, list):
+            continue
+        label = _skill_category_label(category)
+        by_category[label] = [str(skill).strip() for skill in skills if str(skill).strip()]
+        for skill in by_category[label]:
+            lookup[_normalize_match_text(skill)] = skill
+    return lookup, by_category
+
+
+def _matched_profile_skills(profile: dict, job_text: str) -> dict[str, list[str]]:
+    """Deterministically select profile skills mentioned in the job description."""
+    _, by_category = _profile_skill_lookup(profile)
+    matched: dict[str, list[str]] = {}
+    for category, skills in by_category.items():
+        hits = [skill for skill in skills if _skill_matches_job(skill, job_text)]
+        if hits:
+            matched[category] = hits
+    return matched
+
+
+def _merge_resume_skills(data: dict, profile: dict, job_text: str) -> dict[str, list[str]]:
+    """Merge deterministic JD skill hits with non-hallucinated LLM skills."""
+    lookup, by_category = _profile_skill_lookup(profile)
+    deterministic = _matched_profile_skills(profile, job_text)
+    merged: dict[str, list[str]] = {
+        category: list(skills) for category, skills in deterministic.items()
+    }
+
+    llm_skills = data.get("skills", {})
+    if isinstance(llm_skills, dict):
+        category_lookup = {
+            _normalize_match_text(category): category
+            for category in by_category
+        }
+        for category, values in llm_skills.items():
+            canonical_category = category_lookup.get(_normalize_match_text(str(category)))
+            if not canonical_category:
+                continue
+            for skill in _split_skill_values(values):
+                allowed = lookup.get(_normalize_match_text(skill))
+                if not allowed:
+                    continue
+                merged.setdefault(canonical_category, [])
+                if allowed not in merged[canonical_category]:
+                    merged[canonical_category].append(allowed)
+
+    return {
+        category: merged[category]
+        for category in by_category
+        if merged.get(category)
+    }
+
+
 def _build_tailor_prompt(profile: dict) -> str:
     """Build the resume tailoring system prompt from the user's profile.
 
@@ -54,11 +177,16 @@ def _build_tailor_prompt(profile: dict) -> str:
     # Preserved entities
     companies = resume_facts.get("preserved_companies", [])
     projects = resume_facts.get("preserved_projects", [])
+    project_details = resume_facts.get("project_details", [])
     school = resume_facts.get("preserved_school", "")
     real_metrics = resume_facts.get("real_metrics", [])
 
     companies_str = ", ".join(companies) if companies else "N/A"
     projects_str = ", ".join(projects) if projects else "N/A"
+    project_details_str = (
+        json.dumps(project_details, indent=2, ensure_ascii=False)
+        if project_details else "N/A"
+    )
     metrics_str = ", ".join(real_metrics) if real_metrics else "N/A"
 
     # Include ALL banned words from the validator so the LLM knows exactly
@@ -81,6 +209,11 @@ Take the base resume and job description. Return a tailored resume as a JSON obj
 ## SKILLS BOUNDARY (real skills only):
 {skills_block}
 
+## PROJECT FACTS (only use these projects):
+Project names to preserve: {projects_str}
+Project details:
+{project_details_str}
+
 You MAY add 2-3 closely related tools (Kubernetes if Docker, Terraform if AWS, Redis if PostgreSQL). No unrelated languages/frameworks.
 
 ## TAILORING RULES:
@@ -89,11 +222,11 @@ TITLE: Match the target role. Keep seniority (Senior/Lead/Staff). Drop company s
 
 SUMMARY: Rewrite from scratch. Lead with the 1-2 skills that matter most for THIS role. Sound like someone who's done this job.
 
-SKILLS: Reorder each category so the job's must-haves appear first.
+SKILLS: Reorder each category so the job's must-haves appear first. Only use skills from SKILLS BOUNDARY; do not invent or infer skills outside that list.
 
 Reframe EVERY bullet for this role. Same real work, different angle. Every bullet must be reworded. Never copy verbatim.
 
-PROJECTS: Reorder by relevance. Drop irrelevant projects entirely.
+PROJECTS: Use only projects from PROJECT FACTS. Reorder by relevance. Drop irrelevant projects entirely. Do not invent project names, subtitles, metrics, users, technologies, or outcomes.
 
 BULLETS: Strong verb + what you built + quantified impact. Vary verbs (Built, Designed, Implemented, Reduced, Automated, Deployed, Operated, Optimized). Most relevant first. Max 4 per section.
 
@@ -220,6 +353,78 @@ def extract_json(raw: str) -> dict:
 
 # ── Resume Assembly (profile-driven header) ──────────────────────────────
 
+def _build_profile_project_entries(profile: dict) -> list[dict]:
+    """Return deterministic project entries from profile resume facts."""
+    resume_facts = profile.get("resume_facts", {})
+    project_details = resume_facts.get("project_details", [])
+    if not isinstance(project_details, list):
+        return []
+
+    entries: list[dict] = []
+    for project in project_details:
+        if not isinstance(project, dict) or not project.get("name"):
+            continue
+        bullets = project.get("bullets", [])
+        entries.append({
+            "header": str(project["name"]),
+            "subtitle": str(project.get("subtitle", "")),
+            "bullets": [str(b) for b in bullets if isinstance(b, str)],
+        })
+    return entries
+
+
+def _experience_location_map() -> dict[str, str]:
+    """Known locations for deterministic experience headings."""
+    return {
+        "FriendsWithMeasurements.com": "Newark, New Jersey",
+        "ALTR": "Melbourne, Florida",
+        "Guy Carpenter": "New York, New York",
+        "Sirion": "New York, New York",
+        "Sakhi": "New York, New York",
+        "The Samaritans of New York": "New York, New York",
+    }
+
+
+def _normalize_experience_subtitle(header: str, subtitle: str) -> str:
+    """Replace placeholder experience locations with known company locations."""
+    subtitle = sanitize_text(subtitle)
+    for company, location in _experience_location_map().items():
+        if company.lower() in header.lower() and subtitle.lower().startswith("tech |"):
+            return subtitle.replace("Tech", location, 1)
+    return subtitle
+
+
+def _format_experience_heading(header: str, subtitle: str, target_title: str = "") -> str:
+    """Render role, company, location, and dates on one deterministic line."""
+    header = sanitize_text(header)
+    subtitle = _normalize_experience_subtitle(header, subtitle)
+    if not subtitle:
+        return header
+
+    location = ""
+    dates = subtitle
+    if "|" in subtitle:
+        location, dates = [part.strip() for part in subtitle.split("|", 1)]
+
+    role = header
+    company = ""
+    if " at " in header:
+        role, company = [part.strip() for part in header.split(" at ", 1)]
+    if company == "FriendsWithMeasurements.com" and target_title:
+        role = sanitize_text(target_title)
+
+    parts = [role]
+    if company:
+        parts.append(company)
+    if location and dates:
+        parts.append(f"{location} {dates}")
+    elif location:
+        parts.append(location)
+    elif dates:
+        parts.append(dates)
+    return ", ".join(part for part in parts if part)
+
+
 def assemble_resume_text(data: dict, profile: dict) -> str:
     """Convert JSON resume data to formatted plain text.
 
@@ -235,14 +440,6 @@ def assemble_resume_text(data: dict, profile: dict) -> str:
     """
     personal = profile.get("personal", {})
     lines: list[str] = []
-    experience_locations = {
-        "FriendsWithMeasurements.com": "Newark, New Jersey",
-        "ALTR": "Melbourne, Florida",
-        "Guy Carpenter": "New York, New York",
-        "Sirion": "New York, New York",
-        "Sakhi": "New York, New York",
-        "The Samaritans of New York": "New York, New York",
-    }
 
     # Header -- always code-injected from profile
     lines.append(personal.get("full_name", ""))
@@ -275,28 +472,30 @@ def assemble_resume_text(data: dict, profile: dict) -> str:
     lines.append("TECHNICAL SKILLS")
     if isinstance(data["skills"], dict):
         for cat, val in data["skills"].items():
-            lines.append(f"{cat}: {sanitize_text(str(val))}")
+            if isinstance(val, list):
+                skill_text = ", ".join(sanitize_text(str(skill)) for skill in val)
+            else:
+                skill_text = sanitize_text(str(val))
+            lines.append(f"{cat}: {skill_text}")
     lines.append("")
 
     # Experience
     lines.append("EXPERIENCE")
     for entry in data.get("experience", []):
-        header = sanitize_text(entry.get("header", ""))
-        lines.append(header)
-        subtitle = sanitize_text(entry.get("subtitle", ""))
-        for company, location in experience_locations.items():
-            if company.lower() in header.lower() and subtitle.lower().startswith("tech |"):
-                subtitle = subtitle.replace("Tech", location, 1)
-                break
-        if subtitle:
-            lines.append(subtitle)
+        heading = _format_experience_heading(
+            entry.get("header", ""),
+            entry.get("subtitle", ""),
+            data.get("title", ""),
+        )
+        lines.append(heading)
         for b in entry.get("bullets", []):
             lines.append(f"- {sanitize_text(b)}")
         lines.append("")
 
     # Projects
     lines.append("PROJECTS")
-    for entry in data.get("projects", []):
+    project_entries = _build_profile_project_entries(profile) or data.get("projects", [])
+    for entry in project_entries:
         lines.append(sanitize_text(entry.get("header", "")))
         if entry.get("subtitle"):
             lines.append(sanitize_text(entry["subtitle"]))
@@ -422,6 +621,11 @@ def tailor_resume(
         except ValueError:
             avoid_notes.append("Output was not valid JSON. Return ONLY a JSON object, nothing else.")
             continue
+
+        profile_projects = _build_profile_project_entries(profile)
+        if profile_projects:
+            data["projects"] = profile_projects
+        data["skills"] = _merge_resume_skills(data, profile, job_text)
 
         # Layer 1: Validate JSON fields
         validation = validate_json_fields(data, profile, mode=validation_mode)

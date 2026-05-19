@@ -148,6 +148,24 @@ def parse_entries(text: str) -> list[dict]:
 
 # ── HTML Template ────────────────────────────────────────────────────────
 
+def format_experience_heading(title: str, subtitle: str = "") -> str:
+    """Render experience heading with role emphasized and details inline."""
+    heading = title
+    if subtitle:
+        heading = f"{title}, {subtitle}"
+
+    if "," not in heading:
+        return f'<div class="entry-title">{heading}</div>'
+
+    role, details = heading.split(",", 1)
+    return (
+        '<div class="entry-heading">'
+        f'<span class="entry-title-inline">{role.strip()}</span>'
+        f'<span class="entry-detail">, {details.strip()}</span>'
+        '</div>'
+    )
+
+
 def build_html(resume: dict) -> str:
     """Build professional resume HTML from parsed data.
 
@@ -175,8 +193,8 @@ def build_html(resume: dict) -> str:
         items = ""
         for e in entries:
             bullets = "".join(f"<li>{b}</li>" for b in e["bullets"])
-            subtitle = f'<div class="entry-subtitle">{e["subtitle"]}</div>' if e["subtitle"] else ""
-            items += f'<div class="entry"><div class="entry-title">{e["title"]}</div>{subtitle}<ul>{bullets}</ul></div>'
+            heading = format_experience_heading(e["title"], e["subtitle"])
+            items += f'<div class="entry">{heading}<ul>{bullets}</ul></div>'
         exp_html = f'<div class="section"><div class="section-title">Experience</div>{items}</div>'
 
     # Projects
@@ -294,6 +312,19 @@ body {{
     font-weight: 600;
     font-size: 10pt;
     color: #1a3a5c;
+}}
+.entry-heading {{
+    margin-bottom: 1px;
+}}
+.entry-title-inline {{
+    font-weight: 600;
+    font-size: 10pt;
+    color: #1a3a5c;
+}}
+.entry-detail {{
+    font-size: 9pt;
+    color: #4a7a9b;
+    font-style: italic;
 }}
 .entry-subtitle {{
     font-size: 9pt;
