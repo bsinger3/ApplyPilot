@@ -146,26 +146,19 @@
       "FriendsWithMeasurements.com",
       "ALTR",
       "Guy Carpenter",
-      "Sirion",
-      "Sakhi",
-      "The Samaritans of New York"
+      "Sirion"
     ],
     "project_details": [
       {
         "name": "Sakhi Domestic Violence Hotline Caller Intake System",
-        "subtitle": "workflow automation, nonprofit operations, crisis response coordination",
         "bullets": [
-          "Designed and implemented a hotline caller intake system that captured caller information and routed cases to the appropriate advocates based on volunteer shift coverage, follow-up workflows, and support needs.",
-          "Built coordination workflows that streamlined communication between hotline volunteers and advocacy staff during active support cases.",
-          "Provided crisis support for Sakhi’s domestic violence hotline and coordinated with New York City’s homeless shelter network for emergency placements, requiring strong communication skills, empathy, and discretion in high-stress situations."
+          "Built a hotline caller intake and advocate routing system for Sakhi while also providing crisis support and coordinating emergency shelter placements."
         ]
       },
       {
         "name": "HumaneHousing | First Place Winner, Columbia University Women in Tech Hackathon",
-        "subtitle": "social impact, housing access, hackathon prototype",
         "bullets": [
-          "Co-created a prototype platform that helped recently incarcerated individuals apply for housing resources across New York State.",
-          "Won first place at the Columbia University Women in Tech Hackathon and secured a $1,500 grant to support further development of the project."
+          "Co-created HumaneHousing, a prototype platform that helped recently incarcerated individuals apply for housing resources across New York State, winning first place at the Columbia University Women in Tech Hackathon and securing a $1,500 grant."
         ]
       }
     ],
