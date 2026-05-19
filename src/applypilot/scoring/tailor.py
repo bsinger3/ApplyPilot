@@ -49,6 +49,8 @@ def _normalize_match_text(text: str) -> str:
     text = text.replace("&", " and ")
     text = text.replace("+", " plus ")
     text = re.sub(r"[^a-z0-9]+", " ", text)
+    text = re.sub(r"\broadmaps?\b", "roadmap", text)
+    text = re.sub(r"\broadmapping\b", "roadmap", text)
     return re.sub(r"\s+", " ", text).strip()
 
 
@@ -82,6 +84,8 @@ def _skill_matches_job(skill: str, job_text: str) -> bool:
     job_tokens = job_norm.split()
     if not skill_tokens or len(skill_tokens) > len(job_tokens):
         return False
+    if "roadmap" in skill_tokens and "roadmap" in job_tokens:
+        return True
     if len(skill_tokens) <= 3 and all(token in job_tokens for token in skill_tokens):
         return True
 
@@ -394,6 +398,16 @@ def _normalize_experience_subtitle(header: str, subtitle: str) -> str:
     return subtitle
 
 
+def _clean_role_title(title: str) -> str:
+    """Remove team/product qualifiers from a JD title for resume role labels."""
+    title = sanitize_text(title).strip()
+    for separator in (" - ", " | ", ": "):
+        if separator in title:
+            title = title.split(separator, 1)[0].strip()
+            break
+    return title or "Product Manager"
+
+
 def _format_experience_heading(header: str, subtitle: str, target_title: str = "") -> str:
     """Render role, company, location, and dates on one deterministic line."""
     header = sanitize_text(header)
@@ -408,10 +422,36 @@ def _format_experience_heading(header: str, subtitle: str, target_title: str = "
 
     role = header
     company = ""
-    if " at " in header:
+    known_locations = _experience_location_map()
+    for known_company in known_locations:
+        match = re.search(re.escape(known_company), header, re.IGNORECASE)
+        if match:
+            company = known_company
+            role = header[:match.start()].strip(" ,-")
+            role = re.sub(r"\s+at$", "", role, flags=re.IGNORECASE).strip(" ,-")
+            break
+
+    if not company and " at " in header:
         role, company = [part.strip() for part in header.split(" at ", 1)]
+
+    if not company:
+        for known_company in known_locations:
+            if known_company.lower() in subtitle.lower():
+                company = known_company
+                if location.lower() == known_company.lower():
+                    location = ""
+                break
+
+    if company and not location:
+        location = known_locations.get(company, "")
+    elif company and company.lower() in location.lower():
+        location = re.sub(re.escape(company), "", location, flags=re.IGNORECASE)
+        location = location.strip(" ,-")
+        if not location:
+            location = known_locations.get(company, "")
+
     if company == "FriendsWithMeasurements.com" and target_title:
-        role = sanitize_text(target_title)
+        role = _clean_role_title(target_title)
 
     parts = [role]
     if company:
@@ -425,7 +465,7 @@ def _format_experience_heading(header: str, subtitle: str, target_title: str = "
     return ", ".join(part for part in parts if part)
 
 
-def assemble_resume_text(data: dict, profile: dict) -> str:
+def assemble_resume_text(data: dict, profile: dict, target_job_title: str = "") -> str:
     """Convert JSON resume data to formatted plain text.
 
     Header (name, location, contact) is ALWAYS code-injected from the profile,
@@ -443,7 +483,7 @@ def assemble_resume_text(data: dict, profile: dict) -> str:
 
     # Header -- always code-injected from profile
     lines.append(personal.get("full_name", ""))
-    lines.append(sanitize_text(data.get("title", "Software Engineer")))
+    lines.append(_clean_role_title(data.get("title", "Software Engineer")))
 
     # Location from search config or profile -- leave blank if not available
     # The location line is optional; the original used a hardcoded city.
@@ -485,7 +525,7 @@ def assemble_resume_text(data: dict, profile: dict) -> str:
         heading = _format_experience_heading(
             entry.get("header", ""),
             entry.get("subtitle", ""),
-            data.get("title", ""),
+            target_job_title or data.get("title", ""),
         )
         lines.append(heading)
         for b in entry.get("bullets", []):
@@ -508,6 +548,23 @@ def assemble_resume_text(data: dict, profile: dict) -> str:
     lines.append(sanitize_text(str(data.get("education", ""))))
 
     return "\n".join(lines)
+
+
+def _safe_filename_part(value: object, max_len: int = 80) -> str:
+    """Return a Windows-safe filename segment while preserving readable spaces."""
+    text = sanitize_text(str(value or "")).strip()
+    text = re.sub(r'[<>:"/\\|?*]', "", text)
+    text = re.sub(r"\s+", " ", text)
+    text = text.strip(" .")
+    return text[:max_len].strip(" .") or "resume"
+
+
+def _resume_filename_prefix(profile: dict, job: dict) -> str:
+    """Build the tailored resume filename base."""
+    full_name = profile.get("personal", {}).get("full_name") or "Brianna Singer"
+    name = _safe_filename_part(full_name, max_len=60)
+    title = _safe_filename_part(job.get("title"), max_len=90)
+    return f"{name}_resume_{title}"
 
 
 # ── LLM Judge ────────────────────────────────────────────────────────────
@@ -637,12 +694,12 @@ def tailor_resume(
             if attempt < max_retries:
                 continue
             # Last attempt — assemble whatever we got
-            tailored = assemble_resume_text(data, profile)
+            tailored = assemble_resume_text(data, profile, job.get("title", ""))
             report["status"] = "failed_validation"
             return tailored, report
 
         # Assemble text (header injected by code, em dashes auto-fixed)
-        tailored = assemble_resume_text(data, profile)
+        tailored = assemble_resume_text(data, profile, job.get("title", ""))
 
         # Layer 2: LLM judge (catches subtle fabrication) — skipped in lenient mode
         if validation_mode == "lenient":
@@ -720,9 +777,7 @@ def run_tailoring(min_score: int = 7, limit: int = 20,
                                              validation_mode=validation_mode)
 
             # Build safe filename prefix
-            safe_title = re.sub(r"[^\w\s-]", "", job["title"])[:50].strip().replace(" ", "_")
-            safe_site = re.sub(r"[^\w\s-]", "", job["site"])[:20].strip().replace(" ", "_")
-            prefix = f"{safe_site}_{safe_title}"
+            prefix = _resume_filename_prefix(profile, job)
 
             # Save tailored resume text
             txt_path = out_dir / f"{prefix}.txt"
