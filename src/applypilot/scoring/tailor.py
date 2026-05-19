@@ -114,7 +114,7 @@ BULLETS: Strong verb + what you built + quantified impact. Vary verbs (Built, De
 
 ## OUTPUT: Return ONLY valid JSON. No markdown fences. No commentary. No "here is" preamble.
 
-{{"title":"Role Title","summary":"2-3 tailored sentences.","skills":{{"Languages":"...","Frameworks":"...","DevOps & Infra":"...","Databases":"...","Tools":"..."}},"experience":[{{"header":"Title at Company","subtitle":"Tech | Dates","bullets":["bullet 1","bullet 2","bullet 3","bullet 4"]}}],"projects":[{{"header":"Project Name - Description","subtitle":"Tech | Dates","bullets":["bullet 1","bullet 2"]}}],"education":"{school} | {education_level}"}}"""
+{{"title":"Role Title","summary":"2-3 tailored sentences.","skills":{{"Languages":"...","Frameworks":"...","DevOps & Infra":"...","Databases":"...","Tools":"..."}},"experience":[{{"header":"Title at Company","subtitle":"Location | Dates","bullets":["bullet 1","bullet 2","bullet 3","bullet 4"]}}],"projects":[{{"header":"Project Name - Description","subtitle":"Location | Dates","bullets":["bullet 1","bullet 2"]}}],"education":"{school} | {education_level}"}}"""
 
 
 def _build_judge_prompt(profile: dict) -> str:
@@ -235,6 +235,14 @@ def assemble_resume_text(data: dict, profile: dict) -> str:
     """
     personal = profile.get("personal", {})
     lines: list[str] = []
+    experience_locations = {
+        "FriendsWithMeasurements.com": "Newark, New Jersey",
+        "ALTR": "Melbourne, Florida",
+        "Guy Carpenter": "New York, New York",
+        "Sirion": "New York, New York",
+        "Sakhi": "New York, New York",
+        "The Samaritans of New York": "New York, New York",
+    }
 
     # Header -- always code-injected from profile
     lines.append(personal.get("full_name", ""))
@@ -273,9 +281,15 @@ def assemble_resume_text(data: dict, profile: dict) -> str:
     # Experience
     lines.append("EXPERIENCE")
     for entry in data.get("experience", []):
-        lines.append(sanitize_text(entry.get("header", "")))
-        if entry.get("subtitle"):
-            lines.append(sanitize_text(entry["subtitle"]))
+        header = sanitize_text(entry.get("header", ""))
+        lines.append(header)
+        subtitle = sanitize_text(entry.get("subtitle", ""))
+        for company, location in experience_locations.items():
+            if company.lower() in header.lower() and subtitle.lower().startswith("tech |"):
+                subtitle = subtitle.replace("Tech", location, 1)
+                break
+        if subtitle:
+            lines.append(subtitle)
         for b in entry.get("bullets", []):
             lines.append(f"- {sanitize_text(b)}")
         lines.append("")

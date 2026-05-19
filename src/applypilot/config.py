@@ -185,7 +185,16 @@ def load_profile(persona: str | dict | PersonaPaths | None = None) -> dict:
         raise FileNotFoundError(
             f"Profile not found at {paths.profile_path}. Run `applypilot init` or create the persona first."
         )
-    return json.loads(paths.profile_path.read_text(encoding="utf-8-sig"))
+    profile = json.loads(paths.profile_path.read_text(encoding="utf-8-sig"))
+    personal = profile.setdefault("personal", {})
+    if not personal.get("password"):
+        password = os.environ.get("APPLYPILOT_PROFILE_PASSWORD", "")
+        local_password_path = paths.profile_path.with_name("profile.password.local.txt")
+        if not password and local_password_path.exists():
+            password = local_password_path.read_text(encoding="utf-8-sig").strip()
+        if password:
+            personal["password"] = password
+    return profile
 
 
 def load_search_config(persona: str | dict | PersonaPaths | None = None) -> dict:

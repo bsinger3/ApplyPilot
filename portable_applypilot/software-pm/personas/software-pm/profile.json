@@ -1,112 +1,186 @@
 ﻿{
-    "personal":  {
-                     "full_name":  "Brianna Singer",
-                     "preferred_name":  "Brianna",
-                     "email":  "bsinger3@gmail.com",
-                     "password":  "",
-                     "phone":  "916 224 9144",
-                     "address":  "",
-                     "city":  "Newark",
-                     "province_state":  "New Jersey",
-                     "country":  "United States",
-                     "postal_code":  "07105",
-                     "linkedin_url":  "https://linkedin.com/in/briannasinger/",
-                     "github_url":  "https://github.com/bsinger3/",
-                     "portfolio_url":  "",
-                     "website_url":  ""
-                 },
-    "work_authorization":  {
-                               "legally_authorized_to_work":  "Yes",
-                               "require_sponsorship":  "No",
-                               "work_permit_type":  ""
-                           },
-    "availability":  {
-                         "earliest_start_date":  "Immediately",
-                         "available_for_full_time":  "Yes",
-                         "available_for_contract":  "Yes"
-                     },
-    "compensation":  {
-                         "salary_expectation":  "130000",
-                         "salary_currency":  "USD",
-                         "salary_range_min":  "115000",
-                         "salary_range_max":  "160000",
-                         "currency_conversion_note":  ""
-                     },
-    "experience":  {
-                       "years_of_experience_total":  "",
-                       "education_level":  "Bachelor of Science, Industrial and Labor Relations",
-                       "current_job_title":  "Product Manager",
-                       "current_company":  "FriendsWithMeasurements.com",
-                       "target_role":  "Software Project Manager"
-                   },
-    "skills_boundary":  {
-                            "languages":  [
-                                              "Python",
-                                              "SQL"
-                                          ],
-                            "frameworks":  [
-
-                                           ],
-                            "devops":  [
-                                           "Supabase",
-                                           "Postgres",
-                                           "Snowflake",
-                                           "Power BI",
-                                           "Mixpanel"
-                                       ],
-                            "databases":  [
-                                              "Postgres",
-                                              "Snowflake"
-                                          ],
-                            "tools":  [
-                                          "Agile",
-                                          "Scrum",
-                                          "OKRs",
-                                          "NLP",
-                                          "LLM workflows",
-                                          "data pipelines",
-                                          "requirements definition",
-                                          "roadmap planning",
-                                          "stakeholder management"
-                                      ]
-                        },
-    "resume_facts":  {
-                         "preserved_companies":  [
-                                                     "FriendsWithMeasurements.com",
-                                                     "ALTR",
-                                                     "Guy Carpenter",
-                                                     "Sirion",
-                                                     "Sakhi",
-                                                     "The Samaritans of New York"
-                                                 ],
-                         "preserved_projects":  [
-                                                    "FriendsWithMeasurements.com",
-                                                    "Snowflake Native App",
-                                                    "NLP-powered contract intelligence workflows",
-                                                    "HumaneHousing"
-                                                ],
-                         "preserved_school":  "Cornell University School of Industrial and Labor Relations",
-                         "real_metrics":  [
-                                              "15K+ measurement profiles",
-                                              "30%",
-                                              "80%",
-                                              "50+ TBs",
-                                              "80+ columns",
-                                              "100k property reinsurance contracts",
-                                              "7 days to approximately 10 minutes",
-                                              "$40M",
-                                              "15%",
-                                              "9%",
-                                              "five engineer team",
-                                              "$75k",
-                                              "+95% of sprint goals",
-                                              "$1500 grant"
-                                          ]
-                     },
-    "eeo_voluntary":  {
-                          "gender":  "Decline to self-identify",
-                          "race_ethnicity":  "Decline to self-identify",
-                          "veteran_status":  "Decline to self-identify",
-                          "disability_status":  "Decline to self-identify"
-                      }
+  "personal": {
+    "full_name": "Brianna Singer",
+    "preferred_name": "Bri",
+    "email": "bsinger3@gmail.com",
+    "password": "",
+    "phone": "916-224-9144",
+    "address": "54 Polk Street Apt G2",
+    "city": "Newark",
+    "province_state": "New Jersey",
+    "country": "United States",
+    "postal_code": "07105",
+    "linkedin_url": "https://www.linkedin.com/in/briannasinger/",
+    "github_url": "https://github.com/bsinger3",
+    "portfolio_url": "",
+    "website_url": ""
+  },
+  "work_authorization": {
+    "legally_authorized_to_work": "Yes",
+    "require_sponsorship": "No",
+    "work_permit_type": "US Citizen"
+  },
+  "availability": {
+    "earliest_start_date": "Immediately",
+    "available_for_full_time": "Yes",
+    "available_for_contract": "Yes"
+  },
+  "compensation": {
+    "salary_expectation": "130000",
+    "salary_currency": "USD",
+    "salary_range_min": "115000",
+    "salary_range_max": "160000",
+    "currency_conversion_note": "All compensation expectations are listed in USD."
+  },
+  "experience": {
+    "years_of_experience_total": "4",
+    "education_level": "Bachelor of Science, Industrial and Labor Relations",
+    "current_job_title": "Software Project Manager",
+    "current_company": "FriendsWithMeasurements.com",
+    "target_role": "Software Project Manager"
+  },
+  "skills_boundary": {
+    "languages": ["Python", "SQL", "JavaScript", "PHP", "Google Apps Script"],
+    "frameworks": [
+      "Agile Scrum",
+      "Go-to-market Strategy",
+      "Ecommerce Workflows",
+      "Hybrid Project Management",
+      "Sprint Planning",
+      "SaaS Pricing Frameworks",
+      "SAFe",
+      "Software Project Management",
+      "Milestone Tracking",
+      "Kanban",
+      "SDLC",
+      "Continuous Improvement / Kaizen",
+      "OKRs",
+      "Lean Product Development",
+      "A/B Testing",
+      "Experimentation Frameworks",
+      "Root Cause Analysis",
+      "5 Whys",
+      "Postmortems",
+      "Retrospectives",
+      "Acceptance Criteria Frameworks",
+      "Epic / Story Decomposition",
+      "RBAC",
+      "Data Governance Frameworks",
+      "NLP / ML Evaluation Methodologies",
+      "Machine Learning Frameworks",
+      "Benchmark Dataset Evaluation",
+      "F1 Scoring",
+      "Risk-Based Classification Methodologies"
+    ],
+    "devops": [
+      "CI/CD Collaboration",
+      "Stakeholder Management",
+      "Program Management",
+      "Technical Documentation",
+      "Presentation Skills",
+      "Roadmap Planning",
+      "Requirements Gathering",
+      "Mentoring",
+      "Customer Success",
+      "Change Management",
+      "KPI Tracking",
+      "QA Coordination",
+      "Scheduling Management",
+      "Training Enablement",
+      "Resource Planning",
+      "Sprint Reviews",
+      "ERP",
+      "SOPs",
+      "AI/ML",
+      "Risk Management",
+      "Release Coordination",
+      "Deployment Workflows",
+      "Observability Concepts",
+      "Audit Logging",
+      "System Monitoring",
+      "Workflow Automation",
+      "Policy Automation",
+      "Okta Integration Workflows",
+      "Database Access Governance",
+      "Data Pipelines",
+      "Data Warehousing",
+      "Distributed Systems Concepts"
+    ],
+    "databases": [
+      "PostgreSQL",
+      "Snowflake",
+      "Databricks",
+      "MongoDB",
+      "Supabase"
+    ],
+    "tools": [
+      "AWS",
+      "Power BI",
+      "Mixpanel",
+      "Jira",
+      "Confluence",
+      "DBeaver",
+      "Playwright",
+      "Apify",
+      "Octoparse",
+      "VS Code",
+      "GitHub",
+      "Supabase CLI",
+      "Codex CLI",
+      "Google Sheets",
+      "Smartsheet",
+      "Trello",
+      "Tablaeu",
+      "ServiceNow",
+      "Notion",
+      "Legal Technology",
+      "Google Analytics",
+      "Figma",
+      "Microsoft Planner",
+      "Google Cloud",
+      "HubSpot"
+    ]
+  },
+  "resume_facts": {
+    "preserved_companies": [
+      "FriendsWithMeasurements.com",
+      "ALTR",
+      "Guy Carpenter",
+      "Sirion",
+      "Sakhi",
+      "The Samaritans of New York"
+    ],
+    "project_details": [
+      {
+        "name": "Sakhi Domestic Violence Hotline Caller Intake System",
+        "subtitle": "workflow automation, nonprofit operations, crisis response coordination",
+        "bullets": [
+          "Designed and implemented a hotline caller intake system that captured caller information and routed cases to the appropriate advocates based on volunteer shift coverage, follow-up workflows, and support needs.",
+          "Built coordination workflows that streamlined communication between hotline volunteers and advocacy staff during active support cases.",
+          "Provided crisis support for Sakhi’s domestic violence hotline and coordinated with New York City’s homeless shelter network for emergency placements, requiring strong communication skills, empathy, and discretion in high-stress situations."
+        ]
+      },
+      {
+        "name": "HumaneHousing | First Place Winner, Columbia University Women in Tech Hackathon",
+        "subtitle": "social impact, housing access, hackathon prototype",
+        "bullets": [
+          "Co-created a prototype platform that helped recently incarcerated individuals apply for housing resources across New York State.",
+          "Won first place at the Columbia University Women in Tech Hackathon and secured a $1,500 grant to support further development of the project."
+        ]
+      }
+    ],
+    "preserved_school": "Cornell University School of Industrial and Labor Relations",
+    "real_metrics": [
+      "30% increase in relevant retail search results",
+      "80% reduction in no-result retail searches",
+      "$40M+ reinsurance value identified from contract analysis",
+      "reduced contract review cycle from 7 days to 10 minutes"
+    ]
+  },
+  "eeo_voluntary": {
+    "gender": "Female",
+    "race_ethnicity": "White",
+    "veteran_status": "I am not a protected veteran",
+    "disability_status": "No, I do not have a disability"
+  }
 }

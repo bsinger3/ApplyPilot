@@ -5,6 +5,8 @@ resume.pdf
 *.env
 .env.*
 !.env.example
+.local-secrets/
+*.password.local.txt
 
 # Runtime artifacts
 *.db
