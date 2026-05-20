@@ -1,0 +1,2079 @@
+{
+  "version": 1,
+  "persona": "software-pm",
+  "updated_at": "2026-05-20T20:44:04Z",
+  "canonical_roles": {
+    "FriendsWithMeasurements.com": {
+      "company_type": "employer",
+      "default_role": "Technical Program Manager, Data & AI Pipelines",
+      "title_strategy": "Resolve a JD-aware title that stays close to the target job while remaining plausible for FriendsWithMeasurements.com."
+    }
+  },
+  "bullets": [
+    {
+      "id": "fwm-base-001",
+      "company": "FriendsWithMeasurements.com",
+      "role": "Technical Project Manager",
+      "category": "experience",
+      "bullet": "Rebuilt FriendsWithMeasurements.com to solve a common apparel discovery problem: shoppers struggling to find clothing that fits their body measurements. Redesigned the Postgres data model to support a catalog of 15K+ measurement profiles.",
+      "source_type": "base_resume",
+      "source_refs": [
+        {
+          "path": "portable_applypilot/software-pm/personas/software-pm/resume.txt"
+        }
+      ],
+      "tags": [
+        "postgres",
+        "data modeling",
+        "apparel discovery",
+        "product search",
+        "measurement profiles"
+      ],
+      "metrics": [
+        "15K+ measurement profiles"
+      ],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "fwm-base-002",
+      "company": "FriendsWithMeasurements.com",
+      "role": "Technical Project Manager",
+      "category": "experience",
+      "bullet": "Built data ingestion and normalization pipelines for apparel datasets, standardizing inconsistent sizing formats and enabling structured filtering.",
+      "source_type": "base_resume",
+      "source_refs": [
+        {
+          "path": "portable_applypilot/software-pm/personas/software-pm/resume.txt"
+        }
+      ],
+      "tags": [
+        "data ingestion",
+        "normalization",
+        "data pipelines",
+        "structured filtering",
+        "apparel data"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "fwm-base-003",
+      "company": "FriendsWithMeasurements.com",
+      "role": "Technical Project Manager",
+      "category": "experience",
+      "bullet": "Implemented measurement-based product search using Postgres functions, vector similarity queries, and indexed text search, increasing relevant results by more than 30% and reducing no-results searches by over 80%.",
+      "source_type": "base_resume",
+      "source_refs": [
+        {
+          "path": "portable_applypilot/software-pm/personas/software-pm/resume.txt"
+        }
+      ],
+      "tags": [
+        "postgres",
+        "vector similarity",
+        "indexed text search",
+        "product search",
+        "search relevance"
+      ],
+      "metrics": [
+        "30% increase in relevant results",
+        "80% reduction in no-results searches"
+      ],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "fwm-base-004",
+      "company": "FriendsWithMeasurements.com",
+      "role": "Technical Project Manager",
+      "category": "experience",
+      "bullet": "Designed image and metadata pipelines using Supabase storage and computer vision tagging to improve catalog discoverability and enable measurement-based analytics.",
+      "source_type": "base_resume",
+      "source_refs": [
+        {
+          "path": "portable_applypilot/software-pm/personas/software-pm/resume.txt"
+        }
+      ],
+      "tags": [
+        "supabase",
+        "computer vision",
+        "image pipelines",
+        "metadata pipelines",
+        "analytics"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "fwm-transcript-001",
+      "company": "FriendsWithMeasurements.com",
+      "role": "Technical Program Manager, Data & AI Pipelines",
+      "category": "experience",
+      "bullet": "Led a multi-threaded data pipeline program, coordinating scrape claims, implementation rules, validation metrics, Git/S3/Supabase syncs, and transcript documentation across concurrent engineering workstreams.",
+      "source_type": "supabase_transcript",
+      "source_refs": [
+        {
+          "table": "codex_chat_transcripts",
+          "chat_key": "codex-fwm-hollister-full-site-scrape-and-remot-650254d980c65001",
+          "title": "FWM Hollister full-site scrape and remote sync"
+        },
+        {
+          "table": "codex_chat_transcripts",
+          "chat_key": "codex-show-me-your-mumu-first-time-non-amazon--7d9e5a1f03e74c0b",
+          "title": "Show Me Your Mumu First-Time Non-Amazon Scrape"
+        }
+      ],
+      "tags": [
+        "technical program management",
+        "data pipelines",
+        "supabase",
+        "s3",
+        "git",
+        "validation metrics",
+        "concurrent workstreams"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "fwm-transcript-002",
+      "company": "FriendsWithMeasurements.com",
+      "role": "Technical Program Manager, Data & AI Pipelines",
+      "category": "experience",
+      "bullet": "Built and governed Python ingestion pipelines that discover full public product catalogs, extract review text, customer images, ordered sizes, body measurements, product metadata, and source URLs, then validate outputs against a standardized Step 1 intake schema.",
+      "source_type": "supabase_transcript",
+      "source_refs": [
+        {
+          "table": "codex_chat_transcripts",
+          "chat_key": "codex-missacc-non-amazon-scrape-2026-05-17-67c429c1ee98e368",
+          "title": "Missacc Non-Amazon Scrape - 2026-05-17"
+        },
+        {
+          "table": "codex_chat_transcripts",
+          "chat_key": "codex-stacees-non-amazon-scrape-2026-05-17-9bee8fa988c51dea",
+          "title": "Stacees Non-Amazon Scrape - 2026-05-17"
+        }
+      ],
+      "tags": [
+        "python",
+        "data ingestion",
+        "product catalogs",
+        "customer images",
+        "measurements",
+        "schema validation"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "fwm-transcript-003",
+      "company": "FriendsWithMeasurements.com",
+      "role": "Technical Program Manager, Data & AI Pipelines",
+      "category": "experience",
+      "bullet": "Scaled catalog and review data coverage across high-volume sources, including a Hollister pipeline that processed 1,966 products and 160K+ customer reviews into structured fit and measurement data for downstream analytics.",
+      "source_type": "supabase_transcript",
+      "source_refs": [
+        {
+          "table": "codex_chat_transcripts",
+          "chat_key": "codex-fwm-hollister-full-site-scrape-and-remot-650254d980c65001",
+          "title": "FWM Hollister full-site scrape and remote sync"
+        }
+      ],
+      "tags": [
+        "scale",
+        "catalog coverage",
+        "review data",
+        "measurement data",
+        "downstream analytics",
+        "data pipelines"
+      ],
+      "metrics": [
+        "1,966 products processed",
+        "160K+ customer reviews"
+      ],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "fwm-transcript-004",
+      "company": "FriendsWithMeasurements.com",
+      "role": "Technical Program Manager, Data & AI Pipelines",
+      "category": "experience",
+      "bullet": "Designed reusable provider-specific scraping patterns for Bazaarvoice, Yotpo, Stamped, Judge.me, Okendo, Shopify, Nuxt, and custom review endpoints, improving delivery speed while preserving product-level coverage and stop conditions for 429/captcha/WAF/auth blocks.",
+      "source_type": "supabase_transcript",
+      "source_refs": [
+        {
+          "table": "codex_chat_transcripts",
+          "chat_key": "codex-non-amazon-scraping-s3-backup-and-transc-b6057287fe21cab5",
+          "title": "Non-Amazon scraping, S3 backup, and transcript handoff chat"
+        },
+        {
+          "table": "codex_chat_transcripts",
+          "chat_key": "codex-show-me-your-mumu-first-time-non-amazon--7d9e5a1f03e74c0b",
+          "title": "Show Me Your Mumu First-Time Non-Amazon Scrape"
+        }
+      ],
+      "tags": [
+        "bazaarvoice",
+        "yotpo",
+        "stamped",
+        "judge.me",
+        "okendo",
+        "shopify",
+        "nuxt",
+        "endpoint strategy",
+        "coverage"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "fwm-transcript-005",
+      "company": "FriendsWithMeasurements.com",
+      "role": "Technical Program Manager, Data & AI Pipelines",
+      "category": "experience",
+      "bullet": "Established quality gates for data readiness, including dedupe checks, numeric-field validation, product URL sampling, broken media checks, coverage summaries, and rules for analytics-ready dataset promotion.",
+      "source_type": "supabase_transcript",
+      "source_refs": [
+        {
+          "table": "codex_chat_transcripts",
+          "chat_key": "codex-show-me-your-mumu-first-time-non-amazon--7d9e5a1f03e74c0b",
+          "title": "Show Me Your Mumu First-Time Non-Amazon Scrape"
+        },
+        {
+          "table": "codex_chat_transcripts",
+          "chat_key": "codex-missacc-non-amazon-scrape-2026-05-17-67c429c1ee98e368",
+          "title": "Missacc Non-Amazon Scrape - 2026-05-17"
+        }
+      ],
+      "tags": [
+        "quality gates",
+        "data validation",
+        "dedupe",
+        "numeric validation",
+        "coverage summaries",
+        "analytics-ready data"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "fwm-transcript-006",
+      "company": "FriendsWithMeasurements.com",
+      "role": "Technical Program Manager, Data & AI Pipelines",
+      "category": "experience",
+      "bullet": "Managed cloud-backed data operations by syncing generated FWM_Data outputs and claims to S3, maintaining traceability through Supabase transcript rows, and keeping repo commits scoped to pipeline scripts, documentation, and handoff artifacts.",
+      "source_type": "supabase_transcript",
+      "source_refs": [
+        {
+          "table": "codex_chat_transcripts",
+          "chat_key": "codex-fwm-hollister-full-site-scrape-and-remot-650254d980c65001",
+          "title": "FWM Hollister full-site scrape and remote sync"
+        },
+        {
+          "table": "codex_chat_transcripts",
+          "chat_key": "codex-missacc-non-amazon-scrape-2026-05-17-67c429c1ee98e368",
+          "title": "Missacc Non-Amazon Scrape - 2026-05-17"
+        }
+      ],
+      "tags": [
+        "s3",
+        "supabase transcripts",
+        "git",
+        "documentation",
+        "handoff artifacts",
+        "cloud data operations"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "altr-base-001",
+      "company": "ALTR",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Defined product requirements for ALTR's data governance platform by analyzing customer security workflows and sales feedback, aligning engineering delivery with enterprise data protection needs.",
+      "source_type": "base_resume",
+      "source_refs": [
+        {
+          "path": "portable_applypilot/software-pm/personas/software-pm/resume.txt"
+        }
+      ],
+      "tags": [
+        "product requirements",
+        "data governance",
+        "customer security workflows",
+        "enterprise data protection"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "altr-base-002",
+      "company": "ALTR",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Transformed competitor sentiment research into a strategic roadmap that prioritized high-demand data governance features, directly supporting the sales pipeline for enterprise accounts.",
+      "source_type": "base_resume",
+      "source_refs": [
+        {
+          "path": "portable_applypilot/software-pm/personas/software-pm/resume.txt"
+        }
+      ],
+      "tags": [
+        "roadmap",
+        "data governance",
+        "competitive research",
+        "enterprise accounts",
+        "sales pipeline"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "altr-base-003",
+      "company": "ALTR",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Spearheaded ALTR's Snowflake Native App that uses Snowflake's native classifiers to scan 50+ TBs of a key customer's data, detect unprotected sensitive data, apply the right tags, and generate security policy recommendations based on exposure and usage. First customer identified 80+ columns of unprotected PII, cutting manual tagging time by 10s of hours. Product usage tracked through Mixpanel analytics.",
+      "source_type": "base_resume",
+      "source_refs": [
+        {
+          "path": "portable_applypilot/software-pm/personas/software-pm/resume.txt"
+        }
+      ],
+      "tags": [
+        "snowflake",
+        "data governance",
+        "classifiers",
+        "sensitive data",
+        "policy recommendations",
+        "mixpanel"
+      ],
+      "metrics": [
+        "50+ TBs scanned",
+        "80+ columns of unprotected PII",
+        "10s of hours cut"
+      ],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "altr-base-004",
+      "company": "ALTR",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Developed logic across multiple Snowflake audit log types to support automated alerting when security policies are violated and designed remediation flows that revoke permissions and force logouts for suspicious users.",
+      "source_type": "base_resume",
+      "source_refs": [
+        {
+          "path": "portable_applypilot/software-pm/personas/software-pm/resume.txt"
+        }
+      ],
+      "tags": [
+        "snowflake",
+        "audit logs",
+        "alerting",
+        "policy automation",
+        "remediation flows",
+        "security"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "altr-base-005",
+      "company": "ALTR",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Partnered with enterprise data security teams to evaluate classifier performance, prioritize roadmap features, and translate governance requirements into deployable product releases.",
+      "source_type": "base_resume",
+      "source_refs": [
+        {
+          "path": "portable_applypilot/software-pm/personas/software-pm/resume.txt"
+        }
+      ],
+      "tags": [
+        "enterprise data security",
+        "classifier performance",
+        "roadmap",
+        "governance requirements",
+        "product releases"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "guy-carpenter-base-001",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Drove delivery of NLP-powered contract intelligence workflows across more than 100k property reinsurance contracts, reducing average contract review time from 7 days to approximately 10 minutes and capturing more than $40M in previously unstructured deal economics.",
+      "source_type": "base_resume",
+      "source_refs": [
+        {
+          "path": "portable_applypilot/software-pm/personas/software-pm/resume.txt"
+        }
+      ],
+      "tags": [
+        "nlp",
+        "contract intelligence",
+        "workflow delivery",
+        "reinsurance",
+        "cycle time reduction"
+      ],
+      "metrics": [
+        "100k property reinsurance contracts",
+        "7 days to 10 minutes",
+        "$40M"
+      ],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "guy-carpenter-base-002",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Built Power BI dashboards that surfaced trends in exception patterns, deal size correlations, and recurring review bottlenecks, equipping brokerage leadership with data to support multimillion dollar negotiations.",
+      "source_type": "base_resume",
+      "source_refs": [
+        {
+          "path": "portable_applypilot/software-pm/personas/software-pm/resume.txt"
+        }
+      ],
+      "tags": [
+        "power bi",
+        "dashboards",
+        "analytics",
+        "exception patterns",
+        "negotiations"
+      ],
+      "metrics": [
+        "multimillion dollar negotiations"
+      ],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "guy-carpenter-base-003",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Designed QA experiments and data augmentation techniques that improved model precision by 15% and recall by 9% for high-value edge cases.",
+      "source_type": "base_resume",
+      "source_refs": [
+        {
+          "path": "portable_applypilot/software-pm/personas/software-pm/resume.txt"
+        }
+      ],
+      "tags": [
+        "qa experiments",
+        "data augmentation",
+        "model precision",
+        "model recall",
+        "edge cases"
+      ],
+      "metrics": [
+        "15% precision improvement",
+        "9% recall improvement"
+      ],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "guy-carpenter-base-004",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Led scrum ceremonies and tracked OKRs for a five engineer team developing contract extraction and classification models.",
+      "source_type": "base_resume",
+      "source_refs": [
+        {
+          "path": "portable_applypilot/software-pm/personas/software-pm/resume.txt"
+        }
+      ],
+      "tags": [
+        "scrum",
+        "okrs",
+        "engineering team",
+        "contract extraction",
+        "classification models"
+      ],
+      "metrics": [
+        "five engineer team"
+      ],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "guy-carpenter-base-005",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Implemented LLM driven document processing workflows to automate term extraction and reduce manual contract review effort.",
+      "source_type": "base_resume",
+      "source_refs": [
+        {
+          "path": "portable_applypilot/software-pm/personas/software-pm/resume.txt"
+        }
+      ],
+      "tags": [
+        "llm",
+        "document processing",
+        "term extraction",
+        "automation",
+        "contract review"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "sirion-base-001",
+      "company": "Sirion",
+      "role": "Technical Project Manager",
+      "category": "experience",
+      "bullet": "Managed budgets exceeding $75k, led daily scrum and Agile delivery of ML models, consistently hitting +95% of sprint goals for bank clients.",
+      "source_type": "base_resume",
+      "source_refs": [
+        {
+          "path": "portable_applypilot/software-pm/personas/software-pm/resume.txt"
+        }
+      ],
+      "tags": [
+        "budget management",
+        "scrum",
+        "agile delivery",
+        "ml models",
+        "bank clients"
+      ],
+      "metrics": [
+        "$75k budgets",
+        "95% of sprint goals"
+      ],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "sirion-base-002",
+      "company": "Sirion",
+      "role": "Technical Project Manager",
+      "category": "experience",
+      "bullet": "Served as primary liaison for customers of Sirion's SaaS product, facilitating document extraction for financial contracts.",
+      "source_type": "base_resume",
+      "source_refs": [
+        {
+          "path": "portable_applypilot/software-pm/personas/software-pm/resume.txt"
+        }
+      ],
+      "tags": [
+        "customer liaison",
+        "saas",
+        "document extraction",
+        "financial contracts"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "sirion-base-003",
+      "company": "Sirion",
+      "role": "Technical Project Manager",
+      "category": "experience",
+      "bullet": "Defined training data requirements and implemented NLP strategies to improve the model's interpretation of financial tables and charts.",
+      "source_type": "base_resume",
+      "source_refs": [
+        {
+          "path": "portable_applypilot/software-pm/personas/software-pm/resume.txt"
+        }
+      ],
+      "tags": [
+        "training data",
+        "nlp",
+        "model interpretation",
+        "financial tables",
+        "charts"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "sirion-base-004",
+      "company": "Sirion",
+      "role": "Technical Project Manager",
+      "category": "experience",
+      "bullet": "Mentored junior project managers and led seminars on project scoping, product releases, and management skills.",
+      "source_type": "base_resume",
+      "source_refs": [
+        {
+          "path": "portable_applypilot/software-pm/personas/software-pm/resume.txt"
+        }
+      ],
+      "tags": [
+        "mentoring",
+        "project scoping",
+        "product releases",
+        "management skills"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "sirion-agile-001",
+      "company": "Sirion",
+      "role": "Technical Project Manager",
+      "category": "experience",
+      "bullet": "Led daily Scrum ceremonies, sprint planning, backlog grooming, and delivery tracking for ML model implementation projects serving bank clients, consistently achieving 95%+ sprint goal completion.",
+      "source_type": "user_approved",
+      "source_refs": [
+        {
+          "conversation": "ApplyPilot resume tailoring",
+          "approved_at": "2026-05-20"
+        }
+      ],
+      "tags": [
+        "scrum",
+        "sprint planning",
+        "backlog grooming",
+        "delivery tracking",
+        "ml implementation",
+        "bank clients"
+      ],
+      "metrics": [
+        "95%+ sprint goal completion"
+      ],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "sirion-agile-002",
+      "company": "Sirion",
+      "role": "Technical Project Manager",
+      "category": "experience",
+      "bullet": "Managed project plans, budgets exceeding $75K, delivery risks, and stakeholder updates for financial-contract AI/ML deployments, keeping client workstreams aligned across scope, timeline, and release priorities.",
+      "source_type": "user_approved",
+      "source_refs": [
+        {
+          "conversation": "ApplyPilot resume tailoring",
+          "approved_at": "2026-05-20"
+        }
+      ],
+      "tags": [
+        "project planning",
+        "budget management",
+        "delivery risks",
+        "stakeholder updates",
+        "ai/ml deployment",
+        "scope",
+        "timeline",
+        "release priorities"
+      ],
+      "metrics": [
+        "$75K+ budgets"
+      ],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "sirion-agile-003",
+      "company": "Sirion",
+      "role": "Technical Project Manager",
+      "category": "experience",
+      "bullet": "Translated client document-extraction requirements into Agile delivery plans, breaking financial contract workflows into prioritized user stories, acceptance criteria, and model-training tasks.",
+      "source_type": "user_approved",
+      "source_refs": [
+        {
+          "conversation": "ApplyPilot resume tailoring",
+          "approved_at": "2026-05-20"
+        }
+      ],
+      "tags": [
+        "requirements gathering",
+        "agile delivery",
+        "user stories",
+        "acceptance criteria",
+        "model training",
+        "document extraction"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "sirion-agile-004",
+      "company": "Sirion",
+      "role": "Technical Project Manager",
+      "category": "experience",
+      "bullet": "Coordinated customer, product, and technical teams through implementation milestones for Sirion's SaaS contract intelligence platform, balancing client expectations with engineering capacity and model-readiness constraints.",
+      "source_type": "user_approved",
+      "source_refs": [
+        {
+          "conversation": "ApplyPilot resume tailoring",
+          "approved_at": "2026-05-20"
+        }
+      ],
+      "tags": [
+        "customer coordination",
+        "product teams",
+        "technical teams",
+        "implementation milestones",
+        "saas",
+        "contract intelligence",
+        "engineering capacity"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "sirion-agile-005",
+      "company": "Sirion",
+      "role": "Technical Project Manager",
+      "category": "experience",
+      "bullet": "Defined training-data requirements and NLP improvement priorities for financial tables and charts, then tracked delivery through sprint ceremonies, release planning, and client-facing progress updates.",
+      "source_type": "user_approved",
+      "source_refs": [
+        {
+          "conversation": "ApplyPilot resume tailoring",
+          "approved_at": "2026-05-20"
+        }
+      ],
+      "tags": [
+        "training data",
+        "nlp",
+        "sprint ceremonies",
+        "release planning",
+        "client updates",
+        "financial contracts"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "sirion-agile-006",
+      "company": "Sirion",
+      "role": "Technical Project Manager",
+      "category": "experience",
+      "bullet": "Mentored junior project managers on project scoping, sprint execution, release planning, and stakeholder communication for SaaS implementation projects.",
+      "source_type": "user_approved",
+      "source_refs": [
+        {
+          "conversation": "ApplyPilot resume tailoring",
+          "approved_at": "2026-05-20"
+        }
+      ],
+      "tags": [
+        "mentoring",
+        "project scoping",
+        "sprint execution",
+        "release planning",
+        "stakeholder communication",
+        "saas implementation"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "sakhi-base-001",
+      "company": "Sakhi",
+      "role": "Domestic Violence Hotline Volunteer",
+      "category": "volunteer",
+      "bullet": "Provide crisis support for the domestic violence hotline, coordinated with New York City's Homeless Shelter network for emergency placements.",
+      "source_type": "base_resume",
+      "source_refs": [
+        {
+          "path": "portable_applypilot/software-pm/personas/software-pm/resume.txt"
+        }
+      ],
+      "tags": [
+        "crisis support",
+        "coordination",
+        "emergency placements",
+        "communication"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "sakhi-base-002",
+      "company": "Sakhi",
+      "role": "Domestic Violence Hotline Volunteer",
+      "category": "volunteer",
+      "bullet": "Completed training in trauma response and crisis communication to support domestic violence hotline callers effectively.",
+      "source_type": "base_resume",
+      "source_refs": [
+        {
+          "path": "portable_applypilot/software-pm/personas/software-pm/resume.txt"
+        }
+      ],
+      "tags": [
+        "trauma response",
+        "crisis communication",
+        "training"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "samaritans-base-001",
+      "company": "The Samaritans of New York",
+      "role": "Suicide Hotline Volunteer",
+      "category": "volunteer",
+      "bullet": "Practiced crisis management, mental health counseling, and emergency response, serving on the suicide hotline for regular volunteer shifts.",
+      "source_type": "base_resume",
+      "source_refs": [
+        {
+          "path": "portable_applypilot/software-pm/personas/software-pm/resume.txt"
+        }
+      ],
+      "tags": [
+        "crisis management",
+        "mental health counseling",
+        "emergency response"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "award-base-001",
+      "company": "Columbia University Women in Tech Hackathon",
+      "role": "1st Place Winner",
+      "category": "award",
+      "bullet": "Prototyped HumaneHousing, a platform that helps recently incarcerated individuals apply for housing in New York State, winning a $1500 grant.",
+      "source_type": "base_resume",
+      "source_refs": [
+        {
+          "path": "portable_applypilot/software-pm/personas/software-pm/resume.txt"
+        }
+      ],
+      "tags": [
+        "prototype",
+        "housing platform",
+        "hackathon",
+        "grant",
+        "social impact"
+      ],
+      "metrics": [
+        "$1500 grant"
+      ],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "award-base-002",
+      "company": "The Fringe Playwriting Festival",
+      "role": "Honorable Mention",
+      "category": "award",
+      "bullet": "Press release in the East End Beacon for writing and producing a dystopian short play inspired by Franz Kafka.",
+      "source_type": "base_resume",
+      "source_refs": [
+        {
+          "path": "portable_applypilot/software-pm/personas/software-pm/resume.txt"
+        }
+      ],
+      "tags": [
+        "writing",
+        "production",
+        "press"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T00:00:00Z",
+      "last_used_at": null
+    },
+    {
+      "id": "altr-transcript-approved-001",
+      "company": "ALTR",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Led product discovery for a Snowflake data classification workflow that scanned 50+ TB of customer data, identified 80+ columns of unprotected PII, and translated security needs into automated policy-recommendation requirements.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "altr_codex_chat_transcripts",
+          "chat_key": "altr-chatgpt-691cce75-4d54-8332-8b1b-0a41ffb9700a",
+          "title": "Snowflake work at ALTR"
+        }
+      ],
+      "tags": [
+        "Snowflake",
+        "data classification",
+        "product discovery",
+        "policy recommendations"
+      ],
+      "metrics": [
+        "50+ TB",
+        "80+ columns"
+      ],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null,
+      "evidence_notes": "Metric appears in cached resume-context transcript for the same ALTR Snowflake Native App work: 50+ TB scanned and 80+ unprotected PII columns identified."
+    },
+    {
+      "id": "altr-transcript-approved-002",
+      "company": "ALTR",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Scoped a Snowflake Native App experience that used native classifiers to scan 50+ TB of customer data, surface 80+ columns of unprotected PII, apply tags, and cut manual tagging time by 10s of hours.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "altr_codex_chat_transcripts",
+          "chat_key": "altr-chatgpt-691cce75-4d54-8332-8b1b-0a41ffb9700a",
+          "title": "Snowflake work at ALTR"
+        }
+      ],
+      "tags": [
+        "Snowflake Native App",
+        "PII",
+        "classifiers",
+        "security policy"
+      ],
+      "metrics": [
+        "50+ TB",
+        "80+ columns",
+        "10s of hours"
+      ],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null,
+      "evidence_notes": "Cached transcript context states the Snowflake Native App scanned 50+ TB of a key customer's data, identified 80+ columns of unprotected PII, and cut manual tagging time by 10s of hours."
+    },
+    {
+      "id": "altr-transcript-approved-003",
+      "company": "ALTR",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Converted enterprise data-security pain points into requirements for no-code governance workflows, helping non-engineering users understand classification results, tag sensitive data, and manage policy actions without custom scripts.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "altr_codex_chat_transcripts",
+          "chat_key": "altr-chatgpt-688d83ca-572c-832c-ae1c-802e97d83789",
+          "title": "Incremental prototype prompts"
+        }
+      ],
+      "tags": [
+        "no-code workflows",
+        "requirements gathering",
+        "data governance",
+        "tag approval"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "altr-transcript-approved-004",
+      "company": "ALTR",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Designed classification dashboard for ALTR Trust Center and Risk workflows, giving customers visibility into sensitive-data findings, classification status, and governance actions across Snowflake environments.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "altr_codex_chat_transcripts",
+          "chat_key": "altr-chatgpt-689b505c-e784-8331-b2bf-c5527cebe5be",
+          "title": "Classification dashboard project"
+        }
+      ],
+      "tags": [
+        "dashboard",
+        "Trust Center",
+        "Risk",
+        "Snowflake",
+        "Databricks"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "altr-transcript-approved-005",
+      "company": "ALTR",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Prioritized dashboard requirements that connected sensitive-data discovery, classification results, masking policy context, and remediation workflows into a single customer-facing governance view.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "altr_codex_chat_transcripts",
+          "chat_key": "altr-chatgpt-688cfe0a-04e0-8326-8ce5-2f0d72b2f5ba",
+          "title": "ALTR classification dashboard"
+        }
+      ],
+      "tags": [
+        "dashboard requirements",
+        "masking policy",
+        "remediation",
+        "governance view"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "altr-transcript-approved-006",
+      "company": "ALTR",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Mapped customer classification gaps into product requirements for detecting PII, PHI, PCI, and other sensitive data types while reducing reliance on third-party DLP tools.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "altr_codex_chat_transcripts",
+          "chat_key": "altr-chatgpt-68656258-44b0-8012-a09b-87a31f189e5d",
+          "title": "PII Classification without DLP"
+        }
+      ],
+      "tags": [
+        "PII",
+        "PHI",
+        "PCI",
+        "DLP",
+        "classification"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "altr-transcript-approved-007",
+      "company": "ALTR",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Evaluated Snowflake native classifiers, Google DLP alternatives, and Databricks classification constraints to shape a platform strategy for sensitive-data detection across cloud data warehouses.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "altr_codex_chat_transcripts",
+          "chat_key": "altr-chatgpt-68656258-44b0-8012-a09b-87a31f189e5d",
+          "title": "PII Classification without DLP"
+        }
+      ],
+      "tags": [
+        "classifier evaluation",
+        "Snowflake",
+        "Google DLP",
+        "Databricks"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "altr-transcript-approved-008",
+      "company": "ALTR",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Defined product logic for audit-log threat detection, connecting policy violations, anomalous access patterns, alerting, and remediation actions into an actionable security workflow.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "altr_codex_chat_transcripts",
+          "chat_key": "altr-chatgpt-68771fdc-3840-8012-934d-2188a6461c13",
+          "title": "Audit log threat detection"
+        }
+      ],
+      "tags": [
+        "audit logs",
+        "threat detection",
+        "alerting",
+        "remediation"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "altr-transcript-approved-009",
+      "company": "ALTR",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Developed requirements for automated remediation flows that could respond to suspicious database access by revoking permissions, forcing logout, or escalating alerts for security review.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "altr_codex_chat_transcripts",
+          "chat_key": "altr-chatgpt-68771fdc-3840-8012-934d-2188a6461c13",
+          "title": "Audit log threat detection"
+        }
+      ],
+      "tags": [
+        "automated remediation",
+        "database access",
+        "security alerts"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "altr-transcript-approved-010",
+      "company": "ALTR",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Translated audit-log event types into product requirements for compliance-friendly reporting, including who changed policies, which policy decision was applied, and why an action was allowed or blocked.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "altr_codex_chat_transcripts",
+          "chat_key": "altr-chatgpt-686190ef-82d0-8012-b158-a106c39eb27f",
+          "title": "Impersonation Policy Overview"
+        }
+      ],
+      "tags": [
+        "audit logging",
+        "compliance reporting",
+        "policy decisions",
+        "S3 export"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "altr-transcript-approved-011",
+      "company": "ALTR",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Synthesized enterprise access-control discovery into requirements for group-based RBAC, Okta integration, auditable database access, and a lighter architecture for 600+ databases that avoided 800-900 proxy components.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "altr_codex_chat_transcripts",
+          "chat_key": "altr-chatgpt-686275b1-b3d8-8012-a1c7-1171ebe92459",
+          "title": "Informatica Compliance Access Needs"
+        }
+      ],
+      "tags": [
+        "Informatica",
+        "Okta",
+        "RBAC",
+        "database access"
+      ],
+      "metrics": [
+        "600+ databases",
+        "800-900 proxy components"
+      ],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null,
+      "evidence_notes": "Informatica discovery transcript says the customer needed auditable access control across 600+ databases and faced a projected 800-900 proxies/equivalent components."
+    },
+    {
+      "id": "altr-transcript-approved-012",
+      "company": "ALTR",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Evaluated Cyral replacement opportunities by mapping customer frustrations with proxy complexity, policy management overhead, audit visibility, and alerting gaps into ALTR roadmap themes.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "altr_codex_chat_transcripts",
+          "chat_key": "altr-chatgpt-68587039-2bc4-8012-b70e-4305c93feab9",
+          "title": "Terraform Cyral Vault Setup"
+        }
+      ],
+      "tags": [
+        "Cyral",
+        "competitive displacement",
+        "roadmap",
+        "proxy complexity"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "altr-transcript-approved-013",
+      "company": "ALTR",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Turned competitive intelligence on Cyral, SecuPi, Immuta, Skyflow, and related data-security vendors into roadmap inputs for classification, masking, tokenization, activity monitoring, and policy automation.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "altr_codex_chat_transcripts",
+          "chat_key": "altr-chatgpt-683cbe8b-bef0-8012-ad04-c4f639905822",
+          "title": "Competitor Review Summaries"
+        }
+      ],
+      "tags": [
+        "competitive intelligence",
+        "roadmap",
+        "classification",
+        "masking",
+        "tokenization"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "altr-transcript-approved-014",
+      "company": "ALTR",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Built a structured competitor research dataset from review sources and customer examples, identifying recurring pain points around setup complexity, support responsiveness, manual overrides, and data-platform integration gaps.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "altr_codex_chat_transcripts",
+          "chat_key": "altr-chatgpt-683cbe8b-bef0-8012-ad04-c4f639905822",
+          "title": "Competitor Review Summaries"
+        }
+      ],
+      "tags": [
+        "competitor research",
+        "customer feedback",
+        "market analysis"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "altr-transcript-approved-015",
+      "company": "ALTR",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Translated market feedback into product positioning for ALTR capabilities including Dynamic Data Masking, format-preserving encryption, tokenization, activity monitoring, and Snowflake access governance.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "altr_codex_chat_transcripts",
+          "chat_key": "altr-chatgpt-683cbe8b-bef0-8012-ad04-c4f639905822",
+          "title": "Competitor Review Summaries"
+        }
+      ],
+      "tags": [
+        "positioning",
+        "dynamic masking",
+        "RFPE",
+        "tokenization"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "altr-transcript-approved-016",
+      "company": "ALTR",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Defined Databricks governance concepts for tag-driven policies, cross-metastore consistency, no-code policy management, and audit trails for customers managing sprawling schemas and thousands of columns.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "altr_codex_chat_transcripts",
+          "chat_key": "altr-chatgpt-686190ef-82d0-8012-b158-a106c39eb27f",
+          "title": "Impersonation Policy Overview"
+        }
+      ],
+      "tags": [
+        "Databricks",
+        "tag-driven policies",
+        "cross-metastore",
+        "audit trails"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "altr-transcript-approved-017",
+      "company": "ALTR",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Scoped impersonation-policy workflows that link application users to database users, improving accountability for shared service-account access patterns in enterprise data environments.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "altr_codex_chat_transcripts",
+          "chat_key": "altr-chatgpt-686190ef-82d0-8012-b158-a106c39eb27f",
+          "title": "Impersonation Policy Overview"
+        }
+      ],
+      "tags": [
+        "impersonation policy",
+        "database users",
+        "application users",
+        "accountability"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "altr-transcript-approved-018",
+      "company": "ALTR",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Documented customer requirements for centralized security dashboards that combine access monitoring, alert history, broad-query detection, and SIEM integrations such as Teams, Splunk, and ServiceNow.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "altr_codex_chat_transcripts",
+          "chat_key": "altr-chatgpt-686275b1-b3d8-8012-a1c7-1171ebe92459",
+          "title": "Informatica Compliance Access Needs"
+        }
+      ],
+      "tags": [
+        "security dashboard",
+        "SIEM",
+        "Teams",
+        "Splunk",
+        "ServiceNow"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "altr-transcript-approved-019",
+      "company": "ALTR",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Partnered with sales and technical stakeholders to turn discovery-session transcripts into product requirements, stakeholder maps, and customer-specific problem statements for enterprise data-access governance.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "altr_codex_chat_transcripts",
+          "chat_key": "altr-chatgpt-686275b1-b3d8-8012-a1c7-1171ebe92459",
+          "title": "Informatica Compliance Access Needs"
+        }
+      ],
+      "tags": [
+        "discovery sessions",
+        "stakeholder mapping",
+        "requirements"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "altr-transcript-approved-020",
+      "company": "ALTR",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Prioritized data-security roadmap opportunities by comparing competitor weaknesses against ALTR strengths in Snowflake governance, masking, tokenization, audit logging, and policy automation.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "altr_codex_chat_transcripts",
+          "chat_key": "altr-chatgpt-683cbe8b-bef0-8012-ad04-c4f639905822",
+          "title": "Competitor Review Summaries"
+        }
+      ],
+      "tags": [
+        "roadmap prioritization",
+        "competitive analysis",
+        "policy automation"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "altr-transcript-approved-021",
+      "company": "ALTR",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Shaped release narratives and enablement materials that explained technical data-security concepts to nontechnical buyers, including classification, masking, tokenization, and policy enforcement tradeoffs.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "altr_codex_chat_transcripts",
+          "chat_key": "altr-chatgpt-6818f6b6-e0f8-8012-9100-2bf0f6dd9333",
+          "title": "Blog Post Critique"
+        }
+      ],
+      "tags": [
+        "enablement",
+        "technical communication",
+        "buyer education"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "altr-transcript-approved-022",
+      "company": "ALTR",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Created product framing for activity monitoring use cases that help customers see who accessed what data, when, why, and what policy context applied to the access event.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "altr_codex_chat_transcripts",
+          "chat_key": "altr-chatgpt-6872c943-ebb4-8012-a416-e5dd693b560b",
+          "title": "ALTR Monitoring Tool Gaps"
+        }
+      ],
+      "tags": [
+        "activity monitoring",
+        "audit logs",
+        "access visibility"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "altr-transcript-approved-023",
+      "company": "ALTR",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Identified monitoring gaps around alert visibility, retention windows, dashboard flexibility, and policy-change tracking, then translated them into customer-facing product opportunities.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "altr_codex_chat_transcripts",
+          "chat_key": "altr-chatgpt-6872c943-ebb4-8012-a416-e5dd693b560b",
+          "title": "ALTR Monitoring Tool Gaps"
+        }
+      ],
+      "tags": [
+        "monitoring gaps",
+        "alerts",
+        "dashboard flexibility"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "guy-carpenter-transcript-approved-001",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Drove NLP contract-intelligence workflows across 100k+ reinsurance contracts, reducing review time from 7 days to about 10 minutes and surfacing $40M in reusable deal intelligence.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "guy_carpenter_codex_chat_transcripts",
+          "chat_key": "guy_carpenter-chatgpt-69c400b4-3004-8325-89b0-849b9c412523",
+          "title": "STAR Answers Summary"
+        }
+      ],
+      "tags": [
+        "NLP",
+        "contract intelligence",
+        "requirements",
+        "brokerage workflows"
+      ],
+      "metrics": [
+        "100k+ contracts",
+        "7 days to about 10 minutes",
+        "$40M"
+      ],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null,
+      "evidence_notes": "Cached Guy Carpenter transcript context states NLP contract intelligence covered 100k+ property reinsurance contracts, reduced review time from 7 days to about 10 minutes, and captured $40M in deal economics."
+    },
+    {
+      "id": "guy-carpenter-transcript-approved-002",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Led Agile delivery for contract extraction and classification models, coordinating scrum ceremonies, backlog refinement, QA review, and stakeholder feedback across business and engineering teams.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "guy_carpenter_codex_chat_transcripts",
+          "chat_key": "guy_carpenter-chatgpt-67552e96-9d24-8012-8077-a8ba54b029b1",
+          "title": "Agile Methodologies Experience"
+        }
+      ],
+      "tags": [
+        "Agile",
+        "scrum",
+        "backlog",
+        "QA",
+        "NLP"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "guy-carpenter-transcript-approved-003",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Broke ambiguous reinsurance contract review needs into user stories and acceptance criteria for clause extraction, article classification, and manual QA workflows.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "guy_carpenter_codex_chat_transcripts",
+          "chat_key": "guy_carpenter-chatgpt-2109ec78-32c5-4a92-bc71-9bc9bc8bc099",
+          "title": "LabelStudio Enterprise Demo"
+        }
+      ],
+      "tags": [
+        "user stories",
+        "acceptance criteria",
+        "LabelStudio",
+        "manual QA"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "guy-carpenter-transcript-approved-004",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Defined quality-review workflows for article and clause classifiers, helping flag mislabeled contract rows for manual QA and improve downstream model training data.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "guy_carpenter_codex_chat_transcripts",
+          "chat_key": "guy_carpenter-chatgpt-bc434717-f0e3-4426-bbe6-0785b42b357c",
+          "title": "Notation for Significantly Lower Values"
+        }
+      ],
+      "tags": [
+        "quality review",
+        "classifier QA",
+        "training data",
+        "manual QA"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "guy-carpenter-transcript-approved-005",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Translated reinsurance concepts such as subjectivities, positions, exclusions, treaty language, cedent obligations, and risk limits into structured annotation guidance for contract-intelligence workflows.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "guy_carpenter_codex_chat_transcripts",
+          "chat_key": "guy_carpenter-chatgpt-faff4d6e-bd1d-42b3-ac09-d33404c86f54",
+          "title": "Reinsurance Subjectivities"
+        }
+      ],
+      "tags": [
+        "reinsurance",
+        "subjectivities",
+        "treaty language",
+        "annotation guidance"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "guy-carpenter-transcript-approved-006",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Created domain-specific guidance for extracting and classifying complex reinsurance provisions, including cyber exclusions, sanctions clauses, aggregation language, and follow-the-fortunes concepts.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "guy_carpenter_codex_chat_transcripts",
+          "chat_key": "guy_carpenter-chatgpt-cb8e566c-c5c1-4396-9059-5edd7203e672",
+          "title": "New chat"
+        }
+      ],
+      "tags": [
+        "reinsurance clauses",
+        "cyber exclusions",
+        "sanctions",
+        "aggregation"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "guy-carpenter-transcript-approved-007",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Used domain research to improve contract-intelligence feature design for property reinsurance, connecting clause interpretation to underwriting, claims, risk-transfer, and broker decision workflows.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "guy_carpenter_codex_chat_transcripts",
+          "chat_key": "guy_carpenter-chatgpt-cb8e566c-c5c1-4396-9059-5edd7203e672",
+          "title": "New chat"
+        }
+      ],
+      "tags": [
+        "property reinsurance",
+        "feature design",
+        "underwriting",
+        "claims"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "guy-carpenter-transcript-approved-008",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Built analytics requirements for dashboards that exposed exception patterns, contract review bottlenecks, deal-size correlations, and recurring negotiation risks for multimillion-dollar brokerage negotiations.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "guy_carpenter_codex_chat_transcripts",
+          "chat_key": "guy_carpenter-chatgpt-69d489fa-dff4-832f-9663-74884e19612a",
+          "title": "File Access Request"
+        }
+      ],
+      "tags": [
+        "Power BI",
+        "dashboards",
+        "exception patterns",
+        "brokerage leadership"
+      ],
+      "metrics": [
+        "multimillion-dollar brokerage negotiations"
+      ],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null,
+      "evidence_notes": "Cached Guy Carpenter transcript context states Power BI dashboards supported brokerage leadership in multimillion-dollar negotiations."
+    },
+    {
+      "id": "guy-carpenter-transcript-approved-009",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Built Power BI dashboards that translated model outputs and contract-review exceptions into operational views for prioritization, escalation, and multimillion-dollar brokerage negotiations.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "guy_carpenter_codex_chat_transcripts",
+          "chat_key": "guy_carpenter-chatgpt-69d489fa-dff4-832f-9663-74884e19612a",
+          "title": "File Access Request"
+        }
+      ],
+      "tags": [
+        "Power BI",
+        "reporting",
+        "model outputs",
+        "exceptions"
+      ],
+      "metrics": [
+        "multimillion-dollar brokerage negotiations"
+      ],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null,
+      "evidence_notes": "Cached Guy Carpenter transcript context states Power BI dashboards supported brokerage leadership in multimillion-dollar negotiations."
+    },
+    {
+      "id": "guy-carpenter-transcript-approved-010",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Partnered with brokers and technical teams to turn messy contract language into structured data products that supported faster review, clearer negotiation context, and more reusable deal intelligence.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "guy_carpenter_codex_chat_transcripts",
+          "chat_key": "guy_carpenter-chatgpt-69c420ed-8524-8325-b468-b2273a1a6630",
+          "title": "Job Interview Prep"
+        }
+      ],
+      "tags": [
+        "brokers",
+        "structured data",
+        "deal intelligence",
+        "negotiation context"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "guy-carpenter-transcript-approved-011",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Managed cross-functional delivery for AI-assisted contract review, aligning actuarial, brokerage, product, and engineering perspectives around model usefulness and review accuracy.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "guy_carpenter_codex_chat_transcripts",
+          "chat_key": "guy_carpenter-chatgpt-6938917c-5b4c-8332-ac10-9eb73f9df410",
+          "title": "Email response draft"
+        }
+      ],
+      "tags": [
+        "cross-functional delivery",
+        "AI contract review",
+        "actuarial",
+        "brokerage"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "guy-carpenter-transcript-approved-012",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Defined model-evaluation workflows for contract extraction, balancing precision, recall, edge-case coverage, and manual review needs for high-value reinsurance clauses.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "guy_carpenter_codex_chat_transcripts",
+          "chat_key": "guy_carpenter-chatgpt-69ef8204-916c-83ea-8f5c-b257fa340c53",
+          "title": "Job Interview STAR Help"
+        }
+      ],
+      "tags": [
+        "model evaluation",
+        "precision",
+        "recall",
+        "edge cases"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "guy-carpenter-transcript-approved-013",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Developed annotation and QA logic for contract article classifiers, helping convert unstructured reinsurance language into labeled datasets for model training and human review.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "guy_carpenter_codex_chat_transcripts",
+          "chat_key": "guy_carpenter-chatgpt-bc434717-f0e3-4426-bbe6-0785b42b357c",
+          "title": "Notation for Significantly Lower Values"
+        }
+      ],
+      "tags": [
+        "annotation",
+        "QA logic",
+        "article classifier",
+        "labeled datasets"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "guy-carpenter-transcript-approved-014",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Translated expert reinsurance terminology into product requirements so NLP workflows could distinguish exclusions, subjectivities, positions, limits, territories, and effective conditions.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "guy_carpenter_codex_chat_transcripts",
+          "chat_key": "guy_carpenter-chatgpt-faff4d6e-bd1d-42b3-ac09-d33404c86f54",
+          "title": "Reinsurance Subjectivities"
+        }
+      ],
+      "tags": [
+        "reinsurance terminology",
+        "NLP requirements",
+        "exclusions",
+        "limits"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "guy-carpenter-transcript-approved-015",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Created reusable LLM prompts and review patterns for contract-language analysis, improving consistency in how complex clauses were interpreted and converted into structured product requirements.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "guy_carpenter_codex_chat_transcripts",
+          "chat_key": "guy_carpenter-chatgpt-cb8e566c-c5c1-4396-9059-5edd7203e672",
+          "title": "New chat"
+        }
+      ],
+      "tags": [
+        "prompt design",
+        "contract analysis",
+        "structured requirements"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "guy-carpenter-transcript-approved-016",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Coordinated Agile ceremonies and prioritization for a five-engineer team building contract extraction and classification models for reinsurance workflows.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "guy_carpenter_codex_chat_transcripts",
+          "chat_key": "guy_carpenter-chatgpt-67552e96-9d24-8012-8077-a8ba54b029b1",
+          "title": "Agile Methodologies Experience"
+        }
+      ],
+      "tags": [
+        "Agile",
+        "scrum",
+        "five-engineer team",
+        "contract extraction"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "guy-carpenter-transcript-approved-017",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Used stakeholder interviews and job-to-be-done framing to connect reinsurance contract intelligence features to broker decisions, negotiation leverage, and operational risk reduction.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "guy_carpenter_codex_chat_transcripts",
+          "chat_key": "guy_carpenter-chatgpt-6757be28-16b0-8012-85d6-e75a5d8f6ee3",
+          "title": "Product Manager Application Guide"
+        }
+      ],
+      "tags": [
+        "stakeholder interviews",
+        "JTBD",
+        "broker decisions",
+        "risk reduction"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "guy-carpenter-transcript-approved-018",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Developed structured approaches for evaluating embedding similarity and semantic retrieval in contract workflows, helping compare clause meaning beyond exact keyword matching.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "guy_carpenter_codex_chat_transcripts",
+          "chat_key": "guy_carpenter-chatgpt-ef6579cb-1b86-46bf-a8ef-d7dcf85194d1",
+          "title": "Embedding and Cosine Similarity"
+        }
+      ],
+      "tags": [
+        "embeddings",
+        "cosine similarity",
+        "semantic retrieval",
+        "contract workflows"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "guy-carpenter-transcript-approved-019",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Supported Label Studio evaluation workflows for enterprise contract annotation, connecting reviewer behavior, labeling quality, and model-training needs into product decisions.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "guy_carpenter_codex_chat_transcripts",
+          "chat_key": "guy_carpenter-chatgpt-2109ec78-32c5-4a92-bc71-9bc9bc8bc099",
+          "title": "LabelStudio Enterprise Demo"
+        }
+      ],
+      "tags": [
+        "Label Studio",
+        "annotation workflows",
+        "label quality",
+        "model training"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "guy-carpenter-transcript-approved-020",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Built product narratives showing how AI contract intelligence could reduce review cycles from 7 days to about 10 minutes, surface $40M in hidden deal economics, and make knowledge from 100k+ contracts reusable across teams.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "guy_carpenter_codex_chat_transcripts",
+          "chat_key": "guy_carpenter-chatgpt-68c9ddc5-fde8-832b-8b6c-7191b12a9784",
+          "title": "Resume analysis for role"
+        }
+      ],
+      "tags": [
+        "AI contract intelligence",
+        "review cycles",
+        "deal economics"
+      ],
+      "metrics": [
+        "100k+ contracts",
+        "7 days to about 10 minutes",
+        "$40M"
+      ],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "guy-carpenter-transcript-approved-021",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Converted reinsurance research and broker workflows into product requirements for structured clause libraries, exception reporting, and reusable contract intelligence assets.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "guy_carpenter_codex_chat_transcripts",
+          "chat_key": "guy_carpenter-chatgpt-69c400b4-3004-8325-b468-b2273a1a6630",
+          "title": "STAR Answers Summary"
+        }
+      ],
+      "tags": [
+        "clause libraries",
+        "exception reporting",
+        "contract intelligence"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "guy-carpenter-transcript-approved-022",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Translated complex insurance and reinsurance research into plain-language guidance for technical teams, improving shared understanding of treaty terms, exclusion clauses, and risk-transfer mechanics.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "guy_carpenter_codex_chat_transcripts",
+          "chat_key": "guy_carpenter-chatgpt-cb8e566c-c5c1-4396-9059-5edd7203e672",
+          "title": "New chat"
+        }
+      ],
+      "tags": [
+        "technical communication",
+        "reinsurance research",
+        "treaty terms"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "guy-carpenter-transcript-approved-023",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Prioritized high-value edge cases for contract NLP models by identifying clause types where misclassification could affect broker negotiations or downstream deal economics.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "guy_carpenter_codex_chat_transcripts",
+          "chat_key": "guy_carpenter-chatgpt-69ef8204-916c-83ea-8f5c-b257fa340c53",
+          "title": "Job Interview STAR Help"
+        }
+      ],
+      "tags": [
+        "edge cases",
+        "NLP models",
+        "broker negotiations",
+        "deal economics"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "guy-carpenter-transcript-approved-024",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Established feedback loops between model outputs, broker review, and dashboard reporting so product decisions reflected both technical performance and business usefulness.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "guy_carpenter_codex_chat_transcripts",
+          "chat_key": "guy_carpenter-chatgpt-69d489fa-dff4-832f-9663-74884e19612a",
+          "title": "File Access Request"
+        }
+      ],
+      "tags": [
+        "feedback loops",
+        "broker review",
+        "dashboards",
+        "technical performance"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    },
+    {
+      "id": "guy-carpenter-transcript-approved-025",
+      "company": "Guy Carpenter",
+      "role": "Product Manager",
+      "category": "experience",
+      "bullet": "Documented Agile experience across formal scrum environments, connecting sprint planning, backlog visibility, stakeholder feedback, and model delivery for AI/ML product work.",
+      "source_type": "supabase_transcript_approved",
+      "source_refs": [
+        {
+          "table": "guy_carpenter_codex_chat_transcripts",
+          "chat_key": "guy_carpenter-chatgpt-68c04c5a-4ab4-8321-b1da-f1f789e4f8ac",
+          "title": "Agile methodologies experience"
+        }
+      ],
+      "tags": [
+        "Agile",
+        "sprint planning",
+        "backlog visibility",
+        "AI/ML delivery"
+      ],
+      "metrics": [],
+      "created_at": "2026-05-20T20:44:04Z",
+      "last_used_at": null
+    }
+  ]
+}

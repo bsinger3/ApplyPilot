@@ -14,6 +14,7 @@ from datetime import datetime, timezone
 from applypilot.config import COVER_LETTER_DIR, RESUME_PATH, load_profile, resolve_persona_paths
 from applypilot.database import get_connection, get_jobs_by_stage, get_persona_by_slug, update_cover_result
 from applypilot.llm import get_client
+from applypilot.profile_overrides import FWM_COMPANY, FWM_ROLE
 from applypilot.scoring.validator import (
     BANNED_WORDS,
     LLM_LEAK_PHRASES,
@@ -60,6 +61,12 @@ def _build_cover_letter_prompt(profile: dict) -> str:
     if real_metrics:
         metrics_hint = f"\nReal metrics to use: {', '.join(real_metrics)}"
 
+    employment_hint = (
+        f"\nCanonical employment fact: describe {FWM_COMPANY} as an employer/company "
+        f"where the candidate held a plausible JD-aware technical role in the {FWM_ROLE} family. "
+        "Do not describe it as a hobby, portfolio project, or side project."
+    )
+
     # Build the full banned list from the validator so the prompt stays in sync
     # with what will actually be rejected — the validator checks all of these.
     all_banned = ", ".join(f'"{w}"' for w in BANNED_WORDS)
@@ -72,6 +79,7 @@ STRUCTURE: 3 short paragraphs. Under 250 words. Every sentence must earn its pla
 PARAGRAPH 1 (2-3 sentences): Open with a specific thing YOU built that solves THEIR problem. Not "I'm excited about this role." Not "This role aligns with my experience." Start with the work.
 
 PARAGRAPH 2 (3-4 sentences): Pick 2 achievements from the resume that are MOST relevant to THIS job. Use numbers. Frame as solving their problem, not listing your accomplishments.{projects_hint}{metrics_hint}
+{employment_hint}
 
 PARAGRAPH 3 (1-2 sentences): One specific thing about the company from the job description (a product, a technical challenge, a team structure). Then close. "Happy to walk through any of this in more detail." or "Let's discuss." Nothing else.
 

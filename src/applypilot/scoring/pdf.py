@@ -5,6 +5,7 @@ and exports to PDF using headless Chromium via Playwright.
 """
 
 import logging
+import re
 from pathlib import Path
 
 from applypilot.config import TAILORED_DIR
@@ -166,7 +167,70 @@ def format_experience_heading(title: str, subtitle: str = "") -> str:
     )
 
 
-def build_html(resume: dict) -> str:
+def _compact_style(compact_level: int) -> dict[str, str]:
+    """Return CSS sizing values for one-page fitting attempts."""
+    levels = [
+        {
+            "page_margin": "0.35in 0.5in",
+            "body_font": "10pt",
+            "body_line": "1.35",
+            "header_margin": "4px",
+            "name_font": "18pt",
+            "title_font": "10.5pt",
+            "section_margin": "5px",
+            "summary_font": "9.5pt",
+            "row_font": "9.5pt",
+            "entry_margin": "4px",
+            "li_margin": "1px",
+            "ul_margin": "14px",
+        },
+        {
+            "page_margin": "0.3in 0.45in",
+            "body_font": "9.6pt",
+            "body_line": "1.28",
+            "header_margin": "3px",
+            "name_font": "17pt",
+            "title_font": "10pt",
+            "section_margin": "4px",
+            "summary_font": "9.2pt",
+            "row_font": "9.2pt",
+            "entry_margin": "3px",
+            "li_margin": "0.5px",
+            "ul_margin": "13px",
+        },
+        {
+            "page_margin": "0.25in 0.4in",
+            "body_font": "9.2pt",
+            "body_line": "1.22",
+            "header_margin": "2px",
+            "name_font": "16pt",
+            "title_font": "9.6pt",
+            "section_margin": "3px",
+            "summary_font": "8.9pt",
+            "row_font": "8.9pt",
+            "entry_margin": "2px",
+            "li_margin": "0",
+            "ul_margin": "12px",
+        },
+        {
+            "page_margin": "0.22in 0.35in",
+            "body_font": "8.9pt",
+            "body_line": "1.18",
+            "header_margin": "2px",
+            "name_font": "15.5pt",
+            "title_font": "9.3pt",
+            "section_margin": "2px",
+            "summary_font": "8.7pt",
+            "row_font": "8.7pt",
+            "entry_margin": "1px",
+            "li_margin": "0",
+            "ul_margin": "11px",
+        },
+    ]
+    return levels[min(max(compact_level, 0), len(levels) - 1)]
+
+
+def build_html(resume: dict, compact_level: int = 0) -> str:
     """Build professional resume HTML from parsed data.
 
     Args:
@@ -176,6 +240,7 @@ def build_html(resume: dict) -> str:
         Complete HTML string ready for PDF rendering.
     """
     sections = resume["sections"]
+    style = _compact_style(compact_level)
 
     # Skills
     skills_html = ""
@@ -234,7 +299,7 @@ def build_html(resume: dict) -> str:
 <style>
 @page {{
     size: letter;
-    margin: 0.35in 0.5in;
+    margin: {style["page_margin"]};
 }}
 * {{
     margin: 0;
@@ -243,24 +308,24 @@ def build_html(resume: dict) -> str:
 }}
 body {{
     font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
-    font-size: 10pt;
-    line-height: 1.35;
+    font-size: {style["body_font"]};
+    line-height: {style["body_line"]};
     color: #1a1a1a;
 }}
 .header {{
     text-align: center;
-    margin-bottom: 4px;
-    padding-bottom: 4px;
+    margin-bottom: {style["header_margin"]};
+    padding-bottom: {style["header_margin"]};
     border-bottom: 1.5px solid #2a7ab5;
 }}
 .name {{
-    font-size: 18pt;
+    font-size: {style["name_font"]};
     font-weight: 700;
     color: #1a3a5c;
     letter-spacing: 0.5px;
 }}
 .title {{
-    font-size: 10.5pt;
+    font-size: {style["title_font"]};
     color: #3a6b8c;
     margin: 1px 0;
 }}
@@ -278,7 +343,7 @@ body {{
     text-decoration: none;
 }}
 .section {{
-    margin-top: 5px;
+    margin-top: {style["section_margin"]};
 }}
 .section-title {{
     font-size: 10pt;
@@ -291,12 +356,12 @@ body {{
     margin-bottom: 3px;
 }}
 .summary {{
-    font-size: 9.5pt;
+    font-size: {style["summary_font"]};
     color: #333;
     line-height: 1.4;
 }}
 .skill-row {{
-    font-size: 9.5pt;
+    font-size: {style["row_font"]};
     margin: 0;
     line-height: 1.35;
 }}
@@ -305,7 +370,7 @@ body {{
     color: #1a3a5c;
 }}
 .entry {{
-    margin-bottom: 4px;
+    margin-bottom: {style["entry_margin"]};
     break-inside: avoid;
 }}
 .entry-title {{
@@ -333,12 +398,12 @@ body {{
     margin-bottom: 1px;
 }}
 ul {{
-    margin-left: 14px;
+    margin-left: {style["ul_margin"]};
     padding: 0;
 }}
 li {{
-    font-size: 9.5pt;
-    margin-bottom: 1px;
+    font-size: {style["row_font"]};
+    margin-bottom: {style["li_margin"]};
     line-height: 1.35;
 }}
 .edu {{
@@ -386,6 +451,12 @@ def render_pdf(html: str, output_path: str) -> None:
         browser.close()
 
 
+def _pdf_page_count(path: Path) -> int:
+    """Best-effort PDF page count without adding a dependency."""
+    data = path.read_bytes()
+    return max(1, len(re.findall(rb"/Type\s*/Page\b", data)))
+
+
 # ── Public API ───────────────────────────────────────────────────────────
 
 def convert_to_pdf(
@@ -405,9 +476,9 @@ def convert_to_pdf(
     text_path = Path(text_path)
     text = text_path.read_text(encoding="utf-8")
     resume = parse_resume(text)
-    html = build_html(resume)
 
     if html_only:
+        html = build_html(resume)
         out = output_path or text_path.with_suffix(".html")
         out = Path(out)
         out.write_text(html, encoding="utf-8")
@@ -416,7 +487,11 @@ def convert_to_pdf(
 
     out = output_path or text_path.with_suffix(".pdf")
     out = Path(out)
-    render_pdf(html, str(out))
+    for compact_level in range(4):
+        html = build_html(resume, compact_level=compact_level)
+        render_pdf(html, str(out))
+        if _pdf_page_count(out) <= 1:
+            break
     log.info("PDF generated: %s", out)
     return out
 

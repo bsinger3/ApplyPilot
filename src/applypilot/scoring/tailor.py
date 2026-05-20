@@ -1,8 +1,8 @@
 """Resume tailoring: LLM-powered ATS-optimized resume generation per job.
 
-THIS IS THE HEAVIEST REFACTOR. Every piece of personal data -- name, email, phone,
+THIS IS THE HEAVIEST REFACTOR. Most personal data -- name, email, phone,
 skills, companies, projects, school -- is loaded at runtime from the user's profile.
-Zero hardcoded personal information.
+Canonical experience facts live in profile_overrides when they must survive tailoring.
 
 The LLM returns structured JSON, code assembles the final text. Header (name, contact)
 is always code-injected, never LLM-generated. Each retry starts a fresh conversation
@@ -20,6 +20,20 @@ from pathlib import Path
 from applypilot.config import RESUME_PATH, TAILORED_DIR, load_profile, resolve_persona_paths
 from applypilot.database import get_connection, get_jobs_by_stage, get_persona_by_slug, update_tailor_result
 from applypilot.llm import get_client
+from applypilot.profile_overrides import (
+    FWM_COMPANY,
+    FWM_LOCATION,
+    FWM_ROLE,
+    canonicalize_experience_role,
+)
+from applypilot.scoring.supplementary_bullets import (
+    cap_experience_bullets,
+    enforce_required_first_experience_bullets,
+    format_selected_bullets_for_prompt,
+    load_supplementary_bullets,
+    remove_redundant_experience_bullets,
+    select_bullets_for_job,
+)
 from applypilot.scoring.validator import (
     BANNED_WORDS,
     FABRICATION_WATCHLIST,
@@ -161,7 +175,7 @@ def _merge_resume_skills(data: dict, profile: dict, job_text: str) -> dict[str, 
     }
 
 
-def _build_tailor_prompt(profile: dict) -> str:
+def _build_tailor_prompt(profile: dict, selected_bullets_text: str = "") -> str:
     """Build the resume tailoring system prompt from the user's profile.
 
     All skills boundaries, preserved entities, and formatting rules are
@@ -199,6 +213,23 @@ def _build_tailor_prompt(profile: dict) -> str:
 
     education = profile.get("experience", {})
     education_level = education.get("education_level", "")
+    selected_bullets_section = ""
+    if selected_bullets_text:
+        selected_bullets_section = f"""
+
+## SELECTED BULLET LIBRARY FOR THIS JOB:
+Use these bullets as the primary source for experience content. They are already ranked for this job by relevance, keyword overlap, and metric strength. Preserve concrete numbers exactly. You may lightly reframe wording, but do not invent new work.
+
+{selected_bullets_text}
+
+Rules for these bullets:
+- Use no more than 5 bullets per company.
+- Put the most JD-relevant bullet first for each company.
+- For FriendsWithMeasurements.com, always keep the bullet explaining the apparel discovery problem as the first bullet before implementation details.
+- Prefer metric-bearing bullets when they are relevant.
+- Do not use redundant bullets. If two bullets describe the same work, keep the one with stronger target-JD keyword overlap.
+- Omit lower-relevance bullets when space is tight.
+"""
 
     return f"""You are a senior technical recruiter rewriting a resume to get this person an interview.
 
@@ -229,6 +260,7 @@ SUMMARY: Rewrite from scratch. Lead with the 1-2 skills that matter most for THI
 SKILLS: Reorder each category so the job's must-haves appear first. Only use skills from SKILLS BOUNDARY; do not invent or infer skills outside that list.
 
 Reframe EVERY bullet for this role. Same real work, different angle. Every bullet must be reworded. Never copy verbatim.
+{selected_bullets_section}
 
 PROJECTS: Use only projects from PROJECT FACTS. Reorder by relevance. Drop irrelevant projects entirely. Do not invent project names, subtitles, metrics, users, technologies, or outcomes.
 
@@ -246,6 +278,7 @@ BULLETS: Strong verb + what you built + quantified impact. Vary verbs (Built, De
 - Do NOT invent work, companies, degrees, or certifications
 - Do NOT change real numbers ({metrics_str})
 - Preserved companies: {companies_str} -- names stay as-is
+- {FWM_COMPANY} is an employer/company. Its role title should be close to the target JD while staying plausible for that company.
 - Preserved school: {school}
 - Must fit 1 page.
 
@@ -380,7 +413,7 @@ def _build_profile_project_entries(profile: dict) -> list[dict]:
 def _experience_location_map() -> dict[str, str]:
     """Known locations for deterministic experience headings."""
     return {
-        "FriendsWithMeasurements.com": "Newark, New Jersey",
+        FWM_COMPANY: FWM_LOCATION,
         "ALTR": "Melbourne, Florida",
         "Guy Carpenter": "New York, New York",
         "Sirion": "New York, New York",
@@ -408,7 +441,12 @@ def _clean_role_title(title: str) -> str:
     return title or "Product Manager"
 
 
-def _format_experience_heading(header: str, subtitle: str, target_title: str = "") -> str:
+def _format_experience_heading(
+    header: str,
+    subtitle: str,
+    target_title: str = "",
+    target_job_text: str = "",
+) -> str:
     """Render role, company, location, and dates on one deterministic line."""
     header = sanitize_text(header)
     subtitle = _normalize_experience_subtitle(header, subtitle)
@@ -450,8 +488,7 @@ def _format_experience_heading(header: str, subtitle: str, target_title: str = "
         if not location:
             location = known_locations.get(company, "")
 
-    if company == "FriendsWithMeasurements.com" and target_title:
-        role = _clean_role_title(target_title)
+    role = canonicalize_experience_role(company, role, target_title, target_job_text)
 
     parts = [role]
     if company:
@@ -465,7 +502,12 @@ def _format_experience_heading(header: str, subtitle: str, target_title: str = "
     return ", ".join(part for part in parts if part)
 
 
-def assemble_resume_text(data: dict, profile: dict, target_job_title: str = "") -> str:
+def assemble_resume_text(
+    data: dict,
+    profile: dict,
+    target_job_title: str = "",
+    target_job_text: str = "",
+) -> str:
     """Convert JSON resume data to formatted plain text.
 
     Header (name, location, contact) is ALWAYS code-injected from the profile,
@@ -526,6 +568,7 @@ def assemble_resume_text(data: dict, profile: dict, target_job_title: str = "") 
             entry.get("header", ""),
             entry.get("subtitle", ""),
             target_job_title or data.get("title", ""),
+            target_job_text,
         )
         lines.append(heading)
         for b in entry.get("bullets", []):
@@ -617,6 +660,7 @@ def judge_tailored_resume(
 def tailor_resume(
     resume_text: str, job: dict, profile: dict,
     max_retries: int = 3, validation_mode: str = "normal",
+    selected_bullets_text: str = "",
 ) -> tuple[str, dict]:
     """Generate a tailored resume via JSON output + fresh context on each retry.
 
@@ -653,7 +697,7 @@ def tailor_resume(
     avoid_notes: list[str] = []
     tailored = ""
     client = get_client()
-    tailor_prompt_base = _build_tailor_prompt(profile)
+    tailor_prompt_base = _build_tailor_prompt(profile, selected_bullets_text)
 
     for attempt in range(max_retries + 1):
         report["attempts"] = attempt + 1
@@ -683,6 +727,10 @@ def tailor_resume(
         if profile_projects:
             data["projects"] = profile_projects
         data["skills"] = _merge_resume_skills(data, profile, job_text)
+        data = enforce_required_first_experience_bullets(data, bullet_library)
+        data = remove_redundant_experience_bullets(data, job_text)
+        data = enforce_required_first_experience_bullets(data, bullet_library)
+        data = cap_experience_bullets(data)
 
         # Layer 1: Validate JSON fields
         validation = validate_json_fields(data, profile, mode=validation_mode)
@@ -694,12 +742,22 @@ def tailor_resume(
             if attempt < max_retries:
                 continue
             # Last attempt — assemble whatever we got
-            tailored = assemble_resume_text(data, profile, job.get("title", ""))
+            tailored = assemble_resume_text(
+                data,
+                profile,
+                job.get("title", ""),
+                job.get("full_description", ""),
+            )
             report["status"] = "failed_validation"
             return tailored, report
 
         # Assemble text (header injected by code, em dashes auto-fixed)
-        tailored = assemble_resume_text(data, profile, job.get("title", ""))
+        tailored = assemble_resume_text(
+            data,
+            profile,
+            job.get("title", ""),
+            job.get("full_description", ""),
+        )
 
         # Layer 2: LLM judge (catches subtle fabrication) — skipped in lenient mode
         if validation_mode == "lenient":
@@ -749,6 +807,7 @@ def run_tailoring(min_score: int = 7, limit: int = 20,
     profile = load_profile(persona_row)
     resume_path = persona_paths.resume_path if persona else RESUME_PATH
     resume_text = resume_path.read_text(encoding="utf-8")
+    bullet_library = load_supplementary_bullets(persona_paths)
 
     jobs = get_jobs_by_stage(
         conn=conn,
@@ -773,8 +832,11 @@ def run_tailoring(min_score: int = 7, limit: int = 20,
     for job in jobs:
         completed += 1
         try:
+            selected_bullets = select_bullets_for_job(bullet_library, job)
+            selected_bullets_text = format_selected_bullets_for_prompt(selected_bullets)
             tailored, report = tailor_resume(resume_text, job, profile,
-                                             validation_mode=validation_mode)
+                                             validation_mode=validation_mode,
+                                             selected_bullets_text=selected_bullets_text)
 
             # Build safe filename prefix
             prefix = _resume_filename_prefix(profile, job)

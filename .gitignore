@@ -17,6 +17,7 @@ chrome-workers/
 apply-workers/
 apply_logs/
 logs/
+transcript_bullet_candidates/
 
 # MCP configs (per-machine)
 .mcp*.json
