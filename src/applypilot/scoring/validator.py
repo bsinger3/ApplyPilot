@@ -11,8 +11,10 @@ normal  -- banned words = warnings only; fabrication/structure = errors (default
 lenient -- banned words ignored; only fabrication and required structure checked
 """
 
-import re
 import logging
+import re
+from difflib import SequenceMatcher
+from pathlib import Path
 
 log = logging.getLogger(__name__)
 
@@ -70,6 +72,13 @@ FABRICATION_WATCHLIST: set[str] = {
 
 REQUIRED_SECTIONS: set[str] = {"SUMMARY", "TECHNICAL SKILLS", "EXPERIENCE", "PROJECTS", "EDUCATION"}
 
+NOISY_TITLE_MARKERS: tuple[str, ...] = (" - ", " | ", ": ", "(", "[")
+SUBTITLE_NOISE_TERMS: tuple[str, ...] = (
+    "saas", "ai", "ml", "platform", "delivery", "implementation",
+    "business systems", "data platform", "project management", "scrum",
+    "stakeholder", "analytics", "technical",
+)
+
 
 # ── Helpers ───────────────────────────────────────────────────────────────
 
@@ -92,6 +101,216 @@ def sanitize_text(text: str) -> str:
     text = text.replace("\u201c", '"').replace("\u201d", '"')   # smart double quotes
     text = text.replace("\u2018", "'").replace("\u2019", "'")   # smart single quotes
     return text.strip()
+
+
+def _normalize_for_match(text: object) -> str:
+    """Normalize text for fuzzy validation comparisons."""
+    text = str(text or "").lower()
+    text = text.replace("&", " and ")
+    text = re.sub(r"[^a-z0-9]+", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def _tokens(text: object) -> set[str]:
+    """Return comparison tokens, excluding low-signal words."""
+    stop = {
+        "and", "the", "for", "with", "from", "that", "this", "role", "job",
+        "remote", "hybrid", "onsite", "all", "genders", "team", "department",
+    }
+    return {token for token in _normalize_for_match(text).split() if len(token) > 2 and token not in stop}
+
+
+def _similarity(left: object, right: object) -> float:
+    """Return a combined token/sequence similarity score."""
+    left_norm = _normalize_for_match(left)
+    right_norm = _normalize_for_match(right)
+    if not left_norm or not right_norm:
+        return 0.0
+    left_tokens = _tokens(left_norm)
+    right_tokens = _tokens(right_norm)
+    token_score = len(left_tokens & right_tokens) / max(1, min(len(left_tokens), len(right_tokens)))
+    sequence_score = SequenceMatcher(None, left_norm, right_norm).ratio()
+    return max(token_score, sequence_score)
+
+
+def _core_job_title(job_title: str) -> str:
+    """Strip common JD suffixes while preserving the core role title."""
+    title = sanitize_text(job_title)
+    for marker in (" - ", " | ", ": "):
+        if marker in title:
+            title = title.split(marker, 1)[0]
+            break
+    title = re.sub(r"\s*\([^)]*\)", "", title)
+    title = re.sub(r"\s*\[[^]]*\]", "", title)
+    return title.strip()
+
+
+def validate_title_fit(resume_title: str, job_title: str, job_description: str = "") -> dict:
+    """Validate that the generated resume title is aligned without lazy-copying a noisy JD title."""
+    errors: list[str] = []
+    warnings: list[str] = []
+    resume_title = sanitize_text(resume_title)
+    job_title = sanitize_text(job_title)
+    core_title = _core_job_title(job_title)
+
+    title_score = _similarity(resume_title, core_title or job_title)
+    jd_score = _similarity(resume_title, f"{job_title} {job_description[:1000]}")
+    if max(title_score, jd_score) < 0.48:
+        errors.append(f"Resume title '{resume_title}' is not close enough to JD title '{job_title}'.")
+
+    resume_norm = _normalize_for_match(resume_title)
+    job_norm = _normalize_for_match(job_title)
+    noisy_title = any(marker in job_title for marker in NOISY_TITLE_MARKERS) or len(_tokens(job_title)) > 6
+    if noisy_title and resume_norm == job_norm:
+        errors.append(f"Resume title appears copied verbatim from noisy JD title: '{job_title}'.")
+    elif resume_norm == job_norm and resume_norm != _normalize_for_match(core_title):
+        warnings.append(f"Resume title appears copied from JD title: '{job_title}'.")
+
+    return {"passed": len(errors) == 0, "errors": errors, "warnings": warnings}
+
+
+def _selected_bullets_by_company(selected_bullets: dict | None) -> dict[str, list[dict]]:
+    """Normalize selected supplemental bullet records by company name."""
+    grouped: dict[str, list[dict]] = {}
+    for company, bullets in (selected_bullets or {}).items():
+        company_key = _normalize_for_match(company)
+        grouped[company_key] = [
+            bullet for bullet in bullets or []
+            if str(bullet.get("bullet", "")).strip()
+        ]
+    return grouped
+
+
+def _company_for_experience_entry(entry: dict, selected_bullets: dict | None, profile: dict) -> str:
+    """Infer the canonical company for a generated experience entry."""
+    haystack = f"{entry.get('header', '')} {entry.get('subtitle', '')}"
+    companies: list[str] = []
+    companies.extend(profile.get("resume_facts", {}).get("preserved_companies", []) or [])
+    companies.extend(str(company) for company in (selected_bullets or {}).keys())
+    for company in companies:
+        if company and company.lower() in haystack.lower():
+            return str(company)
+    if " at " in str(entry.get("header", "")):
+        return str(entry["header"]).split(" at ", 1)[1].strip()
+    return ""
+
+
+def validate_bullet_sources(data: dict, selected_bullets: dict | None, profile: dict) -> dict:
+    """Validate experience bullets are selected from the supplemental bullet library."""
+    errors: list[str] = []
+    warnings: list[str] = []
+    selected_by_company = _selected_bullets_by_company(selected_bullets)
+    if not selected_by_company:
+        warnings.append("No selected supplemental bullets were provided; bullet provenance was not checked.")
+        return {"passed": True, "errors": errors, "warnings": warnings}
+
+    for entry in data.get("experience", []) or []:
+        company = _company_for_experience_entry(entry, selected_bullets, profile)
+        company_key = _normalize_for_match(company)
+        allowed = selected_by_company.get(company_key, [])
+        if not allowed:
+            errors.append(f"No selected supplemental bullets found for experience company '{company or '?'}'.")
+            continue
+
+        allowed_norms = {_normalize_for_match(bullet.get("bullet", "")) for bullet in allowed}
+        for bullet in entry.get("bullets", []) or []:
+            bullet_norm = _normalize_for_match(bullet)
+            if bullet_norm in allowed_norms:
+                continue
+            best = max((_similarity(bullet, item.get("bullet", "")) for item in allowed), default=0.0)
+            if best < 0.92:
+                errors.append(
+                    f"Bullet for {company} is not traceable to selected supplemental bullets: '{str(bullet)[:120]}'."
+                )
+
+    return {"passed": len(errors) == 0, "errors": errors, "warnings": warnings}
+
+
+def validate_experience_subtitle_format(data: dict, profile: dict) -> dict:
+    """Validate experience subtitles stay in the deterministic location/date shape."""
+    errors: list[str] = []
+    warnings: list[str] = []
+    preserved_companies = profile.get("resume_facts", {}).get("preserved_companies", []) or []
+    date_pattern = re.compile(
+        r"\b(?:jan|feb|mar|apr|may|jun|jul|aug|sep|sept|oct|nov|dec)[a-z]*\.?\s+\d{4}\b|"
+        r"\b\d{4}\b|present|current",
+        re.IGNORECASE,
+    )
+
+    for entry in data.get("experience", []) or []:
+        header = sanitize_text(str(entry.get("header", "")))
+        subtitle = sanitize_text(str(entry.get("subtitle", "")))
+        company = _company_for_experience_entry(entry, None, profile)
+
+        if not company:
+            errors.append(f"Experience header does not include a preserved company: '{header}'.")
+        elif not any(str(c).lower() == company.lower() for c in preserved_companies):
+            warnings.append(f"Experience company '{company}' is not in preserved companies.")
+
+        if not subtitle:
+            errors.append(f"Experience entry for '{company or header}' is missing subtitle.")
+            continue
+        if subtitle.count("|") != 1:
+            errors.append(
+                f"Experience subtitle must be exactly 'Location | Dates' for '{company or header}': '{subtitle}'."
+            )
+            continue
+
+        location, dates = [part.strip() for part in subtitle.split("|", 1)]
+        if not location or not dates:
+            errors.append(f"Experience subtitle has blank location or dates for '{company or header}': '{subtitle}'.")
+        if company and company.lower() in subtitle.lower():
+            errors.append(f"Experience subtitle should not repeat company name for '{company}': '{subtitle}'.")
+        if not date_pattern.search(dates):
+            errors.append(f"Experience subtitle dates are not recognizable for '{company or header}': '{dates}'.")
+        location_norm = _normalize_for_match(location)
+        noisy_terms = [term for term in SUBTITLE_NOISE_TERMS if term in location_norm]
+        if noisy_terms:
+            errors.append(
+                f"Experience subtitle location contains role/skill noise for '{company or header}': '{location}'."
+            )
+
+    return {"passed": len(errors) == 0, "errors": errors, "warnings": warnings}
+
+
+def validate_resume_quality_json(
+    data: dict,
+    profile: dict,
+    job: dict,
+    selected_bullets: dict | None = None,
+) -> dict:
+    """Run resume-quality checks that need structured generated JSON."""
+    checks = {
+        "title_fit": validate_title_fit(
+            str(data.get("title", "")),
+            str(job.get("title", "")),
+            str(job.get("full_description") or job.get("description") or ""),
+        ),
+        "bullet_sources": validate_bullet_sources(data, selected_bullets, profile),
+        "experience_subtitles": validate_experience_subtitle_format(data, profile),
+    }
+    errors: list[str] = []
+    warnings: list[str] = []
+    for name, result in checks.items():
+        errors.extend(f"{name}: {error}" for error in result.get("errors", []))
+        warnings.extend(f"{name}: {warning}" for warning in result.get("warnings", []))
+    return {"passed": len(errors) == 0, "errors": errors, "warnings": warnings, "checks": checks}
+
+
+def pdf_page_count(path: str | Path) -> int:
+    """Best-effort PDF page count without extra dependencies."""
+    data = Path(path).read_bytes()
+    return max(1, len(re.findall(rb"/Type\s*/Page\b", data)))
+
+
+def validate_resume_pdf(path: str | Path, max_pages: int = 1) -> dict:
+    """Validate rendered resume PDF page count."""
+    errors: list[str] = []
+    warnings: list[str] = []
+    count = pdf_page_count(path)
+    if count > max_pages:
+        errors.append(f"Resume PDF is {count} pages; max is {max_pages}.")
+    return {"passed": len(errors) == 0, "errors": errors, "warnings": warnings, "page_count": count}
 
 
 # ── JSON Field Validation ─────────────────────────────────────────────────

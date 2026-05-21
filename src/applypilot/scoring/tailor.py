@@ -39,6 +39,8 @@ from applypilot.scoring.validator import (
     FABRICATION_WATCHLIST,
     sanitize_text,
     validate_json_fields,
+    validate_resume_pdf,
+    validate_resume_quality_json,
     validate_tailored_resume,
 )
 
@@ -218,7 +220,7 @@ def _build_tailor_prompt(profile: dict, selected_bullets_text: str = "") -> str:
         selected_bullets_section = f"""
 
 ## SELECTED BULLET LIBRARY FOR THIS JOB:
-Use these bullets as the primary source for experience content. They are already ranked for this job by relevance, keyword overlap, and metric strength. Preserve concrete numbers exactly. You may lightly reframe wording, but do not invent new work.
+Use these bullets as the required source for experience content. They are already ranked for this job by relevance, keyword overlap, and metric strength. Preserve concrete numbers exactly. Use the selected bullets verbatim or with only tiny grammar/punctuation cleanup; do not invent new work.
 
 {selected_bullets_text}
 
@@ -229,6 +231,7 @@ Rules for these bullets:
 - Prefer metric-bearing bullets when they are relevant.
 - Do not use redundant bullets. If two bullets describe the same work, keep the one with stronger target-JD keyword overlap.
 - Omit lower-relevance bullets when space is tight.
+- Do not introduce experience bullets that are not traceable to the selected bullet library.
 """
 
     return f"""You are a senior technical recruiter rewriting a resume to get this person an interview.
@@ -259,7 +262,7 @@ SUMMARY: Rewrite from scratch. Lead with the 1-2 skills that matter most for THI
 
 SKILLS: Reorder each category so the job's must-haves appear first. Only use skills from SKILLS BOUNDARY; do not invent or infer skills outside that list.
 
-Reframe EVERY bullet for this role. Same real work, different angle. Every bullet must be reworded. Never copy verbatim.
+Use the selected supplemental bullets for experience. You may change emphasis through ordering and selection, but the underlying bullet text must stay traceable to the selected library.
 {selected_bullets_section}
 
 PROJECTS: Use only projects from PROJECT FACTS. Reorder by relevance. Drop irrelevant projects entirely. Do not invent project names, subtitles, metrics, users, technologies, or outcomes.
@@ -422,13 +425,112 @@ def _experience_location_map() -> dict[str, str]:
     }
 
 
+def _experience_date_map() -> dict[str, str]:
+    """Known dates for deterministic experience headings."""
+    return {
+        FWM_COMPANY: "Aug 2025 - Present",
+        "ALTR": "Feb 2025 - Aug 2025",
+        "Guy Carpenter": "Nov 2023 - Dec 2024",
+        "Sirion": "May 2022 - June 2023",
+        "Sakhi": "Jan 2022 - Present",
+        "The Samaritans of New York": "Feb 2021 - Sep 2021",
+    }
+
+
 def _normalize_experience_subtitle(header: str, subtitle: str) -> str:
     """Replace placeholder experience locations with known company locations."""
     subtitle = sanitize_text(subtitle)
+    parts = [part.strip() for part in subtitle.split("|")]
+    if len(parts) >= 3:
+        for company in _experience_location_map():
+            if parts[0].lower() == company.lower() or company.lower() in header.lower():
+                return f"{parts[-2]} | {parts[-1]}"
     for company, location in _experience_location_map().items():
         if company.lower() in header.lower() and subtitle.lower().startswith("tech |"):
             return subtitle.replace("Tech", location, 1)
     return subtitle
+
+
+def _company_in_experience_entry(entry: dict, companies: list[str]) -> str:
+    """Infer the company represented by an experience entry."""
+    haystack = f"{entry.get('header', '')} {entry.get('subtitle', '')}".lower()
+    for company in companies:
+        if company and company.lower() in haystack:
+            return company
+    header = str(entry.get("header", ""))
+    if " at " in header:
+        return header.split(" at ", 1)[1].strip()
+    return ""
+
+
+def _normalize_resume_json_for_validation(
+    data: dict,
+    selected_bullets: dict | None,
+) -> dict:
+    """Apply deterministic cleanup before strict resume validation."""
+    title = sanitize_text(str(data.get("title", "")))
+    for separator in (" - ", " | ", ": "):
+        if separator in title:
+            title = title.split(separator, 1)[0].strip()
+            break
+    data["title"] = title or data.get("title", "")
+
+    if selected_bullets:
+        locations = _experience_location_map()
+        dates = _experience_date_map()
+        entries: list[dict] = []
+        for company, bullets in selected_bullets.items():
+            if company not in locations or company not in dates:
+                continue
+            selected_text = [
+                str(bullet.get("bullet", "")).strip()
+                for bullet in bullets or []
+                if str(bullet.get("bullet", "")).strip()
+            ]
+            if not selected_text:
+                continue
+            role = str((bullets[0] or {}).get("role") or "").strip()
+            if not role:
+                role = {
+                    FWM_COMPANY: FWM_ROLE,
+                    "ALTR": "Product Manager",
+                    "Guy Carpenter": "Product Manager",
+                    "Sirion": "Technical Project Manager",
+                    "Sakhi": "Domestic Violence Hotline Volunteer",
+                    "The Samaritans of New York": "Suicide Hotline Volunteer",
+                }.get(company, "Project Manager")
+            max_bullets = 1 if company in {"Sakhi", "The Samaritans of New York"} else 2
+            entries.append(
+                {
+                    "header": f"{role} at {company}",
+                    "subtitle": f"{locations.get(company, '')} | {dates.get(company, '')}",
+                    "bullets": selected_text[:max_bullets],
+                }
+            )
+        if entries:
+            data["experience"] = entries
+            return data
+
+    companies = list(_experience_location_map())
+    companies.extend(str(company) for company in (selected_bullets or {}).keys())
+    seen: set[str] = set()
+    companies = [company for company in companies if not (company in seen or seen.add(company))]
+
+    for entry in data.get("experience", []) or []:
+        entry["subtitle"] = _normalize_experience_subtitle(
+            str(entry.get("header", "")),
+            str(entry.get("subtitle", "")),
+        )
+        company = _company_in_experience_entry(entry, companies)
+        selected = (selected_bullets or {}).get(company) or []
+        selected_text = [
+            str(bullet.get("bullet", "")).strip()
+            for bullet in selected
+            if str(bullet.get("bullet", "")).strip()
+        ]
+        if selected_text:
+            entry["bullets"] = selected_text[:2]
+    return data
 
 
 def _clean_role_title(title: str) -> str:
@@ -661,6 +763,8 @@ def tailor_resume(
     resume_text: str, job: dict, profile: dict,
     max_retries: int = 3, validation_mode: str = "normal",
     selected_bullets_text: str = "",
+    selected_bullets: dict | None = None,
+    bullet_library: dict | None = None,
 ) -> tuple[str, dict]:
     """Generate a tailored resume via JSON output + fresh context on each retry.
 
@@ -679,6 +783,9 @@ def tailor_resume(
                           strict  -- banned words trigger retries; judge must pass
                           normal  -- banned words = warnings only; judge can fail on last retry
                           lenient -- banned words ignored; LLM judge skipped
+        selected_bullets_text: Formatted supplemental bullets included in the prompt.
+        selected_bullets: Structured selected supplemental bullets for validation.
+        bullet_library: Full supplemental bullet library for deterministic post-processing.
 
     Returns:
         (tailored_text, report) where report contains validation details.
@@ -691,7 +798,7 @@ def tailor_resume(
     )
 
     report: dict = {
-        "attempts": 0, "validator": None, "judge": None,
+        "attempts": 0, "validator": None, "quality_validator": None, "judge": None,
         "status": "pending", "validation_mode": validation_mode,
     }
     avoid_notes: list[str] = []
@@ -727,9 +834,11 @@ def tailor_resume(
         if profile_projects:
             data["projects"] = profile_projects
         data["skills"] = _merge_resume_skills(data, profile, job_text)
-        data = enforce_required_first_experience_bullets(data, bullet_library)
+        data = _normalize_resume_json_for_validation(data, selected_bullets)
+        data = enforce_required_first_experience_bullets(data, bullet_library or {})
         data = remove_redundant_experience_bullets(data, job_text)
-        data = enforce_required_first_experience_bullets(data, bullet_library)
+        data = enforce_required_first_experience_bullets(data, bullet_library or {})
+        data = _normalize_resume_json_for_validation(data, selected_bullets)
         data = cap_experience_bullets(data)
 
         # Layer 1: Validate JSON fields
@@ -749,6 +858,22 @@ def tailor_resume(
                 job.get("full_description", ""),
             )
             report["status"] = "failed_validation"
+            return tailored, report
+
+        # Layer 1b: resume-quality checks tied to the generation rules.
+        quality = validate_resume_quality_json(data, profile, job, selected_bullets)
+        report["quality_validator"] = quality
+        if not quality["passed"]:
+            avoid_notes.extend(quality["errors"])
+            if attempt < max_retries:
+                continue
+            tailored = assemble_resume_text(
+                data,
+                profile,
+                job.get("title", ""),
+                job.get("full_description", ""),
+            )
+            report["status"] = "failed_quality_validation"
             return tailored, report
 
         # Assemble text (header injected by code, em dashes auto-fixed)
@@ -836,7 +961,9 @@ def run_tailoring(min_score: int = 7, limit: int = 20,
             selected_bullets_text = format_selected_bullets_for_prompt(selected_bullets)
             tailored, report = tailor_resume(resume_text, job, profile,
                                              validation_mode=validation_mode,
-                                             selected_bullets_text=selected_bullets_text)
+                                             selected_bullets_text=selected_bullets_text,
+                                             selected_bullets=selected_bullets,
+                                             bullet_library=bullet_library)
 
             # Build safe filename prefix
             prefix = _resume_filename_prefix(profile, job)
@@ -867,9 +994,23 @@ def run_tailoring(min_score: int = 7, limit: int = 20,
             if report["status"] in ("approved", "approved_with_judge_warning"):
                 try:
                     from applypilot.scoring.pdf import convert_to_pdf
-                    pdf_path = str(convert_to_pdf(txt_path))
+                    generated_pdf = convert_to_pdf(txt_path)
+                    pdf_check = validate_resume_pdf(generated_pdf)
+                    report["pdf_validator"] = pdf_check
+                    if pdf_check["passed"]:
+                        pdf_path = str(generated_pdf)
+                    else:
+                        report["status"] = "failed_pdf_validation"
                 except Exception:
                     log.debug("PDF generation failed for %s", txt_path, exc_info=True)
+                    report["pdf_validator"] = {
+                        "passed": False,
+                        "errors": ["PDF generation failed."],
+                        "warnings": [],
+                    }
+                    report["status"] = "failed_pdf_validation"
+
+            report_path.write_text(json.dumps(report, indent=2), encoding="utf-8")
 
             result = {
                 "url": job["url"],
