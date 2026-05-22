@@ -1,0 +1,21 @@
+Title: Technical Project Manager
+Company: Blue Ridge Consultants | Atlassian Solution Partner
+Location: Remote
+Score: 9
+URL: https://www.linkedin.com/jobs/view/4413353064
+
+About Us
+Blue Ridge Consultants is a rapidly growing Atlassian Gold Solution Partner helping our clients' organizations streamline workflows and scale with Jira, Confluence, Bitbucket, Jira Service Management (JSM). This is an exciting opportunity to join a fast-growing consulting practice with tons of room to advance your Atlassian expertise and leadership skills.
+About The Role
+- Title: Technical Project Manager
+- Location: Remote (we don't have an office)
+- Work Schedule: Monday - Friday, 9am - 5pm, US Eastern time
+- Employment Type: Full-time Salaried
+- Health Insurance: 100% employer-paid health insurance (individual coverage)
+- Retirement: 401k with match of every dollar up to 3% and then 50 cents to the dollar to 5%.
+Job Purpose
+The Technical Project Manager (TPM) is responsible for:
+- Managing Atlassian focused client engagements (primarily Jira, Jira Service Management, and Confluence) from kick-off to closure
+- Maintaining a healthy project through proactive risk identification, scope control, and effort tracking
+- Providing clear, consistent, and timely communication to both internal stakeholders and client teams
+- Occasionally (<10% of the time) assisting with Atlassian configuration

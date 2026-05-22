@@ -1,0 +1,21 @@
+Title: Technical Program Manager II, Advanced Technology Group
+Company: Pinterest
+Location: None
+Score: 8
+URL: https://www.linkedin.com/jobs/view/4406806356
+
+Technical Program Manager II, Advanced Technology Group
+About Pinterest
+Pinterest is a visual discovery engine that helps people find inspiration to create a life they love. We are a global company with a mission to bring everyone the inspiration to create a life they love. We are looking for a Technical Program Manager to join our Advanced Technology Group.
+Responsibilities:
+- Lead cross-functional teams to deliver complex technical projects.
+- Define project scope, goals, and deliverables that support business goals.
+- Develop project plans, timelines, and resource allocation.
+- Identify and manage project risks and issues.
+- Communicate project status to stakeholders and senior management.
+Requirements:
+- Bachelor's degree in Computer Science or related field.
+- 5+ years of experience in technical program management.
+- Strong understanding of software development lifecycle.
+- Excellent communication and leadership skills.
+- Ability to work in a fast-paced environment and manage multiple projects simultaneously.

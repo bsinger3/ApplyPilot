@@ -1,0 +1,173 @@
+Title: Technical Project Manager
+Company: linkedin
+Location: Remote
+Score: 9
+URL: https://www.linkedin.com/jobs/view/4413194470
+
+**This is a fully remote position, PJ contract and salary range is 28\-35/hr USD.** 
+
+
+
+
+  
+
+
+
+
+
+ Required Skills \& Experience
+ 
+
+
+
+  
+
+
+
+
+
+ • 5\+ years in Technical Program Management, Program Management, or Delivery/Project Leadership in software/product environments.
+ 
+
+
+
+ • Strong experience working with engineering teams (front\-end, back\-end, APIs, integrations) and translating requirements into execution plans.
+ 
+
+
+
+ • Demonstrated ability to manage multiple parallel workstreams with dependencies, ambiguity, and shifting priorities.
+ 
+
+
+
+ • Comfort operating in Agile delivery environments and facilitating common delivery ceremonies.
+ 
+
+
+
+ • Strong ability to communicate clearly with technical and non\-technical stakeholders—written, verbal, and executive\-ready status reporting.
+ 
+
+
+
+ • Proven organizational skills: structured thinking, attention to detail, follow\-through, and accountability.
+ 
+
+
+
+  
+
+
+
+
+
+ Nice to Have Skills \& Experience
+ 
+
+
+
+  
+
+
+
+
+
+ • CPG experience (Consumer Packaged Goods) or work supporting enterprise\-scale commerce, marketing, or customer platforms.
+ 
+
+
+
+ • Experience using GitHub for product/engineering workflows (issues, epics, project boards, milestones, release tracking).
+ 
+
+
+
+ • AI workflow experience (automation, copilots/assistants, orchestration tools, or applied AI to improve delivery ops).
+ 
+
+
+
+ • Experience supporting digital commerce capabilities (e.g., customer experience, product catalogs, order flows, promotions, personalization, content, analytics).
+ 
+
+
+
+ • Familiarity with Elixir and/or React environments—enough to partner effectively with engineers, understand constraints, and anticipate delivery risks.
+ 
+
+
+
+  
+
+
+
+
+
+ Job Description
+ 
+
+
+
+  
+
+
+
+
+
+ The Digital Commerce team is seeking a Technical Program Manager (TPM) to amplify product delivery and relieve a Product Manager who is currently balancing product discovery alongside multiple concurrent projects. This TPM will drive program execution across cross\-functional teams—translating product intent into clear plans, predictable delivery, and measurable outcomes—while ensuring work is well\-managed in GitHub (where our PM workflows now live). This role is ideal for someone who thrives at the intersection of product, engineering, and operations—bringing structure, visibility, and momentum to complex initiatives, and enabling the PM to focus on customer and market discovery.
+ 
+
+
+
+ • Own end\-to\-end program management for multiple digital commerce initiatives, from intake through delivery and rollout.
+ 
+
+
+
+ • Build and maintain integrated plans (milestones, dependencies, risks, resourcing, timeline) across product, engineering, data, QA, security, and partner teams.
+ 
+
+
+
+ • Drive delivery rituals: standups, sprint/iteration planning support, backlog readiness, dependency reviews, status reporting, and go/no\-go readiness.
+ 
+
+
+
+ • Serve as the connective tissue between Product, Engineering, and business stakeholders—ensuring alignment on scope, sequencing, tradeoffs, and “definition of done.”
+ 
+
+
+
+ • Proactively manage dependencies, risks, and decisions; escalate with context and options, not just problems.
+ 
+
+
+
+ • Ensure clear communication across teams and leadership with concise updates and action\-oriented readouts.
+ 
+
+
+
+ • Help standardize how initiatives are tracked in GitHub (e.g., issues, epics, project boards, milestones), driving consistent hygiene and visibility.
+ 
+
+
+
+ • Improve team throughput by reducing friction in processes and tooling (templates, workflows, reporting, intake). • Identify opportunities to use AI\-enabled workflows to reduce overhead (e.g., release comms drafting, backlog grooming support, automated status summaries, incident triage workflows, documentation acceleration) while maintaining governance and quality.
+ 
+
+
+
+ • Partner with engineering and product to implement pragmatic automation that improves delivery efficiency.
+ 
+
+
+
+ • Coordinate release plans across teams: readiness checklists, rollout sequencing, communication plans, training/support readiness, and post\-launch monitoring.
+ 
+
+
+
+ • Ensure operational handoffs and documentation are complete for production support.

@@ -1,0 +1,46 @@
+Title: Technical Program Manager
+Company: Xebia
+Location: None
+Score: 10
+URL: https://www.linkedin.com/jobs/view/4417059896
+
+About Xebia
+For more than 25 years, our global network of passionate technologists and pioneering craftspeople has delivered cutting-edge technology and game-changing consulting to companies on the brink of AI driven digital transformation. Since 2001, we have grown into a full service digital consulting company with 6000+ professionals working on a worldwide ambition. Driven by the desire to make a difference, we keep innovating. Fuelling the growth of our company with our knowledge worker culture. When teaming up with Xebia, expect in-depth expertise based on an authentic, value-led, and high quality way of working that inspires all we do.
+At Xebia, we put ‘People First’—committed to attracting diverse talent and fostering an inclusive, respectful workplace where everyone is valued for their contributions. We welcome all individuals and evaluate solely on the quality of their work and teamwork.
+Role Overview
+We are seeking a highly accomplished and results-driven Senior Technical Program Manager to lead a portfolio of mission-critical software initiatives across the organization. This role owns execution strategy, operational excellence, and organizational alignment for complex, cross-functional programs with material business impact.
+The ideal candidate brings a strategic mindset, strong tenacity, and high emotional intelligence, and excels at driving execution in ambiguous environments, influencing senior stakeholders without authority, and institutionalizing world-class software delivery practices across a large, distributed organization.
+Responsibilities
+Strategic Program Leadership
+- Drive the full Software Development Life Cycle (SDLC) for a portfolio of complex, multi-year programs
+- Ensure alignment with company-level strategic priorities and clearly demonstrate business impact
+- Apply strategic thinking to balance near-term execution demands with long-term technical and organizational objectives
+Portfolio Management & Execution
+- Directly lead and manage multiple high-visibility programs from concept through deployment
+- Define program scope, facilitate build-versus-buy analyses, and develop comprehensive business cases, charters, and execution plans
+- Track progress rigorously across initiatives, ensuring transparency, accountability, and timely escalation of issues
+Operational Excellence & Process Ownership
+- Champion and institutionalize best-in-class delivery and execution practices across development teams
+- Own and continuously improve processes, tools, metrics, and communication mechanisms
+- Leverage data, KPIs, and retrospectives to drive continuous improvement and predictable delivery
+Executive Alignment & Communication
+- Partner closely with Directors, Senior Staff, and executive leadership across Engineering, Product, and Business teams
+- Align roadmaps, prioritize initiatives, negotiate technical and delivery trade-offs, and facilitate critical decision-making
+- Provide concise, high-quality reporting on program health, risks, dependencies, and outcomes to senior stakeholders and governance forums
+Risk & Dependency Management
+- Proactively identify, analyze, and mitigate complex cross-program risks and dependencies spanning multiple teams and organizations
+- Demonstrate tenacity in driving resolution of long-standing, ambiguous, or structurally complex challenges
+- Clearly communicate impacts and proposed resolution paths to all relevant stakeholders
+Performance Tracking
+- Define, track, and communicate Program KPIs and Portfolio OKRs
+- Provide transparent reporting tied to strategic business outcomes, execution health, and value delivery
+Experience
+- 7–10+ years of progressive experience in Technical Program Management within a large-scale, enterprise software environment
+- Proven ability to lead multi-year, high-impact programs across multiple organizational boundaries
+- Deep understanding of modern software architecture, cloud platforms, and the complexities of building and operating global, highly available systems
+- Strong grounding in software development principles and the full SDLC
+- Demonstrated strategic mindset with the ability to translate broad business and technical objectives into executable program plans
+- High emotional intelligence, with strong interpersonal awareness and the ability to influence, negotiate, and build alignment at senior levels
+- Persistence, resilience, and accountability in driving outcomes across complex organizational landscapes
+- Proven success implementing, scaling, and optimizing agile delivery methodologies (e.g., Scrum, Kanban, SAFe) at team and organizational levels
+- Exceptional communication, negotiation, and stakeholder management skills

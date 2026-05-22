@@ -1,0 +1,48 @@
+{
+  "attempts": 4,
+  "validator": {
+    "passed": false,
+    "errors": [
+      "Company 'Sakhi' missing from experience",
+      "Company 'The Samaritans of New York' missing from experience"
+    ],
+    "warnings": [
+      "Banned words: spearheaded"
+    ]
+  },
+  "quality_validator": {
+    "passed": false,
+    "errors": [
+      "bullet_sources: Bullet for FriendsWithMeasurements.com is not traceable to selected supplemental bullets: 'Built data ingestion and normalization pipelines for apparel datasets, standardizing inconsistent sizing formats and ena'.",
+      "bullet_sources: Bullet for FriendsWithMeasurements.com is not traceable to selected supplemental bullets: 'Designed image and metadata pipelines using Supabase storage and computer vision tagging to improve catalog discoverabil'.",
+      "bullet_sources: Bullet for Guy Carpenter is not traceable to selected supplemental bullets: 'Implemented LLM driven document processing workflows to automate term extraction and reduce manual contract review effor'.",
+      "bullet_sources: Bullet for Sirion is not traceable to selected supplemental bullets: 'Defined training data requirements and implemented NLP strategies to improve the model's interpretation of financial tab'."
+    ],
+    "warnings": [],
+    "checks": {
+      "title_fit": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "bullet_sources": {
+        "passed": false,
+        "errors": [
+          "Bullet for FriendsWithMeasurements.com is not traceable to selected supplemental bullets: 'Built data ingestion and normalization pipelines for apparel datasets, standardizing inconsistent sizing formats and ena'.",
+          "Bullet for FriendsWithMeasurements.com is not traceable to selected supplemental bullets: 'Designed image and metadata pipelines using Supabase storage and computer vision tagging to improve catalog discoverabil'.",
+          "Bullet for Guy Carpenter is not traceable to selected supplemental bullets: 'Implemented LLM driven document processing workflows to automate term extraction and reduce manual contract review effor'.",
+          "Bullet for Sirion is not traceable to selected supplemental bullets: 'Defined training data requirements and implemented NLP strategies to improve the model's interpretation of financial tab'."
+        ],
+        "warnings": []
+      },
+      "experience_subtitles": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  "judge": null,
+  "status": "failed_validation",
+  "validation_mode": "normal"
+}

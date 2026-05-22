@@ -1,0 +1,46 @@
+Job Title: Product Manager
+Join a transformative data and AI platform initiative aimed at modernizing enterprise-scale capabilities and enabling real-time decision-making. This project delivers a comprehensive roadmap covering AI, MLOps, data governance, and platform scalability, supporting a shift towards data-first operations and intelligent automation.
+What you will do
+Own and manage the product backlog, ensuring it is well-defined, prioritized, and aligned with business objectives and stakeholder needs
+Lead requirements elicitation and collaboration with stakeholders using advanced techniques (workshops, interviews, discovery sessions)
+Translate business needs into clear, structured requirements (user stories, acceptance criteria, non-functional requirements) ensuring readiness for development
+Define and communicate the product vision, roadmap, and release plans, aligning across engineering and business teams
+Drive requirements prioritization using value-driven approaches, balancing customer impact, technical feasibility, and business goals
+Ensure end-to-end requirements traceability, maintaining consistency across features, releases, and implementation artifacts
+Collaborate closely with engineering teams to define solution approaches, clarify requirements, and support design decisions
+Act as a bridge between business and technical teams, ensuring mutual understanding and alignment
+Validate delivered solutions against business needs through acceptance criteria, demos, and UAT participation
+Monitor and evaluate product performance metrics, identifying gaps between expected and actual value and driving improvements
+Support solution validation and continuous improvement, including defect triage, feedback analysis, and backlog adjustments
+Identify and manage risks, dependencies, and scope changes, ensuring transparency and proactive mitigation
+Maintain clear and structured product documentation (e.g., PRDs, backlog artifacts, Confluence pages)
+Contribute to process improvements in product management, requirements practices, and cross-team collaboration
+Mandatory
+6+ years of experience as a Product Owner, Business Analyst, or similar role in Agile software delivery environments (Scrum, Kanban, SAFe)
+Proven experience managing product backlogs of medium-to-high complexity, including prioritization using advanced techniques (e.g., MoSCoW, RICE, value vs. complexity)
+Strong expertise in requirements lifecycle management: elicitation, documentation (user stories, acceptance criteria), validation, and traceability
+Experience translating business needs into technical solutions in collaboration with engineering teams (preferably Java-based ecosystems, microservices architectures)
+Demonstrated ability to define product vision and roadmap aligned with business goals and stakeholder expectations
+Experience facilitating stakeholder engagement and communication across multiple levels (business, technical, leadership)
+Hands-on experience with Agile ceremonies (backlog refinement, sprint planning, reviews, retrospectives) and ownership of delivery outcomes
+Strong analytical skills with experience in current state analysis, gap analysis, and solution evaluation
+Experience working with metrics and KPIs to measure product performance and drive continuous improvement
+Strong ownership, decision-making capability, and ability to balance business value, technical constraints, and delivery timelines
+Excellent communication skills in English, with the ability to articulate complex concepts clearly to diverse audiences
+Nice to Have
+Experience working in cloud-based environments (AWS/Azure/GCP) and understanding of cloud-native product constraints
+Background in data-driven products, analytics platforms, or event-driven systems (e.g., Kafka)
+Experience with enterprise-scale products or multi-team/multi-product environments
+Familiarity with UX/UI principles and collaboration with design teams
+Experience in automotive, industrial, or IoT domains
+Certification such as PSPO, CSPO, SAFe PO/PM, or equivalent
+Qualifications:
+Candidate’s relevant alignment and experience
+Must have 6+ years of experience as a Product Owner, Business Analyst, or similar role in Agile software delivery environments (Scrum, Kanban, SAFe)
+Where does most of this experience appear in your background?
+This is a project focused on delivering a platform-based fraud prevention system to more of a data and AI based system.  
+What similar projects have you delivered results on previously? 
+Prior experience identifying and driving project backlogs to meet project deadlines.
+Please give 2 recent examples of where you did this
+Must have a solid understanding of software architecture fundamentals, APIs, data flows, and distributed systems.
+Give examples of your technical understanding of these systems.

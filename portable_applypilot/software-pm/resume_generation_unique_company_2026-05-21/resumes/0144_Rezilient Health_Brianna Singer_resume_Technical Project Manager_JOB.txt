@@ -1,0 +1,89 @@
+Title: Technical Project Manager
+Company: linkedin
+Location: None
+Score: 8
+URL: https://www.linkedin.com/jobs/view/4413433932
+
+At Rezilient, we’re redefining primary care by making access to healthcare more convenient, timely, and seamless. Our innovative CloudClinic model combines virtual provider visits with cutting\-edge technology to create a personalized digital healthcare experience that puts patients at the center of their care. By streamlining care delivery and continuously expanding specialty services, we empower our care team to focus on patient well\-being while providing the most comprehensive and accessible care possible.
+ 
+
+
+
+  
+
+
+
+
+
+ This role is responsible for ensuring high\-quality, reliable data flows from source systems into Rezilient Health’s warehouse through hands\-on validation, reconciliation, and quality assurance across clinical and claims datasets. The position is highly execution\-oriented, with the majority of time spent in spreadsheets and files performing data analysis, employer mapping, eligibility matching, and eligibility/claims validation from implementation through the full employer lifecycle. In addition to technical execution, this role serves as a cross\-functional data partner to Operations, Clinical, and Finance – asking the right questions, translating needs into clear requirements, and working with engineers to convert ad\-hoc workflows into repeatable, scalable processes that improve data consistency and operational rigor over time.
+ 
+
+
+
+  
+
+
+
+
+
+**Responsibilities:** 
+
+
+
+* Own end\-to\-end data quality workflows to ensure reliable, high\-integrity data flows from source systems into Rezilient Health’s warehouse across clinical, eligibility, and claims datasets.
+* Execute hands\-on spreadsheet and file\-based work to clean, standardize, reconcile, and validate data from payers, employers, TPAs, and EHR systems.
+* Perform eligibility matching and ongoing roster maintenance (adds, terms, changes), track variances, and resolve discrepancies across employer and partner populations.
+* Validate eligibility and claims data against source systems, proactively flag anomalies, document root causes, and drive resolution through clear audit trails.
+* Maintain accurate employer, plan, and member mappings, including consistent naming conventions and relationship logic across systems.
+* Build scalable checks, templates, SOPs, and controls that make recurring work consistent, auditable, and easier to operate over time.
+* Intake and clarify data requests from Operations, Clinical, Finance, and partners; translate ambiguous needs into structured deliverables and timelines.
+* Communicate progress, risks, and findings clearly to non\-technical stakeholders while serving as a trusted data resource across teams.
+* Partner with engineering and operations to support integrations between source systems and the data warehouse, improving reliability, monitoring, and lifecycle support.
+* Identify opportunities to improve data consistency, operational rigor, and process automation as Rezilient Health scales employer and partner implementations.
+
+
+
+  
+
+
+
+
+
+**Required Qualifications:** 
+
+
+
+* 3\+ years in a healthcare data role (payer, provider, TPA, benefits admin, or healthtech) is required
+* 2\+ years of experience in a quickly growing HealthTech organization is highly preferred
+* Advanced Excel/Google Sheets (VLOOKUP/XLOOKUP, INDEX\-MATCH, pivots, text parsing, data validation, deduping)
+* Experience with eligibility and claims data is required
+* Intermediate SQL and Python skills
+* Working knowledge of HIPAA/PHI handling
+* Proven attention to detail and accuracy with large, messy datasets and tight timelines
+* Excellent verbal and written communication skills, including documentation
+* Strong critical thinker with the ability to partner cross\-functionally
+* Willingness to wear multiple hats and pivot as needed
+
+
+
+**Preferred Qualifications:** 
+
+
+
+* Familiarity with EHR/EMR extracts (e.g., Athena), benefits platforms/TPA portals, and clinical data
+* Experience with simple BI tools (Looker Studio/Tableau)
+
+
+
+  
+
+
+
+
+
+**Benefits** 
+
+
+
+
+ This opportunity offers the chance to shape the future of healthcare in a culture where your ideas and contributions have a meaningful impact on the organization's future. You’ll be part of a supportive, collaborative, and diverse team, with competitive compensation and benefits that include generous PTO, paid family leave, comprehensive medical, dental, vision, and life insurance, as well as stock options.

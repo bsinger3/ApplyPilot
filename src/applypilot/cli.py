@@ -230,6 +230,11 @@ def apply(
     continuous: bool = typer.Option(False, "--continuous", "-c", help="Run forever, polling for new jobs."),
     dry_run: bool = typer.Option(False, "--dry-run", help="Preview actions without submitting."),
     headless: bool = typer.Option(False, "--headless", help="Run browsers in headless mode."),
+    backend: str = typer.Option(
+        "claude",
+        "--backend",
+        help="Auto-apply backend: claude (current) or stagehand (experimental Browserbase/Stagehand).",
+    ),
     url: Optional[str] = typer.Option(None, "--url", help="Apply to a specific job URL."),
     persona: str = typer.Option(..., "--persona", help="Persona slug to use for auto-apply."),
     gen: bool = typer.Option(False, "--gen", help="Generate prompt file for manual debugging instead of running."),
@@ -274,8 +279,29 @@ def apply(
 
     # --- Full apply mode ---
 
-    # Check 1: Tier 3 required (Claude Code CLI + Chrome)
-    check_tier(3, "auto-apply")
+    if backend not in {"claude", "stagehand"}:
+        console.print("[red]Invalid --backend.[/red] Choose: claude, stagehand")
+        raise typer.Exit(code=1)
+
+    # Check 1: backend-specific requirements
+    if backend == "claude":
+        check_tier(3, "auto-apply")
+    else:
+        from applypilot.config import load_env
+        import os
+        import shutil
+
+        load_env()
+        missing = []
+        if not os.environ.get("BROWSERBASE_API_KEY"):
+            missing.append("BROWSERBASE_API_KEY in ~/.applypilot/.env")
+        if not shutil.which("npm"):
+            missing.append("Node.js/npm")
+        if missing:
+            console.print("[red]Stagehand backend is missing requirements:[/red]")
+            for item in missing:
+                console.print(f"  - {item}")
+            raise typer.Exit(code=1)
 
     # Check 2: Profile exists
     if not persona_paths.profile_path.exists():
@@ -334,23 +360,39 @@ def apply(
     console.print(f"  Workers:  {workers}")
     console.print(f"  Model:    {model}")
     console.print(f"  Persona:  {persona}")
+    console.print(f"  Backend:  {backend}")
     console.print(f"  Headless: {headless}")
     console.print(f"  Dry run:  {dry_run}")
     if url:
         console.print(f"  Target:   {url}")
     console.print()
 
-    apply_main(
-        limit=effective_limit,
-        target_url=url,
-        min_score=min_score,
-        headless=headless,
-        model=model,
-        dry_run=dry_run,
-        continuous=continuous,
-        workers=workers,
-        persona=persona,
-    )
+    if backend == "stagehand":
+        if workers != 1:
+            console.print("[yellow]Stagehand experiment currently runs one worker; ignoring --workers.[/yellow]")
+        if continuous:
+            console.print("[yellow]Stagehand experiment does not support --continuous yet.[/yellow]")
+        from applypilot.apply.stagehand_backend import main as stagehand_main
+
+        stagehand_main(
+            limit=1 if effective_limit == 0 else effective_limit,
+            target_url=url,
+            min_score=min_score,
+            dry_run=True if dry_run else False,
+            persona=persona,
+        )
+    else:
+        apply_main(
+            limit=effective_limit,
+            target_url=url,
+            min_score=min_score,
+            headless=headless,
+            model=model,
+            dry_run=dry_run,
+            continuous=continuous,
+            workers=workers,
+            persona=persona,
+        )
 
 
 @app.command()

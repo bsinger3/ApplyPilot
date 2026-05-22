@@ -1,0 +1,97 @@
+Title: System Analyst / Technical Product Manager
+Company: indeed
+Location: Remote, US (Remote)
+Score: 8
+URL: https://www.indeed.com/viewjob?jk=721dad35c27480c4
+
+Remote
+Contract (7 months 5 days)
+Published 35 minutes ago
+Business Analysis
+Power BI
+documentation skills
+Data Migration
+ERP Transformation
+SQL
+Mulesoft
+SIT/UAT testing
+product management
+api design
+We are seeking a highly skilled System Analyst / Technical Product Manager to lead and support the end\-to\-end migration from Microsoft Dynamics Great Plains (GP) to Oracle ERP. This role requires a blend of functional expertise, technical acumen, and product management capabilities to ensure a smooth transition, optimization of business processes, and successful adoption of Oracle ERP solutions.
+
+ **Key Responsibilities:**
+
+
+ERP Transformation \& Migration:
+
+* Lead the migration strategy and execution from Microsoft Dynamics Great Plains (GP) to Oracle ERP (e.g., Oracle Fusion Cloud / Oracle EBS).
+* Conduct current\-state (AS\-IS) assessments of GP systems and design future\-state (TO\-BE) Oracle ERP solutions.
+* Define data migration strategy, including data mapping, cleansing, validation, and reconciliation.
+* Collaborate with cross\-functional teams to ensure seamless integration with upstream and downstream systems.
+
+
+Business Analysis \& Process Optimization:
+
+* Gather, analyze, and document business requirements across Finance, Procurement, Supply Chain, and related domains.
+* Translate business needs into functional and technical specifications.
+* Identify process improvements and recommend best practices aligned with Oracle ERP capabilities.
+* Facilitate workshops, gap analysis, and solution design sessions.
+
+
+Technical Product Management:
+
+* Own product backlog for ERP transformation initiatives and prioritize features based on business value.
+* Define product roadmap and milestones for ERP implementation and enhancements.
+* Work closely with engineering, vendors, and system integrators to deliver scalable solutions.
+* Ensure alignment between business stakeholders and technical teams.
+
+
+System Integration \& Architecture:
+
+* Design integration approaches between Oracle ERP and external systems (e.g., HR, CRM, data warehouses).
+* Collaborate with technical architects on API design, middleware, and data flows.
+* Ensure system scalability, performance, and security compliance.
+
+
+Testing \& Deployment:
+
+* Oversee test planning and execution (SIT, UAT, regression testing).
+* Validate migrated data and ensure accuracy and completeness.
+* Support go\-live planning, cutover activities, and post\-implementation stabilization.
+
+
+Stakeholder Management:
+
+* Act as a bridge between business users, IT, and external vendors.
+* Provide regular status updates, risks, and mitigation strategies to leadership.
+* Manage expectations and drive consensus across diverse stakeholders.
+
+
+Change Management \& Training:
+
+* Support organizational change management initiatives.
+* Develop training materials and conduct end\-user training sessions.
+* Ensure user adoption and continuous improvement post\-implementation.
+
+ **Required Qualifications**:
+
+* 5\-10\+ years of experience in ERP systems, with hands\-on experience in:
+* Microsoft Dynamics GP (Great Plains)
+* Oracle ERP (Fusion or EBS)
+* Proven experience in ERP migration or transformation projects.
+* Strong understanding of financial systems (GL, AP, AR, Fixed Assets, etc.).
+* Experience in data migration tools, SQL, and integration technologies.
+
+ **Preferred Qualifications**:
+
+* Experience with Oracle Cloud (Fusion) modules.
+* Certifications in Oracle ERP, PMP, or Agile/Scrum.
+* Familiarity with middleware platforms (e.g., Oracle Integration Cloud, MuleSoft).
+* Knowledge of reporting tools (BI, Oracle Analytics, Power BI).
+
+  
+
+The pay range that the employer in good faith reasonably expects to pay for this position is $39\.30/hour \- $61\.40/hour. Our benefits include medical, dental, vision and retirement benefits. Applications will be accepted on an ongoing basis.
+
+
+Tundra Technical Solutions is among North America’s leading providers of Staffing and Consulting Services. Our success and our clients’ success are built on a foundation of service excellence. We are an equal opportunity employer, and we do not discriminate on the basis of race, religion, color, national origin, sex, sexual orientation, age, veteran status, disability, genetic information, or other applicable legally protected characteristic. Qualified applicants with arrest or conviction records will be considered for employment in accordance with applicable law, including the Los Angeles County Fair Chance Ordinance for Employers and the California Fair Chance Act. Unincorporated LA County workers: we reasonably believe that criminal history may have a direct, adverse and negative relationship with the following job duties, potentially resulting in the withdrawal of a conditional offer of employment: client provided property, including hardware (both of which may include data) entrusted to you from theft, loss or damage; return all portable client computer hardware in your possession (including the data contained therein) upon completion of the assignment, and; maintain the confidentiality of client proprietary, confidential, or non\-public information. In addition, job duties require access to secure and protected client information technology systems and related data security obligations.

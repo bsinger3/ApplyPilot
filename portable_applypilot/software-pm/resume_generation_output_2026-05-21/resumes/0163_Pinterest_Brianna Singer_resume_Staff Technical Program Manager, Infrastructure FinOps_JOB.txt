@@ -1,0 +1,112 @@
+Title: Staff Technical Program Manager, Infrastructure FinOps
+Company: linkedin
+Location: None
+Score: 8
+URL: https://www.linkedin.com/jobs/view/4405465260
+
+**About Pinterest**
+ Millions of people around the world come to our platform to find creative ideas, dream about new possibilities and plan for memories that will last a lifetime. At Pinterest, we’re on a mission to bring everyone the inspiration to create a life they love, and that starts with the people behind the product.
+   
+
+  
+
+ Discover a career where you ignite innovation for millions, transform passion into growth opportunities, celebrate each other’s unique experiences and embrace the flexibility to do your best work. Creating a career you love? It’s Possible.
+   
+
+  
+
+ At Pinterest, AI isn't just a feature, it's a powerful partner that augments our creativity and amplifies our impact, and we’re looking for candidates who are excited to be a part of that. To get a complete picture of your experience and abilities, we’ll explore your foundational skills and how you collaborate with AI.
+   
+
+  
+
+ Through our interview process, what matters most is that you can always explain your approach, showing us not just what you know, but how you think. You can read more about our AI interview philosophy and how we use AI in our recruiting process here.
+   
+
+  
+
+**The Team**
+ Pinterest is a visual discovery platform where people go from inspiration to action, the Infra Governance space plays a foundational role: it helps ensure Pinterest’s infrastructure strategy can scale with product demand while remaining disciplined on cost, capacity, and long\-term platform health. What is especially exciting about this team is the mix of technical strategy, planning rigor, and business impact—it sits close to infrastructure and platform engineering, close to Product execution, and close to the investment decisions that determine where Pinterest scales next. It is also an unusually strong fit for a senior IC TPM who wants to build governance mechanisms, improve transparency into where infrastructure and AI investment is going, and redesign high\-toil operating workflows with AI\-first methods. The TPM interview framework reinforces that this kind of role is about ambiguity handling, XFN influence, technical judgment, and mechanism\-building at scale.
+   
+
+  
+
+**What You’ll Do**
+* Partner with Product and Engineering to translate infrastructure strategy into executable multi\-quarter programs, with clear scope, sequencing, dependencies, governance forums, and measurable outcomes across the Infra Governance portfolio.
+* Lead capacity planning as a core operating motion: connect product demand, infrastructure supply, growth assumptions, and technical constraints into a durable planning cadence that enables earlier, better investment decisions.
+* Own budgeting, forecasting, and variance analysis for infrastructure governance programs, building clear visibility into where investment is going today, where it is expected to go next, and what is driving movement versus plan.
+* Develop financial models, cost models, and scenario\-planning frameworks that translate technical choices into business impact and support explicit trade\-off discussions across capacity, cost, reliability, performance, and speed.
+* Build an investment transparency matrix for infrastructure and AI spend, including ownership, allocation, utilization, forecast, actuals, and decision points, so leadership can quickly understand where resources are being consumed and where intervention is needed.
+* Establish governance for AI token utilization and allocation, including forecasting demand, tracking usage, improving transparency, and helping teams understand the financial implications of model and token consumption choices.
+* Operationalize durable mechanisms for budgeting reviews, forecast updates, variance investigations, anomaly management, and optimization follow\-through in partnership with Product, Engineering, Finance, Security, and Data.
+* Lead trade\-off discussions that improve decision quality: synthesize technical inputs, business priorities, and financial signals into clear options, recommendations, and escalation\-ready decisions.
+* Build the governance layer for execution: run portfolio reviews, dependency management, roadmap health reviews, planning checkpoints, and executive updates that keep large cross\-functional programs aligned and on track.
+* Identify high\-leverage opportunities to automate operational toil, especially in recurring workflows like status synthesis, planning reviews, dependency tracking, intake triage, forecast reconciliation, and action/decision capture.
+* Build AI\-assisted frameworks, lightweight models, and workflow automations that improve decision\-making, including dashboards, scenario tools, cost\-model templates, token\-usage views, and planning helpers that increase signal while reducing manual overhead.
+* Use GenAI as the default operating model for EP PgM execution—producing AI\-assisted first drafts of core program artifacts, modernizing high\-toil workflows into AI\-first mechanisms (e.g., intake triage, status synthesis, action/decision extraction, risk \& dependency tracking), and synthesizing signals to proactively surface risks, decision/trade\-offs, and escalation paths.
+* Prototype solutions to augment decisions through data (e.g. dashboards, data analysis) or simplify processes (e.g. process and workflow helpers, or internal tools) using AI coding assistants (“vibe coding”).
+* Follow Pinterest AI guidance for risk, governance, and safety\-by\-design: appropriately handle sensitive data, validate AI\-generated outputs, document assumptions/limits, and ensure AI\-assisted workflows meet applicable policy/compliance expectations before broad adoption.
+
+
+**What We’re Looking For** 
+  
+
+  
+
+* 8\+ years of Technical leadership experience owning large, ambiguous, cross\-functional programs with senior stakeholder visibility and durable business impact.
+* Strong experience in infrastructure, platform, cloud economics, or adjacent environments where capacity, cost, performance be managed together.
+* Proven ability to translate strategy into executable programs: turning broad technical goals into roadmaps, governance mechanisms, planning cadences, and measurable outcomes.
+* Demonstrated strength in capacity planning, budgeting, forecasting, variation planning in environments with meaningful scale and complexity.
+* Strong financial modeling and cost modeling skills: able to build simple, credible models, pressure\-test assumptions, and use data to guide prioritization and trade\-off discussions.
+* Experience building transparency mechanisms for investment and utilization, including understanding where infrastructure or AI spend is going, where it is expected to go, and how ownership and allocation should work.
+* Strong technical breadth and judgment: able to partner effectively with engineering teams, drive clarity around requirements, and facilitate technical trade\-offs without relying on coding depth; this is directly aligned to the technical breadth and judgment expectations in the interview guidance.
+* Excellent cross\-functional collaboration and executive communication: able to align teams with conflicting priorities, communicate clearly upward, and influence without direct authority; this is directly aligned to the XFN collaboration and communication expectations in the interview loop.
+* Experience building durable mechanisms rather than just managing tasks: governance processes, planning systems, dashboards, review cadences, and decision frameworks that scale across teams.
+* Workflow design, AI fluency, data \& insights orientation: experience turning repeatable program work into durable, low\-toil mechanisms and improving decision\-making by using GenAI (e.g., strong prompting, vibe coding lightweight scripts/tools, dashboards, data analysis and leveraging agents where appropriate)
+* Safety\-by\-design AI fluency: experience operating within AI governance expectations (risk assessment, data handling, model/output validation, auditability/traceability) and proactively identifying where AI use is not appropriate or requires additional controls.
+* Preferred qualifications:
++ FinOps and investment transparency experience: Experience applying FinOps\-style operating principles to infrastructure or AI spend, including allocation, forecasting, reporting, optimization, and building transparency matrices that clarify ownership, utilization, and investment decisions.
++ Executive influence across senior leadership: Experience influencing directors, VPs, or executive leadership by presenting current state, risks, proposals, and informed trade\-offs clearly and concisely, which is explicitly called out in the IC16 collaboration and influence expectations.
++ Durable mechanism building: Experience creating best practices, tools, methodologies, dashboards, governance reviews, and operatinge across teams rather than managing one\-off projects. The IC16 rubric explicitly calls for creating best practices, tools, and methodologies for the org.
++ Deep domain expertise in infrastructure, cloud, or AI platforms: Advanced understanding of domain concepts, emerging technologies, and related functions product, or data, consistent with the Staff TPM expectations for strong domain knowledge and the ability to apply it to positive program outcomes.
++ Mentorship and force multiplication: Experience mentoring other program managers or cross\-functional partners and scaling impact through others while leading strategic progrevels of leadership. This is part of the IC16 expectation set for influence, leadership, and domain depth.
+
+
+**Why Pinterest**
+ This is a high\-leverage role at the intersection of engineering execution, financial stewardship, and strategic decision\-making. You’ll work on foundational programs that shape how Pinterest scales infrastructure, improves accountability, and turns technical investment into business value. If you enjoy ambiguous problems, senior stakeholder partnership, and building durable systems that help organizations operate better, this role offers wide scope and meaningful impact.
+   
+
+  
+
+ Join us and help shape the future of Pinterest’s infrastructure!
+   
+
+  
+
+**Relocation Statement:**
+* This position is not eligible for relocation assistance. Visit our PinFlex page to learn more about our working model.
+
+
+**In\-Office Requirement Statement**
+* We recognize that the ideal environment for work is situational and may differ across departments. What this looks like day\-to\-day can vary based on the needs of each organization or role.
+* This role will need to be in the office for in\-person collaboration 1\-2 times every 6\-months and therefore can be situated anywhere in the country.
+
+
+ At Pinterest we believe the workplace should be equitable, inclusive, and inspiring for every employee. In an effort to provide greater transparency, we are sharing the base salary range for this position. The position is also eligible for equity. Final salary is based on a number of factors including location, travel, relevant prior experience, or particular skills and expertise.
+   
+
+  
+
+*Information regarding the culture at Pinterest and benefits available for this position can be found here.*
+ US based applicants only
+   
+
+  
+
+ $145,747—$300,067 USD
+   
+
+  
+
+**Our Commitment To Inclusion**
+ Pinterest is an equal opportunity employer and makes employment decisions on the basis of merit. We want to have the best qualified people in every job. All qualified applicants will receive consideration for employment without regard to race, color, ancestry, national origin, religion or religious creed, sex (including pregnancy, childbirth, or related medical conditions), sexual orientation, gender, gender identity, gender expression, age, marital status, status as a protected veteran, physical or mental disability, medical condition, genetic information or characteristics (or those of a family member) or any other consideration made unlawful by applicable federal, state or local laws. We also consider qualified applicants regardless of criminal histories, consistent with legal requirements. If you require a medical or religious accommodation during the job application process, please complete this form for support.

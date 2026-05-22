@@ -1,0 +1,96 @@
+Title: Senior Technical Program Manager, Hosting Services
+Company: linkedin
+Location: Remote
+Score: 8
+URL: https://www.linkedin.com/jobs/view/4394934830
+
+Airbnb was born in 2007 when two hosts welcomed three guests to their San Francisco home, and has since grown to over 5 million hosts who have welcomed over 2 billion guest arrivals in almost every country across the globe. Every day, hosts offer unique stays and experiences that make it possible for guests to connect with communities in a more authentic way.
+   
+
+  
+
+**The Community You Will Join**
+ Airbnb’s mission is to create a world where people can Belong Anywhere. As we grow to achieve that mission, we’re looking to add a technical, hands\-on, and mission\-driven Senior Technical Program Manager (TPM) to the Hosting Services team.
+   
+
+  
+
+ Hosting Services focuses on building tools that make hosting on Airbnb easier. This includes building new as well as expanding existing solutions, such as co\-host matching and management tools, as well as systems that enhance campaign delivery and host referrals across the platform. The team works across multiple tracks to simplify the hosting experience and unlock growth for both new and existing hosts.
+   
+
+  
+
+**The Difference You Will Make**
+ We are seeking a Senior TPM who is genuinely excited about leveraging AI to redefine what is possible in this role. You will be the force multiplier that can scale the team’s impact tenfold, automate repetitive workflows, and free up time for strategic thinking and complex problem\-solving. The ideal candidate will proactively champion the adoption of AI tools across projects and inspire their teams to embrace these technologies, transforming how we work and ultimately delivering exponentially greater value to our hosts and the broader Airbnb community.
+   
+
+  
+
+ You will play a crucial role in tackling complexity and delivering predictable, consistent, and impactful results. You will be leading complex projects/programs that touch multiple product surfaces, services, functions and teams, and hence are required to keep the big picture in focus while being able to dive into the details, working through unique challenges. Success in this role requires a strong sense of ownership, coupled with the ability to think critically and strategically while managing relationships with cross\-functional stakeholders.
+   
+
+  
+
+**A Typical Day**
+* Develop and manage comprehensive project plans to execute on initiatives, identify key milestones and ensure alignment across stakeholders
+* Think both broadly about overall outcomes while using good judgment on where to focus in on details
+* Influence the technical direction of projects to meet the stakeholders’ needs while upholding quality. Quickly validate project ideas through iterative development, and pivot as necessary.
+* Define and align on success criteria for both short term and long term business goals, regularly assessing risks and opportunities and identifying mitigation strategies.
+* Manage effective communication channels to keep a wider range of stakeholders updated on the progress
+* Showcase the work in front of senior leaders, clearly communicate trade\-offs, risks, and opportunities
+
+
+**Your Expertise** 
+  
+
+  
+
+* 7\+ years of experience in the software development industry, with at least 5 years as a TPM or relevant experience
+* Experience using AI to automate manual processes to improve you and your team’s productivity
+* Demonstrated ability to work through ambiguity to detailed solutions. You can take a vague problem, crisply frame the challenge, identify a path forward, and drive an initiative over the finish\-line.
+* Self\-motivated, proactive and proven ability to adapt well and work with teams having different operating cadences.
+* Sound business judgment, a proven ability to influence others, strong analytical skills, and a track record of taking ownership, leading data driven analyses, and influencing results
+* Experience with ML models, LLMs, LRMs, feature development, model testing and resource management to support the development of AI\-powered product experiences.
+* Familiar with A/B testing, incremental delivery and deployment.
+* Ability to ramp up quickly and learn new technologies with minimal lag time.
+* Excellent written and oral business communication and people skills, with the ability to influence stakeholders.
+* Nice to have:
++ Experience developing or working directly on various aspects of large\-scale ML/AI platforms.
++ Experience with feature development of AI\-powered product experiences.
++ Experience and passion for building and maintaining products leveraging AI models
+
+
+**Your Location:**
+ This position is US \- Remote Eligible. The role may include occasional work at an Airbnb office or attendance at offsites, as agreed to with your manager. While the position is Remote Eligible, you must live in a state where Airbnb, Inc. has a registered entity. Click here for the up\-to\-date list of excluded states. This list is continuously evolving, so please check back with us if the state you live in is on the exclusion list. If your position is employed by another Airbnb entity, your recruiter will inform you what states you are eligible to work from.
+   
+
+  
+
+**Our Commitment To Inclusion \& Belonging**
+ Airbnb is committed to working with the broadest talent pool possible. We believe diverse ideas foster innovation and engagement, and allow us to attract creatively\-led people, and to develop the best products, services and solutions. All qualified individuals are encouraged to apply.
+   
+
+  
+
+ We strive to also provide a disability inclusive application and interview process. If you are a candidate with a disability and require reasonable accommodation in order to submit an application, please contact us at: reasonableaccommodations@airbnb.com. Please include your full name, the role you’re applying for and the accommodation necessary to assist you with the recruiting process.
+   
+
+  
+
+ We ask that you only reach out to us if you are a candidate whose disability prevents you from being able to complete our online application.
+   
+
+  
+
+**How We'll Take Care Of You**
+ Our job titles may span more than one career level. The actual base pay is dependent upon many factors, such as: training, transferable skills, work experience, business needs and market demands. The base pay range is subject to change and may be modified in the future. This role may also be eligible for bonus, equity, benefits, and Employee Travel Credits.
+   
+
+  
+
+ Pay Range
+   
+
+  
+
+ $179,000—$210,000 USD

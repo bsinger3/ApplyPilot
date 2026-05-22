@@ -1,0 +1,42 @@
+Brianna Singer
+Project Manager
+bsinger3@gmail.com | 916 224 9144 | https://github.com/bsinger3/ | https://linkedin.com/in/briannasinger/
+
+SUMMARY
+Experienced Project Manager with a strong background in leading enterprise SaaS implementations and transformation initiatives. Proven ability to manage complex integrations, data migrations, and executive stakeholder engagement to drive successful project delivery.
+
+TECHNICAL SKILLS
+Languages: Python, SQL
+DevOps & Infra: Power BI, Supabase, Postgres, Snowflake, Mixpanel
+Databases: Postgres, Snowflake
+Tools: Agile, stakeholder management, Scrum, OKRs, data pipelines, requirements definition
+
+EXPERIENCE
+Technical Project Manager, FriendsWithMeasurements.com, Newark, New Jersey Newark, New Jersey | Aug 2025 - Present
+- Rebuilt FriendsWithMeasurements.com to solve a common apparel discovery problem: shoppers struggling to find clothing that fits their body measurements. Redesigned the Postgres data model to support a catalog of 15K+ measurement profiles.
+- Implemented measurement-based product search using Postgres functions, vector similarity queries, and indexed text search, increasing relevant results by more than 30% and reducing no-results searches by over 80%.
+- Led a multi-threaded data pipeline program, coordinating scrape claims, implementation rules, validation metrics, Git/S3/Supabase syncs, and transcript documentation across concurrent engineering workstreams.
+- Established quality gates for data readiness, including dedupe checks, numeric-field validation, product URL sampling, broken media checks, coverage summaries, and rules for analytics-ready dataset promotion.
+
+Product Manager, ALTR, Melbourne, Florida Melbourne, Florida | Feb 2025 - Aug 2025
+- Spearheaded ALTR's Snowflake Native App that uses Snowflake's native classifiers to scan 50+ TBs of a key customer's data, detect unprotected sensitive data, apply the right tags, and generate security policy recommendations based on exposure and usage. First customer identified 80+ columns of unprotected PII, cutting manual tagging time by 10s of hours.
+- Partnered with sales and technical stakeholders to turn discovery-session transcripts into product requirements, stakeholder maps, and customer-specific problem statements for enterprise data-access governance.
+- Developed logic across multiple Snowflake audit log types to support automated alerting when security policies are violated and designed remediation flows that revoke permissions and force logouts for suspicious users.
+
+Product Manager, Guy Carpenter, New York, New York New York, New York | Nov 2023 - Dec 2024
+- Drove delivery of NLP-powered contract intelligence workflows across more than 100k property reinsurance contracts, reducing average contract review time from 7 days to approximately 10 minutes and capturing more than $40M in previously unstructured deal economics.
+- Built Power BI dashboards that translated model outputs and contract-review exceptions into operational views for prioritization, escalation, and multimillion-dollar brokerage negotiations.
+- Led scrum ceremonies and tracked OKRs for a five-engineer team developing contract extraction and classification models.
+
+Technical Project Manager, Sirion, New York, New York New York, New York | May 2022 - June 2023
+- Managed project plans, budgets exceeding $75K, delivery risks, and stakeholder updates for financial-contract AI/ML deployments, keeping client workstreams aligned across scope, timeline, and release priorities.
+- Led daily Scrum ceremonies, sprint planning, backlog grooming, and delivery tracking for ML model implementation projects serving bank clients, consistently achieving 95%+ sprint goal completion.
+- Mentored junior project managers on project scoping, sprint execution, release planning, and stakeholder communication for SaaS implementation projects.
+
+PROJECTS
+HumaneHousing - Platform for Housing Applications
+Cornell University Women in Tech Hackathon | Oct 2022
+- Prototyped HumaneHousing, a platform that helps recently incarcerated individuals apply for housing in New York State, winning a $1500 grant.
+
+EDUCATION
+Cornell University School of Industrial and Labor Relations | Bachelor of Science, Industrial and Labor Relations

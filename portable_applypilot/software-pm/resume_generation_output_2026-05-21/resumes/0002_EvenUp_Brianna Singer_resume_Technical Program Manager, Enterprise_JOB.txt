@@ -1,0 +1,74 @@
+Title: Technical Program Manager, Enterprise
+Company: EvenUp
+Location: None
+Score: 10
+URL: https://www.linkedin.com/jobs/view/4406257673
+
+EvenUp is on a mission to close the justice gap using technology and AI. We empower personal injury lawyers and victims to get the justice they deserve. Our products enable law firms to secure faster settlements, higher payouts, and better outcomes for victims injured through no fault of their own in vehicle collisions, accidents, natural disasters, and more.
+We are one of the fastest-growing vertical SaaS companies in history, and we are just getting started. EvenUp is backed by top VCs, including Bessemer Venture Partners, Bain Capital Ventures, SignalFire, and Lightspeed. We are looking to expand our team with talented, driven, and collaborative individuals who seek to have a lasting impact. Learn more at www.evenuplaw.com.
+The Technical Program Manager, Enterprise will spearhead the delivery of a transformative enterprise platform, overseeing complex workstreams to retire legacy systems and deploy a next-generation solution for key clients. Reporting to the Head of Customer Onboarding, the Program Manager will collaborate with Product, Engineering, and customer teams to ensure seamless execution and measurable value in a high-stakes enterprise environment.
+Key Responsibilities
+- Program Management
+- Serve as the primary owner of client outcomes, maintaining end-to-end accountability for the project lifecycle and proactively navigating obstacles to drive implementations to a successful, high-impact completion.
+- Develop and manage a comprehensive project plan for each customer enterprise platform delivery, ensuring alignment with customer needs and company goals.
+- Oversee workstreams including data migration, system configuration, user onboarding, change management, and go-live support.
+- Coordinate with Product, Engineering, and customer project teams to deliver on time and within scope.
+- Provide project health, status and risk management oversight, keeping various internal and external customer sponsors engaged.
+- System Configuration
+- Configure platform settings, including user permissions, workflow rules, and reporting tools, to meet customer requirements.
+- Ensure secure and scalable access controls, including API integrations, in collaboration with Engineering teams.
+- User Onboarding
+- Lead User Acceptance Testing (UAT) to validate platform functionality and usability.
+- Deliver onboarding programs, including:
+- End-user training for operational staff.
+- Executive training for leadership teams.
+- Leverage change management principles to ensure training programs drive adoption and minimize disruption.
+- Develop and deliver robust training collateral (live, virtual, leave behinds, demand based online collateral)
+- Change Management and Customer Adoption
+- Design and implement customer adoption strategies using change management fundamentals to ensure high user engagement and platform success.
+- Develop and execute tailored adoption and programs, including stakeholder communication plans, training initiatives, and feedback loops to address resistance and build buy-in.
+- Drive user adoption through proactive change management, hands-on support.
+- Go-Live Support
+- Provide break-fix triage during platform deployment to address critical issues.
+- Monitor system performance and uptime to ensure reliability for customers.
+- Conduct regular status meetings with customers to gather feedback and ensure satisfaction.
+- Customer Engagement
+- Act as the primary point of contact for customer project teams, facilitating requirements gathering and adoption feedback.
+- Travel to customer sites (up to 30% travel) to support onboarding, training, and go-live activities.
+- Build strong relationships with enterprise stakeholders to ensure alignment and success.
+Qualifications
+- Education: Bachelor’s degree, Business, Computer Science, or a related field. PMP, Agile, or similar change management certification preferred.
+- Experience:
+- 7-10 years of program or project management experience in enterprise software delivery or SaaS environments, with a track record of leading enterprise scale initiatives.
+- Proven expertise in retiring legacy systems and migrating data to modern platforms, preferably using tools like Universal Migrator, SQL, automation
+- Extensive experience in change management, including designing and executing customer adoption strategies using frameworks like ADKAR or Kotter.
+- Experience managing complex, cross-functional programs with enterprise customers in regulated industries.
+- Skills:
+- Expertise in project management tools (e.g., Jira, Asana, MS Project).
+- Organizational Change Management experience. Knowledge of ADKAR, Kotters a plus!
+- Strong understanding of data schema mapping, transformation, and enterprise compliance requirements. data migration tools (e.g., Universal Migrator, SQL, Python, etc.).
+- Advanced skills in change management, including stakeholder relationships, communication planning, and adoption measurement.
+- Excellent communication and stakeholder management skills, bridging technical and business teams.
+- Ability to design and deliver training programs and collateral for diverse user groups.
+- Proficiency in configuring workflows, permissions, and reports in enterprise platforms.
+- Attributes:
+- Strategic thinker with a customer-centric approach to delivering high-impact solutions.
+- Detail-oriented with strong problem-solving and risk management skills.
+- Adaptable in a fast-paced, innovative environment with up to 30% travel for onsite customer engagement.
+Notice to Candidates:
+EvenUp has been made aware of fraudulent job postings and unaffiliated third parties posing as our recruiting team – please know that we have no affiliation or connection to these situations. We only post open roles on our career page (evenuplaw.com/careers) or reputable job boards like our official LinkedIn or Indeed pages, and all official EvenUp recruitment emails will come from the domains @evenuplaw.com, @evenup.ai, @ext-evenuplaw.com, no-reply@ashbyhq.com or no‑reply@canditech.io email addresses.
+To ensure fairness and proper consideration, we do not accept resumes or expressions of interest via email or social media messages. If you’re interested in a role, please submit your application directly through our careers page.
+If you receive communication from someone you believe is impersonating EvenUp, please report it to us at talent-ops-team@evenuplaw.com. Examples of fraudulent domains include “careers-evenuplaw.com” and “careers-evenuplaws.com”.
+Benefits & Perks:
+As part of our total rewards package, we offer attractive benefits and perks to our employees, including:
+- Choice of medical, dental, and vision insurance plans for you and your family.
+- Additional insurance coverage options for life, accident, or critical illness.
+- Flexible paid time off, sick leave, short-term and long-term disability.
+- 10 US observed holidays, and Canadian statutory holidays by province.
+- A home office stipend.
+- 401(k) for US-based employees and RRSP for Canada-based employees.
+- Paid parental leave.
+- A local in-person meet-up program.
+- Hubs in San Francisco and Toronto.
+Please note the above benefits & perks are for full-time employees
+EvenUp is an equal opportunity employer. We are committed to diversity and inclusion in our company. We do not discriminate based on race,

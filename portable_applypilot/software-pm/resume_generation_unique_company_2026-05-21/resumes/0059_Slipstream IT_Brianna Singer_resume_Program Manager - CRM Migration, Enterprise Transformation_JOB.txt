@@ -1,0 +1,122 @@
+Title: Program Manager - CRM Migration, Enterprise Transformation
+Company: indeed
+Location: Remote, US (Remote)
+Score: 9
+URL: https://www.indeed.com/viewjob?jk=b4a8d655651d77dc
+
+**About Slipstream Life Sciences (LS)**  
+
+  
+
+Slipstream LS is a trusted technology consulting partner to pharma and biotech companies, exclusively focused on life sciences. Our global experts deliver pragmatic, end\-to\-end solutions that unite speed, compliance, and foresight; helping life sciences organizations accelerate research, optimize time to market, and improve patient outcomes. At Slipstream LS, we work to streamline IT Support and provide managed solutions with a strategic consulting and global leadership management approach.  
+
+  
+
+Slipstream's industry\-leading solutions free clients from the demands of internal IT and allow them to rapidly advance their mission. Led by a leadership team that has been together for over 10 years, you will join a proven team, culture, and strategy to drive innovation within the IT outsourcing industry while developing your skillset with opportunities for internal growth.  
+
+  
+
+**About this Role:**  
+
+  
+
+This role will be part of the Strategy \& Advisory Services group within the Enterprise Transformation division at Slipstream LS. Our strategic advisory services help life sciences organizations navigate complexity, make confident decisions, and build operating models designed to scale in regulated environments.  
+
+  
+
+Enterprise transformation often begins with technology decisions that carry long\-term consequences. Without a clear strategy, organizations risk platform sprawl, rework, and misalignment across commercial, medical, and R\&D teams. Our Strategy \& Advisory services address this challenge by helping organizations define a clear enterprise direction before systems are selected or expanded. The focus is on aligning platforms, processes, and operating models to support both current needs and future growth. Strategic advisory services that help life sciences organizations navigate complexity, make confident decisions, and build operating models designed to scale in regulated environments.  
+
+  
+
+The Program Manager role will support our CRM Implementation and Migration services for some of our most important clients. When CRM implementations are rushed, fragmented, or poorly aligned to operating models, organizations face adoption challenges, compliance risk, and costly rework. The Program Manager role will deliver structured, life sciences–ready CRM platforms designed to scale. The focus will be on harmonizing data, processes, and profiles while ensuring compliance and usability from day one. This role will be responsible for end\-to\-end CRM platform migrations and implementations for some of our clients’ most challenging eco\-systems, which include managing multiple workstreams simultaneously.  
+
+  
+
+**Responsibilities of Role:**
+
+
+* Lead end\-to\-end CRM migration programs for life sciences clients, including assessment, planning, execution, and post\-migration support across Salesforce, Veeva CRM, and other enterprise CRM platforms.
+* Develop comprehensive program plans, timelines, resource allocations, and risk mitigation strategies for complex CRM migration initiatives involving multiple stakeholders and business units.
+* Coordinate cross\-functional teams including technical architects, business analysts, developers, quality assurance, change management, third\-party vendors and client stakeholders to ensure successful program delivery.
+* Manage program scope, budget, schedule, and quality metrics while maintaining alignment with client business objectives and regulatory requirements (GxP, 21 CFR Part 11\).
+* Conduct current\-state assessments of existing CRM environments, documenting business processes, data structures, integrations, customizations, and identifying migration risks and dependencies.
+* Define data migration strategies including data mapping, cleansing, validation, and cutover planning to ensure data integrity throughout the migration process
+* Partner with business owners and IT system owners to establish requirements, perform gap analysis, and design future\-state CRM solutions optimized for life sciences commercial operations.
+* Oversee configuration and customization activities during migration including workflows, validation rules, page layouts, reports, dashboards, and integrations with enterprise systems (ERP, data warehouses, marketing automation).
+* Manage vendor relationships and coordinate with Salesforce, Veeva, and third\-party integration partners to resolve technical issues, and ensure platform readiness
+* Lead change management activities including stakeholder communications, training program development, user adoption strategies, and post\-go\-live support planning.
+* Facilitate program governance meetings with executive stakeholders, providing status updates, escalating risks and issues, and securing decision\-making on critical program milestones.
+* Ensure all migration activities comply with quality management system requirements, maintaining documentation in adherence with change control processes and validation protocols.
+* Manage program financials including budget forecasting, invoice tracking, resource utilization, and variance reporting to maintain program profitability.
+* Identify opportunities for process improvement and CRM optimization post\-migration, developing roadmaps for ongoing platform enhancements and business value realization.
+* Mentor and develop junior program managers and project coordinators, fostering knowledge sharing and professional growth within the CRM practice.
+
+  
+
+  
+
+**Qualifications:**  
+
+  
+
+**Required:**
+
+
+* 7\+ years of program/project management experience leading enterprise software implementations and migrations
+* 5\+ years of hands\-on experience with CRM platforms (Salesforce Sales Cloud, Veeva CRM, Microsoft Dynamics) in implementation or migration roles
+* Proven track record of successfully delivering complex, multi\-workstream CRM migration programs on time and within budget
+* Deep understanding of CRM data migration methodologies, including data extraction, transformation, loading (ETL), validation, and reconciliation
+* Experience managing CRM programs in life sciences, pharmaceutical, or biotech organizations with understanding of commercial operations (sales, marketing, medical affairs)
+* Strong knowledge of life sciences regulatory requirements and their impact on CRM systems (GxP, 21 CFR Part 11, GDPR)
+* Demonstrated ability to manage program budgets, resource plans, and financial reporting with accountability for program P\&L
+* Excellent stakeholder management skills with ability to influence senior executives and build consensus across diverse teams
+* Expert communication skills with ability to translate technical concepts to business audiences and vice versa
+* Experience with program management methodologies (Waterfall, Agile, Hybrid) and PM tools (Smartsheet, Jira, MS Project, Asana)
+* PMP, PgMP, or equivalent project/program management certification
+
+  
+
+  
+
+**Preferred:**
+
+
+* Salesforce Administrator or Advanced Administrator certification
+* Veeva CRM certification or Veeva Commercial Cloud experience
+* Experience with Salesforce/Veeva integrations to master data management (MDM), data warehouses, marketing automation (Marketo, Eloqua), or sample management systems
+* Background in commercial operations, sales operations, or marketing operations within life sciences
+* Experience leading CRM migrations from legacy systems (Siebel, SAP CRM) to modern cloud platforms
+* Familiarity with commercial data standards in life sciences (IQVIA, Definitive Healthcare, Komodo)
+* Change management certification (Prosci ADKAR, CCMP)
+* Technical background or experience with APIs, integration platforms (MuleSoft, Informatica), and data quality tools
+* Experience working with offshore/nearshore delivery teams in a global delivery model
+* Track record of building CRM practices or centers of excellence within consulting or pharma organizations
+* Working knowledge with AI Chatbots and LLM tools (Claude, ChatGpt)
+* Proficient in Smartsheet
+
+  
+
+  
+
+**Key Competencies:**
+
+
+* Strategic program leadership with ability to manage multiple workstreams, balance competing priorities and drive results
+* Risk management and problem\-solving in complex, ambiguous environments
+* Client relationship management and business development acumen
+* Data\-driven decision making and analytical thinking
+* Adaptability and resilience in fast\-paced, changing environments
+* Team leadership and cross\-functional collaboration
+* Attention to detail and commitment to quality delivery
+
+  
+
+  
+
+  
+
+Slipstream is an equal opportunity employer that is committed to diversity and inclusion in the workplace. We prohibit discrimination and harassment of any kind based on race, color, sex, religion, sexual orientation or identity, national origin, genetic information, pregnancy, or any other protected characteristic as outlined by federal, state, or local laws. Slipstream IT makes hiring decisions based solely on qualifications, merit, and business needs at the time.  
+
+  
+
+This job description may not be inclusive of all assigned duties, responsibilities, or aspects of the job described, and may be amended at any time at the sole discretion of the Employer.

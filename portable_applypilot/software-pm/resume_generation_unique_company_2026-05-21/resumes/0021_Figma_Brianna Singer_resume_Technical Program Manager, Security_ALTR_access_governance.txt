@@ -1,0 +1,48 @@
+Brianna Singer
+Technical Program Manager, Security
+bsinger3@gmail.com | 916 224 9144 | https://github.com/bsinger3/ | https://linkedin.com/in/briannasinger/
+
+SUMMARY
+Technical Program Manager with hands-on experience turning enterprise data-security, access governance, and policy-automation needs into shipped product requirements. At ALTR, partnered across product, engineering, sales, and customer security teams to define Snowflake governance workflows for sensitive-data discovery, classification, masking context, audit visibility, and remediation.
+
+TECHNICAL SKILLS
+Languages: Python, SQL
+Security & Governance: Access Management, RBAC, Okta Integration, Audit Logging, Data Classification, Data Masking, Policy Automation, Sensitive Data Discovery
+Data Platforms: Snowflake, Postgres, Supabase, Power BI, Mixpanel
+Program Tools: Agile, Scrum, OKRs, Roadmap Planning, Requirements Definition, Risk Tracking, Stakeholder Management
+
+EXPERIENCE
+Technical Program Manager, FriendsWithMeasurements.com, Newark, New Jersey Aug 2025 - Present
+- Rebuilt FriendsWithMeasurements.com to solve a common apparel discovery problem: shoppers struggling to find clothing that fits their body measurements. Redesigned the Postgres data model to support a catalog of 15K+ measurement profiles.
+- Implemented measurement-based product search using Postgres functions, vector similarity queries, and indexed text search, increasing relevant results by more than 30% and reducing no-results searches by over 80%.
+
+Product Manager, ALTR, Melbourne, Florida Feb 2025 - Aug 2025
+- Synthesized enterprise access-control discovery into requirements for group-based RBAC, Okta integration, auditable database access, and a lighter architecture for 600+ databases that avoided 800-900 proxy components.
+- Scoped a Snowflake Native App experience that used native classifiers to scan 50+ TB of customer data, surface 80+ columns of unprotected PII, apply tags, and cut manual tagging time by 10s of hours.
+- Defined product logic for audit-log threat detection, connecting policy violations, anomalous access patterns, alerting, and remediation actions into an actionable security workflow.
+- Developed requirements for automated remediation flows that could respond to suspicious database access by revoking permissions, forcing logout, or escalating alerts for security review.
+- Prioritized data-security roadmap opportunities by comparing competitor weaknesses against ALTR strengths in Snowflake governance, masking, tokenization, audit logging, and policy automation.
+
+Product Manager, Guy Carpenter, New York, New York Nov 2023 - Dec 2024
+- Drove NLP contract-intelligence workflows across 100k+ reinsurance contracts, reducing review time from 7 days to about 10 minutes and surfacing $40M in reusable deal intelligence.
+- Built product narratives showing how AI contract intelligence could reduce review cycles from 7 days to about 10 minutes, surface $40M in hidden deal economics, and make knowledge from 100k+ contracts reusable across teams.
+- Built Power BI dashboards that surfaced trends in exception patterns, deal size correlations, and recurring review bottlenecks, equipping brokerage leadership with data to support multimillion dollar negotiations.
+
+Technical Project Manager, Sirion, New York, New York May 2022 - June 2023
+- Managed project plans, budgets exceeding $75K, delivery risks, and stakeholder updates for financial-contract AI/ML deployments, keeping client workstreams aligned across scope, timeline, and release priorities.
+- Led daily Scrum ceremonies, sprint planning, backlog grooming, and delivery tracking for ML model implementation projects serving bank clients, consistently achieving 95%+ sprint goal completion.
+- Managed budgets exceeding $75k, led daily scrum and Agile delivery of ML models, consistently hitting +95% of sprint goals for bank clients.
+
+Domestic Violence Hotline Volunteer, Sakhi, New York, New York Jan 2022 - Present
+- Completed training in trauma response and crisis communication to support domestic violence hotline callers effectively.
+
+Suicide Hotline Volunteer, The Samaritans of New York, New York, New York Feb 2021 - Sep 2021
+- Practiced crisis management, mental health counseling, and emergency response, serving on the suicide hotline for regular volunteer shifts.
+
+PROJECTS
+HumaneHousing - Platform for Housing Applications
+First Place Winner, Columbia University Women in Tech Hackathon | New York, New York | Oct 2022
+- Co-created HumaneHousing, a prototype platform that helped recently incarcerated individuals apply for housing resources across New York State, winning first place at the Columbia University Women in Tech Hackathon and securing a $1,500 grant.
+
+EDUCATION
+Cornell University School of Industrial and Labor Relations | Bachelor of Science, Industrial and Labor Relations

@@ -1,0 +1,58 @@
+Title: Technical Program Manager
+Company: indeed
+Location: Remote, US (Remote)
+Score: 9
+URL: https://www.indeed.com/viewjob?jk=f2861c93a7b4adca
+
+Overview:
+
+LMI is seeking a **Senior Technical Program Manage**r **(TPM)** to lead the deployment and evolution of IronGate, an ETL solution focused on moving data from commercial environments into secure environments. You’ll be an initial member of a small, cross\-functional team maintaining this product on contract. **This position requires the ability to obtain a clearance \- U.S. citizenship is required. This role requires quarterly travel for in person team planning and collaboration events.**  
+
+IronGate sits within LMI’s Chief Technology Office. We’re a small, high\-visibility team building an ETL for federal agencies. The culture is more startup than traditional government contractor; we move fast, solve problems in design spikes rather than scheduled reviews, and care more about outcomes than process. That said, we’re building for users who need reliability and trust, so craft and attention to detail matter.  
+
+You’ll work daily with our Product Manager, Engineering Lead, and Product Team. The roadmap for IronGate is still being formed, so you’ll be joining during a great time to help forge our path forward.  
+
+LMI is a new breed of digital solutions provider dedicated to accelerating government impact with innovation and speed. Investing in technology and prototypes ahead of need, LMI brings commercial\-grade platforms and mission\-ready AI to federal agencies at commercial speed.  
+
+Leveraging our mission\-ready technology and solutions, proven expertise in federal deployment, and strategic relationships, we enhance outcomes for the government, efficiently and effectively. With a focus on agility and collaboration, LMI serves the defense, space, healthcare, and energy sectors—helping agencies navigate complexity and outpace change. Headquartered in Tysons, Virginia, LMI is committed to delivering impactful results that strengthen missions and drive lasting value.
+The TPM will serve as the senior technical lead and primary client\-facing presence for the IronGate deployment, translating defense customer requirements into ETL configuration, overseeing a deeply technical multi\-disciplinary team, and bridging hands\-on execution with senior non\-technical leadership. This role requires someone who can move quickly, communicate clearly across technical and non\-technical audiences, and own the end\-to\-end solution lifecycle.  
+
+
+Responsibilities:
+**Why This Role*** You will be working on an ETL in a space where you can help to define and execute the roadmap based on market demand signals. This is a relatively new product with massive growth opportunity
+* You will be the senior technical voice between a deeply capable engineering team and senior defense customer leadership — a rare opportunity to operate at both levels simultaneously.
+* LMI invests in its platforms ahead of customer need, which means you’ll always be working with modern tooling rather than playing catch\-up to legacy environments.
+
+**Responsibilities*** Serve as the primary technical lead for the IronGate deployment, data delivery to ensure alignment with customer requirements, constraints, and mission priorities.
+* Translate customer mission needs into IronGate configuration, data transformation, and delivery
+* Combine deep technical expertise with strong stakeholder management skills to align senior defense leaders to platform\-driven delivery approaches.
+* Oversee the deployment and evolution of IronGate’s strategy and roadmap
+* Collaborate with customer stakeholders to integrate IronGate into existing cloud, data, and enterprise IT environments.
+* Develop and maintain technical documentation including system architectures, pipeline diagrams, and security workflow specifications.
+* Provide technical guidance and advisory support to customer personnel and partner contractors.
+* Stay current on ETL tooling advancements, security standards, and evolving DoD digital and cyber requirements.
+* Ensure compliance with customer cybersecurity, data governance, and software supply chain requirements.
+* Manage project deliverables, financials, schedules, and team performance across the full solution lifecycle.
+* Provide clear, regular status updates to senior customer leaders and LMI management.
+
+
+Qualifications:
+**Required Qualifications*** Active Secret security clearance required.
+* Bachelor’s degree in Computer Science, Information Technology, Software Engineering, or a related technical field preferred; Master’s degree highly desirable.
+* Minimum 5 years of experience in software engineering, solution architecture, and cloud deployments, including security, cyber, and data infrastructure.
+* Demonstrated experience implementing or managing ETL solutions in enterprise or mission environments.
+* Experience interfacing between hands\-on technical teams and senior non\-technical stakeholders, including creating and managing delivery roadmaps.
+* Experience across AWS, Azure, GCP, and on\-premises environments.
+* Experience working directly with federal defense customers and defense contractors.
+* Ability to clearly communicate complex technical concepts to non\-technical senior audiences.
+
+**Preferred Qualifications*** Experience delivering software to classified or air\-gapped networks.
+* Familiarity with hardened ETL solutions
+* Relevant certifications: Security\+, Cloud\+, CySA\+, Solutions Architect, PMP, Scrum/Agile.
+
+  
+
+Target salary range: $145,000 \- 200,000 ***Disclaimer:*** The salary range displayed represents the typical salary range for this position and is not a guarantee of compensation. Individual salaries are determined by various factors including, but not limited to location, internal equity, business considerations, client contract requirements, and candidate qualifications, such as education, experience, skills, and security clearances.  
+
+\#LI\-SH1
+Applicants must meet eligibility requirements for a U.S. Government security clearance. Only US Citizens are eligible for a security clearance. For this position, LMI will only consider applicants with security clearances or applicants who are eligible for security clearances, due to the nature of the work.

@@ -1,0 +1,52 @@
+Title: Sr. IT Project Manager
+Company: linkedin
+Location: None
+Score: 8
+URL: https://www.linkedin.com/jobs/view/4404433702
+
+* Job Overview
+* Enforces organizational policies and establishes goals for project teams which develop business applications and information services products.
+
+
+**Responsibilities**
+* Manages, and controls scope, schedule and budget for multiple cross functional projects.
+* Works with management across the organization to define, plan, develop and implement new information products and services.
+* Leads cross\-functional teams in the execution of full product development life cycle development. Initiates, plans, executes, controls and closes software and product development activity.
+* Under general direction, responsible for all aspects of the development and implementation of assigned projects and provides a single point of contact for those projects.
+* Interfaces with all areas affected by the project including clients, computer services, and client services.
+* Plans and manages resource allocations and task assignments within a matrix managed environment.
+* Communicates project status and risks, with associated recommendations, to all stakeholders.
+* Ensures adherence to quality standards and reviews project deliverables.
+* Provides business guidance to project team.
+* Leverages approved AI‑assisted tools to support project planning, forecasting, risk identification, risk trend analysis and scenario modeling, RAID management and reporting for different audiences.
+* Applies AI‑supported analysis to project financials, capacity planning, and dependency modeling to improve delivery predictability and decision‑making.
+
+
+**Minimum Required Education And Experience**
+* Bachelor's Degree
+
+
+**Required Knowledge, Skills And Abilities**
+* Five (5\) years of experience in software and/or product development
+* Project management education and experience.
+* Past delivery experience in COTS products / configuration projects; and Gated, hybrid, and agile development environments
+* Organizations with regulatory compliance requirements
+* Having a working knowledge of SDLC, regulated environments, business acumen, financial management.
+* Healthcare /life sciences environment domain knowledge is a plus
+* High level experience with delivery tools such as: Requirements, DevOps, Testing, Defect Management tools (HP ALM, JIRA, ADO, etc.)
+* Financial Management Systems (e.g. Oracle, Peoplesoft, homegrown, etc.) is a plus
+* Project Management Organization (PMO) Center of Excellence (COE)
+* Lean Six Sigma and waste elimination methodologies
+* Project Financials
+* Project management processes (RAID, Portfolio Management, Intake,  QCD Analysis, etc. )
+* IT Maturity Process Improvement mindset
+* KPI and Metrics Managed organizations
+* Project Delivery Culture with quality, timeliness, within budget, and optimization of resource utilization
+
+
+ IQVIA is a leading global provider of clinical research services, commercial insights and healthcare intelligence to the life sciences and healthcare industries. We create intelligent connections to accelerate the development and commercialization of innovative medical treatments to help improve patient outcomes and population health worldwide. Learn more at https://jobs.iqvia.com
+   
+
+  
+
+ IQVIA is committed to integrity in our hiring process and maintains a zero tolerance policy for candidate fraud. All information and credentials submitted in your application must be truthful and complete. Any false statements, misrepresentations, or material omissions during the recruitment process will result in immediate disqualification of your application, or termination of employment if discovered later, in accordance with applicable law. We appreciate your honesty and professionalism.

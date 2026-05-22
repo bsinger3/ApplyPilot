@@ -1,0 +1,73 @@
+Title: Project Manager, Card Program Implementations
+Company: linkedin
+Location: None
+Score: 8
+URL: https://www.linkedin.com/jobs/view/4413754553
+
+**Job Summary**
+ The Project Manager is responsible for leading and coordinating the successful onboarding, migration, and integration of credit union card programs — including credit, debit, prepaid, and digital card products. This role is critical in ensuring seamless delivery of card platform implementations, processor migrations, network mandates, and digital wallet rollouts by collaborating cross\-functionally with internal teams (engineering, implementation, support, compliance) and external partners (card processors, networks, and BIN sponsors). Serving as the primary liaison for client card program stakeholders, the Project Manager ensures each engagement is executed on time, compliant with Visa, Mastercard, and PCI requirements, and positioned for long\-term program health.
+   
+
+  
+
+**Supervisory Responsibilities**
+ None
+   
+
+  
+
+**Duties/ Responsibilities**
+* Lead end\-to\-end implementation of credit union card program initiatives — new credit, debit, and prepaid program launches, card processor migrations, BIN conversions and reissues, EMV and contactless rollouts, and digital wallet enablement.
+* Serve as a trusted liaison among credit union clients, card processors (e.g., PSCU, Co\-op Solutions, Fiserv, FIS, Jack Henry), card networks (Visa, Mastercard), BIN sponsors, and internal teams — navigating complex scheme rules, PCI requirements, and integration landscapes.
+* Execute and support card\-related integrations across core banking, authorization and switching, fraud and dispute platforms, and digital banking channels, using tools such as SQL, Jira, and processor file specifications.
+* Guide credit union clients in adapting card operations, dispute workflows, and member\-facing communications to ensure smooth cutover and adoption.
+* Interpret and validate contractual and scheme requirements (Visa and Mastercard rulebooks, PCI DSS, Reg E and Reg Z as applicable), ensuring project scope and deliverables stay aligned with both client expectations and network obligations.
+* Develop and maintain detailed project plans — including BIN readiness, test card provisioning, network certification timelines, vendor dependencies, and go\-live cutover runbooks.
+* Manage project milestones and proactively address deviations — reissue delays, certification failures, settlement breaks — communicating changes and mitigations as needed.
+* Draft and distribute regular status updates, biweekly progress reports, and leadership briefings covering mandate readiness, risk posture, and go\-live forecasts.
+* Implement communication plans that keep credit union executives, processor counterparts, and internal teams aligned across the full program lifecycle.
+* Build and sustain strong relationships with credit union executives and card program owners, promoting confidence in Blossom's cards approach.
+* Analyze and synthesize large volumes of data from authorization, clearing, settlement, and dispute files to support go/no\-go decisions and track implementation health.
+* Demonstrate exceptional written and verbal communication, especially during high\-pressure cutover weekends, scheme mandate windows, and live incidents.
+* Actively manage multiple concurrent card programs, balancing fixed network deadlines against shifting client priorities.
+* Partner closely with developers, product managers, card operations, fraud and risk, and member support teams to coordinate integration efforts and resolve issues.
+* Coordinate readiness for Visa and Mastercard semiannual mandate releases and ensure credit union clients meet all applicable scheme deadlines.
+* Performs other related duties as assigned.
+
+
+**Required Skills/ Abilities**
+* Exceptional attention to detail with strong organizational skills.
+* Excellent verbal and written communication abilities, including executive stakeholder engagement and cross\-vendor issue resolution.
+* Strong analytical, logical reasoning, and problem\-solving capabilities, particularly against transaction and processor data.
+* Proven ability to lead and motivate cross\-functional teams,including external processors and networks, to deliver card projects against fixed deadlines.
+* Deep understanding of project management principles applied to regulated, externally time\-bound programs.
+* Working knowledge of the card lifecycle (issuance, authorization, clearing, settlement, disputes, and chargebacks) and how each step appears in processor systems.
+* Demonstrated expertise in financial services, particularly within credit union card programs and workflows.
+* Capable of managing multiple complex card initiatives simultaneously in a fast\-paced, scheme\-mandate\-driven environment.
+* Familiarity with Visa and Mastercard rulebooks, scheme mandate cycles, PCI DSS, tokenization, 3\-D Secure, and digital wallet provisioning (Apple Pay, Google Pay, Samsung Pay).
+* Proficiency with project management platforms such as Jira, Smartsheet, or Microsoft Project.
+* Comfortable with Google Workspace and SQL, and quick to learn processor\- and network\-specific tools (e.g., VROL, MasterCom, Visa Resolve Online, processor client portals).
+
+
+**Education And Experience**
+* Bachelor's degree in Business, Information Systems, Computer Science, or a related field.
+* PMP, CSM, ETA CPP, AAP, or related certifications preferred.
+* Three or more years of experience managing card program implementations, processor migrations, or payments integration projects.
+* Two or more years working experience with card processors (e.g., PSCU, Co\-op Solutions, Fiserv, FIS, Jack Henry) and/or core banking systems (Symitar, Corelation, Fiserv).
+* Two or more years of previous experience working in or with a credit union, card processor, or fintech service provider.
+
+
+**Physical Requirements**
+* Prolonged periods sitting at a desk and working on a computer.
+* Must be able to lift up to 15 pounds at times.
+
+
+**What We Offer**
+* Company\-paid medical, dental, and vision insurance for employees
+* Company\-paid life and AD\&D insurance
+* Company\-paid short\- and long\-term disability
+* 401(k) retirement plan
+* Flexible Spending Accounts (FSA)/ Dependent Care Spending Account (DCSA)
+* Unlimited PTO
+* Employee Assistance Program (EAP)
+* Voluntary supplemental insurance options

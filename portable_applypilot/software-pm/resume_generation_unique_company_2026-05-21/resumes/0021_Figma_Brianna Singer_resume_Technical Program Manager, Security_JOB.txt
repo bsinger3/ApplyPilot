@@ -1,0 +1,21 @@
+Title: Technical Program Manager, Security
+Company: Figma
+Location: Remote
+Score: 9
+URL: https://www.linkedin.com/jobs/view/4406244744
+
+Technical Program Manager, Security
+About Figma
+Figma is a web-based UI/UX design application, and we are looking for a Technical Program Manager to join our Security team. You will be responsible for driving security initiatives and ensuring that our products are secure and compliant.
+Responsibilities:
+- Lead cross-functional teams to deliver security projects on time and within scope.
+- Collaborate with engineering, product, and design teams to integrate security best practices into the development lifecycle.
+- Develop and maintain project plans, schedules, and status reports.
+- Identify and mitigate risks associated with security projects.
+- Communicate project status and updates to stakeholders.
+Requirements:
+- 5+ years of experience in technical program management or related field.
+- Strong understanding of security principles and practices.
+- Excellent communication and interpersonal skills.
+- Ability to work in a fast-paced environment and manage multiple projects simultaneously.
+- Experience with Agile methodologies is a plus.

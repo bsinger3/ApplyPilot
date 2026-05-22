@@ -1,0 +1,36 @@
+Title: Technical Program Manager
+Company: DataArt
+Location: Remote
+Score: 10
+URL: https://www.linkedin.com/jobs/view/4413325059
+
+Our client is a leading US-based healthcare platform focused on connecting patients with healthcare providers through innovative digital solutions.
+The team operates as a product engineering partner within the client’s ecosystem, focusing on API development and delivering insurance data capabilities that support seamless healthcare experiences.
+Responsibilities
+Lead the Engineering Scorecard program end-to-end, driving adoption across infrastructure domains to improve service health, deployment reliability, code quality, observability, and tooling consistency
+Translate AI Enablement initiatives into actionable delivery plans with clear milestones, ownership, and dependency tracking
+Facilitate program cadences, including standups, status updates, RAID management, and stakeholder communications, tailored to different audiences
+Proactively identify risks, dependencies, and blockers, recommending mitigation strategies and escalating critical decisions when needed
+Partner with engineering leaders to strengthen accountability and support prioritization of remediation initiatives
+Coordinate delivery across multiple teams with varying priorities and planning timelines
+Fully remote role with collaboration aligned to Eastern Time business hours.
+You’ll join the Infrastructure organization and collaborate closely with Platform Engineering, Reliability Engineering, QA, and Security teams. The environment is highly cross-functional, with a strong async-first culture and regular collaboration during Eastern Time business hours. The role involves partnering with both infrastructure and product engineering teams across the organization.
+Technology stack
+Jira, Confluence
+DORA metrics frameworks, service readiness scorecards, RAID logs
+AI-powered engineering tools such as Claude, GitHub Copilot, and ChatGPT
+Agile delivery methodologies (Scrum, Kanban)
+Microservices-based environments
+Requirements
+7+ years of experience in Technical Program Management within software engineering organizations
+3+ years of experience working with infrastructure, platform engineering, or DevOps-focused teams
+Proven experience delivering large-scale cross-functional technical programs across multiple engineering teams
+Practical experience with engineering health metrics, scorecards, or maturity frameworks such as DORA metrics or service readiness models
+Strong understanding of Agile methodologies with the flexibility to adapt processes to team and business needs
+Excellent communication and stakeholder management skills, including experience working with senior leadership and executive audiences
+Hands-on experience using AI-assisted development tools such as Claude, GitHub Copilot, ChatGPT, or similar solutions in day-to-day workflows
+Nice to have
+Experience in healthcare technology or other highly regulated industries
+Background supporting AI/ML platform initiatives or developer experience programs
+Experience working in large-scale microservices environments with multiple distributed services
+Advanced proficiency with Jira and Confluence

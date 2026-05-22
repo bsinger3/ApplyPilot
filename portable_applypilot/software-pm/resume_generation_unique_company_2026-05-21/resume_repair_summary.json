@@ -1,0 +1,2268 @@
+{
+  "resume_dir": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes",
+  "processed": 162,
+  "status_counts": {
+    "repaired": 161,
+    "skipped_no_job": 1
+  },
+  "results": [
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0002_EvenUp_Brianna Singer_resume_Technical Program Manager, Enterprise.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0002_EvenUp_Brianna Singer_resume_Technical Program Manager, Enterprise.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0003_DataArt_Brianna Singer_resume_Technical Program Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0003_DataArt_Brianna Singer_resume_Technical Program Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0004_Xebia_Brianna Singer_resume_Technical Program Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0004_Xebia_Brianna Singer_resume_Technical Program Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0005_Brooksource_Brianna Singer_resume_Technical Program Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0005_Brooksource_Brianna Singer_resume_Technical Program Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0006_Jobgether_Brianna Singer_resume_Technical Program Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0006_Jobgether_Brianna Singer_resume_Technical Program Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0007_Swooped_Brianna Singer_resume_Technical Program Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0007_Swooped_Brianna Singer_resume_Technical Program Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0008_K\u00f6rber_Brianna Singer_resume_Senior Program Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0008_K\u00f6rber_Brianna Singer_resume_Senior Program Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0009_RemoteHunter_Brianna Singer_resume_Senior Program Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0009_RemoteHunter_Brianna Singer_resume_Senior Program Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0010_Intracom Telecom_Brianna Singer_resume_Technical Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0010_Intracom Telecom_Brianna Singer_resume_Technical Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0011_Covenant HR_Brianna Singer_resume_Sr Technical Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0011_Covenant HR_Brianna Singer_resume_Sr Technical Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0012_Morson Edge_Brianna Singer_resume_Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0012_Morson Edge_Brianna Singer_resume_Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0013_Rallyware_Brianna Singer_resume_Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0013_Rallyware_Brianna Singer_resume_Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0014_Hadron Talent -Hadronfinsys_Brianna Singer_resume_Infrastructure Project Manager ITIL.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0014_Hadron Talent -Hadronfinsys_Brianna Singer_resume_Infrastructure Project Manager ITIL.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0015_CRYOPORT SYSTEMS_Brianna Singer_resume_Program Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0015_CRYOPORT SYSTEMS_Brianna Singer_resume_Program Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0016_Landmark_Brianna Singer_resume_Senior Technical Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0016_Landmark_Brianna Singer_resume_Senior Technical Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0017_Block Labs_Brianna Singer_resume_Technical Project Manager - iGaming.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0017_Block Labs_Brianna Singer_resume_Technical Project Manager - iGaming.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0018_Marchon Partners_Brianna Singer_resume_Senior Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0018_Marchon Partners_Brianna Singer_resume_Senior Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0019_Motorola Solutions_Brianna Singer_resume_Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0019_Motorola Solutions_Brianna Singer_resume_Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0020_Whisker Labs_Brianna Singer_resume_Technical Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0020_Whisker Labs_Brianna Singer_resume_Technical Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0021_Figma_Brianna Singer_resume_Technical Program Manager, Security.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0021_Figma_Brianna Singer_resume_Technical Program Manager, Security.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0021_Figma_Brianna Singer_resume_Technical Program Manager, Security_ALTR_access_governance.txt",
+      "status": "skipped_no_job"
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0022_Stripe_Brianna Singer_resume_Technical Program Manager, Risk.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0022_Stripe_Brianna Singer_resume_Technical Program Manager, Risk.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0023_Academian Inc_Brianna Singer_resume_Technical Program Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0023_Academian Inc_Brianna Singer_resume_Technical Program Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0024_K\u00f6rber Supply Chain_Brianna Singer_resume_Senior Program Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0024_K\u00f6rber Supply Chain_Brianna Singer_resume_Senior Program Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0025_Caylent_Brianna Singer_resume_Senior Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0025_Caylent_Brianna Singer_resume_Senior Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0026_CI&T_Brianna Singer_resume_Senior Project Manager, Brazil.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0026_CI&T_Brianna Singer_resume_Senior Project Manager, Brazil.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0028_Blue Ridge Consultants Atlassian Solution Par_Brianna Singer_resume_Technical Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0028_Blue Ridge Consultants Atlassian Solution Par_Brianna Singer_resume_Technical Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0029_Envision_Brianna Singer_resume_TECHNICAL DELIVERY MANAGER III- ITIL Infrastructure projects.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0029_Envision_Brianna Singer_resume_TECHNICAL DELIVERY MANAGER III- ITIL Infrastructure projects.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0030_LeadStack Inc_Brianna Singer_resume_Senior Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0030_LeadStack Inc_Brianna Singer_resume_Senior Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0031_magentIQ_Brianna Singer_resume_Senior Technical Project Manager (Remote Philippines).txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0031_magentIQ_Brianna Singer_resume_Senior Technical Project Manager (Remote Philippines).pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0032_KAI Partners, Inc_Brianna Singer_resume_Senior Project Manager - Accela & Municipal Permitting Systems.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0032_KAI Partners, Inc_Brianna Singer_resume_Senior Project Manager - Accela & Municipal Permitting Systems.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0033_Tech9_Brianna Singer_resume_Senior Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0033_Tech9_Brianna Singer_resume_Senior Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0034_Inizio Partners_Brianna Singer_resume_Senior Delivery Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0034_Inizio Partners_Brianna Singer_resume_Senior Delivery Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0035_Coastal_Brianna Singer_resume_Project Manager II (FINS).txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0035_Coastal_Brianna Singer_resume_Project Manager II (FINS).pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0036_Dayforce_Brianna Singer_resume_Implementation Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0036_Dayforce_Brianna Singer_resume_Implementation Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0037_Synergy BIS_Brianna Singer_resume_Sr. Program Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0037_Synergy BIS_Brianna Singer_resume_Sr. Program Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0038_Velera_Brianna Singer_resume_Interaction Intelligence Program Manager - Remote.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0038_Velera_Brianna Singer_resume_Interaction Intelligence Program Manager - Remote.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0039_Kruncher_Brianna Singer_resume_Founding Technical Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0039_Kruncher_Brianna Singer_resume_Founding Technical Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0040_Abnormal AI_Brianna Singer_resume_Technical Program Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0040_Abnormal AI_Brianna Singer_resume_Technical Program Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0041_Twilio_Brianna Singer_resume_Staff Product Manager - Enterprise AI.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0041_Twilio_Brianna Singer_resume_Staff Product Manager - Enterprise AI.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0042_BeyondTrust_Brianna Singer_resume_Senior Technical Program Manager- Remote.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0042_BeyondTrust_Brianna Singer_resume_Senior Technical Program Manager- Remote.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0043_Insight Global_Brianna Singer_resume_Technical Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0043_Insight Global_Brianna Singer_resume_Technical Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0044_Cohere_Brianna Singer_resume_Technical Program Manager, North Delivery & Release Operations.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0044_Cohere_Brianna Singer_resume_Technical Program Manager, North Delivery & Release Operations.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0045_Focus Systems Inc_Brianna Singer_resume_Project Manager - SaaS Transformation (1875).txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0045_Focus Systems Inc_Brianna Singer_resume_Project Manager - SaaS Transformation (1875).pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0046_Zillow_Brianna Singer_resume_Principal Technical Program Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0046_Zillow_Brianna Singer_resume_Principal Technical Program Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0047_LMI_Brianna Singer_resume_Technical Program Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0047_LMI_Brianna Singer_resume_Technical Program Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0048_Outsourcey_Brianna Singer_resume_Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0048_Outsourcey_Brianna Singer_resume_Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0049_Pinnacle Method Consulting_Brianna Singer_resume_Agile Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0049_Pinnacle Method Consulting_Brianna Singer_resume_Agile Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0050_BairesDev_Brianna Singer_resume_AI Technical Project Manager - Remote Work.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0050_BairesDev_Brianna Singer_resume_AI Technical Project Manager - Remote Work.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0051_Net2Source (N2S)_Brianna Singer_resume_Sr. Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0051_Net2Source (N2S)_Brianna Singer_resume_Sr. Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0052_mSupply_Brianna Singer_resume_Senior IT Project Manager - US.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0052_mSupply_Brianna Singer_resume_Senior IT Project Manager - US.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0053_CSG_Brianna Singer_resume_Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0053_CSG_Brianna Singer_resume_Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0054_Atos_Brianna Singer_resume_PROJECT MANAGER.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0054_Atos_Brianna Singer_resume_PROJECT MANAGER.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0055_Attentive_Brianna Singer_resume_Implementation Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0055_Attentive_Brianna Singer_resume_Implementation Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0056_Norstella_Brianna Singer_resume_Technical Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0056_Norstella_Brianna Singer_resume_Technical Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0057_Yalo_Brianna Singer_resume_Technical Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0057_Yalo_Brianna Singer_resume_Technical Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0058_Softengine_Brianna Singer_resume_SAP Business One Acumatica Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0058_Softengine_Brianna Singer_resume_SAP Business One Acumatica Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0059_Slipstream IT_Brianna Singer_resume_Program Manager - CRM Migration, Enterprise Transformation.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0059_Slipstream IT_Brianna Singer_resume_Program Manager - CRM Migration, Enterprise Transformation.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0060_Experian_Brianna Singer_resume_Lead Technical Project Manager - Remote.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0060_Experian_Brianna Singer_resume_Lead Technical Project Manager - Remote.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0061_Blu Omega LLC_Brianna Singer_resume_Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0061_Blu Omega LLC_Brianna Singer_resume_Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0062_Deepgram_Brianna Singer_resume_Technical Program Manager, Research.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0062_Deepgram_Brianna Singer_resume_Technical Program Manager, Research.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0063_Precision Medicine Group_Brianna Singer_resume_Senior IT Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0063_Precision Medicine Group_Brianna Singer_resume_Senior IT Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0064_SureTest, Inc_Brianna Singer_resume_Product Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0064_SureTest, Inc_Brianna Singer_resume_Product Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0065_Wilson & Sterling Consulting_Brianna Singer_resume_Information Technology Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0065_Wilson & Sterling Consulting_Brianna Singer_resume_Information Technology Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0066_Mitsubishi Electric Power Products, Inc_Brianna Singer_resume_Project Manager - Operational Excellence.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0066_Mitsubishi Electric Power Products, Inc_Brianna Singer_resume_Project Manager - Operational Excellence.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0067_RedHelm_Brianna Singer_resume_Project Manager (Remote).txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0067_RedHelm_Brianna Singer_resume_Project Manager (Remote).pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0068_Medable_Brianna Singer_resume_Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0068_Medable_Brianna Singer_resume_Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0069_L&T Technology Services_Brianna Singer_resume_Program Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0069_L&T Technology Services_Brianna Singer_resume_Program Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0070_Sycomp_Brianna Singer_resume_LATAM Decom Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0070_Sycomp_Brianna Singer_resume_LATAM Decom Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0071_Zoomph_Brianna Singer_resume_AI Quality Program Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0071_Zoomph_Brianna Singer_resume_AI Quality Program Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0072_Higher Oak_Brianna Singer_resume_Technical Program Manager (Customer Experience) - LATAM.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0072_Higher Oak_Brianna Singer_resume_Technical Program Manager (Customer Experience) - LATAM.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0073_Clear_Brianna Singer_resume_Technical Program Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0073_Clear_Brianna Singer_resume_Technical Program Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0074_Calculated Hire_Brianna Singer_resume_Senior Program Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0074_Calculated Hire_Brianna Singer_resume_Senior Program Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0075_Interactive Resources - iR_Brianna Singer_resume_Senior Program Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0075_Interactive Resources - iR_Brianna Singer_resume_Senior Program Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0076_NVIDIA_Brianna Singer_resume_Senior Customer Technical Program Manager - Data Center.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0076_NVIDIA_Brianna Singer_resume_Senior Customer Technical Program Manager - Data Center.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0077_Veeva Systems_Brianna Singer_resume_Project Manager - RTSM.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0077_Veeva Systems_Brianna Singer_resume_Project Manager - RTSM.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0078_Microsoft_Brianna Singer_resume_Program Manager (contract).txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0078_Microsoft_Brianna Singer_resume_Program Manager (contract).pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0079_Upstart_Brianna Singer_resume_Principal Technical Program Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0079_Upstart_Brianna Singer_resume_Principal Technical Program Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0080_Flex Databases_Brianna Singer_resume_Senior Project Manager (eClinical).txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0080_Flex Databases_Brianna Singer_resume_Senior Project Manager (eClinical).pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0081_Imagine Learning_Brianna Singer_resume_Senior Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0081_Imagine Learning_Brianna Singer_resume_Senior Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0082_Arkhya Tech. Inc_Brianna Singer_resume_Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0082_Arkhya Tech. Inc_Brianna Singer_resume_Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0083_Celonis_Brianna Singer_resume_Lead Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0083_Celonis_Brianna Singer_resume_Lead Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0084_NextLink Labs_Brianna Singer_resume_Project Manager - Brazil.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0084_NextLink Labs_Brianna Singer_resume_Project Manager - Brazil.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0085_indeed_Brianna Singer_resume_Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0085_indeed_Brianna Singer_resume_Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0086_Altudo_Brianna Singer_resume_Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0086_Altudo_Brianna Singer_resume_Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0087_RMI_Brianna Singer_resume_Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0087_RMI_Brianna Singer_resume_Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0088_Humana_Brianna Singer_resume_Senior Product Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0088_Humana_Brianna Singer_resume_Senior Product Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0089_reddit_Brianna Singer_resume_Principal Technical Program Manager, Performance.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0089_reddit_Brianna Singer_resume_Principal Technical Program Manager, Performance.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0090_The Phoenix Group_Brianna Singer_resume_CRM project manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0090_The Phoenix Group_Brianna Singer_resume_CRM project manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0091_Cotiviti_Brianna Singer_resume_Technical Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0091_Cotiviti_Brianna Singer_resume_Technical Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0092_BX Studio_Brianna Singer_resume_Senior website Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0092_BX Studio_Brianna Singer_resume_Senior website Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0093_PROJECTUS_Brianna Singer_resume_Senior Technical Project Manager - EHR Interoperability.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0093_PROJECTUS_Brianna Singer_resume_Senior Technical Project Manager - EHR Interoperability.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0094_Welocalize_Brianna Singer_resume_Senior Project Manager - Life Sciences.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0094_Welocalize_Brianna Singer_resume_Senior Project Manager - Life Sciences.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0095_FinThrive_Brianna Singer_resume_Senior Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0095_FinThrive_Brianna Singer_resume_Senior Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0096_Clearsense_Brianna Singer_resume_Senior Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0096_Clearsense_Brianna Singer_resume_Senior Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0097_Luxoft_Brianna Singer_resume_Senior Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0097_Luxoft_Brianna Singer_resume_Senior Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0098_CrowdStrike_Brianna Singer_resume_Program Manager, Product Security (Remote USA or Canada).txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0098_CrowdStrike_Brianna Singer_resume_Program Manager, Product Security (Remote USA or Canada).pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0099_DaCodes_Brianna Singer_resume_IT Project Manager - LATAM - English Required.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0099_DaCodes_Brianna Singer_resume_IT Project Manager - LATAM - English Required.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0100_Talkdesk_Brianna Singer_resume_CX Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0100_Talkdesk_Brianna Singer_resume_CX Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0101_Contabo_Brianna Singer_resume_Technical Project Manager - Datacenter & Infrastructure (all genders)(EN).txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0101_Contabo_Brianna Singer_resume_Technical Project Manager - Datacenter & Infrastructure (all genders)(EN).pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0102_Joinrs_Brianna Singer_resume_Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0102_Joinrs_Brianna Singer_resume_Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0103_Pinterest_Brianna Singer_resume_Technical Program Manager II, Advanced Technology Group.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0103_Pinterest_Brianna Singer_resume_Technical Program Manager II, Advanced Technology Group.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0104_ACV Auctions_Brianna Singer_resume_Product Manager III, Order Management Systems.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0104_ACV Auctions_Brianna Singer_resume_Product Manager III, Order Management Systems.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0105_GoFundMe_Brianna Singer_resume_Staff Technical Program Manager, Security.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0105_GoFundMe_Brianna Singer_resume_Staff Technical Program Manager, Security.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0106_Wellhub_Brianna Singer_resume_Staff Program Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0106_Wellhub_Brianna Singer_resume_Staff Program Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0107_Calix_Brianna Singer_resume_Senior Technical Program Manager (TelecomNetwork).txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0107_Calix_Brianna Singer_resume_Senior Technical Program Manager (TelecomNetwork).pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0108_Porch Group_Brianna Singer_resume_Senior Technical Program Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0108_Porch Group_Brianna Singer_resume_Senior Technical Program Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0109_Aledade, Inc_Brianna Singer_resume_Senior Technical Product Manager (Patient Engagement Experimentation), Remote.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0109_Aledade, Inc_Brianna Singer_resume_Senior Technical Product Manager (Patient Engagement Experimentation), Remote.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0110_Empresa Confidencial_Brianna Singer_resume_Senior Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0110_Empresa Confidencial_Brianna Singer_resume_Senior Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0111_Fluxon_Brianna Singer_resume_Senior Technical Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0111_Fluxon_Brianna Singer_resume_Senior Technical Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0112_Providge Consulting_Brianna Singer_resume_Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0112_Providge Consulting_Brianna Singer_resume_Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0113_Pingle Studio_Brianna Singer_resume_Middle Art Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0113_Pingle Studio_Brianna Singer_resume_Middle Art Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0114_CME Corp_Brianna Singer_resume_Project Manager Adminstrator.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0114_CME Corp_Brianna Singer_resume_Project Manager Adminstrator.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0115_DealerOn, Inc_Brianna Singer_resume_Product Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0115_DealerOn, Inc_Brianna Singer_resume_Product Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0117_American Workforce Solutions_Brianna Singer_resume_Sr. Project Manager -- Telecoms and OpEx.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0117_American Workforce Solutions_Brianna Singer_resume_Sr. Project Manager -- Telecoms and OpEx.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0118_Finch Computing_Brianna Singer_resume_Scrum MasterTechnical Documentation.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0118_Finch Computing_Brianna Singer_resume_Scrum MasterTechnical Documentation.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0119_NexGen Technologies Inc_Brianna Singer_resume_Program Manager (Federal Government Experience Required).txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0119_NexGen Technologies Inc_Brianna Singer_resume_Program Manager (Federal Government Experience Required).pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0120_JSR Tech Consulting_Brianna Singer_resume_IT Project Manager (Medical Affairs Systems).txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0120_JSR Tech Consulting_Brianna Singer_resume_IT Project Manager (Medical Affairs Systems).pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0121_Amaris Consulting_Brianna Singer_resume_Senior Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0121_Amaris Consulting_Brianna Singer_resume_Senior Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0122_Qualcomm_Brianna Singer_resume_Project Manager - E-commerce - Qualcomm, flexible on location within EuropeRemote.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0122_Qualcomm_Brianna Singer_resume_Project Manager - E-commerce - Qualcomm, flexible on location within EuropeRemote.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0123_FROQ FAR EAST BRAND SERVICES PRIVATE LIMITED_Brianna Singer_resume_Information Technology Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0123_FROQ FAR EAST BRAND SERVICES PRIVATE LIMITED_Brianna Singer_resume_Information Technology Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0124_Symplast_Brianna Singer_resume_Implementation Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0124_Symplast_Brianna Singer_resume_Implementation Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0126_BIP US_Brianna Singer_resume_Senior Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0126_BIP US_Brianna Singer_resume_Senior Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0127_Moderna_Brianna Singer_resume_Sr. GxP Product Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0127_Moderna_Brianna Singer_resume_Sr. GxP Product Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0128_Thomson Reuters_Brianna Singer_resume_UX Research Ops - Program Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0128_Thomson Reuters_Brianna Singer_resume_UX Research Ops - Program Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0129_Dutchie_Brianna Singer_resume_Revenue Operations Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0129_Dutchie_Brianna Singer_resume_Revenue Operations Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0130_Panorama Education_Brianna Singer_resume_Project Manager I (East Region).txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0130_Panorama Education_Brianna Singer_resume_Project Manager I (East Region).pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0131_BayOne Solutions_Brianna Singer_resume_Technical Program Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0131_BayOne Solutions_Brianna Singer_resume_Technical Program Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0132_Tredence Inc_Brianna Singer_resume_Technical Program Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0132_Tredence Inc_Brianna Singer_resume_Technical Program Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0133_Airbnb_Brianna Singer_resume_Senior Technical Program Manager, Hosting Services.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0133_Airbnb_Brianna Singer_resume_Senior Technical Program Manager, Hosting Services.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0134_Plusgrade_Brianna Singer_resume_Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0134_Plusgrade_Brianna Singer_resume_Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0135_Five9_Brianna Singer_resume_Professional Services Program Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0135_Five9_Brianna Singer_resume_Professional Services Program Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0136_Telix Pharmaceuticals Limited_Brianna Singer_resume_Senior Project Manager - Therapeutics.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0136_Telix Pharmaceuticals Limited_Brianna Singer_resume_Senior Project Manager - Therapeutics.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0137_CloudIngest_Brianna Singer_resume_Scrum Master for Data Center to Cloud Migration.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0137_CloudIngest_Brianna Singer_resume_Scrum Master for Data Center to Cloud Migration.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0138_Applied Information Sciences_Brianna Singer_resume_Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0138_Applied Information Sciences_Brianna Singer_resume_Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0139_Simpson Thacher & Bartlett LLP_Brianna Singer_resume_Project Manager, PMO.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0139_Simpson Thacher & Bartlett LLP_Brianna Singer_resume_Project Manager, PMO.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0140_ROI Healthcare Solutions_Brianna Singer_resume_UKG Kronos Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0140_ROI Healthcare Solutions_Brianna Singer_resume_UKG Kronos Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0141_RedStream Technology_Brianna Singer_resume_Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0141_RedStream Technology_Brianna Singer_resume_Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0142_OP_Brianna Singer_resume_Project Coordinator (Scrum).txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0142_OP_Brianna Singer_resume_Project Coordinator (Scrum).pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0143_System Automation Corporation_Brianna Singer_resume_Associate Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0143_System Automation Corporation_Brianna Singer_resume_Associate Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0144_Rezilient Health_Brianna Singer_resume_Technical Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0144_Rezilient Health_Brianna Singer_resume_Technical Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0145_Makse Group_Brianna Singer_resume_Workday Certified Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0145_Makse Group_Brianna Singer_resume_Workday Certified Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0146_DMI_Brianna Singer_resume_Technical Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0146_DMI_Brianna Singer_resume_Technical Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0147_Medallion_Brianna Singer_resume_Implementation Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0147_Medallion_Brianna Singer_resume_Implementation Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0148_IQVIA_Brianna Singer_resume_Sr. IT Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0148_IQVIA_Brianna Singer_resume_Sr. IT Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0149_Ellucian_Brianna Singer_resume_Senior Project Manager (SystemwideHigher EducationSaaSERP).txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0149_Ellucian_Brianna Singer_resume_Senior Project Manager (SystemwideHigher EducationSaaSERP).pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0150_nesto_Brianna Singer_resume_Senior Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0150_nesto_Brianna Singer_resume_Senior Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0151_e4health_Brianna Singer_resume_Oracle ERP Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0151_e4health_Brianna Singer_resume_Oracle ERP Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0152_Northrop Grumman_Brianna Singer_resume_Information Systems Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0152_Northrop Grumman_Brianna Singer_resume_Information Systems Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0153_Acorns_Brianna Singer_resume_Technical Program Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0153_Acorns_Brianna Singer_resume_Technical Program Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0154_Capgemini_Brianna Singer_resume_System Analyst Technical Product Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0154_Capgemini_Brianna Singer_resume_System Analyst Technical Product Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0155_Westernacher Consulting_Brianna Singer_resume_Senior SAP Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0155_Westernacher Consulting_Brianna Singer_resume_Senior SAP Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0156_Principal Financial Group_Brianna Singer_resume_Product Manager 1 - (AI Focus).txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0156_Principal Financial Group_Brianna Singer_resume_Product Manager 1 - (AI Focus).pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0157_AEM Corporation_Brianna Singer_resume_Deputy Program Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0157_AEM Corporation_Brianna Singer_resume_Deputy Program Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0158_Horizon Media_Brianna Singer_resume_Sr. Project Manager, Program Management - Product & Data.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0158_Horizon Media_Brianna Singer_resume_Sr. Project Manager, Program Management - Product & Data.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0159_Penta Consulting_Brianna Singer_resume_Technical Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0159_Penta Consulting_Brianna Singer_resume_Technical Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0160_GitHub_Brianna Singer_resume_Staff Program Manager, Product Operations.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0160_GitHub_Brianna Singer_resume_Staff Program Manager, Product Operations.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0161_BlastX Consulting_Brianna Singer_resume_Senior Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0161_BlastX Consulting_Brianna Singer_resume_Senior Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0162_Helic & Co_Brianna Singer_resume_Scrum Master.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0162_Helic & Co_Brianna Singer_resume_Scrum Master.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0163_Blossom_Brianna Singer_resume_Project Manager, Card Program Implementations.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0163_Blossom_Brianna Singer_resume_Project Manager, Card Program Implementations.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0164_OpenLoop_Brianna Singer_resume_IT Project Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0164_OpenLoop_Brianna Singer_resume_IT Project Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    },
+    {
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0165_Guidewire_Brianna Singer_resume_Associate Technical Program Manager.txt",
+      "status": "repaired",
+      "pdf": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0165_Guidewire_Brianna Singer_resume_Associate Technical Program Manager.pdf",
+      "counts": {
+        "FriendsWithMeasurements.com": 2,
+        "ALTR": 4,
+        "Guy Carpenter": 3,
+        "Sirion": 3,
+        "Sakhi": 1,
+        "The Samaritans of New York": 1
+      },
+      "page_count": 1
+    }
+  ]
+}

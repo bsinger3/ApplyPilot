@@ -1,0 +1,7 @@
+Title: Technical Program Manager
+Company: Brooksource
+Location: Remote
+Score: 10
+URL: https://www.linkedin.com/jobs/view/4416303926
+
+Brooksource is seeking a Technical Program Manager to support a highly visible enterprise Data De-Identification (DDI) initiative within a Fortune 500 organization. This role will drive hands-on execution across multiple engineering, data, and security workstreams. This is a delivery-focused role requiring strong Agile execution, technical coordination, dependency management, and executive communication skills. The ideal candidate has experience supporting large-scale technical or IT implementations with significant cross-functional coordination across engineering and data teams. Key Responsibilities: Drive execution across multiple technical workstreams, coordinating dependencies, timelines, risks, and delivery milestones across engineering, data, infrastructure, and business teams. Facilitate Agile/Scrum ceremonies including standups, sprint planning, backlog refinement, retrospectives, and cross-team coordination.

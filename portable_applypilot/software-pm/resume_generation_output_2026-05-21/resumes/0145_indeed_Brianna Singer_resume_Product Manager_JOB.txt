@@ -1,0 +1,30 @@
+Title: Product Manager
+Company: indeed
+Location: Remote, US (Remote)
+Score: 8
+URL: https://www.indeed.com/viewjob?jk=f8780e4820986982
+
+Responsibilities:* Own the product lifecycle end\-to\-end: discovery, requirements, roadmap planning, feature definition, release execution, and post\-launch maintenance for a pre\-defined product area.
+* Lead product initiatives focused on healthcare enrollment, including ingestion, validation, transformation, error handling, reconciliation, and downstream system integrations.
+* Requirements Gathering: Working closely with stakeholders to gather and document product requirements, ensuring that the product meets the needs of both internal and external users.
+* Translate business and regulatory needs into clear product requirements, user stories, acceptance criteria, and product specifications.
+* Sprint / Project Management: Overseeing the entire product development lifecycle, from ideation to launch and beyond. This includes defining sprint / project timelines, managing resources, and coordinating efforts across different teams to ensure timely delivery of high\-quality products \& incremental improvements.
+* Create and maintain product documentation for features, release notes, conceptual data flows, and product interfaces.
+* Incorporate a strong design mindset, working closely with UX/UI partners to define intuitive workflows, simplify complex enrollment processes, and ensure solutions are user\-centered and easily accessible.
+* Partner with engineering teams to prioritize backlog, clarify requirements, and maintain product quality across releases.
+* Collaborate with QA and engineering to ensure robust test coverage and overall product quality.
+
+
+Qualifications:
+**Required Qualifications*** 5\-8\+ years of product management experience (or relevant experience depending on seniority).
+* Strong understanding of healthcare member enrollment processes, including eligibility, enrollment maintenance, reconciliation, and benefits administration for different Lines of Business.
+* Prior experience working in a product development lifecycle (Agile preferred), including backlog management, roadmap planning, and feature delivery.
+* Ability to translate technical concepts and complex enrollment workflows into clear business requirements.
+* Good communication, stakeholder management, interpersonal and cross\-functional collaboration skills, including working with offshore team members.
+* Ability to engage with technical teams (e.g. engineering, client, implementation) to discuss data models, workflows, and system behavior in case of critical production bugs.
+
+ **Preferred / Nice\-to\-Have Qualifications*** Prior experience as Software Engineer
+* Prior experience with Edifecs tools or platforms (EAM, SpecBuilder, TM, ENR, XEServer, XEngine).
+* Understanding of related EDI transactions (e.g., 834, 999, TA1\).
+* Exposure to member enrollment processes for Group and Medicaid LOBs.
+* Familiarity with cloud\-based architectures and modern integration patterns.

@@ -1,0 +1,48 @@
+Brianna Singer
+Senior IT Project Manager
+bsinger3@gmail.com | 916 224 9144 | https://github.com/bsinger3/ | https://linkedin.com/in/briannasinger/
+
+SUMMARY
+Experienced Technical Project Manager with a strong background in managing IT initiatives across data platforms and infrastructure. Proven track record of delivering projects on time and within budget while ensuring stakeholder alignment and accountability.
+
+TECHNICAL SKILLS
+Languages: Python, SQL
+DevOps & Infra: Supabase, Postgres, Snowflake, Mixpanel
+Databases: Postgres, Snowflake
+Tools: Agile, Scrum, OKRs, data pipelines, requirements definition, stakeholder management
+
+EXPERIENCE
+Technical Project Manager, FriendsWithMeasurements.com, Newark, New Jersey Newark, New Jersey | Aug 2025 - Present
+- Rebuilt FriendsWithMeasurements.com to solve a common apparel discovery problem: shoppers struggling to find clothing that fits their body measurements. Redesigned the Postgres data model to support a catalog of 15K+ measurement profiles.
+- Implemented measurement-based product search using Postgres functions, vector similarity queries, and indexed text search, increasing relevant results by more than 30% and reducing no-results searches by over 80%.
+- Scaled catalog and review data coverage across high-volume sources, including a Hollister pipeline that processed 1,966 products and 160K+ customer reviews into structured fit and measurement data for downstream analytics.
+- Led a multi-threaded data pipeline program, coordinating scrape claims, implementation rules, validation metrics, Git/S3/Supabase syncs, and transcript documentation across concurrent engineering workstreams.
+
+Product Manager, ALTR, Melbourne, Florida Melbourne, Florida | Feb 2025 - Aug 2025
+- Spearheaded ALTR's Snowflake Native App that uses Snowflake's native classifiers to scan 50+ TBs of a key customer's data, detect unprotected sensitive data, apply the right tags, and generate security policy recommendations based on exposure and usage. First customer identified 80+ columns of unprotected PII, cutting manual tagging time by 10s of hours. Product usage tracked through Mixpanel analytics.
+- Defined product requirements for ALTR's data governance platform by analyzing customer security workflows and sales feedback, aligning engineering delivery with enterprise data protection needs.
+- Developed logic across multiple Snowflake audit log types to support automated alerting when security policies are violated and designed remediation flows that revoke permissions and force logouts for suspicious users.
+
+Product Manager, Guy Carpenter, New York, New York New York, New York | Nov 2023 - Dec 2024
+- Drove delivery of NLP-powered contract intelligence workflows across more than 100k property reinsurance contracts, reducing average contract review time from 7 days to approximately 10 minutes and capturing more than $40M in previously unstructured deal economics.
+- Built Power BI dashboards that surfaced trends in exception patterns, deal size correlations, and recurring review bottlenecks, equipping brokerage leadership with data to support multimillion dollar negotiations.
+- Implemented LLM driven document processing workflows to automate term extraction and reduce manual contract review effort.
+
+Technical Project Manager, Sirion, New York, New York New York, New York | May 2022 - June 2023
+- Managed budgets exceeding $75k, led daily scrum and Agile delivery of ML models, consistently hitting +95% of sprint goals for bank clients.
+- Defined training data requirements and implemented NLP strategies to improve the model's interpretation of financial tables and charts.
+
+Domestic Violence Hotline Volunteer, Sakhi, New York, New York New York, New York | Jan 2022 - Present
+- Provide crisis support for the domestic violence hotline, coordinated with New York City's Homeless Shelter network for emergency placements.
+- Completed training in trauma response and crisis communication to support domestic violence hotline callers effectively.
+
+Suicide Hotline Volunteer, The Samaritans of New York, New York, New York New York, New York | Feb 2021 - Sep 2021
+- Practiced crisis management, mental health counseling, and emergency response, serving on the suicide hotline for regular volunteer shifts.
+
+PROJECTS
+HumaneHousing - Platform for Housing Applications
+Cornell University Women in Tech Hackathon | Oct 2022
+- Prototyped HumaneHousing, a platform that helps recently incarcerated individuals apply for housing in New York State, winning a $1500 grant.
+
+EDUCATION
+Cornell University School of Industrial and Labor Relations | Bachelor of Science, Industrial and Labor Relations

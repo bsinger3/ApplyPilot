@@ -176,9 +176,36 @@ applypilot apply --dry-run              # Fill forms without submitting
 applypilot apply --continuous           # Run forever, polling for new jobs
 applypilot apply --headless             # Headless browser mode
 applypilot apply --url URL              # Apply to a specific job
+applypilot apply --backend stagehand --dry-run --url URL  # Experimental Browserbase/Stagehand apply run
 applypilot status                       # Pipeline statistics
 applypilot dashboard                    # Open HTML results dashboard
 ```
+
+### Experimental Stagehand Backend
+
+ApplyPilot includes an experimental Browserbase/Stagehand backend for comparing
+against the current Claude Code + Playwright MCP apply loop.
+
+```bash
+npm install
+```
+
+Add a Browserbase API key to `~/.applypilot/.env`:
+
+```bash
+BROWSERBASE_API_KEY=your_browserbase_api_key
+APPLYPILOT_STAGEHAND_MODEL=google/gemini-3-flash-preview
+```
+
+Then run a controlled dry run:
+
+```bash
+applypilot apply --backend stagehand --dry-run --persona default --url APPLICATION_URL
+```
+
+The Stagehand backend is intentionally opt-in. It currently runs one job at a
+time, logs raw output to `~/.applypilot/logs/stagehand_*.log`, and stops before
+final submission when `--dry-run` is set.
 
 ---
 

@@ -1,0 +1,270 @@
+Title: Sr. Project Manager
+Company: linkedin
+Location: Remote
+Score: 9
+URL: https://www.linkedin.com/jobs/view/4410995300
+
+Net2Source is a Global Workforce Solutions Company headquartered at NJ, USA with its branch offices in Asia Pacific Region. We are one of the fastest growing IT Consulting company across the USA and
+ 
+ we are hiring
+ 
+***"* 
+ Sr. Project Manager
+ *"***
+
+ for one of our clients
+ 
+ . We offer a wide gamut of consulting solutions customized to our 450\+ clients ranging from Fortune 500/1000 to Start\-ups across various verticals like Technology, Financial Services, Healthcare, Life Sciences, Oil \& Gas, Energy, Retail, Telecom, Utilities, Technology, Manufacturing, the Internet, and Engineering.
+ 
+
+
+
+
+
+
+
+
+***Position:* 
+ Sr. Project Manager \-Application Modernization** 
+
+
+
+
+***Location: Remote***
+
+
+
+
+***Type: w2 Contract***
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+ This initiative focuses on a
+ **large\-scale Application Modernization program** 
+ , involving migration of approximately
+ **70 applications** 
+ and transitioning legacy systems to
+ **containerized environments on AWS** 
+ . The project requires strong coordination across application, infrastructure, and business teams, with emphasis on execution discipline, testing cycles, and stakeholder approvals (FLIT sign\-offs).
+ 
+
+
+
+**Role Summary** 
+
+
+
+
+ We are seeking a
+ **Senior Project Manager** 
+ to lead delivery of this modernization initiative. The role requires ownership of end\-to\-end execution, strong governance oversight, and the ability to manage multiple interdependent workstreams in a complex enterprise environment. This is a highly detail\-driven role requiring strong coordination across technical and business stakeholders.
+ 
+
+
+
+**Key Responsibilities** 
+
+
+
+* Lead and manage the
+ **end\-to\-end project lifecycle** 
+ from initiation through deployment and stabilization
+* Develop and maintain
+ **integrated project plans, schedules, and dependency tracking across all workstreams**
+* Own
+ **project financials** 
+ , including budgeting, forecasting, and cost control
+* Identify, assess, and manage
+ **risks, issues, and dependencies** 
+ , driving mitigation strategies
+* Execute
+ **integrated change control** 
+ , assessing impacts to scope, schedule, and cost
+* Coordinate across
+ **cross\-functional teams (applications, infrastructure, cloud, testing, and business teams)**
+* Establish and maintain
+ **governance frameworks, reporting cadence, and executive status updates**
+* Ensure adherence to
+ **PMO standards, documentation practices, and audit requirements**
+* Lead
+ **testing coordination, cutover planning, and deployment readiness activities**
+* Drive
+ **stakeholder alignment, approvals, and decision\-making across leadership levels**
+
+
+
+  
+
+
+
+
+
+**Required Experience \& Skills (Role\-Specific)** 
+
+
+
+* Strong experience in
+ **application modernization or cloud transformation programs**
+* Familiarity with
+ **AWS, containerization, and legacy system migration**
+* Hands\-on experience with
+ **Azure DevOps (ADO)** 
+ for tracking and execution management
+* Exposure to
+ **AI fundamentals** 
+ is preferred
+* Proven ability to manage
+ **complex, detail\-oriented execution including testing cycles and sign\-offs**
+* Strong capability in managing
+ **cross\-functional and distributed teams**
+* Excellent
+ **communication, coordination, and problem\-solving skills**
+
+
+
+  
+
+
+
+
+
+**Domain \& Functional Expertise** 
+
+
+
+
+  
+
+
+
+
+* Experience in
+ **enterprise application portfolios and modernization initiatives**
+* Understanding of
+ **infrastructure transformation and cloud migration strategies**
+* Familiarity with
+ **application lifecycle, testing, and deployment processes**
+* Experience working in
+ **large, complex IT environments with multiple stakeholders and dependencies**
+
+
+
+  
+
+
+
+
+
+**Project Management Discipline – Qualification \& Experience** 
+
+
+
+* 8\+ years of experience in
+ **IT Project Management** 
+ , leading medium to large complex initiatives
+* Strong proficiency in
+ **project management methodologies (Waterfall, Agile, or hybrid)**
+
+
+1. Demonstrated experience in: Integrated project planning and scheduling
+2. Financial management (budgeting, forecasting, variance management)
+3. Risk and issue management frameworks
+4. **Executive\-level reporting and stakeholder communication**
+5. 
+6. Experience working within a
+ **structured PMO environment with defined governance and controls**
+7. Proven ability to lead
+ **cross\-functional, matrixed teams and vendors**
+8. Certification preferred:
+ **PMP, PRINCE2, Agile/Scrum or equivalent**
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+**Why Work With Us?** 
+
+
+
+
+ We believe in more than just jobs—we build careers. At Net2Source, we champion leadership at all levels, celebrate diverse perspectives, and empower you to make an impact. Think work\-life balance, professional growth, and a collaborative culture where your ideas matter.
+ 
+
+
+
+ Our Commitment to Inclusion \& Equity
+ 
+
+
+
+ Net2Source is an equal opportunity employer, dedicated to fostering a workplace where diverse talents and perspectives are valued. We make all employment decisions based on merit, ensuring a culture of respect, fairness, and opportunity for all, regardless of age, gender, ethnicity, disability, or other protected characteristics.
+ 
+
+
+
+**Awards \& Recognition** 
+
+
+
+* America’s Most Honored Businesses (Top 10%)
+* Fastest\-Growing Staffing Firm by Staffing Industry Analysts
+* INC 5000 List for Eight Consecutive Years
+* Top 100 by
+ *Dallas Business Journal*
+* Spirit of Alliance Award by Agile1
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+**Madhukar Singh** 
+
+
+
+
+**Email:madhukar@net2source.com**

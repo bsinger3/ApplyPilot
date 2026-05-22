@@ -1,0 +1,172 @@
+Title: Staff Product Manager - Enterprise AI
+Company: indeed
+Location: Remote, US (Remote)
+Score: 9
+URL: https://www.indeed.com/viewjob?jk=7fe92a95cee1b2fb
+
+**Who we are**
+
+
+
+At Twilio, we’re shaping the future of communications, all from the comfort of our homes. We deliver innovative solutions to hundreds of thousands of businesses and empower millions of developers worldwide to craft personalized customer experiences.
+
+
+
+Our dedication to remote\-first work, and strong culture of connection and global inclusion means that no matter your location, you’re part of a vibrant team with diverse experiences making a global impact each day. As we continue to revolutionize how the world interacts, we’re acquiring new skills and experiences that make work feel truly rewarding. Your career at Twilio is in your hands.  
+
+  
+
+We use Artificial Intelligence (AI) to help make our hiring process efficient. That said, every hiring decision is made by real Twilions!
+
+
+
+.
+
+**See yourself at Twilio.**
+
+
+
+Join us as our next Staff Product Manager \- Enterprise AI on Twilio's Enterprise AI team.
+
+
+**About the job**
+
+
+
+Twilio is undergoing a major business transformation powered by Enterprise AI, supported by a dedicated engineering team building the foundations for a unified, secure, and scalable operating system across GTM functions (Sales, Support, Operations, etc.) as well as Internal non\-GTM corporate functions (Finance, HR, Legal, etc.) Our platform is designed to support a multitude of business functions by deploying intelligent agentic solutions that automate complex workflows and deliver unprecedented user experiences. We're building the future of work at Twilio, and this role offers the opportunity to be at the forefront of enterprise AI innovation.
+
+
+
+As Staff Product Manager for Enterprise AI, you will lead the product strategy and execution for AI\-powered solutions across both GTM and Corporate Functions. You'll build intelligent agents, automation workflows, and operational tools that transform how Twilio works across Sales, Support, Operations, Finance, Legal, and HR \- from sales productivity and customer support efficiency to financial operations, legal contract management, and HR processes.
+
+
+
+You will be responsible for understanding the unique workflows, pain points, and opportunities across these diverse business functions, then designing and delivering AI\-powered products that drive measurable business impact. This includes everything from AI assistants that help sales teams close deals faster, to support agents that deflect cases and accelerate resolution, to compliance tools that automate manual investigations, to financial automation that streamlines invoice processing, to legal tools that accelerate contract review, and HR agents that streamline recruiting and onboarding.
+
+
+
+You'll work closely with GTM and Corporate Function leaders, operations teams, engineering, data science, and AI/ML teams to deliver a cohesive product vision that scales across multiple use cases while leveraging our unified Enterprise AI platform.
+
+
+**Responsibilities**
+
+
+
+As a Staff Product Manager, you will:
+
+
+#### **Product Strategy \& Roadmap**
+
+
+* **Define and execute the product roadmap for Enterprise AI** spanning GTM functions (Sales, Support, Operations) and Corporate Functions (Finance, Legal, HR). Establish clear priorities, milestones, and success metrics that align with business objectives and drive measurable improvements.
+* **Lead cross\-functional product development** across multiple business domains, balancing the needs of diverse stakeholders within a unified platform strategy.
+
+#### **GTM AI Capabilities**
+
+
+* **Build AI\-powered solutions** across Sales, Support, and Operations functions that drive measurable GTM improvements. This includes sales productivity tools (intelligent account insights, opportunity management, propensity\-to\-buy signals, automated CRM workflows), support automation (case deflection, intelligent triage, agent assistance, knowledge retrieval), and compliance/risk operations (automated user vetting, fraud detection, compliance investigation dashboards, workflow orchestration for onboarding and audits).
+
+#### **Corporate Functions AI Capabilities**
+
+
+* **Build AI\-powered solutions across** Finance, Legal, and HR functions that transform operational efficiency. This includes financial automation (invoice/billing processing, expense management, automated reconciliation, forecasting and analytics), legal operations (contract review and generation, clause extraction, compliance tracking, risk assessment tools), and HR productivity (recruiting automation, candidate screening, onboarding workflows, employee self\-service, benefits administration).
+
+#### **Platform Integration \& Execution**
+
+
+* **Leverage the Enterprise AI platform** to build agentic solutions using multi\-agent architecture, knowledge retrieval, workflow automation, and LLM\-powered reasoning tailored to each business function.
+* **Integrate with enterprise systems** including Salesforce, Zendesk, Workday, NetSuite, DocuSign, compliance platforms (Sift, etc.), contract management platforms, HRIS systems, and internal Twilio tools to deliver seamless, embedded AI experiences.
+* **Partner with Engineering, Data Science, and AI/ML teams** to operationalize models, build production\-grade products, and ensure scalability, reliability, and performance across all use cases.
+
+#### **Stakeholder Management \& Adoption**
+
+
+* **Collaborate with business leaders** across GTM and Corporate Functions to understand their strategic priorities, operational challenges, and success metrics. Translate these into product requirements and clear roadmaps.
+* **Drive adoption and enablement by working directly with end users,** training teams on new AI capabilities, gathering feedback, and iterating on product experiences.
+* **Measure and communicate impact through clear metrics** on productivity gains, efficiency improvements, cost savings, and business outcomes driven by AI products.
+
+
+**Qualifications**
+
+
+
+Not all applicants will have skills that match a job description exactly. Twilio values diverse experiences in other industries, and we encourage everyone who meets the required qualifications to apply. While having “desired” qualifications make for a strong candidate, we encourage applicants with alternative experiences to also apply. If your career is just starting or hasn't followed a traditional path, don't let that stop you from considering Twilio. We are always looking for people who will bring something new to the table!
+
+
+#### **Required:**
+
+
+* 7\+ years of product management experience at fast\-paced technology companies, with at least 3 years in GTM functions (sales operations, customer support, compliance/risk operations) and/or Corporate Functions (finance operations, legal tech, HR tech)
+* Deep understanding of at least two of the following domains: sales workflows and CRM systems, customer support operations and help desk platforms, compliance/risk operations and fraud detection systems, financial operations and ERP systems, legal operations and contract lifecycle management, HR operations and human capital management systems
+* Proven ability to build products that serve diverse user personas and use cases within a unified platform strategy
+* Strong technical fluency with AI/ML concepts, agentic systems, workflow automation, and conversational AI
+* Proficiency with SQL and ability to extract, analyze, and interpret data independently to inform product decisions
+* Excellent stakeholder management skills with experience influencing senior leaders and driving cross\-functional alignment
+* Demonstrated success delivering measurable business impact through product innovation and operational efficiency
+* Bachelor's degree or equivalent experience
+
+#### **Desired:**
+
+
+* Experience with AI\-powered sales tools, support automation platforms, compliance/risk management systems, finance tools, legal tech platforms, or HR automation systems
+* Knowledge of enterprise platforms including Salesforce, Zendesk, Workday, and other enterprise systems
+* Familiarity with sales methodologies (MEDDPICC, etc.), support best practices (ITIL), operational excellence frameworks, finance best practices (financial close, procurement, FP\&A), legal operations (contract management, matter management), and HR processes (recruiting, onboarding, HRIS administration)
+* Background in building internal tools, operational dashboards, or productivity platforms for business functions
+* Experience with recommendation systems, predictive analytics, ML\-driven insights, document processing, intelligent document understanding, or knowledge management systems
+* Track record of driving adoption of new products across large, distributed teams
+
+
+**Location**
+
+
+
+This role will be remote, but is not eligible to be hired in San Francisco, CA, Oakland, CA, San Jose, CA, or the surrounding areas..
+
+
+**Travel**
+
+
+
+We prioritize connection and opportunities to build relationships with our customers and each other. For this role, you may be required to travel occasionally to participate in project or team in\-person meetings.
+
+
+**What we offer**
+
+
+
+There are many benefits to working at Twilio, including things like competitive pay, generous time\-off, ample parental and wellness leave, healthcare, a retirement savings program, and much more. Offerings vary by location.
+
+
+**Compensation**
+
+
+* *Please note the salary range information provided applies only to candidates residing in California, Colorado, Hawaii, Illinois, Maryland, Massachusetts, Minnesota, New Jersey, New York, Vermont, Washington D.C., and Washington State due to local requirements. Compensation for candidates in other locations will be discussed during the hiring process. Please note that hiring for this role is not restricted to the locations listed above.*
+
+
+
+The estimated pay ranges for this role are as follows:
+
+
+* Based in Colorado, Hawaii, Illinois, Maryland, Massachusetts, Minnesota, Vermont or Washington D.C. : $155,520 \- $194,400\.
+* Based in New York, New Jersey, Washington State, or California (outside of the San Francisco Bay area): $164,640\- $205,800\.
+* Based in the San Francisco Bay area, California: $182,960 \- $228,700\.
+* This role may be eligible to participate in Twilio’s equity plan and corporate bonus plan. All roles are generally eligible for the following benefits: health care insurance, 401(k) retirement account, paid sick time, paid personal time off, paid parental leave.
+
+
+The successful candidate’s starting salary will be determined based on permissible, non\-discriminatory factors such as skills, experience, and geographic location.
+
+
+**Applications for this role are intended to be accepted until 05/27/26, but may change based on business needs.**
+
+**Twilio thinks big. Do you?**
+
+
+
+We like to solve problems, take initiative, pitch in when needed, and are always up for trying new things. That's why we seek out colleagues who embody our values — something we call Twilio Magic. Additionally, we empower employees to build positive change in their communities by supporting their volunteering and donation efforts.
+
+
+
+So, if you're ready to unleash your full potential, do your best work, and be the best version of yourself, apply now! If this role isn't what you're looking for, please consider other open positions.
+
+
+**Twilio is proud to be an equal opportunity employer.** We do not discriminate based upon race, religion, color, national origin, sex (including pregnancy, childbirth, reproductive health decisions, or related medical conditions), sexual orientation, gender identity, gender expression, age, status as a protected veteran, status as an individual with a disability, genetic information, political views or activity, or other applicable legally protected characteristics. We also consider qualified applicants with criminal histories, consistent with applicable federal, state and local law. Qualified applicants with arrest or conviction records will be considered for employment in accordance with the Los Angeles County Fair Chance Ordinance for Employers and the California Fair Chance Act. Additionally, Twilio participates in the E\-Verify program in certain locations, as required by law.

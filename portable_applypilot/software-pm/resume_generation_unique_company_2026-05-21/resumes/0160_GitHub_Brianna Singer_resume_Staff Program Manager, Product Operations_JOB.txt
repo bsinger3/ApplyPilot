@@ -1,0 +1,106 @@
+Title: Staff Program Manager, Product Operations
+Company: indeed
+Location: Remote, US (Remote)
+Score: 8
+URL: https://www.indeed.com/viewjob?jk=c6fb61021e627e50
+
+About GitHub: GitHub is the world’s leading platform for agentic software development — powered by Copilot to build, scale, and deliver secure software. Over 180 million developers, including more than 90% of the Fortune 100 companies, use GitHub to collaborate, and more than 77,000 organisations have adopted GitHub Copilot.  
+
+Locations: In this role you can work from Remote, United States  
+
+Overview:
+**GitHub** and Microsoft's developer portfolio, spanning GitHub, Azure AI Foundry, and VS Code, is one of the highest\-velocity product areas at Microsoft, shipping the tools and platforms that define how the world builds with AI. The Insights \& Product Operations team drives operational excellence across this portfolio, serving as the connective tissue between product, engineering, marketing, revenue, and support to make the full launch lifecycle predictable, scalable, and market ready.
+
+ **About the Role**
+
+
+We are looking for a Staff Program Manager to join our Product Operations team and help ensure that what we ship is ready: not just technically, but across product completeness, go\-to\-market positioning, and field enablement. This person will drive highly strategic, cross\-functional programs that keep a complex product portfolio shipping with confidence. They will identify systemic gaps in how releases move from development through launch, define and advance readiness standards, and build alignment across product, GTM, and compliance stakeholders. The role requires someone who thrives in ambiguity, can formulate a plan and path forward through uncertain scenarios, and builds momentum in a highly matrixed, fast\-paced environment. We are looking for a self\-starter with strong program management craft and the relationship skills to earn trust across teams.
+
+  
+
+
+Responsibilities:
+**Program Management**
+
+* Lead complex, cross\-functional programs in a highly matrixed, fast\-paced environment, formulating plans through ambiguous scenarios and maintaining momentum across stakeholders
+* Identify and assess risks to product readiness, guide discussions to reach consensus, and capture key decisions that keep launches on track
+* Define and track key performance indicators for program health and outcomes across the product launch lifecycle
+
+**Driving Business Impact and Continuous Improvement**
+
+* Identify requirements for program objectives and supporting tools (e.g., process flows, dashboards, readiness frameworks)
+* Improve procedures and workflows that support how products move from development through launch; apply learnings from prior launches to drive broader impact
+
+**Stakeholder Engagement**
+
+* Build collaborative relationships across product, engineering, marketing, revenue, legal, and support to drive alignment on what it takes to ship products that are ready for customers
+* Drive rhythm of business for programs to ensure goals align with cross\-organizational priorities; manage critical or time\-sensitive issues that affect release timelines or market readiness
+
+**Thought Leadership**
+
+* Identify systemic improvement opportunities across how the organization plans, builds, and launches products
+* Share best practices and insights across teams and programs to up\-level how the broader organization thinks about operational rigor, readiness standards, and shipping with confidence at scale
+
+  
+
+
+Qualifications:
+**Required Qualifications**
+
+* 9\+ years experience in program management, product management, project management, customer success, or a related field
+	+ OR Bachelor's Degree in a related field AND 7\+ years experience in program management, product management, project management, customer success, or a related field
+	+ OR equivalent experience
+* 3\+ years experience working in a complex, matrixed organization
+* 3\+ years experience driving cross\-functional alignment across product, engineering, marketing, and revenue stakeholders
+
+**Preferred Qualifications**
+
+* Experience in SaaS or cloud platform product development lifecycle (PDLC) environments
+* Experience with launch readiness, release management, or go\-to\-market operations across a product portfolio
+* Demonstrated track record of building operational frameworks and processes from scratch in high\-growth or rapidly evolving environments
+* Experience with data\-driven operational reporting, such as building dashboards, scorecards, or executive\-facing views of release or program health
+* Active use of AI tools to improve personal productivity and operational workflows
+* Passion for GitHub, open source, and the opportunity to redefine how the world builds and secures software.
+
+  
+
+
+Compensation Range: The base salary range for this job is USD $121,000\.00 \- USD $323,200\.00 /Yr.  
+
+  
+
+These pay ranges are intended to cover roles based across the United States. An individual's base pay depends on various factors including geographical location and review of experience, knowledge, skills, abilities of the applicant. At GitHub certain roles are eligible for benefits and additional rewards, including annual bonus and stock. These rewards are allocated based on individual impact in role. In addition, certain roles also have the opportunity to earn sales incentives based on revenue or utilization, depending on the terms of the plan and the employee's role. GitHub Leadership Principles:
+**GitHub values**
+
+
+* Customer\-obsessed
+* Ship to learn
+* Growth mindset
+* Own the outcome
+* Better together
+* Diverse and inclusive
+
+
+**Manager fundamentals**
+
+
+* Model
+* Coach
+* Care
+
+
+**Leadership principles**
+
+
+* Create clarity
+* Generate energy
+* Deliver success
+
+
+Who We Are: GitHub is the world’s leading AI\-powered developer platform with 150 million developers and counting. We’re also home to the biggest open\-source community on earth (and 99% of the world’s software has open\-source code in its DNA). Many of the apps and programs you use every day are built on GitHub.  
+
+Our teams are dreamers, doers, and pioneers, leading the way in AI, driving humanitarian efforts around the globe, and even sending open source to Mars (and beyond!). At GitHub, our goal is to create the space you need to do your best work. We’re remote\-first and offer competitive pay, generous learning and growth opportunities, and excellent benefits to support you, wherever you are—because we know that people flourish when they can work on their own terms.  
+
+Join us, and let’s change the world, together.  
+
+EEO Statement: GitHub is made up of people from a wide variety of backgrounds and lifestyles. We embrace diversity and invite applications from people of all walks of life. We don't discriminate against employees or applicants based on gender identity or expression, sexual orientation, race, religion, age, national origin, citizenship, disability, pregnancy status, veteran status, or any other differences. Also, if you have a disability, please let us know if there's any way we can make the interview process better for you; we're happy to accommodate!

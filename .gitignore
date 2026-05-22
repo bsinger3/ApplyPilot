@@ -17,6 +17,7 @@ chrome-workers/
 apply-workers/
 apply_logs/
 logs/
+*.log
 transcript_bullet_candidates/
 
 # MCP configs (per-machine)
@@ -31,6 +32,9 @@ __pycache__/
 dist/
 build/
 *.egg
+
+# Node experiments
+node_modules/
 
 # IDE
 .vscode/

@@ -1,0 +1,59 @@
+Title: Product Manager
+Company: indeed
+Location: Remote, US (Remote)
+Score: 9
+URL: https://www.indeed.com/viewjob?jk=04e550a5110df027
+
+**Job Overview**  
+SureTest is seeking a dynamic and innovative Product Manager to lead support our product innovation efforts and help drive our test automation solutions. The Product Manager will be responsible for helping lead the identification, planning, documentation, development, deployment, and enhancement of results\-driven technology products and other innovations from conception through launch and optimization.
+
+The ideal candidate is a strategic, hands\-on product leader who can translate complex healthcare and client needs into practical, high\-impact solutions while driving execution, collaboration, and measurable outcomes.
+
+**Responsibilities**
+
+* Support product innovation development and deployment of product initiatives
+* Identify opportunities for product innovation to improve test automation solutions
+* Define, communicate and maintain product vision and strategy to align with company priorities
+* Own and prioritize backlogs, enhancements and bug fixes
+* Define and track KPIs to measure product performance
+* Collaborate with delivery teams on rollout and adoption of new products
+* Conduct market and client research/feedback to identify opportunities
+* Prepare and update product plans and roadmaps
+
+**Requirements**
+
+* 8\+ years experience in product management in healthcare IT, preferably with test automation or EHR platforms.
+* QA/testing of healthcare software solutions
+* Experience with AI\-driven products and solutions
+* Deep understanding of healthcare business and clinical applications (EHR, RCM, clinical workflows, interoperability).
+* Familiarity with test automation tools and frameworks (e.g., Eggplant Selenium, Cypress, Playwright, API testing) and major EHR platforms preferred.
+* Working knowledge of SDLC and CI/CD pipelines, software development lifecycles, cloud environments, and release management.
+* Experience coordinating projects or initiatives in a product, delivery, and/or technology\-adjacent environment, supporting cross\-functional execution for assigned products.
+* Clear written and verbal communication skills, with particular strength in documentation (e.g., requirements, acceptance criteria, decision logs, status updates) and cross\-team coordination.
+* Comfortable working across teams with differing priorities and technical backgrounds; able to translate between business needs and technical considerations
+* Proficiency with Microsoft 365 tools (e.g., Teams, Outlook, SharePoint, Excel, PowerPoint) and familiarity with work\-management/tracking tools (e.g., Jira, Azure DevOps, Asana, Monday.com, Smartsheet, ClickUp, Salesforce or similar).
+* Strong organizational skills with the ability to manage multiple workstreams, timelines, dependencies, and follow\-ups simultaneously.
+
+Pay: $90,000\.00 \- $135,000\.00 per year
+
+Benefits:
+
+* 401(k)
+* 401(k) matching
+* Dental insurance
+* Employee assistance program
+* Health insurance
+* Health savings account
+* Life insurance
+* Paid time off
+* Parental leave
+* Professional development assistance
+* Referral program
+* Vision insurance
+
+Application Question(s):
+
+* Do you have at least 5 \- 8 years of experience managing technology products in a healthcare IT environment (EHR, clinical systems, revenue cycle)?
+* What products have you managed? Include type, users, and your role.
+
+Work Location: Remote

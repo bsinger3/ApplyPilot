@@ -1,0 +1,57 @@
+Brianna Singer
+Project Manager
+bsinger3@gmail.com | 916 224 9144 | https://github.com/bsinger3/ | https://linkedin.com/in/briannasinger/
+
+SUMMARY
+Experienced Project Manager with a strong background in data-driven solutions and Agile methodologies. Proven track record of delivering complex projects on time and within budget while aligning with business objectives.
+
+TECHNICAL SKILLS
+Languages: Python, SQL
+DevOps & Infra: Supabase, Postgres, Snowflake, Power BI, Mixpanel
+Databases: Postgres, Snowflake
+Tools: Agile, Scrum, roadmap planning, stakeholder management, OKRs, NLP, LLM workflows, data pipelines, requirements definition
+
+EXPERIENCE
+Project Manager, FriendsWithMeasurements.com, Newark, New Jersey Newark, New Jersey | Aug 2025 - Present
+- Rebuilt FriendsWithMeasurements.com to solve a common apparel discovery problem: shoppers struggling to find clothing that fits their body measurements. Redesigned the Postgres data model to support a catalog of 15K+ measurement profiles.
+- Implemented measurement-based product search using Postgres functions, vector similarity queries, and indexed text search, increasing relevant results by more than 30% and reducing no-results searches by over 80%.
+- Built data ingestion and normalization pipelines for apparel datasets, standardizing inconsistent sizing formats and enabling structured filtering.
+- Designed image and metadata pipelines using Supabase storage and computer vision tagging to improve catalog discoverability and enable measurement-based analytics.
+
+Product Manager, ALTR, Melbourne, Florida Melbourne, Florida | Feb 2025 - Aug 2025
+- Spearheaded ALTR's Snowflake Native App that uses Snowflake's native classifiers to scan 50+ TBs of a key customer's data, detect unprotected sensitive data, apply the right tags, and generate security policy recommendations based on exposure and usage. First customer identified 80+ columns of unprotected PII, cutting manual tagging time by 10s of hours.
+- Defined product requirements for ALTR's data governance platform by analyzing customer security workflows and sales feedback, aligning engineering delivery with enterprise data protection needs.
+- Partnered with enterprise data security teams to evaluate classifier performance, prioritize roadmap features, and translate governance requirements into deployable product releases.
+- Developed logic across multiple Snowflake audit log types to support automated alerting when security policies are violated.
+
+Product Manager, Guy Carpenter, New York, New York New York, New York | Nov 2023 - Dec 2024
+- Drove delivery of NLP-powered contract intelligence workflows across more than 100k property reinsurance contracts, reducing average contract review time from 7 days to approximately 10 minutes and capturing more than $40M in previously unstructured deal economics.
+- Built Power BI dashboards that surfaced trends in exception patterns, deal size correlations, and recurring review bottlenecks, equipping brokerage leadership with data to support multimillion dollar negotiations.
+- Implemented LLM driven document processing workflows to automate term extraction and reduce manual contract review effort.
+- Led scrum ceremonies and tracked OKRs for a five engineer team developing contract extraction and classification models.
+
+Technical Project Manager, Sirion, New York, New York New York, New York | May 2022 - June 2023
+- Managed budgets exceeding $75k, led daily scrum and Agile delivery of ML models, consistently hitting +95% of sprint goals for bank clients.
+- Defined training data requirements and implemented NLP strategies to improve the model's interpretation of financial tables and charts.
+- Served as primary liaison for customers of Sirion's SaaS product, facilitating document extraction for financial contracts.
+- Mentored junior project managers and led seminars on project scoping, product releases, and management skills.
+
+PROJECTS
+FriendsWithMeasurements.com - Apparel discovery platform
+Newark, New Jersey | Aug 2025 - Present
+- Rebuilt the platform to improve clothing fit discovery for users, redesigning the Postgres data model to support over 15K measurement profiles.
+
+Snowflake Native App - Data governance solution
+Melbourne, Florida | Feb 2025 - Aug 2025
+- Developed a Snowflake Native App that scanned over 50 TBs of data, identifying unprotected sensitive data and generating security policy recommendations.
+
+NLP-powered contract intelligence workflows - Contract analysis tool
+New York, New York | Nov 2023 - Dec 2024
+- Delivered NLP workflows that reduced contract review time from 7 days to approximately 10 minutes, capturing over $40M in deal economics.
+
+HumaneHousing - Housing application platform
+New York, New York | Oct 2022
+- Prototyped a platform assisting recently incarcerated individuals in applying for housing, winning a $1500 grant.
+
+EDUCATION
+Cornell University School of Industrial and Labor Relations | Bachelor of Science, Industrial and Labor Relations

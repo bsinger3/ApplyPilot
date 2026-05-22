@@ -1,0 +1,172 @@
+Title: Technical Program Manager, Research
+Company: indeed
+Location: Remote, US (Remote)
+Score: 9
+URL: https://www.indeed.com/viewjob?jk=4b3aacc67f60b535
+
+**Location**
+------------
+
+
+USA \| Remote
+
+
+**Employment Type**
+-------------------
+
+
+Full time
+
+
+**Location Type**
+-----------------
+
+
+Remote
+
+
+**Department**
+--------------
+
+
+Research
+
+
+**Compensation**
+----------------
+
+
+* Estimated Base Salary $160K – $235K • Offers Equity • Offers Bonus • 10% Annual Bonus
+
+This range is determined by work location and additional factors, including job\-related skills and experience. There may be instances where a salary higher or lower than this range may be appropriate for a candidate whose qualifications differ meaningfully from those listed in the job description.
+  
+
+  
+
+Please note that the compensation details listed on US role postings reflect the base salary only and does not include bonus, equity or benefits.
+
+
+  
+**Company Overview**
+====================
+
+
+Deepgram is the leading platform underpinning the emerging trillion\-dollar Voice AI economy, providing real\-time APIs for speech\-to\-text (STT), text\-to\-speech (TTS), and building production\-grade voice agents at scale. More than 200,000 developers and 1,300\+ organizations build voice offerings that are ‘Powered by Deepgram’, including Twilio, Cloudflare, Sierra, Decagon, Vapi, Daily, Cresta, Granola, and Jack in the Box. Deepgram’s voice\-native foundation models are accessed through cloud APIs or as self\-hosted and on\-premises software, with unmatched accuracy, low latency, and cost efficiency. Backed by a recent Series C led by leading global investors and strategic partners, Deepgram has processed over 50,000 years of audio and transcribed more than 1 trillion words. There is no organization in the world that understands voice better than Deepgram.
+
+
+**Company Operating Rhythm**
+============================
+
+
+At Deepgram, we expect an AI\-first mindset—AI use and comfort aren’t optional, they’re core to how we operate, innovate, and measure performance.
+
+
+Every team member who works at Deepgram is expected to actively use and experiment with advanced AI tools, and even build your own into your everyday work. We measure how effectively AI is applied to deliver results, and consistent, creative use of the latest AI capabilities is key to success here. Candidates should be comfortable adopting new models and modes quickly, integrating AI into their workflows, and continuously pushing the boundaries of what these technologies can do.
+
+
+Additionally, we move at the pace of AI. Change is rapid, and you can expect your day\-to\-day work to evolve just as quickly. This may not be the right role if you’re not excited to experiment, adapt, think on your feet, and learn constantly, or if you’re seeking something highly prescriptive with a traditional 9\-to\-5\.
+
+
+### **The Opportunity**
+
+
+Voice AI stands at the cusp of a paradigm shift. Current approaches to voice interaction are fundamentally limited by the scarcity and diversity of audio data, combined with the prohibitive computational costs of processing high\-dimensional audio at scale. These challenges have created a gap between the promise of universal voice interaction and today’s reality. While our research scientists pioneer new approaches in Latent Space Models (LSMs) to solve these fundamental challenges, we need exceptional technical program leadership to turn these breakthroughs into shipped products. The complexity of our mission (spanning audio compression, generative modeling, and multimodal systems) demands rigorous cross\-functional execution, precise dependency management, and relentless focus on delivering the technical systems that turn research breakthroughs into real\-world impact. As our research matures and the path from experiment to product grows shorter, we need a Technical Program Manager embedded in the work: someone who drives delivery, owns risk, and makes sure Research, Product, DataOps, and Engineering are always moving together.
+
+
+### **What You'll Do**
+
+
+You will be embedded in Deepgram’s Research organization, working at the intersection of research output and technical delivery. This is not a role where “done” is always easy to define. You’ll be working with teams where timelines shift as experiments succeed or fail, where a model that looked ready last week needs another iteration this week, and where earning the trust of researchers matters as much as building the right process. Your job is to bring structure and delivery discipline to that environment without making it feel like a software release cycle.
+
+
+When you arrive, you’ll inherit a portfolio of active cross\-functional programs spanning STT and TTS model development, data pipeline work, and evaluation infrastructure. In your first 90 days, success looks like: having a clear map of what’s in flight, who owns what, and where the risks are; having established a working rhythm with Research, Product, DataOps, and Engineering leads; and having driven at least one meaningful delivery milestone across teams. Concretely, over time you will:
+
+
+* Own end\-to\-end delivery of new model versions and features for our flagship STT and TTS offerings, coordinating tightly across Research, Product, DataOps, and Engineering to hit milestones and ship on time
+* Define and champion lightweight but effective processes that bring visibility and accountability to researchers’ daily workflows without adding unnecessary overhead or stifling scientific creativity
+* Map dependencies and risks across all active cross\-functional projects; maintain a clear picture of where things stand, where they’re at risk, and what needs to happen to keep execution on track
+* Run cross\-functional programs end\-to\-end: scope definition, timeline management, stakeholder communication, risk mitigation, and launch readiness
+* Troubleshoot cross\-team blockers quickly and build reliable partnerships across the technical organization so that handoffs between teams are smooth and accountability is clear
+* Own proactive communication across all levels of the organization: leadership should always have an accurate read on project health, and teams should always know how their work fits into the bigger picture
+* Respond quickly to shifting priorities, translating decisions made upstream into clear implications for timelines, team capacity, and cross\-functional dependencies
+
+### **You'll Love This Role If You**
+
+
+We are seeking a Technical Program Manager who:
+
+
+* Can drive delivery of complex, multi\-team technical programs without losing sight of the details that make or break a launch
+* Excels at identifying dependencies and risks early, before they become frictional forces or blockers that slow research or delay product timelines
+* Has the technical depth to sit in a room with ML researchers and engineers and understand what’s actually being built
+* Knows how to bring just enough process to an environment that runs fast and resists overhead and knows when to enforce structure versus get out of the way
+* Can build trusted relationships across Research, Product, DataOps, and Engineering, and hold those teams accountable to each other without creating friction
+* Communicates status and risk clearly to both technical and non\-technical stakeholders, and knows when to escalate
+
+If you find yourself thinking about how to untangle a cross\-team dependency while still reading through a model evaluation report, if you’re equally comfortable running a launch readiness review and a technical scoping session, you might be the TPM we need. This role demands a rare combination of technical credibility, execution discipline, and emotional intelligence to keep complex programs moving across a fast\-paced research organization.
+
+
+### **It’s Important to Us That You Have**
+
+
+* 5\+ years of experience as a Technical Program Manager or Engineering Program Manager, ideally with meaningful time spent supporting or embedded in an AI/ML Research organization
+* In\-depth, working knowledge of how machine learning systems are built (i.e., data pipelines, model training, evaluation, and serving) that allows you to engage meaningfully with researchers and engineers on technical tradeoffs
+* Proven track record of delivering complex, multi\-workstream technical programs on time across teams with competing priorities
+* Demonstrated ability to map cross\-functional dependencies and technical risk across concurrent projects, with clear status communication to all stakeholders
+* Experience designing lightweight processes that improve execution velocity and accountability in research or engineering environments without adding bureaucratic overhead
+* Strong analytical skills for evaluating program health, spotting bottlenecks early, and making data\-informed prioritization decisions
+* Excellent communication in both directions: crisp updates for senior leadership, clear direction for researchers
+* A pragmatic, roll\-up\-your\-sleeves orientation: we need you to be equally effective at the strategic level and in the details
+* Bonus points for experience with speech or audio projects — audio data collection and labeling, audio model evaluation (including human eval), or shipping products where audio quality is the core user experience
+
+### **How We Generated This Job Description**
+
+
+This job description was written as a collaboration between a DG Research staff member and Claude\-4\.6\-Sonnet using our Research Program Manager JD, Engineering TPM JD, and several external Research TPM JDs as context. We think the produced JD maintains strong alignment with our vision for pioneering voice AI while focusing on the crucial program management aspects that will enable our research teams to succeed.
+
+
+**Benefits \& Perks\***
+=======================
+
+
+**Holistic health**
+-------------------
+
+
+* Medical, dental, vision benefits
+* Annual wellness stipend
+* Mental health support
+* Life, STD, LTD Income Insurance Plans
+
+**Work/life blend**
+-------------------
+
+
+* Unlimited PTO
+* Generous paid parental leave
+* Flexible schedule
+* 12 Paid US company holidays
+* Quarterly personal productivity stipend
+* One\-time stipend for home office upgrades
+* 401(k) plan with company match
+* Tax Savings Programs
+
+**Continuous learning**
+-----------------------
+
+
+* Learning / Education stipend
+* Participation in talks and conferences
+* Employee Resource Groups
+* AI enablement workshops / sessions
+
+* *For candidates outside of the US, we use an Employer of Record model in many countries, which means benefits are administered locally and governed by country\-specific regulations. Because of this, benefits will differ by region — in some cases international employees receive benefits US employees do not, and vice versa. As we scale, we will continue to evaluate where we can create more alignment, but a 1:1 global benefits structure is not always legally or operationally possible.*
+
+
+Backed by prominent investors including Y Combinator, Madrona, Tiger Global, Wing VC and NVIDIA, Deepgram has raised over $215M in total funding. If you're looking to work on cutting\-edge technology and make a significant impact in the AI industry, we'd love to hear from you!
+
+
+Deepgram is an equal opportunity employer. We want all voices and perspectives represented in our workforce. We are a curious bunch focused on collaboration and doing the right thing. We put our customers first, grow together and move quickly. We do not discriminate on the basis of race, religion, color, national origin, gender, sexual orientation, gender identity or expression, age, marital status, veteran status, disability status, pregnancy, parental status, genetic information, political affiliation, or any other status protected by the laws or regulations in the locations where we operate.
+
+
+We are happy to provide accommodations for applicants who need them.

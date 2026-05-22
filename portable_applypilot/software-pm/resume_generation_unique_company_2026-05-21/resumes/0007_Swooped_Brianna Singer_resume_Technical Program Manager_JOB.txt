@@ -1,0 +1,13 @@
+Title: Technical Program Manager
+Company: Swooped
+Location: Remote
+Score: 10
+URL: https://www.linkedin.com/jobs/view/4417329371
+
+Swooped is a Talent Platform (not a staffing agency). We are not the employer for this role and do not make hiring decisions. Clicking "Apply" takes you to Swooped to review the role and hiring company details.
+About the Opportunity
+The challenges facing US healthcare are longstanding and all too familiar. The organization believes in better. It works with more than 1,900 organizations annually to develop and activate transformative strategies, operating models, and organizational enterprises that make US healthcare more affordable, accessible, safe, and human. With more than 1,450 professionals, it helps providers, payers, technology innovators, retail companies, and investors create and embrace solutions that tangibly and materially reshape healthcare for the better. The family of brands is 100% focused on healthcare and each has a longstanding commitment to helping transform healthcare in big and small ways. Believe in better.
+Remote work is allowed.
+Role Overview
+Working within the Data Platform & Infrastructure team, the organization is seeking a Technical Program Manager to lead complex, high-impact initiatives across the data platform and product portfolio. This role is intended for a highly experienced project leader who can independently own delivery, align senior stakeholders, and drive execution across engineering, analytics, and product teams.
+This is a senior, highly autonomous role with significant visibility and influence. The Technical Program Manager will operate as a trusted partner to data engineering and product leadership, ensuring initiatives are delivered on time and meet the strategic goals of the organization.

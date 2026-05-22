@@ -1,0 +1,66 @@
+{
+  "attempts": 4,
+  "validator": {
+    "passed": true,
+    "errors": [],
+    "warnings": [
+      "Banned words: spearheaded, proven track record"
+    ]
+  },
+  "quality_validator": {
+    "passed": false,
+    "errors": [
+      "bullet_sources: Bullet for ALTR is not traceable to selected supplemental bullets: 'Defined product requirements for ALTR\u2019s data governance platform by analyzing customer security workflows and sales feed'.",
+      "bullet_sources: Bullet for ALTR is not traceable to selected supplemental bullets: 'Developed logic across multiple Snowflake audit log types to support automated alerting when security policies are viola'.",
+      "bullet_sources: Bullet for ALTR is not traceable to selected supplemental bullets: 'Partnered with enterprise data security teams to evaluate classifier performance, prioritize roadmap features, and trans'.",
+      "bullet_sources: Bullet for Guy Carpenter is not traceable to selected supplemental bullets: 'Built Power BI dashboards that surfaced trends in exception patterns, deal size correlations, and recurring review bottl'.",
+      "bullet_sources: Bullet for Guy Carpenter is not traceable to selected supplemental bullets: 'Implemented LLM driven document processing workflows to automate term extraction and reduce manual contract review effor'.",
+      "bullet_sources: Bullet for Guy Carpenter is not traceable to selected supplemental bullets: 'Led scrum ceremonies and tracked OKRs for a five engineer team developing contract extraction and classification models.'.",
+      "bullet_sources: Bullet for Sirion is not traceable to selected supplemental bullets: 'Served as primary liaison for customers of Sirion\u2019s SaaS product, facilitating document extraction for financial contrac'.",
+      "bullet_sources: Bullet for Sirion is not traceable to selected supplemental bullets: 'Defined training data requirements and implemented NLP strategies to improve the model's interpretation of financial tab'.",
+      "experience_subtitles: Experience subtitle must be exactly 'Location | Dates' for 'FriendsWithMeasurements.com': 'FriendsWithMeasurements.com | Newark, New Jersey | Aug 2025 - Present'.",
+      "experience_subtitles: Experience subtitle must be exactly 'Location | Dates' for 'ALTR': 'ALTR | Melbourne, Florida | Feb 2025 - Aug 2025'.",
+      "experience_subtitles: Experience subtitle must be exactly 'Location | Dates' for 'Guy Carpenter': 'Guy Carpenter | New York, New York | Nov 2023 - Dec 2024'.",
+      "experience_subtitles: Experience subtitle must be exactly 'Location | Dates' for 'Sirion': 'Sirion | New York, New York | May 2022 - June 2023'.",
+      "experience_subtitles: Experience subtitle must be exactly 'Location | Dates' for 'Sakhi': 'Sakhi | New York, New York | Jan 2022 - Present'.",
+      "experience_subtitles: Experience subtitle must be exactly 'Location | Dates' for 'The Samaritans of New York': 'The Samaritans of New York | New York, New York | Feb 2021 - Sep 2021'."
+    ],
+    "warnings": [],
+    "checks": {
+      "title_fit": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "bullet_sources": {
+        "passed": false,
+        "errors": [
+          "Bullet for ALTR is not traceable to selected supplemental bullets: 'Defined product requirements for ALTR\u2019s data governance platform by analyzing customer security workflows and sales feed'.",
+          "Bullet for ALTR is not traceable to selected supplemental bullets: 'Developed logic across multiple Snowflake audit log types to support automated alerting when security policies are viola'.",
+          "Bullet for ALTR is not traceable to selected supplemental bullets: 'Partnered with enterprise data security teams to evaluate classifier performance, prioritize roadmap features, and trans'.",
+          "Bullet for Guy Carpenter is not traceable to selected supplemental bullets: 'Built Power BI dashboards that surfaced trends in exception patterns, deal size correlations, and recurring review bottl'.",
+          "Bullet for Guy Carpenter is not traceable to selected supplemental bullets: 'Implemented LLM driven document processing workflows to automate term extraction and reduce manual contract review effor'.",
+          "Bullet for Guy Carpenter is not traceable to selected supplemental bullets: 'Led scrum ceremonies and tracked OKRs for a five engineer team developing contract extraction and classification models.'.",
+          "Bullet for Sirion is not traceable to selected supplemental bullets: 'Served as primary liaison for customers of Sirion\u2019s SaaS product, facilitating document extraction for financial contrac'.",
+          "Bullet for Sirion is not traceable to selected supplemental bullets: 'Defined training data requirements and implemented NLP strategies to improve the model's interpretation of financial tab'."
+        ],
+        "warnings": []
+      },
+      "experience_subtitles": {
+        "passed": false,
+        "errors": [
+          "Experience subtitle must be exactly 'Location | Dates' for 'FriendsWithMeasurements.com': 'FriendsWithMeasurements.com | Newark, New Jersey | Aug 2025 - Present'.",
+          "Experience subtitle must be exactly 'Location | Dates' for 'ALTR': 'ALTR | Melbourne, Florida | Feb 2025 - Aug 2025'.",
+          "Experience subtitle must be exactly 'Location | Dates' for 'Guy Carpenter': 'Guy Carpenter | New York, New York | Nov 2023 - Dec 2024'.",
+          "Experience subtitle must be exactly 'Location | Dates' for 'Sirion': 'Sirion | New York, New York | May 2022 - June 2023'.",
+          "Experience subtitle must be exactly 'Location | Dates' for 'Sakhi': 'Sakhi | New York, New York | Jan 2022 - Present'.",
+          "Experience subtitle must be exactly 'Location | Dates' for 'The Samaritans of New York': 'The Samaritans of New York | New York, New York | Feb 2021 - Sep 2021'."
+        ],
+        "warnings": []
+      }
+    }
+  },
+  "judge": null,
+  "status": "failed_quality_validation",
+  "validation_mode": "normal"
+}

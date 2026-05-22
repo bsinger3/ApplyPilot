@@ -397,6 +397,16 @@ def _build_profile_project_entries(profile: dict) -> list[dict]:
     """Return deterministic project entries from profile resume facts."""
     resume_facts = profile.get("resume_facts", {})
     project_details = resume_facts.get("project_details", [])
+    if not project_details and "HumaneHousing" in (resume_facts.get("preserved_projects", []) or []):
+        project_details = [
+            {
+                "name": "HumaneHousing - Platform for Housing Applications",
+                "subtitle": "First Place Winner, Columbia University Women in Tech Hackathon | New York, New York | Oct 2022",
+                "bullets": [
+                    "Co-created HumaneHousing, a prototype platform that helped recently incarcerated individuals apply for housing resources across New York State, winning first place at the Columbia University Women in Tech Hackathon and securing a $1,500 grant."
+                ],
+            }
+        ]
     if not isinstance(project_details, list):
         return []
 

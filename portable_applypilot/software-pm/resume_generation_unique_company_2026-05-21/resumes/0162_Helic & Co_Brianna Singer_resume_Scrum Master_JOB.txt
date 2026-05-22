@@ -1,0 +1,71 @@
+Title: Scrum Master
+Company: linkedin
+Location: None
+Score: 8
+URL: https://www.linkedin.com/jobs/view/4414622235
+
+**Job Summary** 
+
+
+
+
+ We are seeking an experienced and servant\-leader\-oriented Scrum Master to facilitate Agile practices and support high\-performing development teams. In this role, you will guide teams in adopting Scrum principles, remove impediments, and foster a culture of continuous improvement to deliver high\-quality products efficiently.
+ 
+
+
+
+  
+
+
+
+
+
+**Key Responsibilities** 
+
+
+
+* Facilitate Scrum ceremonies (daily stand\-ups, sprint planning, sprint reviews, retrospectives)
+* Coach team members on Agile principles, Scrum framework, and best practices
+* Identify and remove impediments that may hinder team progress
+* Promote collaboration and effective communication within the team and with stakeholders
+* Track and report on team progress using Agile metrics (velocity, burndown charts)
+* Support Product Owners in backlog grooming and prioritization
+* Foster a culture of continuous improvement and accountability
+* Ensure adherence to Agile/Scrum practices and organizational standards
+* Assist in scaling Agile practices across multiple teams if applicable
+
+
+
+  
+
+
+
+
+
+**Qualifications** 
+
+
+
+* Bachelor’s degree in Business, Computer Science, or a related field
+* Strong understanding of Agile methodologies and Scrum framework
+* Experience facilitating Agile ceremonies and coaching teams
+* Excellent communication, leadership, and conflict resolution skills
+* Ability to manage multiple priorities in a fast\-paced environment
+
+
+
+  
+
+
+
+
+
+**Preferred Skills** 
+
+
+
+* Scrum Master certification (e.g., CSM, PSM)
+* Experience with Agile tools (e.g., Jira, Confluence, Azure DevOps)
+* Familiarity with software development lifecycle (SDLC)
+* Experience working with cross\-functional or distributed teams
+* Knowledge of scaling frameworks (e.g., SAFe, LeSS)

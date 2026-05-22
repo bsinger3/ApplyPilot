@@ -1,0 +1,14 @@
+{
+  "name": "applypilot-browser-experiments",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "stagehand:apply": "tsx scripts/stagehand_apply.mjs"
+  },
+  "dependencies": {
+    "@browserbasehq/stagehand": "latest"
+  },
+  "devDependencies": {
+    "tsx": "latest"
+  }
+}

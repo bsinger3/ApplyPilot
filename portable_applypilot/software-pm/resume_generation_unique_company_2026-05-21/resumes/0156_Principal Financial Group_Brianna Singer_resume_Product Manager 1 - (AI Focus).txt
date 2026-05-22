@@ -1,0 +1,47 @@
+Brianna Singer
+Product Manager
+bsinger3@gmail.com | 916 224 9144 | https://github.com/bsinger3/ | https://linkedin.com/in/briannasinger/
+
+SUMMARY
+Experienced Product Manager with a strong focus on AI and data-driven solutions. Able to translate complex business needs into actionable product outcomes, leveraging stakeholder management and data analytics to drive measurable results.
+
+TECHNICAL SKILLS
+Languages: Python, SQL
+DevOps & Infra: Supabase, Snowflake, Power BI, Mixpanel
+Databases: Postgres, Snowflake
+Tools: Agile, data pipelines, stakeholder management, Scrum, OKRs, NLP, requirements definition
+
+EXPERIENCE
+Technical Product Manager, FriendsWithMeasurements.com, Newark, New Jersey Aug 2025 - Present
+- Rebuilt FriendsWithMeasurements.com to solve a common apparel discovery problem: shoppers struggling to find clothing that fits their body measurements. Redesigned the Postgres data model to support a catalog of 15K+ measurement profiles.
+- Scaled catalog and review data coverage across high-volume sources, including a Hollister pipeline that processed 1,966 products and 160K+ customer reviews into structured fit and measurement data for downstream analytics.
+
+Product Manager, ALTR, Melbourne, Florida Feb 2025 - Aug 2025
+- Spearheaded ALTR's Snowflake Native App that uses Snowflake's native classifiers to scan 50+ TBs of a key customer's data, detect unprotected sensitive data, apply the right tags, and generate security policy recommendations based on exposure and usage. First customer identified 80+ columns of unprotected PII, cutting manual tagging time by 10s of hours. Product usage tracked through Mixpanel analytics.
+- Led product discovery for a Snowflake data classification workflow that scanned 50+ TB of customer data, identified 80+ columns of unprotected PII, and translated security needs into automated policy-recommendation requirements.
+- Synthesized enterprise access-control discovery into requirements for group-based RBAC, Okta integration, auditable database access, and a lighter architecture for 600+ databases that avoided 800-900 proxy components.
+- Converted enterprise data-security pain points into requirements for no-code governance workflows, helping non-engineering users understand classification results, tag sensitive data, and manage policy actions without custom scripts.
+
+Product Manager, Guy Carpenter, New York, New York Nov 2023 - Dec 2024
+- Drove delivery of NLP-powered contract intelligence workflows across more than 100k property reinsurance contracts, reducing average contract review time from 7 days to approximately 10 minutes and capturing more than $40M in previously unstructured deal economics.
+- Built Power BI dashboards that surfaced trends in exception patterns, deal size correlations, and recurring review bottlenecks, equipping brokerage leadership with data to support multimillion dollar negotiations.
+- Designed QA experiments and data augmentation techniques that improved model precision by 15% and recall by 9% for high-value edge cases.
+
+Technical Project Manager, Sirion, New York, New York May 2022 - June 2023
+- Managed project plans, budgets exceeding $75K, delivery risks, and stakeholder updates for financial-contract AI/ML deployments, keeping client workstreams aligned across scope, timeline, and release priorities.
+- Led daily Scrum ceremonies, sprint planning, backlog grooming, and delivery tracking for ML model implementation projects serving bank clients, consistently achieving 95%+ sprint goal completion.
+- Managed budgets exceeding $75k, led daily scrum and Agile delivery of ML models, consistently hitting +95% of sprint goals for bank clients.
+
+Domestic Violence Hotline Volunteer, Sakhi, New York, New York Jan 2022 - Present
+- Provide crisis support for the domestic violence hotline, coordinated with New York City's Homeless Shelter network for emergency placements.
+
+Suicide Hotline Volunteer, The Samaritans of New York, New York, New York Feb 2021 - Sep 2021
+- Practiced crisis management, mental health counseling, and emergency response, serving on the suicide hotline for regular volunteer shifts.
+
+PROJECTS
+HumaneHousing - Platform for Housing Applications
+First Place Winner, Columbia University Women in Tech Hackathon | New York, New York | Oct 2022
+- Co-created HumaneHousing, a prototype platform that helped recently incarcerated individuals apply for housing resources across New York State, winning first place at the Columbia University Women in Tech Hackathon and securing a $1,500 grant.
+
+EDUCATION
+Cornell University School of Industrial and Labor Relations | Bachelor of Science, Industrial and Labor Relations

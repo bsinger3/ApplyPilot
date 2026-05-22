@@ -1,0 +1,1057 @@
+{
+  "started_at": "2026-05-21T00:23:30",
+  "input_csv": "C:\\Users\\bsing\\Downloads\\manual_apply_index - manual_apply_index_software-pm_refreshed.csv",
+  "output_dir": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_output_2026-05-21",
+  "min_score": 8,
+  "target_rows": 208,
+  "generated": 0,
+  "missing_job_description": 118,
+  "failed_validation": 42,
+  "errors": 0,
+  "rows": [
+    {
+      "line": 2,
+      "title": "Technical Program Manager, Enterprise",
+      "company": "EvenUp",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 3,
+      "title": "Technical Program Manager",
+      "company": "DataArt",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 4,
+      "title": "Technical Program Manager",
+      "company": "Xebia",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 5,
+      "title": "Technical Program Manager",
+      "company": "Brooksource",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 6,
+      "title": "Technical Program Manager",
+      "company": "Jobgether",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 7,
+      "title": "Technical Program Manager",
+      "company": "Swooped",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 8,
+      "title": "Senior Program Manager",
+      "company": "K\u00f6rber",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 9,
+      "title": "Senior Program Manager",
+      "company": "RemoteHunter",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 10,
+      "title": "Technical Project Manager",
+      "company": "Intracom Telecom",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 11,
+      "title": "Sr Technical Project Manager",
+      "company": "Covenant HR",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 12,
+      "title": "Project Manager",
+      "company": "Morson Edge",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 13,
+      "title": "Project Manager",
+      "company": "Rallyware",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 14,
+      "title": "Infrastructure Project Manager ITIL",
+      "company": "Hadron Talent -Hadronfinsys",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 15,
+      "title": "Senior Project Manager, Exploratory",
+      "company": "Jobgether",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 16,
+      "title": "Program Manager",
+      "company": "CRYOPORT SYSTEMS",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 17,
+      "title": "Senior Technical Project Manager",
+      "company": "Landmark",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 18,
+      "title": "Technical Project Manager - iGaming",
+      "company": "Block Labs",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 19,
+      "title": "Senior Project Manager",
+      "company": "Marchon Partners",
+      "status": "failed_quality_validation",
+      "path": "",
+      "attempts": 4
+    },
+    {
+      "line": 20,
+      "title": "Project Manager",
+      "company": "Motorola Solutions",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 21,
+      "title": "CRM Project Manager - US Remote",
+      "company": "Motorola Solutions",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 22,
+      "title": "Technical Project Manager",
+      "company": "Whisker Labs",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 23,
+      "title": "Technical Program Manager, Security",
+      "company": "Figma",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 24,
+      "title": "Technical Program Manager, Risk",
+      "company": "Stripe",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 25,
+      "title": "Technical Program Manager",
+      "company": "Academian Inc",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 26,
+      "title": "Senior Program Manager",
+      "company": "K\u00f6rber Supply Chain",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 27,
+      "title": "Senior Project Manager",
+      "company": "Caylent",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 28,
+      "title": "Senior Project Manager, Brazil",
+      "company": "CI&T",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 29,
+      "title": "Project Manager",
+      "company": "Fidel Group",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 30,
+      "title": "Technical Project Manager",
+      "company": "Blue Ridge Consultants | Atlassian Solution Partner",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 31,
+      "title": "TECHNICAL DELIVERY MANAGER III- ITIL/ Infrastructure projects",
+      "company": "Envision",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 32,
+      "title": "Senior Project Manager",
+      "company": "LeadStack Inc.",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 33,
+      "title": "Senior Technical Project Manager (Remote | Philippines)",
+      "company": "magentIQ",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 34,
+      "title": "Senior Project/Program Manager",
+      "company": "Jobgether",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 35,
+      "title": "Senior Project Manager \u2013 Accela & Municipal Permitting Systems",
+      "company": "KAI Partners, Inc.",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 36,
+      "title": "Senior Project Manager",
+      "company": "Tech9",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 37,
+      "title": "Senior Delivery Manager",
+      "company": "Inizio Partners",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 38,
+      "title": "Project Manager II (FINS)",
+      "company": "Coastal",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 39,
+      "title": "Implementation Project Manager",
+      "company": "Dayforce",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 40,
+      "title": "Sr. Program Manager",
+      "company": "Synergy BIS",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 41,
+      "title": "Senior Technical Program Manager",
+      "company": "Jobgether",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 42,
+      "title": "Interaction Intelligence Program Manager - Remote",
+      "company": "Velera",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 43,
+      "title": "Founding Technical Project Manager",
+      "company": "Kruncher",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 44,
+      "title": "Technical Program Manager",
+      "company": "Abnormal AI",
+      "status": "failed_quality_validation",
+      "path": "C:\\Users\\bsing\\.applypilot\\tailored_resumes\\software-pm\\036_8_Abnormal_AI_Technical_Program_Manager.txt",
+      "attempts": 4
+    },
+    {
+      "line": 45,
+      "title": "Staff Product Manager - Enterprise AI",
+      "company": "Twilio",
+      "status": "failed_quality_validation",
+      "path": "",
+      "attempts": 4
+    },
+    {
+      "line": 46,
+      "title": "Senior Technical Program Manager- Remote",
+      "company": "BeyondTrust",
+      "status": "failed_quality_validation",
+      "path": "",
+      "attempts": 4
+    },
+    {
+      "line": 47,
+      "title": "Senior Technical Program Manager",
+      "company": "BeyondTrust",
+      "status": "failed_quality_validation",
+      "path": "",
+      "attempts": 4
+    },
+    {
+      "line": 48,
+      "title": "Technical Project Manager",
+      "company": "Insight Global",
+      "status": "failed_quality_validation",
+      "path": "C:\\Users\\bsing\\.applypilot\\tailored_resumes\\software-pm\\040_8_Insight_Global_Technical_Project_Manager.txt",
+      "attempts": 4
+    },
+    {
+      "line": 49,
+      "title": "Technical Program Manager, North Delivery & Release Operations",
+      "company": "Cohere",
+      "status": "failed_quality_validation",
+      "path": "",
+      "attempts": 4
+    },
+    {
+      "line": 50,
+      "title": "Project Manager - SaaS Transformation (1875)",
+      "company": "Focus Systems Inc.",
+      "status": "failed_validation",
+      "path": "",
+      "attempts": 4
+    },
+    {
+      "line": 51,
+      "title": "Principal Technical Program Manager",
+      "company": "Zillow",
+      "status": "failed_quality_validation",
+      "path": "",
+      "attempts": 4
+    },
+    {
+      "line": 52,
+      "title": "Technical Program Manager",
+      "company": "LMI",
+      "status": "failed_quality_validation",
+      "path": "",
+      "attempts": 4
+    },
+    {
+      "line": 53,
+      "title": "Project Manager",
+      "company": "Outsourcey",
+      "status": "failed_quality_validation",
+      "path": "",
+      "attempts": 4
+    },
+    {
+      "line": 54,
+      "title": "Agile Project Manager",
+      "company": "Pinnacle Method Consulting",
+      "status": "failed_quality_validation",
+      "path": "C:\\Users\\bsing\\.applypilot\\tailored_resumes\\software-pm\\002_8_Pinnacle_Method_Cons_Agile_Project_Manager.txt",
+      "attempts": 4
+    },
+    {
+      "line": 55,
+      "title": "AI Technical Project Manager - Remote Work",
+      "company": "BairesDev",
+      "status": "failed_quality_validation",
+      "path": "C:\\Users\\bsing\\.applypilot\\tailored_resumes\\software-pm\\003_8_BairesDev_AI_Technical_Project_Manager_-_Remote_Work.txt",
+      "attempts": 4
+    },
+    {
+      "line": 56,
+      "title": "Sr. Project Manager",
+      "company": "Net2Source (N2S)",
+      "status": "failed_quality_validation",
+      "path": "",
+      "attempts": 4
+    },
+    {
+      "line": 57,
+      "title": "Senior IT Project Manager - US",
+      "company": "mSupply",
+      "status": "failed_quality_validation",
+      "path": "",
+      "attempts": 4
+    },
+    {
+      "line": 58,
+      "title": "Project Manager",
+      "company": "CSG",
+      "status": "failed_quality_validation",
+      "path": "C:\\Users\\bsing\\.applypilot\\tailored_resumes\\software-pm\\027_8_CSG_Project_Manager.txt",
+      "attempts": 4
+    },
+    {
+      "line": 59,
+      "title": "PROJECT MANAGER",
+      "company": "Atos",
+      "status": "failed_validation",
+      "path": "C:\\Users\\bsing\\.applypilot\\tailored_resumes\\software-pm\\024_8_Atos_PROJECT_MANAGER.txt",
+      "attempts": 4
+    },
+    {
+      "line": 60,
+      "title": "Implementation Project Manager",
+      "company": "Attentive",
+      "status": "failed_quality_validation",
+      "path": "C:\\Users\\bsing\\.applypilot\\tailored_resumes\\software-pm\\082_7_Attentive_Implementation_Project_Manager.txt",
+      "attempts": 4
+    },
+    {
+      "line": 61,
+      "title": "Technical Project Manager",
+      "company": "Norstella",
+      "status": "failed_quality_validation",
+      "path": "C:\\Users\\bsing\\.applypilot\\tailored_resumes\\software-pm\\042_8_Norstella_Technical_Project_Manager.txt",
+      "attempts": 4
+    },
+    {
+      "line": 62,
+      "title": "Technical Project Manager",
+      "company": "Yalo",
+      "status": "failed_quality_validation",
+      "path": "C:\\Users\\bsing\\.applypilot\\tailored_resumes\\software-pm\\044_8_Yalo_Technical_Project_Manager.txt",
+      "attempts": 4
+    },
+    {
+      "line": 63,
+      "title": "SAP Business One / Acumatica Project Manager",
+      "company": "Softengine",
+      "status": "failed_quality_validation",
+      "path": "",
+      "attempts": 4
+    },
+    {
+      "line": 64,
+      "title": "Program Manager - CRM Migration, Enterprise Transformation",
+      "company": "Slipstream IT",
+      "status": "failed_quality_validation",
+      "path": "",
+      "attempts": 4
+    },
+    {
+      "line": 65,
+      "title": "Lead Technical Project Manager - Remote",
+      "company": "Experian",
+      "status": "failed_quality_validation",
+      "path": "C:\\Users\\bsing\\.applypilot\\tailored_resumes\\software-pm\\011_8_Experian_Lead_Technical_Project_Manager_-_Remote.txt",
+      "attempts": 4
+    },
+    {
+      "line": 66,
+      "title": "Project Manager",
+      "company": "Blu Omega LLC",
+      "status": "failed_quality_validation",
+      "path": "",
+      "attempts": 4
+    },
+    {
+      "line": 67,
+      "title": "Technical Program Manager, Research",
+      "company": "Deepgram",
+      "status": "failed_quality_validation",
+      "path": "",
+      "attempts": 4
+    },
+    {
+      "line": 68,
+      "title": "Senior IT Project Manager",
+      "company": "Precision Medicine Group",
+      "status": "failed_quality_validation",
+      "path": "",
+      "attempts": 4
+    },
+    {
+      "line": 69,
+      "title": "Product Manager",
+      "company": "SureTest, Inc.",
+      "status": "failed_quality_validation",
+      "path": "",
+      "attempts": 4
+    },
+    {
+      "line": 70,
+      "title": "Information Technology Project Manager",
+      "company": "Wilson & Sterling Consulting",
+      "status": "failed_quality_validation",
+      "path": "C:\\Users\\bsing\\.applypilot\\tailored_resumes\\software-pm\\091_7_Wilson__Sterling_Con_Information_Technology_Project_Manager.txt",
+      "attempts": 4
+    },
+    {
+      "line": 71,
+      "title": "Project Manager - Operational Excellence",
+      "company": "Mitsubishi Electric Power Products, Inc.",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 72,
+      "title": "Project Manager (Remote)",
+      "company": "RedHelm",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 73,
+      "title": "Project Manager",
+      "company": "Medable",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 74,
+      "title": "Program Manager",
+      "company": "L&T Technology Services",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 75,
+      "title": "LATAM Decom Project Manager",
+      "company": "Sycomp",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 76,
+      "title": "AI Quality Program Manager",
+      "company": "Zoomph",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 77,
+      "title": "Technical Program Manager, Internal Systems",
+      "company": "Stripe",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 78,
+      "title": "Technical Program Manager (Customer Experience) - LATAM",
+      "company": "Higher Oak",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 79,
+      "title": "Technical Program Manager",
+      "company": "Clear.",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 80,
+      "title": "Senior Program Manager",
+      "company": "Calculated Hire",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 81,
+      "title": "Senior Program Manager",
+      "company": "Interactive Resources - iR",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 82,
+      "title": "Senior Customer Technical Program Manager - Data Center",
+      "company": "NVIDIA",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 83,
+      "title": "Project Manager - RTSM",
+      "company": "Veeva Systems",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 84,
+      "title": "Program Manager (contract)",
+      "company": "Microsoft",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 85,
+      "title": "Principal Technical Program Manager",
+      "company": "Upstart",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 86,
+      "title": "AI Quality Program Manager",
+      "company": "Zoomph",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 87,
+      "title": "Senior Project Manager (eClinical)",
+      "company": "Flex Databases",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 88,
+      "title": "Senior Project Manager",
+      "company": "Imagine Learning",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 89,
+      "title": "Project Manager",
+      "company": "Arkhya Tech. Inc.",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 90,
+      "title": "Lead Project Manager",
+      "company": "Celonis",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 91,
+      "title": "Scrum Master / ServiceNow Project Manager - Healthcare Platform (Remote)",
+      "company": "Pinnacle Method Consulting",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 92,
+      "title": "Project Manager - Brazil",
+      "company": "NextLink Labs",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 93,
+      "title": "Project Manager",
+      "company": "indeed",
+      "status": "failed_quality_validation",
+      "path": "",
+      "attempts": 4
+    },
+    {
+      "line": 94,
+      "title": "Project Manager",
+      "company": "Altudo",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 95,
+      "title": "Project Manager",
+      "company": "RMI",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 96,
+      "title": "AI Program Manager",
+      "company": "Insight Global",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 97,
+      "title": "Senior Product Manager",
+      "company": "Humana",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 98,
+      "title": "Principal Technical Program Manager, Performance",
+      "company": "reddit",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 99,
+      "title": "Manager of IT and Enterprise Systems",
+      "company": "indeed",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 100,
+      "title": "CRM project manager",
+      "company": "The Phoenix Group",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 101,
+      "title": "Technical Project Manager",
+      "company": "Cotiviti",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 102,
+      "title": "Senior website Project Manager",
+      "company": "BX Studio",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 103,
+      "title": "Senior Technical Project Manager \u2013 EHR Interoperability",
+      "company": "PROJECTUS",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 104,
+      "title": "Senior Project Manager - Oncology",
+      "company": "Precision Medicine Group",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 105,
+      "title": "Senior Project Manager - Life Sciences",
+      "company": "Welocalize",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 106,
+      "title": "Senior Project Manager",
+      "company": "Imagine Learning",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 107,
+      "title": "Senior Project Manager",
+      "company": "FinThrive",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 108,
+      "title": "Senior Project Manager",
+      "company": "Clearsense",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 109,
+      "title": "Senior Project Manager",
+      "company": "Luxoft",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 110,
+      "title": "Senior Client Delivery Project Manager (Member Services Contact Center) - Remote",
+      "company": "Velera",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 111,
+      "title": "Project Manager (Remote)",
+      "company": "indeed",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 112,
+      "title": "Program Manager, Product Security (Remote USA or Canada)",
+      "company": "CrowdStrike",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 113,
+      "title": "IT Project Manager - LATAM - English Required",
+      "company": "DaCodes.",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 114,
+      "title": "Client Delivery Project Manager - Remote",
+      "company": "Velera",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 115,
+      "title": "CX Manager",
+      "company": "Talkdesk",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 116,
+      "title": "Senior Project Manager",
+      "company": "Calculated Hire",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 117,
+      "title": "Digital Project Manager (Remote)",
+      "company": "Pinnacle Method Consulting",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 118,
+      "title": "Technical Project Manager \u2013 Datacenter & Infrastructure (all genders)(EN)",
+      "company": "Contabo",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 119,
+      "title": "Project Manager",
+      "company": "Joinrs",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 120,
+      "title": "Technical Program Manager II, Advanced Technology Group",
+      "company": "Pinterest",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 121,
+      "title": "Technical Program Manager",
+      "company": "RemoteHunter",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 122,
+      "title": "Product Manager III, Order Management Systems",
+      "company": "ACV Auctions",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 123,
+      "title": "Staff Technical Program Manager, Security",
+      "company": "GoFundMe",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 124,
+      "title": "Staff Program Manager",
+      "company": "Wellhub",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 125,
+      "title": "Senior Technical Program Manager (Telecom/Network)",
+      "company": "Calix",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 126,
+      "title": "Senior Technical Program Manager",
+      "company": "Porch Group",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 127,
+      "title": "Senior Technical Product Manager (Patient Engagement Experimentation), Remote",
+      "company": "Aledade, Inc.",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 128,
+      "title": "Senior Project Manager",
+      "company": "Empresa Confidencial",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 129,
+      "title": "Program Manager, Product Security (Remote, CAN)",
+      "company": "CrowdStrike",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 130,
+      "title": "Senior Technical Project Manager",
+      "company": "Fluxon",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 131,
+      "title": "Scrum Master",
+      "company": "Pinnacle Method Consulting",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 132,
+      "title": "Project Manager",
+      "company": "Providge Consulting",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 133,
+      "title": "Middle Art Project Manager",
+      "company": "Pingle Studio",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 134,
+      "title": "Project Manager Adminstrator",
+      "company": "CME Corp",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 135,
+      "title": "Product Manager",
+      "company": "DealerOn, Inc.",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 136,
+      "title": "Junior Healthcare IT Project Manager",
+      "company": "Jobs via Dice",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 137,
+      "title": "Sr. Project Manager -- Telecoms and OpEx",
+      "company": "American Workforce Solutions",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 138,
+      "title": "Scrum Master/Technical Documentation",
+      "company": "Finch Computing",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 139,
+      "title": "Program Manager (Federal Government Experience Required)",
+      "company": "NexGen Technologies Inc.",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 140,
+      "title": "IT Project Manager (Medical Affairs Systems)",
+      "company": "JSR Tech Consulting",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 141,
+      "title": "IT Project Manager",
+      "company": "Pinnacle Method Consulting",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 142,
+      "title": "Senior Project Manager",
+      "company": "Amaris Consulting",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 143,
+      "title": "Project Manager - E-commerce - Qualcomm, flexible on location within Europe/Remote",
+      "company": "Qualcomm",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 144,
+      "title": "Product Manager - RCA",
+      "company": "Cotiviti",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 145,
+      "title": "Product Manager",
+      "company": "indeed",
+      "status": "failed_validation",
+      "path": "",
+      "attempts": 4
+    },
+    {
+      "line": 146,
+      "title": "Information Technology Project Manager",
+      "company": "FROQ FAR EAST BRAND SERVICES PRIVATE LIMITED",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 147,
+      "title": "Implementation Project Manager",
+      "company": "Symplast",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 148,
+      "title": "IT Project Manager",
+      "company": "Remote Recruitment",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 149,
+      "title": "Senior Project Manager",
+      "company": "BIP US",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 150,
+      "title": "Sr. GxP Product Manager",
+      "company": "Moderna",
+      "status": "failed_quality_validation",
+      "path": "",
+      "attempts": 4
+    },
+    {
+      "line": 151,
+      "title": "UX Research Ops \u2013 Program Manager\u00a0",
+      "company": "Thomson Reuters",
+      "status": "failed_quality_validation",
+      "path": "",
+      "attempts": 4
+    },
+    {
+      "line": 152,
+      "title": "Data Analyst, Product Analytics",
+      "company": "Thomson Reuters",
+      "status": "failed_quality_validation",
+      "path": "C:\\Users\\bsing\\.applypilot\\tailored_resumes\\software-pm\\064_7_Thomson_Reuters_Data_Analyst_Product_Analytics.txt",
+      "attempts": 4
+    },
+    {
+      "line": 153,
+      "title": "Curriculum Certification Program Manager",
+      "company": "Thomson Reuters",
+      "status": "failed_quality_validation",
+      "path": "",
+      "attempts": 4
+    },
+    {
+      "line": 154,
+      "title": "Client Project Manager",
+      "company": "Thomson Reuters",
+      "status": "failed_quality_validation",
+      "path": "C:\\Users\\bsing\\.applypilot\\tailored_resumes\\software-pm\\058_7_Thomson_Reuters_Client_Project_Manager.txt",
+      "attempts": 4
+    },
+    {
+      "line": 155,
+      "title": "Client Project Manager",
+      "company": "Thomson Reuters",
+      "status": "failed_quality_validation",
+      "path": "C:\\Users\\bsing\\.applypilot\\tailored_resumes\\software-pm\\059_7_Thomson_Reuters_Client_Project_Manager.txt",
+      "attempts": 4
+    },
+    {
+      "line": 156,
+      "title": "Senior Project Manager",
+      "company": "Motorola Solutions",
+      "status": "failed_quality_validation",
+      "path": "",
+      "attempts": 4
+    },
+    {
+      "line": 157,
+      "title": "Senior Project Manager",
+      "company": "K\u00f6rber",
+      "status": "failed_quality_validation",
+      "path": "",
+      "attempts": 4
+    },
+    {
+      "line": 158,
+      "title": "Associate Project Manager, Product and Data",
+      "company": "Horizon Media",
+      "status": "failed_quality_validation",
+      "path": "C:\\Users\\bsing\\.applypilot\\tailored_resumes\\software-pm\\006_8_Horizon_Media_Associate_Project_Manager_Product_and_Data.txt",
+      "attempts": 4
+    },
+    {
+      "line": 159,
+      "title": "Revenue Operations Project Manager",
+      "company": "Dutchie",
+      "status": "failed_quality_validation",
+      "path": "",
+      "attempts": 4
+    },
+    {
+      "line": 160,
+      "title": "Project Manager I (East Region)",
+      "company": "Panorama Education",
+      "status": "failed_quality_validation",
+      "path": "",
+      "attempts": 4
+    },
+    {
+      "line": 161,
+      "title": "Technical Program Manager",
+      "company": "BayOne Solutions",
+      "status": "failed_quality_validation",
+      "path": "",
+      "attempts": 4
+    }
+  ]
+}

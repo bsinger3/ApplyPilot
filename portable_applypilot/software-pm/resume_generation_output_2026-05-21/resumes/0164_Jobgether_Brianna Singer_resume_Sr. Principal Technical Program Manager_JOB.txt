@@ -1,0 +1,72 @@
+Title: Sr. Principal Technical Program Manager
+Company: linkedin
+Location: Remote
+Score: 8
+URL: https://www.linkedin.com/jobs/view/4413527218
+
+**This position is posted by Jobgether on behalf of a partner company. We are currently looking for a Sr. Principal Technical Program Manager in United States.**
+ This role sits at the intersection of strategy, execution, and cutting\-edge technology, driving large\-scale, high\-impact programs within a fast\-evolving SaaS environment. You will translate complex company objectives into structured execution frameworks, ensuring alignment across multiple technical initiatives. Acting as the operational backbone for critical programs, you will manage delivery across concurrent workstreams while maintaining clarity, pace, and accountability. The role requires strong systems thinking and the ability to operate in ambiguity, especially within AI\-driven development environments. You will work closely with engineering, product, and leadership teams to ensure outcomes are delivered efficiently and at scale. This is a highly visible position where execution excellence directly influences business success and innovation speed.
+   
+
+  
+
+**Accountabilities**
+* Lead and manage multiple concurrent technical programs of varying complexity, ensuring alignment with strategic company goals.
+* Translate high\-level objectives into structured execution frameworks and program playbooks that drive consistent delivery outcomes.
+* Establish and maintain execution rhythms, governance rituals, and reporting systems to ensure transparency and accountability.
+* Monitor program health, risks, dependencies, and milestones while proactively identifying and removing delivery blockers.
+* Act as an information hub, providing clear, data\-driven updates, executive summaries, and risk assessments to leadership.
+* Integrate AI and agentic workflows into program management processes to improve efficiency, automation, and decision\-making.
+* Maintain centralized tracking systems for initiatives, dependencies, and delivery status across teams and tools.
+* Drive rapid issue resolution and escalation management in complex, fast\-paced technical environments.
+
+
+**Requirements**
+* 10\+ years of experience in SaaS product development, technical program management, or release management roles.
+* Strong experience working in AI\-driven development environments, including familiarity with agentic workflows and modern AI tools.
+* Bachelor’s degree in Computer Science, Engineering, Statistics, or a related technical field.
+* Proven ability to lead in ambiguous, fast\-changing environments while maintaining structure and execution discipline.
+* Strong systems thinking with the ability to connect technical execution to business outcomes.
+* Proficiency with program management tools such as Jira, Confluence, and collaboration platforms.
+* Excellent communication skills with the ability to influence and align stakeholders across all levels.
+* Strong conflict resolution, decision\-making, and adaptability in high\-pressure situations.
+* Familiarity with generative AI, LLMs, and emerging AI frameworks is highly valued.
+
+
+**Benefits**
+* Competitive annual base salary ranging from 176,000 to 221,000 USD
+* Eligibility for annual bonus or performance\-based variable compensation
+* Comprehensive medical, dental, and vision insurance coverage
+* Generous paid parental leave and flexible time off policy
+* Retirement and savings support programs
+* Flexible, remote\-first work environment
+* Additional perks including sabbatical after 5 years of service
+* Access to wellness, learning, and professional development resources
+* Inclusive and diverse workplace culture with equal opportunity commitment
+
+
+**How Jobgether Works**
+ We use an
+ **AI\-powered matching process** 
+ to ensure your application is reviewed quickly, objectively, and fairly against the role's core requirements. Our system identifies the top\-fitting candidates, and this shortlist is then shared directly with the hiring company. The final decision and next steps (interviews, assessments) are managed by their internal team.
+   
+
+  
+
+ We appreciate your interest and wish you the best!
+   
+
+  
+
+ Why Apply Through Jobgether?
+   
+
+  
+
+**Data Privacy Notice:** 
+ By submitting your application, you acknowledge that Jobgether will process your personal data to evaluate your candidacy and share relevant information with the hiring employer. This processing is based on legitimate interest and pre\-contractual measures under applicable data protection laws (including GDPR). You may exercise your rights (access, rectification, erasure, objection) at any time.
+   
+
+  
+
+ We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.

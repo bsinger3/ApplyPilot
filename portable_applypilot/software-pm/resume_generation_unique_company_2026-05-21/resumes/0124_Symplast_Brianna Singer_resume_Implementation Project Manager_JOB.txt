@@ -1,0 +1,19 @@
+Title: Implementation Project Manager
+Company: Symplast
+Location: Remote
+Score: 8
+URL: https://www.linkedin.com/jobs/view/4416257843
+
+About the Company
+Symplast is a SaaS platform serving plastic surgery, medical spa, wellness, and aesthetic medicine practices. Our platform supports practices through EHR, practice management, patient engagement, CRM coordination, and operational tools designed for the modern aesthetic healthcare business.
+About the Role
+The Implementation Project Manager owns the client implementation journey from Kickoff through Project Completion. This role is responsible for keeping onboarding projects organized, driving client accountability, coordinating EHR implementation milestones, and overseeing related CRM setup tasks and dependencies that impact go-live readiness. This is a client-facing SaaS implementation role that requires strong project ownership, clear communication, comfort with technical concepts, and the ability to guide busy medical practice teams through operational change. While Product Specialist Trainers lead most formal training, the Implementation Project Manager should be comfortable delivering light user training or workflow guidance when needed to keep the project moving.
+Responsibilities
+- Lead standard EHR implementation projects from Kickoff through Project Completion, including coordination of CRM-related setup tasks, dependencies, and readiness items.
+- Serve as the primary client contact during onboarding, while partnering closely with the Client Success Manager.
+- Create and maintain clear project timelines, milestones, client tasks, and internal dependencies.
+- Provide regular client status updates and keep projects moving toward planned go-live.
+- Partner with Product Specialist Trainers to coordinate client training and confirm go-live readiness.
+- Conduct light user training, workflow reinforcement, or basic software guidance as needed to support client readiness.
+- Ensure clients complete required readiness steps, including assigned LMS/Symplast University coursework when applicable.
+- Track CRM implementation dependencies that intersect with onboarding, such as required client inputs, configuration readiness, workflow handoffs, or coordination with other teams.

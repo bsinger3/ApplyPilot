@@ -1,0 +1,51 @@
+Brianna Singer
+Revenue Operations Project Manager
+bsinger3@gmail.com | 916 224 9144 | https://github.com/bsinger3/ | https://linkedin.com/in/briannasinger/
+
+SUMMARY
+Experienced Technical Project Manager with a strong focus on data-driven decision making and operational efficiency. Proven track record in managing cross-functional projects, driving change management, and delivering measurable outcomes in fast-paced environments.
+
+TECHNICAL SKILLS
+Languages: Python, SQL
+DevOps & Infra: Supabase, Postgres, Snowflake, Power BI, Mixpanel
+Databases: Postgres, Snowflake
+Tools: stakeholder management, Agile, Scrum, OKRs, data pipelines, requirements definition
+
+EXPERIENCE
+Technical Project Manager, FriendsWithMeasurements.com, Newark, New Jersey Newark, New Jersey | Aug 2025 - Present
+- Rebuilt FriendsWithMeasurements.com to solve a common apparel discovery problem: shoppers struggling to find clothing that fits their body measurements. Redesigned the Postgres data model to support a catalog of 15K+ measurement profiles.
+- Implemented measurement-based product search using Postgres functions, vector similarity queries, and indexed text search, increasing relevant results by more than 30% and reducing no-results searches by over 80%.
+- Built and governed Python ingestion pipelines that discover full public product catalogs, extract review text, customer images, ordered sizes, body measurements, product metadata, and source URLs, then validate outputs against a standardized Step 1 intake schema.
+- Managed cloud-backed data operations by syncing generated FWM_Data outputs and claims to S3, maintaining traceability through Supabase transcript rows, and keeping repo commits scoped to pipeline scripts, documentation, and handoff artifacts.
+
+Product Manager, ALTR, Melbourne, Florida Melbourne, Florida | Feb 2025 - Aug 2025
+- Spearheaded ALTR's Snowflake Native App that uses Snowflake's native classifiers to scan 50+ TBs of a key customer's data, detect unprotected sensitive data, apply the right tags, and generate security policy recommendations based on exposure and usage. First customer identified 80+ columns of unprotected PII, cutting manual tagging time by 10s of hours. Product usage tracked through Mixpanel analytics.
+- Led product discovery for a Snowflake data classification workflow that scanned 50+ TB of customer data, identified 80+ columns of unprotected PII, and translated security needs into automated policy-recommendation requirements.
+- Partnered with sales and technical stakeholders to turn discovery-session transcripts into product requirements, stakeholder maps, and customer-specific problem statements for enterprise data-access governance.
+- Defined product requirements for ALTR's data governance platform by analyzing customer security workflows and sales feedback, aligning engineering delivery with enterprise data protection needs.
+
+Product Manager, Guy Carpenter, New York, New York New York, New York | Nov 2023 - Dec 2024
+- Drove delivery of NLP-powered contract intelligence workflows across more than 100k property reinsurance contracts, reducing average contract review time from 7 days to approximately 10 minutes and capturing more than $40M in previously unstructured deal economics.
+- Built Power BI dashboards that surfaced trends in exception patterns, deal size correlations, and recurring review bottlenecks, equipping brokerage leadership with data to support multimillion dollar negotiations.
+- Implemented LLM driven document processing workflows to automate term extraction and reduce manual contract review effort.
+- Led scrum ceremonies and tracked OKRs for a five engineer team developing contract extraction and classification models.
+
+Technical Project Manager, Sirion, New York, New York New York, New York | May 2022 - June 2023
+- Managed project plans, budgets exceeding $75K, delivery risks, and stakeholder updates for financial-contract AI/ML deployments, keeping client workstreams aligned across scope, timeline, and release priorities.
+- Led daily Scrum ceremonies, sprint planning, backlog grooming, and delivery tracking for ML model implementation projects serving bank clients, consistently achieving 95%+ sprint goal completion.
+- Mentored junior project managers on project scoping, sprint execution, release planning, and stakeholder communication for SaaS implementation projects.
+
+Domestic Violence Hotline Volunteer, Sakhi, New York, New York New York, New York | Jan 2022 - Present
+- Provide crisis support for the domestic violence hotline, coordinated with New York City's Homeless Shelter network for emergency placements.
+- Completed training in trauma response and crisis communication to support domestic violence hotline callers effectively.
+
+Suicide Hotline Volunteer, The Samaritans of New York, New York, New York New York, New York | Feb 2021 - Sep 2021
+- Practiced crisis management, mental health counseling, and emergency response, serving on the suicide hotline for regular volunteer shifts.
+
+PROJECTS
+HumaneHousing - A platform that helps recently incarcerated individuals apply for housing in New York State
+Cornell University Women in Tech Hackathon | Oct 2022
+- Prototyped HumaneHousing, winning a $1500 grant.
+
+EDUCATION
+Cornell University School of Industrial and Labor Relations | Bachelor of Science, Industrial and Labor Relations

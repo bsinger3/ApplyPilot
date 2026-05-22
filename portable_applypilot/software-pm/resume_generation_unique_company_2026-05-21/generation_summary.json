@@ -1,0 +1,48 @@
+{
+  "started_at": "2026-05-21T13:48:52",
+  "input_csv": "C:\\Users\\bsing\\Downloads\\manual_apply_index - manual_apply_index_software-pm_refreshed.csv",
+  "output_dir": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21",
+  "min_score": 8,
+  "input_rows": 1746,
+  "kept_unique_company_rows": 782,
+  "same_company_removed": 964,
+  "resumed_approved": 160,
+  "target_rows": 4,
+  "generated": 1,
+  "fetched_job_description": 0,
+  "missing_job_description": 3,
+  "failed_validation": 0,
+  "errors": 0,
+  "rows": [
+    {
+      "line": 27,
+      "title": "Project Manager",
+      "company": "Fidel Group",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 41,
+      "title": "Staff Product Manager - Enterprise AI",
+      "company": "Twilio",
+      "status": "approved",
+      "path": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\resumes\\0041_Twilio_Brianna Singer_resume_Staff Product Manager - Enterprise AI.pdf",
+      "attempts": 1
+    },
+    {
+      "line": 116,
+      "title": "Junior Healthcare IT Project Manager",
+      "company": "Jobs via Dice",
+      "status": "missing_job_description"
+    },
+    {
+      "line": 125,
+      "title": "IT Project Manager",
+      "company": "Remote Recruitment",
+      "status": "missing_job_description"
+    }
+  ],
+  "finished_at": "2026-05-21T13:49:51",
+  "output_csv": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\manual_apply_index - manual_apply_index_software-pm_refreshed_with_resume_paths.csv",
+  "duplicate_csv": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\manual_apply_index - manual_apply_index_software-pm_refreshed_same_company_removed.csv",
+  "output_xlsx": "C:\\Users\\bsing\\OneDrive\\Documents\\Projects\\ApplyPilot\\portable_applypilot\\software-pm\\resume_generation_unique_company_2026-05-21\\manual_apply_index - manual_apply_index_software-pm_refreshed_with_resume_paths.xlsx"
+}

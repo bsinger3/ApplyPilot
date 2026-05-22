@@ -1,0 +1,46 @@
+{
+  "attempts": 4,
+  "validator": {
+    "passed": true,
+    "errors": [],
+    "warnings": [
+      "Banned words: spearheaded, proven track record"
+    ]
+  },
+  "quality_validator": {
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "checks": {
+      "title_fit": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "bullet_sources": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "experience_subtitles": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  "judge": {
+    "passed": false,
+    "verdict": "FAIL",
+    "issues": "- Added a new metric of \"1,966 products and 160K+ customer reviews\" that was not in the original resume.",
+    "raw": "VERDICT: FAIL  \nISSUES: - Added a new metric of \"1,966 products and 160K+ customer reviews\" that was not in the original resume."
+  },
+  "status": "approved_with_judge_warning",
+  "validation_mode": "normal",
+  "pdf_validator": {
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "page_count": 1
+  }
+}

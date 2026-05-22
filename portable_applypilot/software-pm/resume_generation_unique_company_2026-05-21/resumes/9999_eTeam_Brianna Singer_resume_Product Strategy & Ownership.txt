@@ -1,0 +1,38 @@
+Brianna Singer
+Product Strategy & Ownership
+New York, New York
+bsinger3@gmail.com | 916 224 9144 | https://github.com/bsinger3/ | https://linkedin.com/in/briannasinger/
+
+SUMMARY
+Product Manager with experience owning AI, analytics, and data governance products from discovery through delivery. Skilled at translating business, measurement, security, and data lifecycle needs into requirements, user stories, roadmaps, acceptance criteria, and executive-ready narratives. Background spans Snowflake governance, NLP analytics, Power BI dashboards, Postgres data modeling, data quality workflows, and cross-functional delivery.
+
+TECHNICAL SKILLS
+Languages: SQL, Python
+Data Platforms: Snowflake, Postgres, Supabase, Power BI, Mixpanel
+Product & Delivery: Product roadmap, requirements definition, user stories, prioritized backlogs, acceptance criteria, Agile, Scrum, OKRs, stakeholder management
+Data & AI: Data pipelines, data modeling, metadata, data quality validation, reconciliation, NLP, AI/ML workflows, automation, governance, RBAC
+
+EXPERIENCE
+Technical Product Manager, FriendsWithMeasurements.com, Newark, New Jersey Aug 2025 - Present
+- Defined the product vision and data model for a measurement-driven apparel discovery product, rebuilding the Postgres schema to support a catalog of 15K+ measurement profiles and downstream analytics use cases.
+- Scaled product, catalog, and review data ingestion across high-volume sources, including a Hollister pipeline that processed 1,966 products and 160K+ customer reviews into structured fit and measurement data.
+- Established repeatable transformation, validation, and roadmap workflows for catalog and review data, improving data quality for analytics, product matching, and user-facing fit recommendations.
+
+Product Manager, ALTR, Melbourne, Florida Feb 2025 - Aug 2025
+- Owned discovery and requirements for a Snowflake Native App using Snowflake classifiers to scan 50+ TB of customer data, detect unprotected sensitive data, apply tags, and recommend security policies based on exposure and usage.
+- Partnered with enterprise data security and governance stakeholders to define metadata, classification, tagging, policy, and auditability requirements; first customer identified 80+ columns of unprotected PII and reduced manual tagging effort by tens of hours.
+- Synthesized access-control discovery into requirements for group-based RBAC, Okta integration, auditable database access, and a lighter architecture for 600+ databases that avoided 800-900 proxy components.
+- Used Mixpanel product analytics and customer feedback to refine roadmap priorities, communicate adoption signals, and align delivery with enterprise governance objectives.
+
+Product Manager, Guy Carpenter, New York, New York Nov 2023 - Dec 2024
+- Drove delivery of NLP-powered contract intelligence workflows across 100K+ property reinsurance contracts, reducing average review time from 7 days to approximately 10 minutes and surfacing $40M+ in previously unstructured deal economics.
+- Built Power BI dashboards that surfaced exception patterns, deal-size correlations, recurring review bottlenecks, and negotiation risks for multimillion-dollar brokerage decisions.
+- Designed QA experiments, validation reviews, and data augmentation techniques that improved model precision by 15% and recall by 9% for high-value edge cases.
+
+Technical Project Manager, Sirion, New York, New York May 2022 - June 2023
+- Managed financial-contract AI/ML implementations for banking clients, aligning scope, roadmap milestones, risks, budgets exceeding $75K, and stakeholder updates across delivery workstreams.
+- Led Scrum ceremonies, sprint planning, backlog grooming, and delivery tracking for ML model implementation projects, consistently achieving 95%+ sprint goal completion.
+- Defined acceptance criteria and release priorities with technical and business teams, validating model and workflow outputs against client requirements before production delivery.
+
+EDUCATION
+Cornell University School of Industrial and Labor Relations | Bachelor of Science, Industrial and Labor Relations

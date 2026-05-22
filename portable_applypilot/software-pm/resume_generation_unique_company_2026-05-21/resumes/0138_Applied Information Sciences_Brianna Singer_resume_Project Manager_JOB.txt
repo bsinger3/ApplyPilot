@@ -1,0 +1,91 @@
+Title: Project Manager
+Company: indeed
+Location: Remote, US (Remote)
+Score: 8
+URL: https://www.indeed.com/viewjob?jk=f79ce79094ebd6cc
+
+**Why AIS?**
+============
+
+When you join AIS, you’re joining a mission\-driven team that’s passionate about making a difference. You’ll work on projects that matter, alongside industry\-leading experts, in an environment that fosters innovation, driving client success, and empowering our team to make a lasting impact. As an employee\-owned company, we value collaboration, inclusivity, continuous growth, and shared success.
+
+
+* **Employee Ownership** : Your contributions directly impact the company’s success, and you share in its achievements.
+* **Continuous Learning** : Access to resources, training, and mentorship to support your professional growth.
+* **Inclusive Culture** : A workplace where diversity is celebrated, and everyone’s voice is valued.
+* **Mission\-Driven Work** : Engage in projects that make a meaningful difference for our clients and communities.
+
+**What are we looking for?**
+============================
+
+At AIS, we're looking for more than just skills \- we're looking for driven individuals who are passionate about making a difference, eager to grow, and aligned with our core principles.  
+
+
+
+**Working@AIS**
+===============
+
+At AIS, we are dedicated to providing our employees with diverse opportunities to grow their careers while supporting a variety of impactful projects. For this position, we are seeking a talented individual to join AIS as a Project Manager.\&\#xa;
+* **Core Knowledge \& Skills:** Demonstrates strong command of project management standards, contract compliance, and delivery excellence. Skilled in risk management, financial tracking, and project planning.
+* **Work \& Complexity:** Leads projects from initiation to close, manages deliverables, tracks milestones, and ensures client acceptance. Proactively identifies and addresses risks and issues.
+* **Quality \& Independence:** Ensures high\-quality outcomes, operates with autonomy, and drives continuous improvement in project delivery.
+* **Teamwork \& Communication:** Builds positive relationships with clients, delivery teams, and stakeholders. Coaches and mentors team members to achieve project success.
+* **Consulting \& Engagement:** Provides expert guidance on project management practices, promotes client satisfaction, and identifies opportunities for process and service enhancements.
+
+\&\#xa;As your initial project assignment, you will support the unique needs of our client as a Project Manager.\&\#xa;\&\#xa;
+**Position Summary**  
+
+We are seeking a Project Manager with a strong technical foundation in Azure infrastructure to lead the planning, coordination, and execution of complex cloud deployment initiatives. This role is responsible for managing cross\-functional project teams delivering Azure\-based infrastructure solutions, including landing zones, networking, identity, security, governance, migration, and platform services. The ideal candidate combines disciplined project delivery leadership with enough technical depth to engage architects, engineers, security teams, and customer stakeholders effectively.
+
+
+This individual will serve as the central point of coordination across business, technical, and operational workstreams to ensure Azure infrastructure projects are delivered on time, within scope, and aligned to security, compliance, and operational readiness requirements.
+
+
+**Key Responsibilities**
+========================
+
+* Lead end\-to\-end delivery of Azure infrastructure deployment projects, from initiation through planning, execution, testing, cutover, and transition to operations.
+* Develop and maintain integrated project plans, schedules, milestones, RAID logs, dependency tracking, and executive status reporting.
+* Coordinate cross\-functional teams including cloud architects, Azure engineers, network engineers, identity engineers, security teams, operations teams, and third\-party vendors.
+* Drive deployment planning for core Azure infrastructure components such as landing zones, subscriptions, management groups, virtual networks, connectivity, identity integration, monitoring, backup, and disaster recovery.
+* Translate technical delivery activities into clear project plans, timelines, work packages, and stakeholder communications.
+* Manage project resources to standards.
+* Facilitate project\-related meetings, such as design reviews, readiness reviews, risk reviews, and management updates.
+* Identify delivery risks, environmental constraints, and interdependencies early, and drive mitigation plans to resolution.
+* Ensure alignment with enterprise security, compliance, and operational standards, especially for regulated or mission\-critical environments.
+* Partner with technical leads to validate deployment readiness, testing completion, cutover planning, and support transition requirements.
+* Track deliverables, action items, and decisions to maintain execution discipline and accountability across teams.
+* Support customer and leadership communications with concise, accurate reporting on progress, blockers, financials, and next steps.
+
+**Required Qualifications**
+===========================
+
+* Bachelor’s degree in Information Technology, Computer Science, Engineering, Business, or related field.
+* 3\+ years of project management experience leading enterprise IT infrastructure or cloud transformation initiatives.
+* 3\+ years of experience managing Azure infrastructure deployment projects.
+* Strong understanding of Azure core infrastructure services, including:
+* Azure landing zones
+* Virtual networks, routing, and connectivity
+* Identity and access management with Microsoft Entra ID
+* Subscription and governance models
+* Security controls and policy enforcement
+* Monitoring, backup, and resiliency concepts
+* Demonstrated experience managing technical delivery teams in complex, multi\-stakeholder environments.
+* Experience developing and maintaining detailed project schedules, resource plans, RAID logs, status reports, and executive briefings.
+* Strong understanding of project delivery methodologies including waterfall, agile, and hybrid delivery models.
+* Proven ability to manage scope, schedule, budget, risks, dependencies, and stakeholder expectations.
+* Excellent written and verbal communication skills, with the ability to communicate effectively with both technical and management audiences.
+
+**Preferred Qualifications**
+============================
+
+* PMP, PgMP, PMI\-ACP, Scrum Master, or similar project management certification.
+* Microsoft Azure certification such as Azure Administrator, Azure Solutions Architect, or Azure Fundamentals.
+* Experience with infrastructure\-as\-code and DevOps\-enabled delivery models using tools such as Terraform, Bicep, Azure DevOps, or GitHub.
+* Experience supporting Azure migrations involving servers, applications, storage, or virtual desktop environments.
+* Familiarity with enterprise governance and security frameworks such as Zero Trust, NIST, CIS, or Microsoft Cloud Adoption Framework.
+* Experience in regulated environments such as government, defense, healthcare, or financial services.
+* Experience managing operational readiness and transition\-to\-support activities for cloud services.
+
+\&\#xa;\&\#xa;At AIS, we are committed to offering competitive and fair compensation that reflects the skills, experience, and contributions of each team member.\&\#xa;\&\#xa;The targeted base salary range for this role is $105,000\-$158,000 per year. Please note that this range is provided as a guideline and the final offer will be based on several factors, including but not limited to, skillset and competencies, level of experience, education, certifications, and location.\&\#xa;\&\#xa;We value transparency in our hiring process and are happy to discuss how your unique qualifications align with our compensation structure during the interview process.\&\#xa;\&\#xa;
+*Applied Information Sciences does not discriminate on the basis of race, national origin, religion, color, gender, sexual orientation, age, disability, protected veteran status, or any other basis. Employment decisions are based solely on qualifications, merit, and business needs.*

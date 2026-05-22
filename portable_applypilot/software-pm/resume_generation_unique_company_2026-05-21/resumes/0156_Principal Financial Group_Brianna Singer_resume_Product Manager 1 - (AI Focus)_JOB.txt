@@ -1,0 +1,77 @@
+Title: Product Manager 1 - (AI Focus)
+Company: indeed
+Location: Remote, US (Remote)
+Score: 8
+URL: https://www.indeed.com/viewjob?jk=a22f6bcc0fa2c1e3
+
+What You'll Do:
+
+The Product Manager 1 supports the development and delivery of AI\-enabled products and use cases. This role works within a Data Science team to help prioritize initiatives, translate business needs into product outcomes, and track performance and adoption. The PM1 partners closely with stakeholders, the data science team, and department leadership to deliver measurable value while gaining experience across the full product lifecycle. **Key Responsibilities*** Contribute to managing the AI use\-case intake pipeline by helping vet, prioritize, and track initiatives in partnership with department leadership.
+* Collaborate with finance and product leadership to support cost\-benefit analyses (CBAs), helping quantify potential value, ROI, and trade\-offs for proposed use cases.
+* Work with stakeholders to identify opportunities, document workflows, and define clear problem statements, success metrics, and “jobs to be done.”
+* Help define and monitor AI utilization and adoption metrics (e.g., Copilot usage, agent adoption, efficiency improvements) and share insights with the product team.
+* Contribute to the management of the RIS AI Portal portfolio.
+* Work with business partners to refine requirements, support backlog development, and ensure clear understanding of business needs.
+* Build and share reports, dashboards, and updates to communicate progress, learnings, and outcomes to stakeholders.
+* Support cross\-functional AI governance efforts, including documentation, risk tracking, and alignment with compliance standards.
+* Use Jira to coordinate work across stakeholders, track progress, and maintain visibility into product delivery.
+
+
+Who You Are:
+* 2\+ years of product management experience, preferably in an engineering or technology organization.
+* Understanding of AI/ML concepts, generative AI, and agentic patterns. (technical depth not required, but conversational fluency expected)
+* Demonstrated experience building business cases and cost\-benefit analyses.
+* Strong stakeholder management skills, able to communicate technical concepts to non\-technical audiences.
+* Experience with intake/pipeline management and prioritization frameworks.
+* Data\-driven mindset with experience in defining and tracking KPIs and adoption metrics.
+* Familiarity with JIRA, Confluence, and agile delivery practices.
+* Excellent written and verbal communication skills.
+
+  
+
+**Preferred Qualifications*** Experience in financial services or other regulated data environments.
+* Familiarity with data science, analytics, or AI/ML concepts (e.g., models, experimentation, data pipelines, or model lifecycle).
+* Exposure to product, analytics, or technical project work supporting data\-driven or AI initiatives.
+
+
+Salary Range Information: Salary ranges below reflect targeted base salaries. Non\-sales positions have the opportunity to participate in a bonus program. Sales positions are eligible for sales incentives, and in some instances a bonus plan, whereby total compensation may far exceed base salary depending on individual performance. Actual compensation for all roles will be based upon geographic location, work experience, education, licensure requirements and/or skill level and will be finalized at the time of offer. Salary Range: $85000 \- $134000 / year Salary Details:
+
+The following locations are examples of market\-specific salary ranges across different geographies.
+
+* Wichita, KS: $85,000 \- $100,000 / year
+* Des Moines, IA: $90,000 \- $105,000 / year
+* Charlotte, NC: $95,000 \- $110,000 / year
+* Chicago/Minneapolis: $104,000 \- $122,000 / year
+* Los Angeles/New York City: $112,000 \- $134,000 / year
+
+
+Time Off Program: Flexible Time Off (FTO) is provided to salaried (exempt) employees and provides the opportunity to take time away from the office with pay for vacation, personal or short\-term illness. Employees don’t accrue a bank of time off under FTO and there is no set number of days provided. Pension Eligible: Yes Additional Information:
+**Work Environment**  
+
+This role offers in\-office, hybrid (blending at least three office days in a typical workweek), and remote work arrangements (only if residing more than 30 miles from Des Moines, IA, Raleigh, NC, or Charlotte, NC). You’ll work with your leader to figure out which option may align best based on several factors. **Work Authorization/Sponsorship**  
+
+At this time, we're not considering candidates that need any type of immigration sponsorship now or in the future or those needing work authorization for this role. (This includes, but is not limited to students on F1\-OPT, F1\-CPT, J\-1, etc.)
+
+
+Nonimmigrant Workers and Green Card for Employment\-Based Immigrants
+
+ **Investment Code of Ethics**  
+
+For Principal Global Investors positions, you’ll need to follow an Investment Code of Ethics related to personal and business conduct as well as personal trading activities for you and members of your household. These same requirements may also apply to other positions across the organization.
+
+ **Experience Principal**  
+
+At Principal, we value connecting on both a personal and professional level. Together, we’re imagining a more purpose\-led future for financial services – and that starts with you. Our success depends on the unique experiences, backgrounds, and talents of our employees. And we support our employees the same way we support our customers: with comprehensive, competitive benefit offerings crafted to protect their physical, financial, and social well\-being. Check out our careers site to learn more about our purpose, values and benefits. **Principal is an Equal Opportunity Employer**  
+
+All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, or veteran status.
+
+
+Posting Window: We will accept applications for 3 full days following the Original Posting Date, after which the posting may remain open or be removed based upon applications received. If we choose to post the job again, we will accept additional applications for at least 1 full day following the Most Recently Posted Date. Please submit applications in a timely manner as there is no guarantee the posting will be available beyond the applicable deadline. Date First Posted (TTF): 5/13/2026 Latest Post Date: Careers \- US: 5/13/2026
+LinkedIn Remote Hashtag
+
+
+: \#LI\-Remote
+LinkedIn Hashtag
+
+
+: \#LI\-EW1

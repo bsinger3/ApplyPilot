@@ -1,0 +1,46 @@
+{
+  "attempts": 4,
+  "validator": {
+    "passed": true,
+    "errors": [],
+    "warnings": [
+      "Banned words: spearheaded, proven track record"
+    ]
+  },
+  "quality_validator": {
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "checks": {
+      "title_fit": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "bullet_sources": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "experience_subtitles": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  "judge": {
+    "passed": false,
+    "verdict": "FAIL",
+    "issues": "The tailored resume includes a fabricated bullet point in the FriendsWithMeasurements.com role: \"Scaled catalog and review data coverage across high-volume sources, including a Hollister pipeline that processed 1,966 products and 160K+ customer reviews into structured fit and measurement data for downstream analytics.\" This specific achievement does not exist in the original resume and is completely new work.",
+    "raw": "VERDICT: FAIL  \nISSUES: The tailored resume includes a fabricated bullet point in the FriendsWithMeasurements.com role: \"Scaled catalog and review data coverage across high-volume sources, including a Hollister pipeline that processed 1,966 products and 160K+ customer reviews into structured fit and measurement data for downstream analytics.\" This specific achievement does not exist in the original resume and is completely new work."
+  },
+  "status": "approved_with_judge_warning",
+  "validation_mode": "normal",
+  "pdf_validator": {
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "page_count": 1
+  }
+}

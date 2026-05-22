@@ -1,0 +1,24 @@
+Title: Sr Technical Project Manager
+Company: Covenant HR
+Location: Remote
+Score: 10
+URL: https://www.linkedin.com/jobs/view/4416425599
+
+Company - Our client is a globally recognized people management software organization known for delivering enterprise-scale HR and workforce technology solutions. The company supports complex, multinational environments and is highly focused on innovation, digital transformation, and secure cloud-based operations.
+Job Title - Sr Technical Project Manager
+Location - Remote in Mexico
+Role Type - 6-Month Contract
+Must Have Skills:
+- Strong enterprise-level Technical Project Management experience managing multiple concurrent, matrixed projects across global teams and stakeholders
+- Proven experience leading SaaS / Cloud implementation projects utilizing Agile methodologies such as Scrum or Kanban
+- Executive-level stakeholder management and communication experience across North America and APJ regions
+- Hands-on technical project management background within cybersecurity or infrastructure environments
+- Experience with Zscaler migrations strongly preferred
+- Strong change management, requirements gathering, and business process mapping experience
+- Experience using Jira and Agile project management tools
+Responsibilities and Job Details:
+- Manage multiple complex technical projects simultaneously across global teams and stakeholders
+- Develop and maintain detailed project plans, schedules, resource allocation, communications, and risk mitigation strategies
+- Coordinate project execution with business leaders, technical teams, executives, and external partners
+- Drive SaaS and cloud implementation projects from initiation through delivery
+- Facilitate stakeholder meetings, executive updates,

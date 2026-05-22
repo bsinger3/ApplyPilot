@@ -1,0 +1,43 @@
+{
+  "attempts": 1,
+  "validator": {
+    "passed": true,
+    "errors": [],
+    "warnings": []
+  },
+  "quality_validator": {
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "checks": {
+      "title_fit": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "bullet_sources": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "experience_subtitles": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  "judge": {
+    "verdict": "SKIPPED",
+    "passed": true,
+    "issues": "none"
+  },
+  "status": "approved",
+  "validation_mode": "lenient",
+  "pdf_validator": {
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "page_count": 1
+  }
+}

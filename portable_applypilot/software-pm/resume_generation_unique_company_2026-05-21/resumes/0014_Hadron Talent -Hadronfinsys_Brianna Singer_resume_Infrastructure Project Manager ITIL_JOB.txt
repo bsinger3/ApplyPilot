@@ -1,0 +1,28 @@
+Title: Infrastructure Project Manager ITIL
+Company: Hadron Talent -Hadronfinsys
+Location: Remote
+Score: 10
+URL: https://www.linkedin.com/jobs/view/4417352029
+
+Infrastructure IS PM - ITIL & Future Operating Model Focus
+Job Location: 100% Remote from European Union
+Project: 6 months, rolling contract
+Project Type: Contract
+Core Job Responsibilities
+1. ITIL Framework Implementation & Alignment
+- ITIL Service Value System (SVS) Integration: Design and embed ITIL 4 best practices across the carved-out IT infrastructure function, focusing on core ITIL practices including service strategy, service design, service transition, service operation, and continual service improvement.
+- Stakeholder Engagement: Collaborate with key stakeholders to ensure alignment of ITIL practices with business objectives and operational needs.
+- Training and Development: Develop and deliver training programs to enhance the ITIL knowledge and skills of the IT team.
+2. Project Management
+- Project Planning: Develop detailed project plans, including scope, timelines, resources, and budget.
+- Risk Management: Identify potential risks and develop mitigation strategies to ensure project success.
+- Reporting: Provide regular updates to stakeholders on project progress, risks, and issues.
+3. Continuous Improvement
+- Process Optimization: Analyze existing processes and identify opportunities for improvement.
+- Performance Metrics: Establish and monitor key performance indicators (KPIs) to measure the effectiveness of ITIL practices.
+Core Job Requirements
+- Proven experience as an IT Project Manager with a focus on ITIL frameworks.
+- Strong understanding of ITIL 4 principles and practices.
+- Excellent communication and interpersonal skills.
+- Ability to work independently and manage multiple projects simultaneously.
+- Relevant certifications (e.g., ITIL, PMP) are a plus.

@@ -1,0 +1,47 @@
+{
+  "attempts": 4,
+  "validator": {
+    "passed": true,
+    "errors": [],
+    "warnings": [
+      "Banned words: spearheaded"
+    ]
+  },
+  "quality_validator": {
+    "passed": false,
+    "errors": [
+      "bullet_sources: Bullet for ALTR is not traceable to selected supplemental bullets: 'Developed logic across multiple Snowflake audit log types to support automated alerting when security policies are viola'.",
+      "bullet_sources: Bullet for Guy Carpenter is not traceable to selected supplemental bullets: 'Built Power BI dashboards that surfaced trends in exception patterns, deal size correlations, and recurring review bottl'.",
+      "bullet_sources: Bullet for Guy Carpenter is not traceable to selected supplemental bullets: 'Implemented LLM driven document processing workflows to automate term extraction and reduce manual contract review effor'.",
+      "bullet_sources: Bullet for Guy Carpenter is not traceable to selected supplemental bullets: 'Led scrum ceremonies and tracked OKRs for a five engineer team developing contract extraction and classification models.'.",
+      "bullet_sources: Bullet for Sirion is not traceable to selected supplemental bullets: 'Defined training data requirements and implemented NLP strategies to improve the model's interpretation of financial tab'."
+    ],
+    "warnings": [],
+    "checks": {
+      "title_fit": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      },
+      "bullet_sources": {
+        "passed": false,
+        "errors": [
+          "Bullet for ALTR is not traceable to selected supplemental bullets: 'Developed logic across multiple Snowflake audit log types to support automated alerting when security policies are viola'.",
+          "Bullet for Guy Carpenter is not traceable to selected supplemental bullets: 'Built Power BI dashboards that surfaced trends in exception patterns, deal size correlations, and recurring review bottl'.",
+          "Bullet for Guy Carpenter is not traceable to selected supplemental bullets: 'Implemented LLM driven document processing workflows to automate term extraction and reduce manual contract review effor'.",
+          "Bullet for Guy Carpenter is not traceable to selected supplemental bullets: 'Led scrum ceremonies and tracked OKRs for a five engineer team developing contract extraction and classification models.'.",
+          "Bullet for Sirion is not traceable to selected supplemental bullets: 'Defined training data requirements and implemented NLP strategies to improve the model's interpretation of financial tab'."
+        ],
+        "warnings": []
+      },
+      "experience_subtitles": {
+        "passed": true,
+        "errors": [],
+        "warnings": []
+      }
+    }
+  },
+  "judge": null,
+  "status": "failed_quality_validation",
+  "validation_mode": "normal"
+}

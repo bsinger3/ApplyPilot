@@ -1,0 +1,67 @@
+Title: Deputy Program Manager
+Company: indeed
+Location: Remote, US (Remote)
+Score: 8
+URL: https://www.indeed.com/viewjob?jk=765050bba19fe700
+
+Job Description**Summary of position/daily activities:**   
+We are seeking highly motivated **Deputy Program Managers** to join our team and play a pivotal role in advancing federal program delivery and operational excellence across complex, multi\-stakeholder environments. AEM Deputy Program Managers understand program management, system integration, and service delivery, and support the translation of strategic objectives into coordinated execution across technical and functional teams. In this position, you will oversee day\-to\-day operations, manage cross\-functional coordination, and ensure alignment between program priorities, technical delivery, and customer expectations. You will support planning, risk management, and performance tracking while ensuring quality standards, timelines, and service levels are consistently met. You will play an integral role in driving collaboration, maintaining continuity of operations, and enabling continuous improvement across program activities.
+
+* Support the Program Manager in overseeing day\-to\-day operations of a Federal Agency enterprise digital services program supporting multiple mission applications and stakeholder communities
+* Coordinate activities across engineering, data, UX, infrastructure, cybersecurity, and operational support teams to maintain consistent delivery of program services
+* Monitor program performance including schedule, deliverables, staffing coordination, and operational metrics
+* Facilitate collaboration between product owners, engineering teams, and stakeholders to ensure mission requirements are reflected in development priorities and operational workflows
+* Assist with Agile delivery coordination including backlog planning, sprint cadence support, and cross team communication
+* Support program governance activities including reporting, risk tracking, issue resolution, and performance monitoring
+* Ensure operational processes and workflows are documented and maintained to support efficient program execution
+* Assist with coordination between contractor teams and Federal Agency stakeholders to maintain alignment across program activities
+
+**Basic qualifications/experience (the** ***required qualificationswhich are critical*** **to be considered for the position:**
+
+* Bachelor’s degree in Business Administration, Information Technology, Computer Science, Information Systems, or a related field
+* 10 or more years of experience supporting federal IT programs or enterprise digital platforms
+* Experience coordinating cross functional teams delivering cloud\-based applications or digital services platforms
+* Experience supporting Agile development environments and modern technology delivery models
+* Demonstrated ability to coordinate program workflows, track deliverables, and support program leadership in managing operational performance
+* Strong organizational and communication skills with the ability to coordinate across technical teams and stakeholders
+* Experience supporting Federal Government or large enterprise technology programs
+
+**Desired skills/certifications (any additional skills desired but not required to be considered for the position):**
+
+* Project Management Professional certification or equivalent program management credential
+* Familiarity with Agile delivery frameworks such as Scrum or SAFe
+* Experience supporting cloud hosted enterprise platforms in AWS or similar environments
+* Experience coordinating programs involving multiple contractor teams and stakeholder organizations
+* Experience supporting digital services platforms or user facing web applications
+* Experience working within DevSecOps enabled delivery environments
+
+AEM and its affiliates are equal opportunity employers, and all qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, sexual orientation, gender identity, disability or protected veteran status, or any other characteristic protected by law. – AA M/F/Vet/Disability
+
+Federal law requires AEM and its affiliates to verify identity and employment eligibility with information from your Form I\-9\. The E\-Verify system is used.
+
+The California Consumer Privacy Act of 2018 (“CCPA”) imposes specific obligations on businesses processing personal information of California residents. Pursuant to the CCPA, AEM and its affiliates are required to provide applicants who are California residents a notice, used at or before the point of collection of such personal information, which identifies the categories of personal information that may be collected and why AEM and its affiliates collect such information. Applicants can find information about Twenty Bridge Staffing’s privacy policy and CCPA here.
+
+AEM is an equal opportunity employer and all qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, disability status, protected veteran status, or any other characteristic protected by law.
+
+Pay: $145,000\.00 \- $160,000\.00 per year
+
+Benefits:
+
+* Flexible schedule
+* Health insurance
+* Paid time off
+
+Application Question(s):
+
+* Please elaborate on any relevant experience supporting Federal Government or large enterprise technology programs
+
+Education:
+
+* Bachelor's (Required)
+
+License/Certification:
+
+* PMP (Required)
+* ability to obtain a clearance (US citizen in good standing) (Required)
+
+Work Location: Remote

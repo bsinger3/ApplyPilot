@@ -1,0 +1,150 @@
+Title: Sr. GxP Product Manager
+Company: Workday
+Location: None
+Score: 8
+URL: https://modernatx.wd1.myworkdayjobs.com/M_tx/job/Cambridge-Massachusetts/GxP-Product-Manager_R19011-1
+
+The Role
+
+At Moderna, we are revolutionizing modern healthcare by leveraging the power of digital technology to maximize our impact on patients' lives. By joining us, you will have the unique opportunity to contribute to an organization making an unprecedented difference in society.
+
+As a Senior GxP Product Manager, Digital, you will lead system engineering initiatives and manage multiple digital platforms and applications that align with Moderna's clinical and regulatory digital roadmap. This dynamic role blends the Product Manager role with GxP Business Analyst skillsets and is key to delivering validated, compliant, and impactful lab informatics solutions which drive user adoption, ongoing business value and responds to the ongoing needs of our users around the world.
+
+Your role will be to ensure that these systems operate efficiently, reliably, and compliantly while remaining scalable to support our diverse portfolio. You will collaborate closely with teams across regulatory operations, clinical, and other business units to maximize the value of our digital platforms. You will bring deep product expertise in Laboratory Information Management Systems (LIMS), E2E data pipeline solutions, GxP reporting/data visualizations and GxP-compliant environments.
+
+As the day-to-day product manager on this high-visibility initiative, your role will require management of multiple workstreams, including but not limited to UX, architecture, configuration, integration, and system validation. You will collaborate closely with business stakeholders and users across Analytical Development, Quality, QA and business operations to align process and functions as well as our engineering and validation teams to implement technical solutions which align with our overarching digital strategy, while ensuring a strong user experience which is compliant and maintains operational excellence.
+
+Here's What You’ll Do
+
+Defining user stories, clear acceptance criteria and precise functional scope for agreed upon features which capture business requirements and expected outcomes
+
+Serve as a liaison between technical teams and business users to ensure mutual understanding and shared expectations by partnering with stakeholders and teams to elicit and document detailed business, functional, and data requirements in collaboration with end users
+
+Alignment on what defines success and how we will measure success post-launch with clear KPI’s 
+
+Ruthless and continual prioritization of the backlog and sprint work items based on time, definition of ready (“DoR”) criteria, resources and business value
+
+Act as the go-to expert for product capabilities, integrations, and compliance impacts.
+
+Lead backlog refinement sessions, manage sprint planning in collaboration with delivery teams, define and prioritize product features and scope against Definition of Ready (“DoR”) standards and clear acceptance criteria
+
+Ensuring successful delivery through adaptive agile product management practices which align to GxP standards which meet Definition of Done (“DoD”) criteria and GxP business analyst expertise
+
+Translate complex technical requirements to drive alignment and decision-making, inclusive of data dependencies, into clear and business-friendly narratives through writing, verbal presentations, slides, or a combination thereof.
+
+Alignment with business stakeholders on data governance and operational process needs
+
+Lead and/or contribute to impact assessments, evaluating how process changes affect system behavior/requirements and articulating key outcomes back to business stakeholders
+
+Key contributor to Computer System Validation (CSV) efforts, including authoring or reviewing validation documentation (URS, FRS, IQ/OQ/PQ, test protocols).
+
+Contribute to business case development and ROI impact to drive measurable value
+
+Competency in measuring and reporting on product and project status to a variety of audiences, including stakeholders and senior leadership.
+
+Experience working with globally distributed teams, including offshore delivery teams
+
+Manage vendor partners in a regulated environment to ensure compliance and operational effectiveness.
+
+Prioritize, organize, and manage platform operations, including tracking operational metrics and generating reports.
+
+Contribute to the creation of short- and long-term roadmaps that deliver value, drive efficiencies, and support Moderna’s bold digital vision.
+
+Oversee application lifecycle and release management activities, ensuring product configurations efficiently maintain compliance and that all systems meet GxP requirements including 21 CFR Part 11, Annex 11, and ALCOA+ principles.
+
+Here’s What You’ll Need (Basic Qualifications) 
+
+The ideal candidate will have strong GxP Business Analyst skills and experience who made a successful transition to a Product Management role.
+
+Minimum 7+ years experience in GxP biotech/pharma space
+
+Minimum of 5+ years as a Product Owner/Product Manager in digital healthcare/biotech/pharma space with strong experience in delivering E2E data solutions and GxP reporting outcomes. Spotfire and Tableau experience highly desired.
+
+Minimum of 5+ years as GxP Business Analyst specializing in LIMS systems in biotech or pharma space. Labvantage 8.7 experience highly desired.
+
+Minimum of 3+ years of hands-on experience with GxP LIMS systems
+
+Strong experience in data lifecycles and data governance procedures
+
+Strong understanding of stability testing procedures, data and regulatory requirements to maintain stability testing compliance
+
+Expert in following tools and areas:
+
+JIRA for backlog management, refinement and sprint planning
+
+Confluence for version-controlled functional requirements and other key product documentation
+
+Validation documentation and SDLC processes
+
+Strong proficiency in the following tools and areas
+
+Excel, PowerPoint, Kneat
+
+Here’s What You’ll Bring to the Table (Preferred Qualifications):
+
+A highly-organized, data-driven systems thinker who understands the interdependencies between multiple platforms, diverse processes, cross-functional teams and how these impact enterprise data strategies and outputs
+
+Team player who is unafraid to ask the hard “what-if” questions (in the appropriate tone and forums) to probe on symptoms in order to get to the actual problem statement/root cause of what we are solving for
+
+You understand the criticality of a strong user experience to drive launch and adoption
+
+Excellent communicator with strong active listening skills and storytelling abilities, an empathetic approach and ability to rapidly align clear scope across diverse cross-functional global team processes
+
+Strong collaboration and relationship-building skills with a diverse set of business stakeholders and technical delivery teams
+
+You know when to dive into the deep details and when to pull back to provide a high-level view
+
+You speak these languages well and can effortlessly translate between them based on your audience: business, product, technical and data
+
+Ability to manage conflicting priorities and thrive in a fast-paced, dynamic environment with shifting priorities.
+
+Excellent time management skills and ability to swap between multiple hats in a fast-paced environment. You love having many hats…and know which one to wear when
+
+Pay & Benefits
+
+At Moderna, we believe that when you feel your best, you can do your best work. That’s why our US benefits and global well-being resources are designed to support you—at work, at home, and everywhere in between.
+
+Best-in-class healthcare coverage, plus voluntary benefit programs to support your unique needs
+
+A holistic approach to well-being, with access to fitness, mindfulness, and mental health support
+
+Family planning benefits, including fertility, adoption, and surrogacy support
+
+Generous paid time off, including vacation, volunteer days, sabbatical, global recharge days, and a discretionary year-end shutdown
+
+Savings and investment opportunities to help you plan for the future
+
+Location-specific perks and extras
+
+The salary range for this role is $145,900.00 - $234,200.00. This is the lowest to highest salary we in good faith believe we would pay for this role at the time of this posting. An individual’s position within the salary range will be based on several factors including, but not limited to, specific competencies, relevant education, qualifications, certifications, experience, skills, performance, and business or organizational needs.&#xa;&#xa;The successful candidate may be eligible for an annual discretionary bonus, other incentive compensation, or equity award, subject to company plan eligibility criteria and individual performance.
+
+About Moderna
+
+Since our founding in 2010, we have aspired to build the leading mRNA technology platform, the infrastructure to reimagine how medicines are created and delivered, and a world-class team. We believe in giving our people a platform to change medicine and an opportunity to change the world. 
+
+By living our mission, values, and mindsets every day, our people are the driving force behind our scientific progress and our culture. Together, we are creating a culture of belonging and building an organization that cares deeply for our patients, our employees, the environment, and our communities. 
+
+We are proud to have been recognized as a Science Magazine Top Biopharma Employer, a Fast Company Best Workplace for Innovators, and a Great Place to Work in the U.S. 
+
+If you want to make a difference and join a team that is changing the future of medicine, we invite you to visit modernatx.com/careers to learn more about our current opportunities. 
+
+Our Working Model 
+
+As we build our company, we have always believed an in-person culture is critical to our success. Moderna champions the significant benefits of in-office collaboration by embracing a 70/30 work model. This 70% in-office structure helps to foster a culture rich in innovation, teamwork, and direct mentorship. Join us in shaping a world where every interaction is an opportunity to learn, contribute, and make a meaningful impact. 
+
+Moderna is a smoke-free, alcohol-free, and drug-free work environment. 
+
+Equal Opportunities
+
+Moderna is committed to equal employment opportunity and non-discrimination for all employees and qualified applicants without regard to a person's race, color, sex, gender identity or expression, age, religion, national origin, ancestry or citizenship, ethnicity, disability, military or protected veteran status, genetic information, sexual orientation, marital or familial status, or any other personal characteristic protected under applicable law. Moderna is a place where everyone can grow. If you meet the Basic Qualifications for the role and you would be excited to contribute to our mission every day, please apply!
+
+Moderna is an E-Verify Employer in the United States. We consider qualified applicants regardless of criminal histories, consistent with legal requirements. 
+
+Accommodations
+
+We’re focused on attracting, retaining, developing, and advancing our employees. By cultivating a workplace that values diverse experiences, backgrounds, and ideas, we create an environment where every employee can contribute their best. 
+
+Moderna is committed to offering reasonable accommodations to qualified job applicants with disabilities. Any applicant requiring an accommodation in connection with the hiring process and/or to perform the essential functions of the position for which the applicant has applied should contact the Accommodations team at leavesandaccommodations@modernatx.com. 
+
+Export Control Notice&#xa;This position may involve access to technology or data that is subject to U.S. export control laws, including the Export Administration Regulations (EAR). As such, employment is contingent upon the applicant’s ability to access export-controlled information in accordance with U.S. law. Due to the nature of the work and regulatory requirements, only individuals who qualify as U.S. persons (citizens, permanent residents, asylees, or refugees) are eligible for this position. For this role Moderna is unable to sponsor non-U.S. persons to apply for an export control license.&#xa;#LI-CK1
+-

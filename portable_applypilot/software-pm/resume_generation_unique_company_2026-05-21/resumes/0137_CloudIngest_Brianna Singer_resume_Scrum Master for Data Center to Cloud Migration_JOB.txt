@@ -1,0 +1,281 @@
+Title: Scrum Master for Data Center to Cloud Migration
+Company: linkedin
+Location: Remote
+Score: 8
+URL: https://www.linkedin.com/jobs/view/4414222802
+
+Scrum Master for Data Center to Cloud Migration
+ 
+
+
+
+ Rate – 40/hr on W2
+ 
+
+
+
+ Client location: Pheonix AZ
+ 
+
+
+
+ Hybrid / Remote; Remote
+ 
+
+
+
+ Key Skills: Scrum framework expertise with preferred experience in cloud migration initiatives
+ 
+
+
+
+  
+
+
+
+
+
+ Job Description: Data Center to Cloud Scrum Master/Project Manager (2 Opening)
+ 
+
+
+
+  
+
+
+
+
+
+ Position Overview
+ 
+
+
+
+  
+
+
+
+
+
+ Seeking a skilled Scrum Master to spearhead our Data Center to Cloud migration strategy. Lead cross\-functional teams through sophisticated cloud transformation projects encompassing Rehost, Re\-platform, Rewrite, and Purchase methodologies
+ 
+
+
+
+  
+
+
+
+
+
+ Key Responsibilities
+ 
+
+
+
+  
+
+
+
+
+
+ Scrum Leadership \& Facilitation
+ 
+
+
+
+  
+
+
+
+
+
+ Facilitate all Scrum ceremonies (Daily Stand\-ups, Sprint Planning, Sprint Reviews, and Retrospectives) for cloud migration teams
+ 
+
+
+
+ Remove impediments and blockers that hinder team progress across multiple migration workstreams
+ 
+
+
+
+ Coach team members on Agile principles and Scrum practices specific to cloud transformation
+ 
+
+
+
+ Foster a culture of continuous improvement and collaboration across cross\-functional teams
+ 
+
+
+
+ Cloud Migration Strategy Management
+ 
+
+
+
+  
+
+
+
+
+
+ Rehost (Lift \& Shift): Coordinate teams migrating applications with minimal changes to cloud infrastructure
+ 
+
+
+
+ Replatform: Manage sprints focused on optimizing applications during migration with minor modifications
+ 
+
+
+
+ Rewrite/Refactor: Facilitate development teams rebuilding applications using cloud\-native architectures
+ 
+
+
+
+ Purchase: Coordinate evaluation, procurement, and implementation of SaaS/commercial solutions replacing legacy systems
+ 
+
+
+
+ Project Coordination \& Delivery
+ 
+
+
+
+  
+
+
+
+
+
+ Maintain and prioritize product backlogs for multiple migration streams
+ 
+
+
+
+ Track and report on sprint velocity, burndown charts, and migration progress metrics
+ 
+
+
+
+ Coordinate dependencies between teams working on interconnected systems
+ 
+
+
+
+ Ensure alignment with overall cloud migration roadmap and timelines
+ 
+
+
+
+ Manage risks and issues specific to cloud transformation initiatives
+ 
+
+
+
+ Stakeholder Management
+ 
+
+
+
+  
+
+
+
+
+
+ Communicate progress, risks, and blockers to leadership and stakeholders
+ 
+
+
+
+ Facilitate decision\-making sessions for migration strategy selection (6Rs framework)
+ 
+
+
+
+ Coordinate with Infrastructure, Security, Compliance, and Application teams
+ 
+
+
+
+ Bridge communication between technical teams and business stakeholders
+ 
+
+
+
+ Required Qualifications
+ 
+
+
+
+  
+
+
+
+
+
+ Certifications \& Education
+ 
+
+
+
+  
+
+
+
+
+
+ Certified Scrum Master (CSM) or Professional Scrum Master (PSM) certification required
+ 
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+ Experience
+ 
+
+
+
+  
+
+
+
+
+
+ 6\+ years of experience as a Scrum Master in technology environments
+ 
+
+
+
+ 3\+ years of experience with cloud migration or transformation projects
+ 
+
+
+
+ Proven track record managing multiple Agile teams simultaneously
+ 
+
+
+
+ Experience with DC to Cloud migration strategies (Rehost, Replatform, Rewrite, Purchase)
+ 
+
+
+
+ Hands\-on experience with cloud platforms (AWS, Azure, or Google Cloud)

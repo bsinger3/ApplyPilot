@@ -1,0 +1,42 @@
+Brianna Singer
+Product Manager
+New York, New York
+bsinger3@gmail.com | 916 224 9144 | https://github.com/bsinger3/ | https://linkedin.com/in/briannasinger/
+
+SUMMARY
+Product Manager with experience supporting digital products, internal tools, AI/ML workflows, analytics dashboards, and backend data services from discovery through launch readiness. Skilled at translating business needs into user stories, acceptance criteria, roadmap priorities, documentation, KPIs, and release plans. Strong cross-functional collaborator across engineering, design, analytics, operations, security, and business stakeholders, with hands-on technical fluency in SQL, Python, Snowflake, Postgres, Power BI, and product analytics.
+
+TECHNICAL SKILLS
+Languages: SQL, Python
+Data & Platforms: Snowflake, Postgres, Supabase, Power BI, Mixpanel
+Product Management: Roadmap execution, backlog grooming, user stories, acceptance criteria, requirements documentation, KPIs, launch readiness
+Delivery: Agile, Scrum, SDLC, sprint planning, stakeholder management, risk tracking, dependency management, cross-functional communication
+
+EXPERIENCE
+Technical Product Manager, FriendsWithMeasurements.com, Newark, New Jersey Aug 2025 - Present
+- Own roadmap execution for a measurement-driven apparel discovery product, translating user fit problems into prioritized requirements, backend data model improvements, and product delivery tasks.
+- Rebuilt the Postgres data model to support a catalog of 15K+ measurement profiles, improving the foundation for product matching, analytics, and customer-facing recommendations.
+- Scaled ingestion and transformation workflows across high-volume catalog and review sources, including a Hollister pipeline that processed 1,966 products and 160K+ customer reviews.
+- Analyze structured product and customer feedback data to identify iteration opportunities, improve data quality, and guide prioritization across product coverage and user experience.
+
+Product Manager, ALTR, Melbourne, Florida Feb 2025 - Aug 2025
+- Supported product delivery for a Snowflake Native App that used Snowflake classifiers to scan 50+ TB of customer data, detect unprotected sensitive data, apply tags, and recommend security policies.
+- Translated enterprise security and governance requirements into structured product requirements, user stories, acceptance criteria, and release priorities for engineering delivery.
+- Partnered with engineering, sales, security, and customer stakeholders to refine backlog priorities, clarify dependencies, and align feature delivery with enterprise data-protection needs.
+- First customer identified 80+ columns of unprotected PII and reduced manual tagging effort by tens of hours through automated classification and policy recommendation workflows.
+- Used Mixpanel analytics and customer feedback to assess feature adoption, communicate product progress, and identify opportunities for roadmap iteration.
+
+Product Manager, Guy Carpenter, New York, New York Nov 2023 - Dec 2024
+- Drove delivery of NLP-powered contract intelligence workflows across 100K+ property reinsurance contracts, reducing average review time from 7 days to approximately 10 minutes.
+- Drafted requirements, success metrics, and stakeholder-ready documentation for analytics workflows that surfaced $40M+ in previously unstructured deal economics.
+- Partnered with technical, analytics, operations, and business teams to support feature development, testing, validation, launch readiness, and stakeholder alignment.
+- Built Power BI dashboards that exposed exception patterns, deal-size correlations, recurring review bottlenecks, and negotiation risks for multimillion-dollar brokerage decisions.
+- Designed QA experiments and validation reviews that improved model precision by 15% and recall by 9% for high-value edge cases.
+
+Technical Project Manager, Sirion, New York, New York May 2022 - June 2023
+- Managed financial-contract AI/ML implementations for banking clients, coordinating multiple concurrent workstreams across scope, budget, delivery risks, release milestones, and stakeholder updates.
+- Led Scrum ceremonies, sprint planning, backlog grooming, and delivery tracking for ML model implementation projects, consistently achieving 95%+ sprint goal completion.
+- Defined acceptance criteria and release priorities with technical and business teams, validating model and workflow outputs against client requirements before production delivery.
+
+EDUCATION
+Cornell University School of Industrial and Labor Relations | Bachelor of Science, Industrial and Labor Relations

@@ -1,0 +1,118 @@
+Title: Principal Technical Program Manager
+Company: linkedin
+Location: Remote
+Score: 9
+URL: https://www.linkedin.com/jobs/view/4383330524
+
+**About The Team**
+ Zillow’s mission is to give people the power to unlock life’s next chapter. The Customer Fulfillment Engineering group powers how real estate professionals turn interest into action – from first contact through deal close and beyond.
+   
+
+  
+
+ We build and scale platforms like Follow Up Boss and related partner experiences that help agents and teams:
+   
+
+  
+
+* Capture and route high\-intent leads
+* Engage customers across email, phone, SMS, and in\-app channels
+* Automate follow\-up and workflows so nothing falls through the cracks
+* Use data and AI to prioritize the right work at the right time
+
+
+ Our teams work across product, engineering, data, and go\-to\-market partners. Together, we deliver reliable, high\-scale systems that support millions of conversations and transactions. We value being smart, humble, customer\-obsessed, and highly collaborative, and we’re looking for a Principal TPM who wants to help us improve how we plan, prioritize, and deliver complex programs.
+   
+
+  
+
+**About The Role**
+ This is a Principal Technical Program Manager (P5\) role within the Customer Fulfillment Engineering group. We hire Principal TPMs on an ongoing basis as we grow, and when you apply, you will be considered for current and future Principal TPM opportunities supporting Follow Up Boss and our broader fulfillment and partner platforms.
+   
+
+  
+
+ As a Principal TPM, you will lead large, cross\-organizational programs that sit at the heart of Zillow’s agent and team experiences. You’ll drive initiatives that:
+   
+
+  
+
+* Modernize and scale our CRM, communications, and workflow platforms
+* Improve reliability, performance, and quality across critical systems
+* Introduce AI\-powered capabilities that help agents prioritize the right work and serve their clients more effectively
+* Align product, platform, and operational work into coherent, outcomes\-driven roadmaps
+
+
+ You’ll operate at both strategy and execution levels. You’ll clarify goals, translate product vision into technical plans, align stakeholders, and ensure programs land with measurable impact for our customers and business.
+   
+
+  
+
+ You will get to
+   
+
+  
+
+* Lead complex, cross\-org, multi\-quarter programs that span multiple product, platform, and data teams within Customer Fulfillment Engineering and partner orgs, owning delivery from discovery through post\-launch and managing scope, risks, and dependencies.
+* Create clarity from ambiguity by turning loosely defined problems into clear program charters, roadmaps, and success metrics, bringing structure to fast\-moving, evolving environments.
+* Bridge product and engineering by translating product goals into technical requirements and sequencing, partnering closely with Engineering Managers, Staff/Principal Engineers, and Product leaders to shape strategy and make smart tradeoffs.
+* Drive operational excellence by establishing regular operating rhythms (for example, cadences, dashboards, and reviews) and defining and tracking KPIs around reliability, throughput, quality, and customer impact for Customer Fulfillment programs.
+* Champion AI and platform strategy by partnering with engineering and product leaders to integrate AI, shared platforms, and reusable services into program plans where they create durable leverage.
+* Influence senior leaders by communicating clearly with Directors, VPs, and cross\-functional partners; framing options and recommendations; driving alignment; and securing decisions that unblock progress.
+* Improve how we work by evolving lightweight, scalable ways\-of\-working across Customer Fulfillment Engineering (planning, intake, prioritization, execution, and retros), balancing consistency with team autonomy.
+* Mentor and lead by example as a senior leader within the TPM community at Zillow, mentoring other TPMs and helping raise the bar on program management craft across the org.
+
+
+ This role has been categorized as a Remote position. “Remote” employees do not have a permanent corporate office workplace and, instead, work from a physical location of their choice, which must be identified to the Company. U.S. employees may live in any of the 50 United States, with limited exceptions.
+   
+
+  
+
+ In California, Connecticut, Maryland, Massachusetts, New Jersey, New York, Washington state, and Washington DC the standard base pay range for this role is $178,300\.00 \- $284,700\.00 annually. This base pay range is specific to these locations and may not be applicable to other locations. In Colorado, Hawaii, Illinois, Minnesota, Nevada, Ohio, Rhode Island, and Vermont the standard base pay range for this role is $169,300\.00 \- $270,500\.00 annually. The base pay range is specific to these locations and may not be applicable to other locations.
+   
+
+  
+
+ In addition to a competitive base salary this position is also eligible for equity awards based on factors such as experience, performance and location. Actual amounts will vary depending on experience, performance and location. Employees in this role will not be paid below the salary threshold for exempt employees in the state where they reside.
+   
+
+  
+
+ Who you are
+   
+
+  
+
+* 8\+ years of Technical Program Management experience (or equivalent) leading large, cross\-functional software initiatives in mid\-size or large organizations, with a proven track record delivering complex, multi\-team programs with meaningful customer and business impact.
+* 4\+ years of hands\-on experience building or closely partnering on software systems (for example, web/mobile applications, distributed services, or data/messaging platforms), and you are comfortable discussing architecture, tradeoffs, and failure modes with engineers.
+* Experience working with product and design partners on customer\-facing experiences, preferably in B2B SaaS, CRM, communications, or workflow/automation domains, and you know how to balance new feature delivery with platform, quality, and operational investments.
+* Strong written and verbal communication skills; you distill complexity into crisp narratives tailored to engineers, cross\-functional peers, and executive stakeholders, and you influence without direct authority to align diverse stakeholders and drive accountability.
+* Deep command of program management fundamentals, including planning, estimation, risk management, dependency mapping, change management, and postmortems, and you are comfortable using data and metrics (such as reliability, latency, throughput, and funnel performance) to steer programs and improve how teams operate.
+* You thrive in ambiguity and change, enjoy working in evolving problem spaces with incomplete information, and naturally move teams from confusion to clarity, building momentum without waiting for perfect conditions.
+* Nice to have (bonus, not required): experience in real estate, CRM, martech/adtech, or communications platforms; background working with AI/ML\-powered products or using AI to improve developer and operator productivity; or prior experience with high\-scale systems that handle large volumes of messages, events, or third\-party integrations. These are truly optional—if you don’t have them but meet most of the qualifications above, we’d still love to hear from you.
+* Here at Zillow, we value the experience and perspective of candidates with non\-traditional backgrounds. We encourage you to apply if you have transferable skills or related experiences.
+
+
+ Get to know us
+   
+
+  
+
+ At Zillow, we’re reimagining how people move—through the real estate market and through their careers. As the most\-visited real estate platform in the U.S., we help customers navigate buying, selling, financing and renting with greater ease and confidence. Whether you're working in tech, sales, operations, or design, you’ll be part of a company that's reshaping an industry and helping more people make home a reality.
+   
+
+  
+
+ Zillow is honored to be recognized among the best workplaces in the country. Zillow was named one of FORTUNE 100 Best Companies to Work For® in 2025, and included on the PEOPLE Companies That Care® 2025 list, reflecting our commitment to creating an innovative, inclusive, and engaging culture where employees are empowered to grow.
+   
+
+  
+
+ No matter where you sit in the organization, your work will help drive innovation, support our customers, and move the industry—and your career—forward, together.
+   
+
+  
+
+*Zillow Group is an equal opportunity employer committed to fostering an inclusive, innovative environment with the best employees. We are committed to equal employment opportunity regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity or Veteran status. If you have a disability or special need that requires accommodation, please contact your recruiter directly.*
+*Qualified applicants with arrest or conviction records will be considered for employment in accordance with applicable state and local law.*
+*Los Angeles County applicants: Job duties for this position include: work safely and cooperatively with other employees, supervisors, and staff; adhere to standards of excellence despite stressful conditions; communicate effectively and respectfully with employees, supervisors, and staff to ensure exceptional customer service; and follow all federal, state, and local laws and Company policies. Criminal history may have a direct, adverse, and negative relationship with some of the material job duties of this position. These include the duties and responsibilities listed above, as well as the abilities to adhere to company policies, exercise sound judgment, effectively manage stress and work safely and respectfully with others, exhibit trustworthiness and professionalism, and safeguard business operations and the Company’s reputation. Pursuant to the Los Angeles County Fair Chance Ordinance, we will consider for employment qualified applicants with arrest and conviction records.*

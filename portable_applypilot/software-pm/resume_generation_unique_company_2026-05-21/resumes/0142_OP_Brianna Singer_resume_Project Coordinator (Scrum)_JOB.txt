@@ -1,0 +1,65 @@
+Title: Project Coordinator (Scrum)
+Company: linkedin
+Location: None
+Score: 8
+URL: https://www.linkedin.com/jobs/view/4412998036
+
+We are on the lookout for a highly organized Project Coordinator / Scrum Master to support delivery execution across multiple teams. This role is ideal for someone who can drive coordination, track progress, and ensure smooth Agile ceremonies, while also acting as a bridge between stakeholders, product teams, and leadership.
+   
+
+  
+
+ The ideal candidate is execution\-focused, detail\-oriented, and comfortable working in fast\-paced, cross\-functional environments, with the ability to balance coordination responsibilities and Agile facilitation.
+   
+
+  
+
+**Key Responsibilities**
+* Coordinate and track day\-to\-day project activities, timelines, and deliverables.
+* Facilitate Agile ceremonies (daily stand\-ups, sprint planning, retrospectives, backlog grooming).
+* Support multiple teams or workstreams, ensuring alignment and progress tracking.
+* Maintain and update project plans, status reports, and dashboards (Jira/Confluence).
+* Monitor sprint progress, velocity, and delivery metrics.
+* Identify risks, blockers, and dependencies, and escalate when needed.
+* Work closely with Product Owners, Engineering teams, and stakeholders to ensure clarity on priorities.
+* Assist in resource coordination and scheduling.
+* Ensure documentation, meeting notes, and action items are captured and followed up on.
+* Drive continuous improvement initiatives across teams.
+
+
+**Required Skills \& Experience**
+* 3 7\+ years of experience as a Project Coordinator, Scrum Master, or similar role.
+* Strong understanding of Agile/Scrum frameworks and delivery lifecycle.
+* Hands\-on experience with Jira, Confluence, and Agile reporting dashboards.
+* Experience supporting multiple teams or cross\-functional programs.
+* Strong organizational, multitasking, and coordination skills.
+* Ability to manage stakeholder communication and expectations.
+* Experience tracking KPIs such as velocity, burndown, cycle time, and delivery metrics.
+
+
+**Preferred / Nice\-to\-Have**
+* Experience in technical environments (software development/cloud/data projects).
+* Exposure to Scrum of Scrums or scaled Agile environments.
+* Certifications such as CSM, PSM, or SAFe.
+* Experience with reporting tools (Power BI, Excel dashboards).
+* Ability to support basic technical discussions with engineering teams.
+
+
+**Benefits**
+* 401(k).
+* Dental Insurance.
+* Health insurance.
+* Vision insurance.
+* We are an equal opportunity employer and value diversity, equality, inclusion, and respect for people.
+* The salary will be determined based on several factors including, but not limited to, location, relevant education, qualifications, experience, technical skills, and business needs.
+
+
+**Additional Responsibilities**
+* Participate in OP monthly team meetings, and participate in team\-building efforts.
+* Contribute to OP technical discussions, peer reviews, etc.
+* Contribute content and collaborate via the OP\-Wiki/Knowledge Base.
+* Provide status reports to OP Account Management as requested.
+
+
+**About Us**
+ OP is a technology consulting and solutions company, offering advisory and managed services, innovative platforms, and staffing solutions across a wide range of fields including AI, cyber security, enterprise architecture, and beyond. Our most valuable asset is our people: dynamic, creative thinkers, who are passionate about doing quality work. As a member of the OP team, you will have access to industry\-leading consulting practices, strategies \& and technologies, innovative training \& education. An ideal OP team member is a technology leader with a proven track record of technical excellence and a strong focus on process and methodology.

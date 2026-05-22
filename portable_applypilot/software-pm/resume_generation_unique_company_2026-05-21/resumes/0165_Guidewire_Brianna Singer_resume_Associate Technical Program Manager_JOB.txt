@@ -1,0 +1,56 @@
+Title: Associate Technical Program Manager
+Company: indeed
+Location: Remote, US (Remote)
+Score: 8
+URL: https://www.indeed.com/viewjob?jk=bc42251231ad736e
+
+**United States \- Remote**
+
+Product Development and Operations/Full time/Remote
+
+  
+
+We are seeking an Associate Technical Program Manager to join the team, operating at the intersection of Engineering, Customer Success, and cross\-functional teams. This individual will be working with Engineering teams, Technical Account Managers, Security, SRE, and GGS teams. This candidate plays a critical role in ensuring the successful and timely delivery of cloud operations projects aligned with Guidewire goals and priorities.  
+
+  
+
+The Associate TPgM will serve as a trusted partner driving alignment on priorities, owning execution plans, and proactively identifying and removing roadblocks to delivery. This person is fully accountable for end\-to\-end delivery, from planning, and risk mitigation, ensuring outcomes meet both technical and business objectives.  
+
+  
+
+The primary objective will be to manage small technical projects for Guidewire Cloud. These initiatives encompass a wide spectrum of critical areas, including but not limited to, building and optimizing cloud infrastructure, onboarding new customers, enforcing the cloud compliance standards and executing decommission strategies. Their expertise will help to apply company policies and procedures to resolve a variety of issues, being able to determine a course of action based on guidelines and defined processes.  
+
+  
+
+This role requires a technical background, good communication skills, and the ability to exercise judgment within defined procedures and practices to determine appropriate action. The ideal candidate thrives in a dynamic environment, applies learned techniques, contributes bringing structure to ambiguity, and is passionate about innovation and execution excellence.
+Job Description
+Responsibilities
+Manage small projects from start to finish independently, being responsible for the scope, complexity and impact, driving execution plans, and ensuring delivery meets business outcomes.
+Coordinate work between 2–3 related functional areas, working closely with Engineering, Customer Success and internal teams to ensure successful project execution.
+Identify common risks and define a remediation plan aligning the different stakeholders to make data\-informed decisions.
+Build and maintain basic project schedules, highlighting key tasks, milestones, and dependencies across projects, teams, and systems.
+Provide meeting notes for the team and regular updates of the project health for the key stakeholders and sponsors.
+Work with senior TPgMs on the coordination of dependencies, blockers or risks ensuring alignment on priorities, timelines, and deliverables throughout the project lifecycle.
+Assess the effectiveness of existing processes and suggest small tweaks to save time.
+Onboard new teammates and turn repeat questions into quick guides.
+
+Qualifications
+Bachelor's degree in Information Technology, Computer Science, or a related field. Master's degree.
+Minimum 1 year of experience managing small projects.
+Experience leading projects using Cloud Technologies. Knowledge of Guidewire Cloud is a plus.
+Understanding of agile tools and concepts.
+Proficient communication and interpersonal skills.
+Professional Program/Project Management certifications a plus.
+Familiarity with Jira, Confluence, Monday, Aha, or other project tracking and reporting tools is a plus.
+  
+
+
+The US base salary range for this full\-time position is $90,000 \- $175,000\. Your base pay will depend on your experience, skills, education, training, and location among other factors. All full\-time positions or part\-time roles working 30 hours or more a week at Guidewire are eligible for benefits that support their health and well\-being including health, dental, and vision insurance, paid time off, and a company sponsored retirement plan. In addition, some roles may be eligible for the annual company bonus plan, commissions, and/or long term incentive awards which are contingent on a variety of factors including, but not limited to, company and employee performance.
+Disability Accommodations and Guidewire’s Appeals Process. Guidewire provides accommodations to the hiring process to create a fair opportunity for candidates with disabilities to contend for open positions. Accommodation requests should be directed to Accommodations@guidewire.com. If things do not go as hoped, we invite you to use our appeals process. Guidewire promises to independently review any denied accommodation and any decision not to offer you the position. The appeals process is the same in either case. Within five business days of receiving a notice of denial of an accommodation, or receiving a notice of your non\-selection for a vacancy, e\-mail Accommodations@guidewire.com to make an appeal. Guidewire will assign a new decision\-maker to review the request and/or hiring decision, who will then notify you in writing of a decision within 10 business days.
+Interested in this position?
+  
+About Guidewire
+Guidewire is the platform P\&C insurers trust to engage, innovate, and grow efficiently. We combine digital, core, analytics, and AI to deliver our platform as a cloud service. More than 540\+ insurers in 40 countries, from new ventures to the largest and most complex in the world, run on Guidewire.
+As a partner to our customers, we continually evolve to enable their success. We are proud of our unparalleled implementation track record with 1600\+ successful projects, supported by the largest R\&D team and partner ecosystem in the industry. Our Marketplace provides hundreds of applications that accelerate integration, localization, and innovation.
+For more information, please visit www.guidewire.com and follow us on Twitter: @Guidewire\_PandC.
+Guidewire Software, Inc. is proud to be an equal opportunity and affirmative action employer. We are committed to an inclusive workplace, and believe that a diversity of perspectives, abilities, and cultures is a key to our success. Qualified applicants will receive consideration without regard to race, color, ancestry, religion, sex, national origin, citizenship, marital status, age, sexual orientation, gender identity, gender expression, veteran status, or disability. All offers are contingent upon passing a criminal history and other background checks where it's applicable to the position.

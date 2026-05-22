@@ -1,0 +1,10 @@
+Title: Technical Program Manager
+Company: Academian Inc
+Location: None
+Score: 9
+URL: https://www.linkedin.com/jobs/view/4413652323
+
+Position Overview
+We are seeking a seasoned Technical Program Manager to lead large-scale enterprise transformation programs across complex technology ecosystems. This role focuses on driving cross-functional execution, aligning multiple stakeholder groups, and ensuring successful delivery of strategic digital and operational initiatives.
+The position requires strong program governance, Agile leadership, and the ability to manage interdependent workstreams spanning enterprise platforms, data systems, and customer-facing applications in a fast-paced environment.
+You will act as a key delivery partner between business leadership, technology teams, and external vendors to ensure programs are delivered with predictability, quality, and measurable impact.

@@ -1,0 +1,95 @@
+Title: Technical Program Manager
+Company: linkedin
+Location: None
+Score: 8
+URL: https://www.linkedin.com/jobs/view/4414589594
+
+**Program Manager – Data \& Analytics Platforms** 
+
+
+
+
+**Job Summary** 
+
+
+
+
+ We are seeking an experienced Program Manager to lead the delivery of a large\-scale data and analytics program. The ideal candidate will manage multiple teams working in parallel, ensure alignment across workstreams, and drive key milestones to successful completion. A strong understanding of modern data platforms and analytics technologies is highly desirable.
+ 
+
+
+
+**Key Responsibilities** 
+
+
+
+* Lead end\-to\-end delivery of a large\-scale program involving
+ **3–4 cross\-functional teams** 
+ operating in parallel.
+* Drive program planning, execution, and tracking of
+ **milestones, dependencies, risks, and deliverables** 
+ across all teams.
+* Ensure alignment between business stakeholders, engineering teams, data teams, and leadership.
+* Facilitate program governance, status reporting, and executive\-level communication.
+* Proactively identify and mitigate risks, resolve dependencies, and remove delivery blockers.
+* Ensure adherence to timelines, scope, and quality standards.
+* Support teams with delivery best practices, agile ceremonies, and continuous improvement.
+* Coordinate with technology, data, and analytics stakeholders to ensure successful integration and outcomes.
+
+
+
+**Required Skills \& Qualifications** 
+
+
+
+* Proven experience managing
+ **large\-scale programs** 
+ with multiple teams working in parallel.
+* Strong program management skills, including planning, execution, and stakeholder management.
+* Ability to drive accountability and execution across diverse teams.
+* Excellent communication, coordination, and leadership skills.
+
+
+
+**Preferred Technical Knowledge** 
+
+
+
+
+ Foundational understanding of
+ **at least three** 
+ of the following technologies:
+ 
+
+
+* Google Cloud Platform (GCP)
+* BigQuery
+* Teradata
+* Informatica
+* Databricks
+* Tableau
+
+
+
+*(Hands\-on expertise is not mandatory, but the ability to understand architecture, data flows, and technical discussions is highly beneficial.)* 
+
+
+
+
+**Nice to Have** 
+
+
+
+* Experience managing
+ **data, analytics, or cloud transformation programs** 
+ .
+* Familiarity with Agile / Scrum / SAFe delivery models.
+* Experience working with distributed or global teams.
+
+
+
+**Education** 
+
+
+
+* Bachelor’s degree in Engineering, Computer Science, or a related field (or equivalent practical experience).
